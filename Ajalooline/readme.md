@@ -1,1 +1,1 @@
-Siin on ajalooline readme.
+EKKD-III1 ajalooliste sõnakujude töörühma materjalid.
