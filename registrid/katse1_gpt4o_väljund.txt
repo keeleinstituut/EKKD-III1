@@ -1,0 +1,720 @@
+Input: ilmama
+Response: kasutatakse eesti keeles tavaliselt kõnekeeles ja rahvalikus stiilis, et rõhutada midagi suurt, olulist või erakordset. Näiteks võib seda kasutada väljendites nagu "ilmama suur" või "ilmama tähtis". Seda sõna võib kohata ka kirjanduses, eriti rahvajuttudes ja -luuletustes, kus püütakse edasi anda rahvalikku kõnepruuki ja stiili.
+-----------
+Input: aeglus
+Response: kasutatakse eesti keeles erinevates kontekstides, sealhulgas: 1. Teaduslikud ja tehnilised tekstid: Näiteks füüsikas ja inseneriteadustes, kus arutatakse liikumise kiiruse või protsesside tempo üle. 2. Meditsiinilised ja psühholoogilised tekstid: Näiteks kirjeldamaks reaktsioonikiiruse või kognitiivsete protsesside aeglustumist. 3. Kirjandus ja ilukirjandus: Näiteks kirjeldamaks tegelaste tegevust või sündmuste kulgu. 4. Igapäevane kõne ja ajakirjandus: Näiteks liikluse või internetiühenduse kiiruse kirjeldamisel.
+-----------
+Input: ahter
+Response: kasutatakse eesti keeles peamiselt merendusega seotud tekstides. See tähendab laeva või paadi tagaosa. Näiteks võib seda sõna leida merendusalastes artiklites, laevanduse käsiraamatutes, navigatsioonijuhistes ja mereajaloo kirjeldustes.
+-----------
+Input: eelsool
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "eelsool". Sõna võib esineda spetsiifilistes kontekstides, näiteks teaduslikes või tehnilistes tekstides, kuid ilma täiendava informatsioonita ei ole võimalik täpselt määrata, millistes tekstides seda kasutatakse.
+-----------
+Input: ekker
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "ekker". See võib olla spetsiifiline termin või nimi, mida kasutatakse teatud kontekstis, kuid ilma täiendava informatsioonita ei saa ma kindlalt öelda, kus ja kuidas seda sõna kasutatakse.
+-----------
+Input: orgkomitee
+Response: kasutatakse tekstides, mis käsitlevad ürituste, konverentside, spordivõistluste, festivalide või muude suuremate sündmuste korraldamist ja planeerimist. "Orgkomitee" on lühend sõnast "organiseerimiskomitee" ja viitab rühmale inimesi, kes vastutavad sündmuse ettevalmistamise ja läbiviimise eest. Näiteks võib seda sõna leida ürituste kavades, ametlikes teadaannetes, pressiteadetes ja aruannetes.
+-----------
+Input: pasunapoiss
+Response: kasutatakse eesti keeles tavaliselt kirjanduses, muusikaga seotud tekstides ja ajaloolistes kontekstides. Pasunapoiss viitab tavaliselt noorele inimesele, kes mängib pasunat, näiteks sõjaväes või orkestris. Seda sõna võib leida ka rahvajuttudes, lastekirjanduses ja muudes kultuurilistes tekstides, kus kirjeldatakse muusikalisi tegevusi või tegelasi.
+-----------
+Input: hoolik
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "hoolik".
+-----------
+Input: tüübiline
+Response: kasutatakse eesti keeles tekstides, kus kirjeldatakse midagi, mis on iseloomulik või esinduslik teatud kategooria, rühma või nähtuse jaoks. Näiteks võib seda kasutada kirjeldamaks tüüpilist käitumist, tüüpilisi omadusi, tüüpilisi olukordi jne. Seda sõna võib leida erinevates tekstides, sealhulgas teaduslikes artiklites, ajakirjades, ilukirjanduses, ajalehtedes ja igapäevases suhtluses.
+-----------
+Input: aktsioon
+Response: kasutatakse eesti keeles tavaliselt järgmistes kontekstides: 1. Reklaam ja turundus: Näiteks kampaaniate ja eripakkumiste kirjeldamisel. "Poel on käimas suur soodusmüügi aktsioon." 2. Poliitika ja ühiskondlik tegevus: Näiteks protestide, demonstratsioonide või muude ühiskondlike algatuste kirjeldamisel. "Aktivistid korraldasid keskkonnakaitse aktsiooni." 3. Kunst ja kultuur: Näiteks performance'i või kunstiprojektide kirjeldamisel. "Kunstnikud viisid läbi tänavakunsti aktsiooni." 4. Finants ja majandus: Kuigi sõna "aktsioon" ei ole otseselt seotud finantsterminitega, võib see mõnikord esineda kontekstis, kus räägitakse investeerimisprojektidest või ettevõtete tegevustest. "Ettevõte alustas uue tooteliini turule toomise aktsiooni.
+-----------
+Input: antratsiit
+Response: kivisöe tüüp, mida iseloomustab kõrge süsinikusisaldus ja madal lenduvate ainete sisaldus. Seda sõna kasutatakse peamiselt järgmistes kontekstides: 1. Geoloogia ja maavarade kirjeldused: Antratsiiti mainitakse sageli geoloogilistes uuringutes ja aruannetes, kus kirjeldatakse kivisöe erinevaid tüüpe ja nende omadusi. 2. Energeetika ja kütuste kirjeldused: Antratsiiti kasutatakse kütusena, seega võib seda sõna leida tekstides, mis käsitlevad energia tootmist, kütuste omadusi ja kasutusviise. 3. Tööstus ja kaevandamine: Antratsiiti mainitakse kaevandustööstuse kirjeldustes, sealhulgas kaevandamistehnoloogiate ja -protsesside kirjeldustes. 4. Keskkonnateadus ja -poliitika: Tekstides, mis käsitlevad keskkonnamõjusid ja kliimamuutusi, võib antratsiiti mainida seoses selle põlemisel tekkivate heitmetega.
+-----------
+Input: bioloogia
+Response: kasutatakse tekstides, mis käsitlevad elusorganisme ja nende elu protsesse. See võib hõlmata teaduslikke artikleid, õpikuid, uurimustöid, populaarteaduslikke raamatuid, ajakirju ja veebilehti, mis räägivad bioloogilistest teemadest nagu geneetika, ökoloogia, evolutsioon, mikrobioloogia, zooloogia, botaanika ja paljud teised bioloogia harud.
+-----------
+Input: bioloogiliselt
+Response: kasutatakse tekstides, mis käsitlevad bioloogiat või bioloogilisi protsesse. See võib esineda teadusartiklites, õpikutes, uurimistöödes, populaarteaduslikes artiklites, tervise- ja meditsiinitekstides ning keskkonnateemalistes kirjutistes. Näiteks võib seda kasutada lausetes nagu "bioloogiliselt aktiivsed ühendid" või "bioloogiliselt lagunevad materjalid".
+-----------
+Input: debüteerima
+Response: kasutatakse eesti keeles tekstides, mis käsitlevad esmakordset esinemist või avalikku ülesastumist. Seda sõna võib leida näiteks: 1. Kultuuri- ja meediavaldkonna tekstides: Artiklid, arvustused ja uudised, mis räägivad uutest filmidest, teatritükkidest, muusikalistest esinemistest või kunstinäitustest. 2. Spordiuudistes: Kirjeldades sportlase esimest osalemist mõnel võistlusel või turniiril. 3. Kirjanduses: Rääkides autori esimesest avaldatud teosest. 4. Äriuudistes: Kui ettevõte või toode ilmub esmakordselt turule.
+-----------
+Input: džeiraan
+Response: ei ole eesti keeles laialt tuntud ega kasutusel. See võib olla võõrsõna või spetsiifiline termin, mis ei ole üldlevinud eesti keeles. Kui see sõna on seotud mõne konkreetse valdkonnaga, näiteks bioloogia, zooloogia või mõne kultuurilise kontekstiga, siis võiks see esineda vastava valdkonna tekstides. Ilma täiendava kontekstita ei oska ma täpselt öelda, millistes tekstides seda sõna kasutatakse.
+-----------
+Input: eraots
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "eraots". See võib olla haruldane või spetsiifiline termin, mida ei leidu laialdaselt tuntud tekstides.
+-----------
+Input: fanatt
+Response: kasutatakse eesti keeles tavaliselt mitteametlikes tekstides, nagu näiteks sotsiaalmeedia postitustes, blogides, foorumites ja vestlustes. See sõna viitab inimesele, kes on väga kirglik või pühendunud mingi teema, hobi, spordiala, muusikastiili või muu sarnase suhtes. Kui sul on konkreetsem kontekst või tekst, kus seda sõna kasutatakse, saan proovida anda täpsema vastuse.
+-----------
+Input: fellah
+Response: ei ole eesti keeles tavaline ja see ei pärine eesti keelest. Tegemist on araabiakeelse sõnaga (فَلَّاح‎, fallāḥ), mis tähendab põllumeest või talupoega, eriti Egiptuses ja teistes Lähis-Ida piirkondades. Seda sõna kasutatakse peamiselt ajaloolistes ja kultuurilistes kontekstides, mis käsitlevad Lähis-Ida ja Põhja-Aafrika põllumajandust ja ühiskonda. Eesti keeles võib seda sõna kohata tõlgetes või tekstides, mis käsitlevad araabia kultuuri, ajalugu või sotsiaalset struktuuri.
+-----------
+Input: fliseliin
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "fliseliin".
+-----------
+Input: formeeruma
+Response: kasutatakse eesti keeles tekstides, mis käsitlevad organisatsioonide, struktuuride või üksuste moodustamist või kujunemist. Seda võib leida näiteks sõjaväelistes kontekstides, kus räägitakse üksuste formeerumisest, aga ka laiemalt organisatsiooniteoorias, juhtimises ja sotsioloogias, kus arutatakse gruppide või struktuuride tekkimist ja kujunemist. Kui sul on konkreetne tekst või kontekst, kus seda sõna kasutatakse, saan pakkuda täpsemat selgitust.
+-----------
+Input: gestaapo
+Response: kasutatakse tavaliselt ajaloolistes ja poliitilistes tekstides, mis käsitlevad Teise maailmasõja ja natsionaalsotsialistliku Saksamaa ajalugu. Gestaapo (Gestapo) oli natsionaalsotsialistliku Saksamaa salapolitsei, mis tegeles poliitiliste vastaste jälitamise ja represseerimisega. Seda sõna võib leida ka kirjanduses, memuaarides, dokumentaalfilmides ja akadeemilistes uurimustes, mis käsitlevad natsionaalsotsialismi, holokausti ja sõjakuritegusid.
+-----------
+Input: hiinlane
+Response: kasutatakse eesti keeles tekstides, mis viitavad Hiina rahvusest või Hiina päritolu inimesele. Seda võib leida erinevat tüüpi tekstides, sealhulgas: 1. Ajaloolised tekstid: Arutledes Hiina ajaloost ja selle mõjust maailmale. 2. Uudised ja ajakirjandus: Käsitledes Hiina ja Eesti vahelisi suhteid, Hiina poliitikat, kultuuri või majandust. 3. Akadeemilised ja teaduslikud artiklid: Uurides Hiina kultuuri, keelt, ühiskonda või majandust. 4. Ilukirjandus: Tegelaste kirjeldamisel, kes on Hiina päritolu. 5. Reisikirjad ja blogid: Kirjeldades kogemusi Hiinas või kohtumisi hiinlastega. 6. Õpikutes ja haridusmaterjalides: Õpetades geograafiat, ajalugu või kultuuri.
+-----------
+Input: hoon
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sisestatud eesti keele sõna "hoon". Võib-olla on tegemist trükiveaga või harva kasutatava sõnaga.
+-----------
+Input: instrueering
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "instrueering".
+-----------
+Input: jomp
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "jomp".
+-----------
+Input: jupsima
+Response: kasutatakse eesti keeles tavaliselt igapäevases kõnepruugis ja mitteametlikes tekstides. See tähendab midagi väikest või tühist parandama või kohendama, sageli viidates tegevusele, mis on tülikas või aeganõudev. Näiteks võib seda sõna kasutada, kui räägitakse koduste tööde tegemisest, tehniliste seadmete parandamisest või muust sarnasest tegevusest, mis nõuab pidevat väikest kohendamist. Täpsemat teavet selle sõna kasutamise kohta konkreetsetes tekstides mul ei ole.
+-----------
+Input: jäärama
+Response: eesti keeles üsna haruldane ja spetsiifiline. See võib olla seotud murdekeele või vanema kirjakeelega. Kui see sõna on kasutusel, siis tõenäoliselt leidub seda rahvaluules, vanades kirjandustekstides või murdekeelsetes tekstides. Täpsemat konteksti või tekstide näiteid mul kahjuks ei ole.
+-----------
+Input: jagune
+Response: kasutatakse eesti keeles tavaliselt verbina "jagunema" käändevormina. Seda võib leida erinevates tekstides, sealhulgas teaduslikes artiklites, õpikutes, ilukirjanduses ja igapäevases suhtluses, kus räägitakse millegi jaotumisest või jaotamisest osadeks. Näiteks võib see esineda lauses: "Rühm jagune kaheks alarühmaks." 
+-----------
+Input: jõletu
+Response: kasutatakse eesti keeles tavaliselt kirjeldamaks midagi, mis on väga inetu, vastik või eemaletõukav. Seda võib leida erinevates tekstides, sealhulgas ilukirjanduses, ajakirjanduses, arvustustes ja vestlustes, kus soovitakse rõhutada millegi äärmiselt ebameeldivat olemust. Näiteks võib seda kasutada kirjeldamaks koledat hoonet, vastikut lõhna või ebameeldivat olukorda.
+-----------
+Input: järjend
+Response: kasutatakse eesti keeles peamiselt matemaatikas, informaatikas ja programmeerimises. See viitab tavaliselt järjestatud elementide kogumile, mida võib nimetada ka järjestikuks või järjestatud loendiks. Näiteks võib järjend olla arvude, tähtede või muude objektide järjestus, mida kasutatakse algoritmides ja andmestruktuurides. Kui sul on konkreetsem kontekst või tekst, mille kohta soovid teada, siis anna teada!
+-----------
+Input: korp
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sisestatud eesti(keelset) sõna "korp".
+-----------
+Input: kuub
+Response: kasutatakse eesti keeles mitmesugustes tekstides ja kontekstides. Näiteks: 1. Matemaatika ja geomeetria: "Kuub" viitab kolmemõõtmelisele kujundile, millel on kuus võrdset ruudukujulist külge. Näiteks: "Kuubi ruumala arvutamiseks tuleb külje pikkus tõsta kolmandasse astmesse." 2. Riietus: "Kuub" võib tähendada ka teatud tüüpi rõivastust, näiteks mantlit või jopet. Näiteks: "Ta kandis paksu talvekuube." 3. Kirjandus ja poeesia: Sõna "kuub" võib esineda ka kirjanduslikes tekstides, luuletustes ja proosas, kus seda kasutatakse kas otseses või metafoorses tähenduses.
+-----------
+Input: kuukama
+Response: kasutatakse eesti keeles peamiselt luules ja ilukirjanduses, et kirjeldada kuuvalguse poolt tekitatud helendust või kuma. See sõna võib esineda ka looduskirjeldustes ja romantilistes tekstides, kus on vaja luua meeleolu või visuaalset pilti öisest maastikust. Kui sul on konkreetne tekst või kontekst, kus seda sõna on kasutatud, saan aidata täpsemalt analüüsida.
+-----------
+Input: kõiksugu
+Response: kasutatakse eesti keeles mitmesugustes tekstides, sealhulgas ilukirjanduses, ajakirjanduses, teadusartiklites ja igapäevases suhtluses. See sõna tähendab "igasugune" või "mitmesugune" ja seda kasutatakse tavaliselt mitmesuguste asjade või nähtuste kirjeldamiseks. Näiteks: 1. Ilukirjandus: "Raamat sisaldas kõiksugu lugusid, alates seiklustest kuni armastusromaanideni." 2. Ajakirjandus: "Turg pakub kõiksugu tooteid, alates värsketest puuviljadest kuni käsitööesemeteni." 3. Teadusartiklid: "Uurimus käsitleb kõiksugu bioloogilisi protsesse, mis toimuvad raku tasandil." 4. Igapäevane suhtlus: "Kodus on kõiksugu tööriistu, mida saame kasutada.
+-----------
+Input: käokaats
+Response: kasutatakse eesti keeles tavaliselt rahvapärimustes ja loodustekstides. See sõna viitab taimele, mida tuntakse ka kui "käopäkka" või "käokannust". Käokaats on tuntud oma eripäraste õite poolest ja teda võib leida niitudelt ja metsaservadelt. Kui sul on konkreetne kontekst või tekst, milles seda sõna kasutatakse, siis saaksin täpsemalt aidata. Kui mitte, siis üldiselt kasutatakse seda sõna looduse ja taimestiku kirjeldamisel.
+-----------
+Input: käppima
+Response: kasutatakse eesti keeles tavaliselt mitteametlikes ja argistes tekstides. See võib esineda näiteks vestlustes, sotsiaalmeedia postitustes, blogides või jutustustes. Sõna "käppima" tähendab tavaliselt midagi kätega katsuma või kompama, sageli viidates tegevusele, mis on pealetükkiv või soovimatu. Näiteks võib seda kasutada lauses: "Ära käpi mu asju!
+-----------
+Input: küütima
+Response: kasutatakse eesti keeles ja see tähendab kedagi sõidutama või vedama, tavaliselt hobuse või mõne muu sõiduvahendiga. Seda sõna võib leida erinevates tekstides, sealhulgas ilukirjanduses, ajaloolistes dokumentides ja rahvapärimustes, kus kirjeldatakse vanu kombeid ja eluolu. Näiteks võib seda sõna kohata eesti rahvajuttudes või kirjandusteostes, mis käsitlevad maaelu ja talutöid.
+-----------
+Input: kadal
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sisestatud eesti sõna "kadal".
+-----------
+Input: kasima
+Response: kasutatakse eesti keeles ja see tähendab tavaliselt puhastamist või koristamist. Seda sõna võib leida erinevates tekstides, sealhulgas: 1. Igapäevastes vestlustes ja kõnes. 2. Kodumajapidamise ja koristamise juhendites. 3. Ilukirjanduses, kus tegelased võivad tegeleda koristamisega. 4. Blogides ja artiklites, mis käsitlevad koduhooldust ja koristamisnippe. 5. Lastekirjanduses, kus õpetatakse lapsi koristama ja oma asju korras hoidma.
+-----------
+Input: kassiahastus
+Response: kasutatakse eesti keeles tavaliselt kirjeldamaks pohmelli või halba enesetunnet pärast alkoholi tarbimist. Seda sõna võib kohata erinevates tekstides, sealhulgas ilukirjanduses, ajakirjanduses, blogides ja vestlustes, kus arutatakse alkoholi tarbimise tagajärgi või kirjeldatakse tegelaste enesetunnet pärast pidu. Näiteks võib seda sõna leida romaanides, novellides, artiklites, arvamuslugudes ja sotsiaalmeedia postitustes.
+-----------
+Input: kasutus
+Response: kasutatakse erinevates eesti keele tekstides, sealhulgas: 1. Tehnilised juhendid ja kasutusjuhendid: Näiteks seadmete, tarkvara või tööriistade kasutusjuhendid, kus selgitatakse, kuidas toodet kasutada. 2. Õigusaktid ja lepingud: Näiteks lepingutes, kus määratletakse vara kasutustingimused. 3. Õppematerjalid ja õpikud: Näiteks õpikutes, kus selgitatakse mõistete või meetodite kasutust. 4. Teadusartiklid ja uurimistööd: Näiteks teaduslikes töödes, kus kirjeldatakse meetodite või andmete kasutust. 5. Igapäevane suhtlus ja kirjavahetus: Näiteks e-kirjades või vestlustes, kus arutatakse erinevate asjade kasutamist.
+-----------
+Input: kiri
+Response: kasutatakse mitmesugustes tekstides, sealhulgas: 1. Isiklikud kirjad - sõnumid, mida inimesed saadavad üksteisele, et jagada uudiseid, mõtteid ja tundeid. 2. Ametlikud kirjad - formaalsed dokumendid, mida kasutatakse ametlikus suhtluses, näiteks tööalased kirjad, avaldused ja teated. 3. Kirjandus - ilukirjanduslikud teosed, nagu romaanid, novellid ja luuletused, kus tegelased võivad kirjutada või saada kirju. 4. Ajaloolised dokumendid - vanad kirjad, mis on säilinud ja mida uuritakse ajaloolise konteksti mõistmiseks. 5. E-kirjad - elektroonilised kirjad, mida saadetakse e-posti teel. 6. Õppematerjalid - õpikutes ja juhendites, kus õpetatakse kirjade kirjutamist ja vormistamist. 7. Ajalehed ja ajakirjad - lugejakirjad ja toimetuse kirjad, kus lugejad ja toimetajad vahetavad mõtteid ja arvamusi.
+-----------
+Input: kirikukogu
+Response: kasutatakse tekstides, mis käsitlevad religiooni, kiriku ajalugu, teoloogiat ja kiriklikke administratiivseid küsimusi. Kirikukogu viitab tavaliselt ametlikule kogunemisele või nõukogule, kus arutatakse ja otsustatakse olulisi kirikuga seotud küsimusi. Näiteks võib see sõna esineda kiriku ajalugu käsitlevates raamatutes, teoloogilistes uurimustes, kiriklike seaduste ja määruste tekstides ning kiriklike sündmuste aruannetes.
+-----------
+Input: kogu
+Response: mitmesugustes tekstides ja kontekstides. Siin on mõned näited: 1. Ametlikud dokumendid ja seadused: Sõna "kogu" võib esineda näiteks fraasides nagu "Riigikogu" (Eesti parlament) või "kogumispension". 2. Kirjandus ja ajakirjandus: Sõna "kogu" võib esineda kirjandusteostes, ajaleheartiklites ja ajakirjades, näiteks "luulekogu" või "novellikogu". 3. Akadeemilised ja teaduslikud tekstid: Sõna "kogu" võib esineda teadusartiklites ja uurimistöödes, näiteks "andmekogu" või "teaduskogu". 4. Igapäevane kõnekeel ja mitteametlikud tekstid: Sõna "kogu" võib esineda igapäevases kõnes ja mitteametlikes tekstides, näiteks "raamatukogu" või "kollektsioonikogu".
+-----------
+Input: kolmeti
+Response: kasutatakse eesti keeles harva, kuid see võib esineda tekstides, kus kirjeldatakse midagi, mis toimub või on jaotatud kolme erinevasse ossa või viisi. Näiteks võib seda kasutada matemaatilistes, tehnilistes või teaduslikes tekstides, kus on vaja täpsustada, et midagi on jaotatud või toimub kolmel erineval viisil. Kui sul on konkreetne kontekst või lause, kus see sõna esineb, saaksin täpsemalt aidata.
+-----------
+Input: komnoor
+Response: kasutatakse tekstides, mis käsitlevad Nõukogude Liidu ajalugu ja ideoloogiat. "Komnoor" on lühend sõnast "kommunistlik noor" ja viitab noortele, kes kuulusid Komsomoli (Kommunistlik Noorsooühing). Komsomol oli Nõukogude Liidu kommunistliku partei noorteorganisatsioon, mis tegeles noorte ideoloogilise kasvatamise ja poliitilise tegevusega. Sõna võib esineda ajaloolistes, sotsioloogilistes ja poliitilistes tekstides, mis käsitlevad Nõukogude perioodi Eestis või laiemalt Nõukogude Liidus.
+-----------
+Input: kriksatrull
+Response: kasutatakse tavaliselt eesti keeles lastekeeles või mitteametlikes kontekstides, et kirjeldada midagi keerulist, segast või arusaamatut. Seda võib kohata näiteks lasteraamatutes, juttudes või igapäevases kõnepruugis, kui soovitakse midagi keerulist või sassis olevat kirjeldada. Kui sul on konkreetne tekst või kontekst, kus seda sõna kasutatakse, siis saan täpsemalt aidata.
+-----------
+Input: kuubikuline
+Response: kasutatakse eesti keeles tekstides, mis käsitlevad geomeetriat, matemaatikat, füüsikat või muid teadusvaldkondi, kus räägitakse kolmemõõtmelistest objektidest ja nende omadustest. Seda võib kasutada ka kirjeldamaks midagi, mis on kuubi kujuline või millel on kuubi omadused. Näiteks võib seda sõna leida õpikutes, teadusartiklites, inseneriteaduse tekstides ja isegi kirjanduses, kui kirjeldatakse midagi kuubikujulist.
+-----------
+Input: külastus
+Response: kasutatakse eesti keeles erinevates tekstides, sealhulgas: 1. Ametlikud dokumendid ja aruanded: Näiteks ettevõtete või organisatsioonide aruannetes, kus kirjeldatakse kohtumisi, inspekteerimisi või delegatsioonide visiite. 2. Turism ja reisikirjeldused: Artiklid ja blogipostitused, mis räägivad reisidest, vaatamisväärsustest ja turismisihtkohtadest. 3. Meditsiinilised tekstid: Arstide ja patsientide vahelised suhtlused, kus kirjeldatakse arsti vastuvõtte ja tervisekontrolle. 4. Haridus ja teadus: Koolide ja ülikoolide tekstid, kus kirjeldatakse õppekäike, ekskursioone ja teaduslikke ekspeditsioone. 5. Kultuuri- ja meelelahutussündmused: Ürituste kirjeldused, kus mainitakse muuseumide, näituste, kontsertide ja teiste kultuuriasutuste külastusi.
+-----------
+Input: küljest
+Response: kasutatakse eesti keeles mitmesugustes tekstides, sealhulgas ilukirjanduses, ajakirjanduses, teaduslikes artiklites, ametlikes dokumentides ja igapäevases suhtluses. See sõna viitab tavaliselt millegi eraldamisele või eemaldamisele mingist tervikust. Näiteks: 1. Ilukirjandus: "Ta rebis lehe raamatu küljest." 2. Ajakirjandus: "Auto küljes olev reklaam tõmbas palju tähelepanu." 3. Teaduslikud artiklid: "Katse käigus eraldati molekulid üksteise küljest." 4. Ametlikud dokumendid: "Palun eemaldage kleebis pakendi küljest enne taaskasutusse andmist." 5. Igapäevane suhtlus: "Kas sa saad selle sildi minu jope küljest ära võtta?
+-----------
+Input: laiskus
+Response: kasutatakse eesti keeles erinevates tekstides, sealhulgas: 1. Ilukirjandus: Romaanides, novellides ja luuletustes, kus kirjeldatakse tegelaste omadusi või käitumist. 2. Esseistika ja arvamusartiklid: Aruteludes inimloomuse, tööeetika või ühiskondlike probleemide üle. 3. Õpikutes ja teadusartiklites: Psühholoogia, sotsioloogia ja hariduse valdkonnas, kus uuritakse motivatsiooni ja käitumist. 4. Igapäevane kõnekeel ja blogid: Isiklikes lugudes ja kogemustes, kus inimesed räägivad oma harjumustest ja eluviisist. 5. Ajalehed ja ajakirjad: Artiklid, mis käsitlevad tööelu, produktiivsust ja enesearengut.
+-----------
+Input: lits
+Response: eesti keeles vulgaarne ja solvav termin, mida kasutatakse tavaliselt naise kohta, keda peetakse seksuaalselt kõlvatuks või kergemeelseks. Seda sõna võib kohata erinevates kontekstides, sealhulgas: 1. Vulgaarne kõnepruuk: Seda sõna kasutatakse sageli solvamiseks või halvustamiseks igapäevases kõnekeeles. 2. Kirjandus ja ilukirjandus: Mõnikord võib see sõna esineda kirjandusteostes, kus autorid püüavad edasi anda teatud tegelaste kõnepruuki või sotsiaalset konteksti. 3. Muusika ja laulutekstid: Mõned laulud, eriti teatud žanrites nagu räpp või punk, võivad sisaldada vulgaarseid väljendeid, sealhulgas seda sõna. 4. Sotsiaalmeedia ja internetifoorumid: Anonüümsus ja vähene järelevalve võivad viia vulgaarse keelekasutuse suurenemiseni, sealhulgas selle sõna kasutamiseni. Kuna tegemist on solvava terminiga, on selle kasutamine üldiselt taunitav ja ebasoovitav.
+-----------
+Input: lõpp
+Response: kasutatakse eesti keeles mitmesugustes tekstides ja kontekstides. Näiteks: 1. Ilukirjandus: Romaanid, novellid, luuletused ja muud kirjanduslikud teosed, kus räägitakse loo lõpust või kirjeldatakse sündmuste kulminatsiooni. 2. Ametlikud dokumendid: Lepingud, aruanded ja muud ametlikud tekstid, kus võib olla viidatud protsessi või perioodi lõpule. 3. Akadeemilised tööd: Uurimistööd, esseed ja artiklid, kus võib olla järelduste osa või lõppkokkuvõte. 4. Igapäevane suhtlus: Vestlused, kirjad, e-kirjad ja sõnumid, kus räägitakse mingi tegevuse või sündmuse lõpust. 5. Meedia ja ajakirjandus: Uudised, artiklid ja reportaažid, kus kajastatakse sündmuste lõppu või tulemusi.
+-----------
+Input: lõppjärk
+Response: kasutatakse tavaliselt tekstides, mis käsitlevad protsesside või projektide etappe, eriti kui viidatakse viimasele või lõplikule etapile. Seda võib leida näiteks järgmistes kontekstides: 1. Projektijuhtimine: Kirjeldades projekti viimast faasi, kus viiakse läbi lõplikud tegevused ja projekt lõpetatakse. 2. Tootearendus: Viidates toote arendamise viimasele etapile enne turule toomist. 3. Teadustööd ja uurimused: Kirjeldades uurimisprotsessi viimast etappi, kus tehakse järeldused ja koostatakse lõpparuanne. 4. Haridus ja koolitus: Viidates õppeprotsessi viimasele osale, näiteks lõputöö kirjutamisele või eksamite sooritamisele. 5. Ehitus ja inseneritööd: Kirjeldades ehitusprojekti viimast etappi, kus tehakse viimistlustööd ja objekt antakse üle tellijale.
+-----------
+Input: lõõgas
+Response: kasutatakse eesti keeles harva ja see võib esineda peamiselt murdekeeles või vanemas kirjanduses. Täpsemalt võib see sõna esineda tekstides, mis käsitlevad rahvapärimusi, murdekeelt või ajaloolisi teemasid. Kui sul on konkreetne kontekst või tekst, kus see sõna esineb, siis võiksin aidata täpsemalt selgitada. Kui mul ei ole selle kohta informatsiooni, siis pean ütlema, et ma ei oska öelda.
+-----------
+Input: lööma
+Response: kasutatakse eesti keeles mitmesugustes tekstides ja kontekstides. Siin on mõned näited: 1. Ilukirjandus: Romaanides, novellides ja luuletustes, kus tegelased võivad füüsiliselt kakelda või võidelda. Näide: "Ta lõi rusikaga vastu lauda." 2. Ajakirjandus: Uudistes ja artiklites, kus kirjeldatakse sündmusi, mis hõlmavad füüsilist vägivalda või võitlust. Näide: "Mees lõi teist meest baaris." 3. Õiguslikud tekstid: Seadustes ja kohtulahendites, kus käsitletakse füüsilise vägivalla juhtumeid. Näide: "Süüdistatav lõi kannatanut pähe." 4. Sporditekstid: Kirjeldustes, kus räägitakse spordivõistlustest, eriti võitlusspordialadest. Näide: "Poksija lõi vastast tugeva hoobiga." 5. Igapäevane kõnepruuk ja dialoogid: Vestlustes, kus inimesed räägivad oma kogemustest või juhtumitest. Näide: "Ma lõin varba vastu tooli." 6. Õppematerjalid ja juhendid: Tekstides, kus õpetatakse enesekaitset või võitluskunste. Näide: "Õpi, kuidas õigesti lüüa.
+-----------
+Input: ladra
+Response: ei ole eesti keeles tavaline ega laialt kasutatav. See võib olla trükiviga, haruldane murdesõna või võõrkeelne sõna. Ilma täiendava kontekstita ei oska ma täpselt öelda, millistes tekstides seda sõna kasutatakse.
+-----------
+Input: lamatis
+Response: kasutatakse meditsiinilistes tekstides, eriti nendes, mis käsitlevad haavandeid, haavahooldust ja pikaajalist voodiravi vajavate patsientide hooldust. Lamatised on naha ja nahaaluste kudede kahjustused, mis tekivad pikaajalise surve tõttu, tavaliselt voodihaigetel või ratastoolikasutajatel. Selliseid tekste võib leida meditsiinilistes õpikutes, teadusartiklites, hooldusjuhendites ja tervishoiualastes väljaannetes.
+-----------
+Input: lape
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "lape".
+-----------
+Input: laudik
+Response: kasutatakse eesti keeles tavaliselt põllumajandusega seotud tekstides, eriti piimanduses ja loomakasvatuses. Laudik viitab noorele lehmale, kes on tiine ja valmistub esimest korda poegima. Selliseid tekste võib leida põllumajandusajakirjades, teadusartiklites, õpikutes ja juhendites, mis käsitlevad loomakasvatust ja piimatootmist.
+-----------
+Input: lidrine
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "lidrine". See võib olla haruldane või spetsiifiline sõna, mida ei esine laialdaselt tuntud eesti keele sõnavaras.
+-----------
+Input: lubjakas
+Response: kasutatakse eesti keeles tavaliselt geoloogilistes ja ehitusalastes tekstides. See viitab lubjakivile, mis on settekivim, koosnedes peamiselt kaltsiumkarbonaadist. Lubjakivi kasutatakse sageli ehitusmaterjalina, samuti tsemendi ja lubja tootmisel. Lisaks võib seda sõna kohata ka loodusteaduslikes ja keskkonnateemalistes tekstides, kus käsitletakse pinnase koostist ja kivimite omadusi.
+-----------
+Input: mutt
+Response: kasutatakse eesti keeles mitmesugustes tekstides ja kontekstides. Siin on mõned näited: 1. Loodusteaduslikud tekstid: Sõna "mutt" viitab loomale, kes elab maa all ja on tuntud oma kaevamisoskuste poolest. Näide: "Mutt on väike imetaja, kes elab maa-alustes käikudes." 2. Lastekirjandus: Sõna "mutt" võib esineda lasteraamatutes ja -lugudes, kus räägitakse loomadest. Näide: "Mutt ja tema sõbrad seiklesid metsas." 3. Rahvapärimus ja vanasõnad: Sõna "mutt" võib esineda rahvajuttudes ja vanasõnades. Näide: "Mutt on töökas loom, kes ei karda rasket tööd." 4. Igapäevane kõnekeel: Sõna "mutt" võib kasutada ka kõnekeeles, mõnikord ka slängina, viidates inimesele, kes on väga töökas või kellel on "mutilaadne" käitumine. Näide: "Ta on nagu mutt, kogu aeg midagi kaevamas." 5. Meditsiinilised tekstid: Sõna "mutt" võib kasutada ka meditsiinilises kontekstis, viidates nahamoodustisele (sünnimärk). Näide: "Arst kontrollis patsiendi mutte, et veenduda nende ohutuses.
+-----------
+Input: manu
+Response: kasutatakse eesti keeles mitmesugustes kontekstides, kuid kõige sagedamini esineb see kirjanduslikes ja arhailistes tekstides. Näiteks võib seda leida vanades rahvalauludes, luuletustes ja religioossetes tekstides. "Manu" tähendab "juurde" või "poole" ning seda kasutatakse sageli väljendites nagu "jumala manu" (jumala juurde) või "manu minema" (poole minema). Kui sul on konkreetne tekst või kontekst, kus seda sõna kasutatakse, siis saaksin anda täpsema vastuse.
+-----------
+Input: mullatoit
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "mullatoit".
+-----------
+Input: mänguriist
+Response: kasutatakse tavaliselt tekstides, mis käsitlevad muusikat, muusikariistu või mänguasju. See võib viidata erinevatele instrumentidele või seadmetele, mida kasutatakse mängimiseks või muusika tegemiseks. Näiteks võib seda sõna leida muusikainstrumentide kirjeldustes, mänguasjade kataloogides või haridusmaterjalides, mis käsitlevad muusikaõpetust.
+-----------
+Input: natike[ne]
+Response: kasutatakse eesti keeles tavaliselt mitteametlikes ja igapäevastes vestlustes või tekstides, et väljendada midagi väikest või vähest. See võib esineda näiteks vestlustes, blogipostitustes, sotsiaalmeedia postitustes, kirjavahetuses sõprade vahel ja muudes mitteametlikes kontekstides." 
+-----------
+Input: noneh
+Response: kasutatakse eesti keeles tavaliselt kõnekeeles või mitteametlikes tekstides. See on väljend, mida kasutatakse üllatuse, imestuse või mõnikord ka kerge pahameele väljendamiseks. Näiteks võib seda kasutada järgmiselt: "Noneh, sa oled juba siin!", "Noneh, mis nüüd juhtus?" Ametlikes tekstides või formaalses kirjas seda sõna tavaliselt ei kasutata.
+-----------
+Input: näpukas
+Response: kasutatakse eesti keeles tavaliselt mitteametlikes tekstides, nagu vestlused, sotsiaalmeedia postitused, blogid ja muud igapäevased suhtlusvormid. See sõna viitab väikesele veale või eksimusele, mis on tehtud kirjutamisel või trükkimisel. Näiteks võib keegi öelda: "Vabandust, see oli näpukas," kui nad on teinud kirjaviga.
+-----------
+Input: otsitav
+Response: Ma ei oska öelda, millistes konkreetsetes tekstides kasutatakse sõna "otsitav", kuna mul puudub juurdepääs sellistele andmetele. Sõna "otsitav" võib aga esineda erinevates kontekstides, näiteks politsei otsitavate nimekirjades, kuulutustes, tööpakkumistes või muudes tekstides, kus viidatakse isikule või objektile, mida otsitakse.
+-----------
+Input: pett
+Response: kasutatakse eesti keeles tekstides, mis käsitlevad toiduaineid ja toiduvalmistamist. Pett on piimatoode, mis jääb järele või valmistamisel. Seda võib leida retseptides, mis sisaldavad traditsioonilisi eesti roogasid, samuti toitumise ja tervise teemalistes artiklites. Kui sul on konkreetne kontekst või tekstiliik, milles sõna "pett" esineb, siis saan täpsemalt aidata.
+-----------
+Input: piller
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "piller".
+-----------
+Input: pommima
+Response: kasutatakse eesti keeles tavaliselt tekstides, mis käsitlevad sõjategevust, terrorismi või vägivaldseid konflikte. See sõna viitab tegevusele, kus kasutatakse pomme või muud lõhkeainet rünnakute sooritamiseks. Näiteks võib seda sõna leida uudisteartiklites, ajaloolistes ülevaadetes, sõjandusalastes kirjutistes või ilukirjanduses, mis käsitleb sõda ja konflikte. 
+-----------
+Input: paarutama
+Response: kasutatakse eesti keeles peamiselt bioloogilistes ja zooloogilistes kontekstides, viidates loomade paaritumisprotsessile. Seda võib leida teaduslikes artiklites, õpikutes, loomade käitumist käsitlevates raamatutes ja dokumentaalides. Samuti võib seda sõna kohata loomakasvatusega seotud tekstides, kus kirjeldatakse loomade aretamist ja sigimist.
+-----------
+Input: paganus
+Response: kasutatakse eesti keeles peamiselt religiooni ja kultuuri kontekstis. See viitab tavaliselt usunditele ja praktikatele, mis ei kuulu suurtesse monoteistlikesse religioonidesse nagu kristlus, islam või judaism. Sõna võib esineda ajaloolistes tekstides, religioonialastes aruteludes, kirjanduses ja folklooris. Näiteks võib seda leida ajalooõpikutes, mis käsitlevad muinasaegu, või kirjandusteostes, mis uurivad vanu uskumusi ja tavasid.
+-----------
+Input: paralüüsima
+Response: kasutatakse eesti keeles tavaliselt meditsiinilistes ja tervishoiualastes tekstides, kus räägitakse kehaosade või lihaste liikumisvõime kaotamisest ehk halvatuse tekkimisest. Seda sõna võib kohata ka psühholoogia, neuroloogia ja füsioteraapia kontekstis. Lisaks võib seda kasutada ka metafooriliselt, näiteks kirjeldamaks olukorda, kus tegevus või protsess on täielikult peatunud või takistatud.
+-----------
+Input: parenhüüm
+Response: kasutatakse peamiselt meditsiinilistes ja bioloogilistes tekstides. Parenhüüm viitab funktsionaalsele koele elundites, mis täidab elundi põhifunktsioone, erinevalt tugikoest või stroomast. Näiteks võib seda terminit kohata anatoomia, patoloogia ja füsioloogia õpikutes ning teadusartiklites.
+-----------
+Input: passiivmaja
+Response: kasutatakse peamiselt arhitektuuri, ehituse ja energiatõhususe valdkonna tekstides. Passiivmaja viitab hoonele, mis on projekteeritud ja ehitatud selliselt, et selle energiatarve on minimaalne, kasutades passiivseid meetodeid nagu hea soojustus, õhutihedus ja päikeseenergia maksimaalne ärakasutamine. Selliseid tekste võib leida näiteks ehitusajakirjades, energiatõhususe käsiraamatutes, arhitektuuriblogides ja teadusartiklites, mis käsitlevad säästvat ehitust ja energiatõhusust.
+-----------
+Input: pehmo
+Response: kasutatakse eesti keeles tavaliselt kõnekeeles ja slängis. See võib viidata inimesele, keda peetakse pehmeks või nõrgaks, sageli emotsionaalses või füüsilises mõttes. Seda sõna võib leida erinevates kontekstides, näiteks vestlustes, sotsiaalmeedias, blogides või isegi mõnes ilukirjanduslikus teoses, kus kasutatakse kõnekeelt või slängi. Täpsemalt, millistes tekstides seda sõna kasutatakse, mul informatsiooni ei ole.
+-----------
+Input: piripardani
+Response: kasutatakse eesti keeles tavaliselt kõnekeeles või mitteametlikes tekstides. See tähendab "ääreni täis" või "kuni servani täis". Näiteks võib seda kasutada kirjeldamaks olukorda, kus midagi on täis või ülevoolavalt palju. Näiteks: "Klaas oli piripardani vett täis." või "Toit oli piripardani maitseaineid täis.
+-----------
+Input: preisi keel
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sisestatud eesti(keelset) sõna "preisi keel".
+-----------
+Input: provanslane
+Response: kasutatakse tekstides, mis käsitlevad Provence'i piirkonda ja selle elanikke. See võib esineda ajaloolistes, kultuurilistes, geograafilistes või sotsiaalsetes kontekstides, kus räägitakse Provence'i piirkonna inimestest, nende elustiilist, traditsioonidest, ajaloost või kultuurist. Näiteks võib seda sõna leida reisikirjeldustes, ajalooõpikutes, kultuurianalüüsides või ilukirjanduslikes teostes, mis keskenduvad Provence'ile ja selle elanikele.
+-----------
+Input: punakuub
+Response: kasutatakse eesti keeles tavaliselt kirjeldamaks inimest, kes kannab punast kuube või mantlit. See võib esineda erinevates tekstides, sealhulgas ilukirjanduses, rahvajuttudes, luules ja ajaloolistes kirjeldustes. Näiteks võib see sõna esineda rahvajuttudes, kus kirjeldatakse tegelasi, kes kannavad punaseid rõivaid, või ajaloolistes tekstides, kus viidatakse teatud ajastu või sündmuse osalejatele, kes olid riietatud punasesse.
+-----------
+Input: pürjermeister
+Response: kasutatakse ajaloolistes ja ametlikku keelt kajastavates tekstides, mis käsitlevad linnavalitsuse ja omavalitsuse struktuuri. See termin viitab linnapea või kõrge linnaametniku ametikohale, eriti ajaloolises kontekstis. Näiteks võib seda sõna leida ajaloolistes dokumentides, kroonikates, linnade ajalugu käsitlevates raamatutes ja uurimustes, samuti vanades seadustes ja määrustes.
+-----------
+Input: rait
+Response: võib eesti keeles esineda mitmes kontekstis, kuid kõige sagedamini kasutatakse seda isikunimena. Kui sul on konkreetne kontekst või tekst, kus seda sõna on kasutatud, siis saaksin täpsemalt vastata. Ilma täiendava informatsioonita ei oska ma täpselt öelda, millistes tekstides seda sõna kasutatakse.
+-----------
+Input: räidima
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "räidima". See sõna ei ole mulle tuttav ja võib-olla ei ole see laialt levinud või standardne eesti keele sõna.
+-----------
+Input: ridvamees
+Response: kasutatakse eesti keeles tavaliselt kalapüügiga seotud tekstides. See viitab inimesele, kes püüab kala ridvaga. Selliseid tekste võib leida kalapüügi juhendites, ajakirjades, blogides, foorumites ja muudes kalapüügiga seotud väljaannetes.
+-----------
+Input: rõõmurõngad
+Response: Ma ei oska öelda, millistes konkreetsetes tekstides kasutatakse sõna "rõõmurõngad". See võib esineda erinevates kontekstides, näiteks kirjanduses, luules, ajakirjanduses või isiklikes kirjutistes, sõltuvalt autori loomingulisest väljendusest.
+-----------
+Input: rõõmustama
+Response: kasutatakse eesti keeles tekstides, mis väljendavad positiivseid emotsioone, rõõmu või heameelt. Seda võib leida erinevates kontekstides, nagu ilukirjandus, luule, ajakirjandus, isiklikud kirjad, sotsiaalmeedia postitused ja igapäevane suhtlus. Näiteks võib seda kasutada lausetes nagu "See uudis rõõmustas mind väga" või "Lapsed rõõmustasid, kui nad said kingitusi.
+-----------
+Input: rögane
+Response: kasutatakse tavaliselt eesti keeles kirjeldamaks midagi, mis on lima või röga täis, näiteks köha või hingamisteede seisundi kirjeldamisel. Seda võib leida meditsiinilistes tekstides, tervisealastes artiklites või kirjanduses, kus kirjeldatakse tegelase füüsilist seisundit. Kui sul on konkreetne kontekst, milles sõna "rögane" esineb, saan aidata täpsemalt.
+-----------
+Input: seedima
+Response: kasutatakse eesti keeles peamiselt bioloogilistes ja meditsiinilistes tekstides, kus käsitletakse toidu seedimist ja ainevahetust. Samuti võib seda sõna leida tervise- ja toitumisalastes artiklites, õpikutes, teaduslikes uurimustes ja populaarteaduslikes väljaannetes. Lisaks võib "seedima" esineda ka metafoorses tähenduses, näiteks kirjanduses või igapäevases kõnes, kus see võib tähendada millegi mõistmist või omaksvõtmist.
+-----------
+Input: sutspüss
+Response: eesti keeles harva kasutatav sõna, mis viitab tavaliselt väikese kaliibriga püssile või vintpüssile. Seda sõna võib kohata vanemates tekstides, rahvapärimustes või kirjanduses, mis käsitleb jahindust või sõjandust. Täpsemalt võib see esineda näiteks vanades jahindusraamatutes, sõjandusalastes kirjutistes või rahvajuttudes. Kui sul on konkreetne tekst või kontekst, kus seda sõna kasutatakse, siis saaksin täpsemalt aidata.
+-----------
+Input: säps
+Response: kasutatakse eesti keeles harva ja see võib esineda peamiselt murdekeeles või kõnekeeles. See võib tähendada äkilist ehmatust või väikest hirmu. Kuna tegemist on üsna spetsiifilise ja harva kasutatava sõnaga, siis ei ole mul täpseid andmeid selle kohta, millistes tekstides seda sõna kasutatakse.
+-----------
+Input: söödav
+Response: kasutatakse eesti keeles tekstides, mis käsitlevad toitu, toiduvalmistamist, toiduohutust ja toitumist. Näiteks võib seda sõna leida retseptides, toidublogides, toiduainete pakenditel, menüüdes, toitumisalastes artiklites ja teaduslikes uurimustes, mis käsitlevad toidu kvaliteeti ja ohutust. Samuti võib seda kasutada kirjeldamaks taimi, marju, seeni ja muid looduslikke saadusi, mis on inimesele tarbitavad ja ohutud.
+-----------
+Input: sega-soga
+Response: eesti keeles väljend, mida kasutatakse tavaliselt segaduse või korratuse kirjeldamiseks. Seda võib leida erinevates tekstides, sealhulgas ilukirjanduses, ajakirjanduses, blogides ja vestlustes, kus kirjeldatakse olukordi, mis on segased või kaootilised. Näiteks võib seda kasutada kirjeldamaks segamini tuba, keerulist olukorda või segadust tekitavat sündmust." 
+-----------
+Input: siva
+Response: kasutatakse eesti keeles tavaliselt tähenduses "kiiresti" või "ruttu". Seda võib kohata erinevates kontekstides, näiteks argivestlustes, kirjanduses, ajakirjanduses ja muudes tekstides, kus on vaja väljendada kiiret tegutsemist või liikumist. Näiteks: "Tule siva, muidu jääme hiljaks!", "Ta jooksis siva koju.
+-----------
+Input: stukk
+Response: kasutatakse eesti keeles peamiselt arhitektuuri ja ehituse kontekstis. See viitab dekoratiivsele krohvile, mida kasutatakse hoonete sise- ja välisviimistluses. Stukki kasutatakse sageli ajalooliste hoonete restaureerimisel ja klassikalises arhitektuuris, et luua ornamentaalseid detaile, nagu karniisid, rosetid ja friisid. Sõna võib esineda ka kunstiajaloo ja restaureerimisega seotud tekstides.
+-----------
+Input: stereoskoop
+Response: kasutatakse tekstides, mis käsitlevad optikat, fotograafiat, kolmemõõtmelist kujutist või visuaalset tajumist. Stereoskoop on seade, mis võimaldab vaadata kahte veidi erinevat pilti nii, et need sulanduvad üheks kolmemõõtmeliseks kujutiseks. Seda terminit võib leida teaduslikes artiklites, õpikutes, tehnilistes juhendites ja muudes materjalides, mis käsitlevad visuaalset tehnoloogiat ja kolmemõõtmelist kujutist.
+-----------
+Input: takkaotsa
+Response: kasutatakse eesti keeles tavaliselt murdekeeles või vanemas keelepruugis. See tähendab "lõpuks" või "lõpuks ometi". Seda võib kohata kirjanduses, rahvajuttudes või tekstides, mis kajastavad vanemat või murdekeelset eesti keelt. Näiteks võib seda sõna leida vanades rahvajuttudes või murdekeelsetes tekstides, kus kirjeldatakse sündmuste kulgemist ja lõpptulemust.
+-----------
+Input: tarbepuit
+Response: kasutatakse tekstides, mis käsitlevad metsandust, puidutööstust, ehitust, mööblitootmist ja keskkonnateemasid. See võib esineda ka majandust ja kaubandust käsitlevates dokumentides, kus arutatakse puidu kasutamist ja selle turgu. Näiteks võib seda sõna leida metsanduse aruannetes, puidutööstuse ettevõtete kodulehtedel, ehitusmaterjalide kirjeldustes ja keskkonnakaitse raportites.
+-----------
+Input: toss
+Response: Eesti keeles kasutatakse sõna "toss" mitmesugustes kontekstides. Siin on mõned näited: 1. Spordijalatsid: "Toss" tähendab spordijalatseid või vabaajajalatseid. Näiteks: "Ma ostsin uued tossud jooksmiseks." 2. Suits: "Toss" võib tähendada ka suitsu või suitsupilve. Näiteks: "Korsten ajas musta tossu välja." 3. Rahvapärane väljend: Mõnikord kasutatakse sõna "toss" ka rahvapärases kõnepruugis, et viidata millelegi, mis on ebaoluline või tühine. Näiteks: "See jutt on puhas toss.
+-----------
+Input: törts
+Response: kasutatakse eesti keeles tavaliselt mitteametlikes ja kõnekeelsetes tekstides. See tähendab väikest kogust millestki, näiteks "törts soola" või "törts nalja". Seda võib leida ka ilukirjanduslikes tekstides, blogipostitustes, vestlustes ja muudes mitteametlikes kirjutistes.
+-----------
+Input: tüss
+Response: kasutatakse eesti keeles tavaliselt kõnekeelsetes ja mitteametlikes tekstides. See sõna tähendab petmist või kelmust. Seda võib kohata näiteks jutuajamistes, sotsiaalmeedia postitustes, blogides, kommentaarides ja muudes mitteametlikes kirjutistes. Ametlikes dokumentides ja kirjanduses kasutatakse tavaliselt formaalsemaid väljendeid nagu "pettus" või "kelmus".
+-----------
+Input: takerduma
+Response: kasutatakse eesti keeles tekstides, mis kirjeldavad olukordi, kus midagi jääb kinni, takistab või ei liigu sujuvalt edasi. Seda sõna võib leida erinevates kontekstides, näiteks: 1. Ilukirjandus: Kirjeldamaks tegelase füüsilist või vaimset seisundit, kus ta on takerdunud mingisse olukorda või mõttesse. 2. Ajakirjandus: Uudistes või artiklites, kus räägitakse projektidest, plaanidest või protsessidest, mis on takerdunud erinevate probleemide tõttu. 3. Teaduslikud ja akadeemilised tekstid: Analüüsides uurimisprotsesse või teooriaid, mis on takerdunud metodoloogiliste või teoreetiliste raskuste tõttu. 4. Igapäevane kõnekeel: Vestlustes, kus inimesed kirjeldavad oma isiklikke kogemusi, näiteks takerdumist liikluses, töös või suhetes.
+-----------
+Input: tanum
+Response: kasutatakse eesti keeles tavaliselt kirjanduses, rahvaluules ja ajaloolistes tekstides. See sõna viitab tavaliselt väikesele maatükile või põllule, mis on sageli seotud traditsioonilise maaelu ja talupidamisega. Kui sul on konkreetne kontekst või tekst, kus seda sõna kasutatakse, saaksin pakkuda täpsemat teavet. Kui ei, siis üldiselt võib öelda, et "tanum" esineb eelkõige vanemates või stiliseeritud tekstides, mis käsitlevad maaelu ja loodust.
+-----------
+Input: tasa
+Response: kasutatakse eesti keeles mitmesugustes kontekstides ja tekstides. Siin on mõned näited: 1. Ilukirjandus: Romaanides, novellides ja luuletustes võib "tasa" viidata vaikusele või rahulikule olekule. Näide: "Ta astus tasa, et mitte kedagi äratada." 2. Lastekirjandus: Lastejuttudes ja -luuletustes kasutatakse sageli lihtsaid ja arusaadavaid sõnu, nagu "tasa". Näide: "Tasa, tasa, magab väike jänku." 3. Õpikutes ja juhendites: Õppematerjalides võib "tasa" viidata helitugevusele või tegevuse intensiivsusele. Näide: "Keera raadio heli tasa, et saaksime keskenduda." 4. Ajakirjandus ja uudised: Artiklid ja uudised võivad kasutada sõna "tasa" kirjeldamaks olukordi, kus on vaja vaikust või rahu. Näide: "Meeleavaldajad paluti tasa olla, et mitte häirida ümberkaudseid elanikke." 5. Igapäevane kõnekeel: Igapäevases suhtluses kasutatakse "tasa" sageli, et paluda kellelgi vaiksemalt olla. Näide: "Ole palun tasa, ma üritan töötada.
+-----------
+Input: torukil
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "torukil".
+-----------
+Input: trikk
+Response: kasutatakse eesti keeles erinevates kontekstides ja tekstides. Näiteks: 1. Ilukirjandus: Romaanides, novellides ja lühijuttudes, kus tegelased võivad sooritada trikke või rääkida neist. 2. Lastekirjandus: Lasteraamatutes ja muinasjuttudes, kus tegelased võivad teha trikke või sattuda olukordadesse, kus trikkidel on oluline roll. 3. Teatritekstid: Näidendites ja stsenaariumides, kus tegelased võivad sooritada trikke või rääkida neist. 4. Õpikutes ja juhendites: Raamatutes ja artiklites, mis õpetavad erinevaid trikke, näiteks mustkunstitrikke või sporditrikke. 5. Ajakirjandus: Artiklid ja reportaažid, mis käsitlevad trikke, näiteks mustkunstnike esinemisi või spordivõistlusi. 6. Reklaamtekstid: Reklaamides ja turundusmaterjalides, kus kasutatakse sõna "trikk" tähelepanu püüdmiseks või toote omaduste kirjeldamiseks.
+-----------
+Input: treening
+Response: kasutatakse eesti keeles erinevates kontekstides, mis on seotud füüsilise või vaimse harjutamise ja ettevalmistusega. Siin on mõned näited tekstidest, kus seda sõna võib leida: 1. Sporditekstid: Artiklid, raamatud ja juhendid, mis käsitlevad sporti ja füüsilist treeningut. Näide: "Jalgpallimeeskonna treeningud toimuvad kolm korda nädalas." 2. Tervise ja fitnessi tekstid: Blogipostitused, ajakirjad ja veebilehed, mis keskenduvad tervisele, treeningprogrammidele ja fitnessile. Näide: "Kardiotreening on oluline südame tervise parandamiseks." 3. Hariduslikud ja koolitusmaterjalid: Materjalid, mis on seotud vaimse treeningu, oskuste arendamise ja koolitustega. Näide: "Juhtimisoskuste treening aitab parandada meeskonna juhtimist." 4. Reklaamid ja turundustekstid: Reklaamid ja brošüürid, mis reklaamivad treeningprogramme, spordiklubisid ja treeningvarustust. Näide: "Liitu meie jõusaaliga ja saa osa personaalsest treeningkavast." 5. Teaduslikud ja akadeemilised tekstid: Uuringud ja artiklid, mis käsitlevad treeningu mõju tervisele ja füüsilisele vormile. Näide: "Uuring näitas, et regulaarne treening parandab kognitiivseid funktsioone.
+-----------
+Input: tugimaantee
+Response: kasutatakse eesti keeles peamiselt ametlikes ja tehnilistes tekstides, mis käsitlevad teedevõrku ja liikluskorraldust. Näiteks võib seda leida järgmistes kontekstides: 1. Seadusandlikud ja regulatiivsed dokumendid: Eesti teeseadus, liiklusseadus ja muud õigusaktid, mis reguleerivad maanteede klassifikatsiooni ja hooldust. 2. Riiklikud ja kohalikud arengukavad: Dokumentides, mis käsitlevad teedevõrgu arendamist ja investeeringuid infrastruktuuri. 3. Tehnilised aruanded ja uuringud: Inseneride ja transpordispetsialistide koostatud aruanded, mis analüüsivad maanteede seisukorda ja liiklusvooge. 4. Riigiasutuste ja omavalitsuste teated: Pressiteated ja ametlikud teadaanded, mis informeerivad avalikkust teetöödest, liikluskorralduse muudatustest ja muudest seotud teemadest.
+-----------
+Input: tähemärk
+Response: kasutatakse eesti keeles erinevates kontekstides, sealhulgas: 1. Astroloogia: Tähemärk viitab sodiaagimärgile, mis määratakse inimese sünnikuupäeva järgi. Näiteks "Minu tähemärk on Lõvi." 2. Kirjandus ja kirjutamine: Tähemärk võib viidata kirjamärgile või sümbolile, mida kasutatakse tekstis. Näiteks "Selles tekstis on 5000 tähemärki." 3. Infotehnoloogia: Tähemärk võib tähendada üksikut sümbolit või märki, mida kasutatakse arvutisüsteemides ja programmeerimises. Näiteks "Parool peab sisaldama vähemalt ühte eritähemärki.
+-----------
+Input: varblane
+Response: kasutatakse eesti keeles ja see viitab väikesele linnule, kes kuulub varblaslaste sugukonda. Seda sõna võib leida mitmesugustes tekstides, sealhulgas: 1. Loodusteaduslikud tekstid: Artiklid, raamatud ja õpikud, mis käsitlevad linde, nende käitumist, elupaiku ja bioloogiat. 2. Ilukirjandus: Romaanid, novellid, luuletused ja jutustused, kus varblane võib esineda tegelasena või sümbolina. 3. Rahvaluule ja muinasjutud: Eesti rahvajutud, muinasjutud ja legendid, kus varblane võib olla osa loost või õpetlikust moraalist. 4. Ajalehed ja ajakirjad: Artiklid ja lood, mis käsitlevad loodust, linnuelu või konkreetseid sündmusi, kus varblased on osalised. 5. Õppematerjalid: Koolide ja lasteaedade õppematerjalid, kus tutvustatakse lastele erinevaid linde ja nende omadusi.
+-----------
+Input: viilima
+Response: kasutatakse eesti keeles mitmesugustes tekstides, sealhulgas: 1. Tööalased tekstid: Näiteks metallitöötluse või puutöö juhendites, kus kirjeldatakse viilimise protsessi ehk materjali eemaldamist viili abil. 2. Igapäevased vestlused ja kirjeldused: Kui räägitakse kellegi tegevusest, näiteks "Ta viilib metallitükki." 3. Släng ja kõnekeel: Sõna "viilima" kasutatakse ka kõnekeeles tähenduses "tööd vältima" või "logelema". Näiteks "Ta viilib tööl" tähendab, et inimene väldib tööd või ei tee seda korralikult 4. Kirjandus ja ilukirjandus: Sõna võib esineda ka kirjanduslikes tekstides, kus kirjeldatakse tegelaste tegevusi või iseloomu.
+-----------
+Input: viss
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "viss".
+-----------
+Input: vari
+Response: kasutatakse sõna "vari" mitmesugustes tekstides, sealhulgas: 1. Ilukirjandus: Romaanides, novellides, luuletustes ja muudes kirjanduslikes teostes, kus kirjeldatakse varju kui füüsilist nähtust või sümboolset elementi. 2. Teaduslikud tekstid: Füüsika ja optika valdkonnas, kus käsitletakse valguse ja varju omadusi. 3. Õppematerjalid: Koolides ja ülikoolides kasutatavates õpikutes ja juhendites, mis selgitavad valguse ja varju teket ja omadusi. 4. Kunstikriitika ja -teooria: Tekstides, mis analüüsivad visuaalseid kunste, sealhulgas maale, joonistusi ja fotograafiat, kus varju kasutamine on oluline kompositsiooni osa. 5. Igapäevane suhtlus: Vestlustes ja kirjutistes, kus inimesed räägivad varjudest igapäevases kontekstis, näiteks "puu vari" või "inimese vari".
+-----------
+Input: vire
+Response: kasutatakse eesti keeles mitmesugustes kontekstides ja tekstides. See võib esineda näiteks kirjanduses, ajakirjanduses, teaduslikes artiklites, igapäevases suhtluses ja mujal. Sõna "vire" võib tähendada näiteks olukorda, seisundit või meeleolu. Kui sul on konkreetsem kontekst või tekstiliik, mille kohta soovid teada, siis palun täpsusta, et saaksin anda täpsema vastuse.
+-----------
+Input: vuhva
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "vuhva". See võib olla haruldane või kontekstispetsiifiline sõna, mida ei leidu laialdaselt tuntud kirjanduses või tekstides.
+-----------
+Input: võlakiri
+Response: kasutatakse finants- ja majandustekstides, sealhulgas järgmistes kontekstides: 1. Finantsaruanded ja -analüüsid: Ettevõtete ja organisatsioonide finantsaruannetes, kus käsitletakse võlakirjade emiteerimist, intressimakseid ja tagasimakseid. 2. Investeerimisjuhendid ja -artiklid: Materjalides, mis selgitavad investeerimisvõimalusi, sealhulgas võlakirjade ostmist ja müümist. 3. Õigusaktid ja regulatsioonid: Seadustes ja määrustes, mis reguleerivad võlakirjade emiteerimist ja kauplemist. 4. Majandusajakirjandus: Uudistes ja analüüsides, mis käsitlevad finantsturge, ettevõtete rahastamist ja majandustrende. 5. Akadeemilised tööd ja õpikud: Majanduse ja rahanduse õpikutes ning teadusartiklites, kus uuritakse võlakirjade turgu ja nende mõju majandusele.
+-----------
+Input: väledus
+Response: kasutatakse eesti keeles tavaliselt tekstides, mis käsitlevad füüsilist kiirust, osavust või liikumisvõimet. Seda võib leida sporditeemalistes artiklites, kirjanduses, mis kirjeldab tegelaste füüsilisi omadusi, või teaduslikes tekstides, mis uurivad liikumist ja motoorikat. Samuti võib seda sõna kohata igapäevastes vestlustes ja kirjutistes, kus räägitakse kellegi või millegi kiirest ja osavast liikumisest.
+-----------
+Input: õhulaev
+Response: kasutatakse eesti keeles tekstides, mis käsitlevad õhutransporti, lennundust, tehnoloogiat ja ajalugu. See võib esineda ka ilukirjanduses, teadusartiklites, ajakirjanduses ja õpikutes, kus räägitakse õhulaevadest, nagu näiteks tsepeliinid ja dirižaablid. Kui sul on konkreetne kontekst või tekst, milles sõna "õhulaev" esineb, saan aidata täpsemalt.
+-----------
+Input: ainekataloog
+Response: kasutatakse tavaliselt haridusalastes tekstides, eriti kõrgkoolide ja ülikoolide kontekstis. Ainekataloog sisaldab teavet pakutavate kursuste, nende sisu, õppejõudude ja muude oluliste detailide kohta. See on oluline vahend tudengitele, kes planeerivad oma õpinguid ja valivad kursuseid.
+-----------
+Input: aklimatiseeruma
+Response: kasutatakse tekstides, mis käsitlevad kohanemist uute keskkonnatingimustega. See võib esineda bioloogia, ökoloogia, meditsiini, spordi ja reisimisega seotud tekstides. Näiteks: 1. Bioloogia ja ökoloogia: Artiklid, mis räägivad taimede või loomade kohanemisest uute kliimatingimustega. 2. Meditsiin: Uuringud ja artiklid, mis käsitlevad inimeste kohanemist kõrgmäestiku tingimustega või uute kliimatingimustega. 3. Sport: Tekstid, mis arutavad sportlaste kohanemist erinevate kõrguste või kliimatingimustega treeninglaagrites. 4. Reisimine: Reisijuhid ja artiklid, mis annavad nõu, kuidas kohaneda uue kliima või ajavööndiga.
+-----------
+Input: akva
+Response: võib kasutada mitmesugustes tekstides, kuid selle täpne kontekst sõltub sõna tähendusest ja kasutusvaldkonnast. Näiteks: 1. Lühendina - "akva" võib olla lühend sõnast "akvaarium" ja seda võib kasutada tekstides, mis käsitlevad kalade pidamist, akvaariumide hooldust või akvaariumide tarvikuid. 2. Nime osana - "akva" võib esineda ka ettevõtete, toodete või teenuste nimedes, mis on seotud vee või akvaariumidega, näiteks "Akva Maailm" või "Akva Teenused". 3. Kunstiline või kirjanduslik kontekst - sõna võib esineda ka luules, proosas või muudes kirjanduslikes teostes, kus see võib omada sümboolset või metafoorset tähendust.
+-----------
+Input: ankrupaik
+Response: kasutatakse tavaliselt merendusega seotud tekstides, eriti laevanduse ja navigatsiooni kontekstis. See viitab kohale, kus laevad saavad ankrusse jääda, stabiilselt ja turvaliselt seista. Selliseid tekste võib leida näiteks mereõiguse dokumentides, navigatsioonijuhistes, sadamate ja meretranspordi kirjeldustes ning merendusalastes artiklites.
+-----------
+Input: antiikmängud
+Response: kasutatakse tekstides, mis käsitlevad vanaaegseid või ajaloolisi mänge ja spordialasid, eriti neid, mis pärinevad antiikajast, nagu Vana-Kreeka ja Vana-Rooma ajast. Sellised tekstid võivad olla ajalooõpikud, spordiajaloo käsitlused, kultuuriloolised uurimused või ka populaarteaduslikud artiklid, mis tutvustavad antiikaja meelelahutust ja sporti.
+-----------
+Input: autosugestioon
+Response: kasutatakse tekstides, mis käsitlevad psühholoogiat, eneseabi, enesejuhtimist ja vaimset tervist. Autosugestioon viitab protsessile, kus inimene mõjutab oma mõtteid, tundeid ja käitumist läbi enesele suunatud positiivsete kinnituste või mõtete. Seda terminit võib leida ka meditatsiooni ja mindfulness'i käsitlevates materjalides, samuti enesearengu ja motivatsioonikoolituste kontekstis.
+-----------
+Input: bass
+Response: kasutatakse eesti keeles mitmesugustes kontekstides, sealhulgas muusikas ja kalanduses. Siin on mõned näited: 1. Muusika: Instrument: Basskitarr või kontrabass, mis on madala helikõrgusega keelpillid. Vokaal: Bassihääl, mis on madalaim meeste lauluhääl. Helikvaliteet: Madalad helid või sagedused muusikas. 2. Kalandus: Kalaliik: Bass on ka teatud kalaliikide nimetus, näiteks meribass.
+-----------
+Input: Bessaraabia
+Response: kasutatakse ajaloolistes ja geograafilistes tekstides, mis käsitlevad piirkonda, mis asub tänapäeva Moldova ja Ukraina territooriumil. Bessaraabia on ajalooline piirkond, mis on olnud erinevate riikide ja impeeriumide koosseisus, sealhulgas Osmanite impeerium, Venemaa Keisririik ja Rumeenia. Tekstides võib seda sõna kohata, kui räägitakse piirkonna ajaloost, kultuurist, poliitikast või geograafiast.
+-----------
+Input: ehitismälestis
+Response: kasutatakse peamiselt tekstides, mis käsitlevad kultuuripärandit, arhitektuuri, ajaloolisi hooneid ja nende kaitset. See võib esineda seadusandlikes dokumentides, muinsuskaitseametite aruannetes, teadusartiklites, arhitektuurialastes väljaannetes ja muudes tekstides, mis keskenduvad ajalooliste ja kultuuriliselt väärtuslike ehitiste säilitamisele ja kaitsmisele.
+-----------
+Input: end sisse seadma
+Response: kasutatakse tavaliselt tekstides, mis käsitlevad elukoha vahetust, uude kohta kolimist või uue elukorralduse loomist. Seda võib leida näiteks ilukirjanduses, ajakirjanduses, reisikirjeldustes, elulugudes ja muudes tekstides, kus räägitakse inimese kohanemisest uues keskkonnas või elukohas. Näiteks: "Pärast pikka reisi otsustasid nad end väikeses mägikülas sisse seada.", "Uude linna kolides oli tal vaja end kiiresti sisse seada ja tööle asuda." "Pärast ülikooli lõpetamist seadis ta end pealinnas sisse ja alustas karjääri.
+-----------
+Input: holm
+Response: kasutatakse eesti keeles tavaliselt geograafilises kontekstis ja see tähendab väikest saart või laidu. Seda sõna võib leida tekstides, mis käsitlevad loodust, geograafiat, merendust või turismi. Näiteks võib "holm" esineda reisikirjeldustes, geograafilistes uurimustes või loodusteaduslikes artiklites, kus räägitakse Eesti saartest ja laidudest.
+-----------
+Input: jumalatar
+Response: kasutatakse eesti keeles tekstides, mis käsitlevad mütoloogiat, religiooni, kirjandust ja kultuuri. See viitab naissoost jumalusele või jumalannale. Näiteks võib seda sõna leida: 1. Mütoloogilistes lugudes ja legendides, kus räägitakse erinevatest jumalannadest. 2. Religioossetes tekstides, mis käsitlevad jumalate ja jumalannade kultust. 3. Kirjandusteostes, sealhulgas romaanides, luules ja näidendites, kus tegelasteks on jumalannad või kus neid mainitakse. 4. Akadeemilistes uurimustes ja artiklites, mis käsitlevad mütoloogiat, religiooni või kultuuriantropoloogiat. 5. Popkultuuri tekstides, nagu filmid, telesarjad ja videomängud, kus esinevad jumalannad või nende kujutised.
+-----------
+Input: jätkutama
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "jätkutama". See ei tundu olevat tavaline või laialt levinud eesti keele sõna. Võib-olla on see erialane termin või harva kasutatav sõna, mille tähendus ja kasutusala ei ole laialt teada.
+-----------
+Input: kaaduma
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "kaaduma". See ei tundu olevat tavaline eesti keele sõna või on see võib-olla väga spetsiifiline või haruldane termin. Kui see on erialane või murdesõna, siis võiks see esineda vastava valdkonna või piirkonna tekstides.
+-----------
+Input: kapihomo
+Response: kasutatakse tavaliselt mitteametlikes ja kõnekeelsetes tekstides, sealhulgas vestlustes, sotsiaalmeedia postitustes, blogides ja mõnikord ka ajakirjanduses. See termin viitab inimesele, kes on homoseksuaalne, kuid ei ole seda avalikult tunnistanud või varjab oma seksuaalset orientatsiooni. Sõna võib esineda ka kirjanduses või filmides, kus käsitletakse LGBTQ+ teemasid.
+-----------
+Input: karbon
+Response: kasutatakse eesti keeles peamiselt geoloogilistes ja paleontoloogilistes tekstides. See viitab geoloogilisele ajastule, mis on osa paleosoikumi ajastust ja kestis umbes 359 kuni 299 miljonit aastat tagasi. Karboniajastul tekkisid suured kivisöelademed, mistõttu see ajastu on oluline ka majanduslikust ja tööstuslikust vaatepunktist. Lisaks võib sõna "karbon" esineda ka keemiat ja materjaliteadust käsitlevates tekstides, kus see võib viidata süsinikule või süsinikupõhistele ühenditele.
+-----------
+Input: kaugus
+Response: kasutatakse eesti keeles erinevates kontekstides ja tekstides, sealhulgas: 1. Teaduslikud ja tehnilised tekstid: Füüsikas, matemaatikas ja inseneriteadustes, kus arutatakse mõõtühikuid, vahemaid ja ruumilisi suhteid 2. Geograafia ja astronoomia: Kirjeldades vahemaid maastikul, linnade vahel või taevakehade vahel. 3. Sporditekstid: Näiteks kergejõustikus, kus mõõdetakse hüppe- või viskekaugusi. 4. Igapäevane suhtlus ja kirjandus: Kui räägitakse vahemaadest inimeste, kohtade või objektide vahel. 5. Psühholoogia ja sotsioloogia: Metaforiliselt, kui arutatakse emotsionaalset või sotsiaalset distantsi inimeste vahel.
+-----------
+Input: Kerberos
+Response: kasutatakse peamiselt järgmistes kontekstides: 1. Mütoloogia: Kerberos (või Cerberus) on tuntud tegelane Vana-Kreeka mütoloogiast, kus ta on kolme peaga koer, kes valvab allilma väravaid. 2. Infotehnoloogia ja turvalisus: Kerberos on ka autentimisprotokoll, mida kasutatakse arvutivõrkudes turvalise identiteedi kinnitamiseks. See protokoll võimaldab kasutajatel ja teenustel omavahel turvaliselt suhelda.
+-----------
+Input: keskaadel
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "keskaadel". See võib olla haruldane või spetsiifiline termin, mida ei ole laialdaselt dokumenteeritud.
+-----------
+Input: kiiama
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "kiiama". See võib olla haruldane või spetsiifiline sõna, mida ei leidu tavapärases eesti keeles.
+-----------
+Input: kiirköitja
+Response: kasutatakse tekstides, mis käsitlevad kontoritarbeid, dokumentide korrastamist ja arhiveerimist. Näiteks võib seda sõna leida kontoritarvete kataloogides, juhendites dokumentide organiseerimise kohta, koolitarvete nimekirjades ja töökohtade sisekorraeeskirjades.
+-----------
+Input: kiitsakas
+Response: kasutatakse eesti keeles tavaliselt kirjeldamaks kedagi või midagi, mis on kõhn või sale, sageli viidates inimesele, kes on väga peenikese kehaehitusega. Seda sõna võib leida erinevat tüüpi tekstides, sealhulgas ilukirjanduses, ajakirjanduses, tervise- ja sporditeemalistes artiklites ning igapäevases kõnes. Näiteks võib see sõna esineda romaanides, novellides, ajaleheartiklites, blogipostitustes ja vestlustes, kus kirjeldatakse inimese füüsilist välimust.
+-----------
+Input: kindlustustunnistus
+Response: dokument, mida kasutatakse kindlustuse valdkonnas. Seda võib leida erinevates tekstides ja kontekstides, näiteks: 1. Kindlustuspoliisid: Kindlustustunnistus võib olla osa kindlustuspoliisist, mis tõendab, et kindlustusleping on sõlmitud ja kindlustuskaitse kehtib. 2. Lepingud ja lepingutingimused: Kindlustustunnistus võib olla lisatud erinevatele lepingutele, kus on vajalik tõendada kindlustuskaitse olemasolu, näiteks laenulepingud, rendilepingud jne. 3. Transpordi- ja logistikadokumendid: Rahvusvahelises kaubanduses ja transpordis kasutatakse kindlustustunnistust kaubaveo kindlustuse tõendamiseks. 4. Õigusaktid ja regulatsioonid: Kindlustustunnistust võib mainida erinevates seadustes ja määrustes, mis reguleerivad kindlustustegevust ja kindlustuslepingute sõlmimist. 5. Ettevõtte sise-eeskirjad ja protseduurid: Ettevõtted võivad oma sise-eeskirjades ja protseduurides nõuda kindlustustunnistuse esitamist teatud tegevuste või tehingute puhul.
+-----------
+Input: kirgline
+Response: kasutatakse eesti keeles tekstides, mis väljendavad tugevaid emotsioone, entusiasmi või pühendumust. Seda võib leida erinevates kontekstides, sealhulgas: 1. Ilukirjandus: Romaanides, novellides ja luules, kus tegelased või jutustaja väljendavad sügavaid tundeid või kirge millegi või kellegi vastu. 2. Armastuslood: Tekstides, mis käsitlevad romantilisi suhteid ja armastust. 3. Arvustused ja esseed: Kunsti, kirjanduse, muusika või filmiarvustustes, kus autor väljendab tugevat arvamust või emotsiooni teose suhtes. 4. Isiklikud päevikud ja blogid: Kirjutistes, kus autor jagab oma isiklikke kogemusi ja tundeid. 5. Motivatsioonitekstid ja kõned: Tekstides, mis on mõeldud inspireerima ja motiveerima lugejat või kuulajat.
+-----------
+Input: kiskuma
+Response: kasutatakse eesti keeles erinevates kontekstides ja tekstides. See võib esineda nii ilukirjanduses, ajakirjanduses, teadustekstides kui ka igapäevases kõnes. Näiteks: 1. Ilukirjandus: Romaanides, novellides ja luuletustes, kus kirjeldatakse tegevusi või emotsioone. "Ta kiskus vihaselt ukse lahti ja tormas välja." 2. Ajakirjandus: Uudistes ja artiklites, kus kirjeldatakse sündmusi või olukordi. "Protestijad kiskusid maha valitsuse hoone ees seisnud barrikaadid." 3. Teadustekstid: Uurimustes ja analüüsides, kus kirjeldatakse füüsilisi või bioloogilisi protsesse. "Loomad kiskusid toitu üksteise käest." 4. Igapäevane kõne: Vestlustes ja argises suhtluses. "Ära kisu mu juukseid!
+-----------
+Input: kloppima
+Response: kasutatakse eesti keeles erinevates kontekstides ja tekstides. Näiteks: 1. Kulinaaria: Retseptides ja toiduvalmistamise juhendites, kus räägitakse näiteks munade kloppimisest omleti tegemiseks või koore kloppimisest vahukoore valmistamiseks. 2. Kodumajapidamine: Tekstides, mis käsitlevad kodutöid, näiteks vaipade kloppimist tolmu eemaldamiseks. 3. Spordikirjeldused: Tekstides, mis kirjeldavad füüsilist tegevust või treeningut, näiteks poksitreeningus, kus kasutatakse sõna "kloppima" vastase löömise kontekstis. 4. Ilukirjandus: Romaanides, novellides ja muudes ilukirjanduslikes tekstides, kus kirjeldatakse tegevusi või sündmusi, mis hõlmavad kloppimist.
+-----------
+Input: koiduvalge
+Response: kasutatakse eesti keeles tavaliselt kirjanduslikes ja poeetilistes tekstides, et kirjeldada varahommikust valguse ilmumist või koidiku aega. Seda võib leida luuletustes, ilukirjanduses, looduskirjeldustes ja muudes kunstilistes väljendustes, kus on oluline rõhutada päeva alguse ilu ja atmosfääri.
+-----------
+Input: kokku jooksma
+Response: kasutatakse tavaliselt tekstides, mis käsitlevad tehnilisi probleeme, eriti arvutite ja tarkvara kontekstis. See väljend tähendab, et süsteem või programm lakkab töötamast ja muutub mittetoimivaks, sageli ootamatult. Näiteks võib seda kasutada järgmistes kontekstides: 1. Arvutitehnika ja IT: "Minu arvuti jooksis jälle kokku, kui proovisin uut tarkvara installida. 2. Tarkvaraarendus: "Rakendus jookseb kokku, kui kasutaja sisestab vale andmeformaadi." 3. Üldine tehniline tugi: "Kui teie telefon jookseb kokku, proovige seda taaskäivitada.
+-----------
+Input: kompleks
+Response: kasutatakse eesti keeles mitmesugustes tekstides ja kontekstides. Siin on mõned näited: 1. Teaduslikud ja tehnilised tekstid: Näiteks füüsikas, keemias ja inseneriteadustes kasutatakse sõna "kompleks" keeruliste süsteemide või struktuuride kirjeldamiseks. 2. Psühholoogia ja psühhiaatria: Psühholoogias võib "kompleks" viidata teatud emotsionaalsete ja psühholoogiliste probleemide kogumile, nagu näiteks alaväärsuskompleks. 3. Majandus ja ärindus: Majandustekstides võib "kompleks" tähendada mitmest ettevõttest või tootmisüksusest koosnevat gruppi. 4. Kinnisvara ja arhitektuur: Kinnisvaras ja arhitektuuris võib "kompleks" viidata hoonete või rajatiste kogumile, näiteks elamukompleks või spordikompleks 5. Matemaatika: Matemaatikas kasutatakse sõna "kompleks" kompleksarvude kontekstis.
+-----------
+Input: korrelatsioonikoefitsient
+Response: kasutatakse peamiselt järgmistes tekstides: 1. Statistika ja andmeanalüüs: Artiklid, raamatud ja teadustööd, mis käsitlevad statistilisi meetodeid ja andmete analüüsi, kasutavad sageli korrelatsioonikoefitsienti, et näidata kahe muutuja vahelise seose tugevust ja suunda. 2. Majandus ja finantsanalüüs: Majandus- ja finantsanalüüsides kasutatakse korrelatsioonikoefitsienti, et uurida erinevate majandusnäitajate või finantsinstrumentide vahelisi seoseid. 3. Sotsiaalteadused: Sotsiaalteadustes, nagu psühholoogia, sotsioloogia ja haridusteadused, kasutatakse korrelatsioonikoefitsienti, et uurida seoseid erinevate sotsiaalsete nähtuste ja käitumiste vahel. 4. Meditsiin ja terviseteadused: Meditsiinilistes uuringutes kasutatakse korrelatsioonikoefitsienti, et analüüsida seoseid erinevate tervisenäitajate ja riskifaktorite vahel. 5. Loodusteadused: Füüsika, keemia, bioloogia ja teised loodusteadused kasutavad korrelatsioonikoefitsienti, et uurida seoseid erinevate loodusnähtuste ja mõõtmiste vahel.
+-----------
+Input: kossutama
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "kossutama".
+-----------
+Input: kotus
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "kotus". See võib olla spetsiifiline või haruldane sõna, mille tähendus ja kasutus ei ole laialt levinud.
+-----------
+Input: kvarts
+Response: kasutatakse eesti keeles peamiselt järgmistes kontekstides: 1. Geoloogia ja mineraloogia: Kvarts on üks levinumaid mineraale Maal. Seda mainitakse sageli teaduslikes artiklites, õpikutes ja uurimustes, mis käsitlevad kivimeid ja mineraale. 2. Ehted ja kristalliteraapia: Kvarts on populaarne materjal ehete valmistamisel ja kristalliteraapias. Seda kasutatakse sageli kaubanduslikes tekstides, mis kirjeldavad kvartsist valmistatud ehteid või kristallide kasutamist tervendamise eesmärgil. 3. Tööstus ja tehnoloogia: Kvartsil on oluline roll erinevates tööstuslikes rakendustes, näiteks elektroonikas (kvartskristallid kasutatakse kellades ja muudes seadmetes). Seda mainitakse tehnilistes dokumentides ja tööstusalastes artiklites. 4. Ehitus ja sisekujundus: Kvartsist valmistatud materjale kasutatakse laialdaselt ehituses ja sisekujunduses, näiteks kvartsist tööpinnad köökides ja vannitubades. Seda mainitakse ehitus- ja sisekujundusalastes tekstides.
+-----------
+Input: käitumine
+Response: kasutatakse eesti keeles mitmesugustes tekstides, sealhulgas: 1. Teaduslikud ja akadeemilised tekstid: Psühholoogia, sotsioloogia, bioloogia ja haridusteaduste valdkonnas, kus uuritakse inimeste ja loomade käitumist. 2. Õppematerjalid ja õpikud: Koolides ja ülikoolides kasutatavad materjalid, mis käsitlevad käitumise teooriaid ja praktikaid. 3. Igapäevased artiklid ja ajakirjandus: Ajalehed, ajakirjad ja veebiväljaanded, mis käsitlevad ühiskondlikke ja kultuurilisi teemasid, sealhulgas inimeste käitumist. 4. Õigusaktid ja ametlikud dokumendid: Seadused ja määrused, mis reguleerivad käitumisnorme ja -reegleid. 5. Eneseabi ja nõuanderaamatud: Raamatud ja juhendid, mis pakuvad nõuandeid käitumise parandamiseks või muutmiseks. 6. Fiktsioon ja ilukirjandus: Romaanid, novellid ja jutustused, kus tegelaste käitumine on oluline osa loo arengust.
+-----------
+Input: küljejooneelund
+Response: kasutatakse bioloogilistes ja zooloogilistes tekstides, eriti kalade ja teiste veeloomade anatoomia ja füsioloogia kirjeldustes. Küljejooneelund on spetsiaalne meeleelund, mis võimaldab kaladel ja mõnel teisel veeloomal tajuda vees liikumist ja vibratsioone, aidates neil orienteeruda ja tuvastada saaki või kiskjaid.
+-----------
+Input: langeallikas
+Response: eesti keeles sõna, mis viitab allikale, kust vesi langeb või voolab alla. Seda sõna võib kasutada erinevates kontekstides, sealhulgas: 1. Geograafia ja loodusteadus: Kirjeldamaks looduslikke veekogusid ja allikaid, kus vesi voolab alla kõrgemalt kohalt. 2. Kirjandus ja luule: Kujundlikus või metafoorses tähenduses, et luua visuaalseid või emotsionaalseid pilte. 3. Turism ja matkamine: Informatsioonimaterjalides, mis tutvustavad looduskauneid kohti ja matkaradu.
+-----------
+Input: lehmakauplemine
+Response: kasutatakse eesti keeles tavaliselt poliitilises või ärilises kontekstis, et kirjeldada olukorda, kus osapooled teevad omavahel kompromisse ja tehinguid, sageli varjatud või ebaeetilisel viisil, et saavutada oma eesmärke. See võib viidata ka olukordadele, kus toimub intensiivne ja sageli manipuleeriv läbirääkimine. Näiteks võib seda sõna leida poliitilistes artiklites, kus kirjeldatakse koalitsiooniläbirääkimisi või seadusandlikke kompromisse. Samuti võib seda kasutada ärimaailmas, kui räägitakse keerulistest ja sageli varjatud tehingutest.
+-----------
+Input: liputaja
+Response: kasutatakse eesti keeles tavaliselt tekstides, mis käsitlevad seksuaalset ahistamist või avalikus kohas sündsusetu käitumise teemasid. Liputaja on inimene, kes paljastab end avalikus kohas teistele inimestele, tavaliselt sooviga šokeerida või tekitada ebamugavust. Selliseid tekste võib leida uudistes, kriminaalreportaažides, psühholoogia- või sotsioloogiaalastes artiklites ning ka ilukirjanduses, kus käsitletakse selliseid tegelasi või olukordi.
+-----------
+Input: luksusnumber
+Response: kasutatakse tavaliselt tekstides, mis käsitlevad majutusteenuseid, näiteks hotellide või kruiisilaevade kirjeldusi. See viitab eriti luksuslikule ja hästi varustatud toale või sviidile, mis pakub kõrgemat mugavust ja teenuseid võrreldes tavaliste tubadega. Samuti võib seda sõna kohata kinnisvarakuulutustes, kus kirjeldatakse luksuslikke kortereid või maju. Kui sul on konkreetne kontekst või tekst, milles sõna "luksusnumber" esineb, saan pakkuda täpsemat vastust.
+-----------
+Input: lõpukorral
+Response: kasutatakse eesti keeles tavaliselt tekstides, mis kirjeldavad mingisuguse protsessi, sündmuse või tegevuse lõppfaasi või lõppjärku. Seda võib leida erinevates kontekstides, näiteks: 1. Uudised ja ajakirjandus: Artiklid, mis kajastavad sündmuste või projektide lõppfaasi. 2. Akadeemilised tekstid: Uurimistööd või projektid, mis on jõudmas lõpule. 3. Ilukirjandus: Romaanid, novellid või jutustused, kus tegevus või süžee on jõudmas lõpule. 4. Äridokumendid: Projektide aruanded või plaanid, mis on lõppjärgus. 5. Igapäevane suhtlus: Vestlused või kirjad, kus räägitakse tegevuste või plaanide lõpuleviimisest.
+-----------
+Input: läkk
+Response: kasutatakse eesti keeles peamiselt kõnekeeles ja slängis. See võib tähendada üleskutset või ettepanekut minna kuhugi või midagi tegema, näiteks "Läkk kinno!" (Lähme kinno!). See on lühendatud ja mitteametlik vorm sõnast "lähme". Täpsemat teavet selle sõna kasutamise kohta konkreetses tekstis mul ei ole.
+-----------
+Input: maarott
+Response: kasutatakse eesti keeles tavaliselt kontekstis, kus viidatakse inimesele, kes elab maal või on maal elamisega harjunud, vastandina linnainimesele ehk "linnarotile". Seda sõna võib leida erinevates tekstides, näiteks ilukirjanduses, ajakirjanduses, vestlustes ja muudes kirjutistes, kus käsitletakse maaelu ja linnaelu erinevusi või vastandatakse neid kahte elustiili.
+-----------
+Input: murdevõistlus
+Response: kasutatakse tekstides, mis käsitlevad murrete uurimist, säilitamist ja populariseerimist. Seda võib leida näiteks: 1. Keeleteaduslikes artiklites ja uurimustes, mis käsitlevad eesti keele murrete mitmekesisust ja nende kasutamist. 2. Kultuuri- ja haridusürituste kirjeldustes, kus korraldatakse murdevõistlusi, et edendada murrete kasutamist ja teadlikkust nende tähtsusest. 3. Koolide ja ülikoolide programmides, kus korraldatakse murdevõistlusi õpilastele ja tudengitele. 4. Meediaväljaannetes, mis kajastavad murdevõistlusi ja nende tulemusi.
+-----------
+Input: mustköömen
+Response: kasutatakse peamiselt järgmistes kontekstides: 1. Kulinaaria: Mustköömen (Nigella sativa) on vürts, mida kasutatakse erinevates köökides, eriti Lähis-Ida, India ja Põhja-Aafrika köögis. Seda kasutatakse sageli leibade, küpsetiste ja erinevate roogade maitsestamiseks. 2. Taimetee ja tervisetooted: Mustköömne seemneid ja õli kasutatakse sageli tervisetoodetes ja taimeteedes, kuna neil arvatakse olevat mitmeid tervisele kasulikke omadusi. 3. Rahvameditsiin: Mustköömne seemneid ja õli kasutatakse traditsioonilises meditsiinis erinevate vaevuste leevendamiseks, sealhulgas seedimisprobleemide, põletike ja immuunsüsteemi tugevdamiseks. 4. Aiandus ja botaanika: Mustköömen võib esineda ka tekstides, mis käsitlevad aiandust ja botaanikat, kuna tegemist on taimega, mida kasvatatakse seemnete saamiseks.
+-----------
+Input: mämm
+Response: kasutatakse eesti keeles tavaliselt toiduga seotud tekstides, eriti kui räägitakse traditsioonilisest toidust. "Mämm" on Soome päritolu magus roog, mida valmistatakse rukkijahust ja melassist ning mida süüakse tavaliselt lihavõttepühade ajal. Eestis on see tuntud peamiselt Soome kultuurimõjude kaudu. Seega võib sõna "mämm" esineda retseptides, toidublogides, kultuuritekstides ja artiklites, mis käsitlevad lihavõttepühi või Soome kööki.
+-----------
+Input: mängulust
+Response: kasutatakse tavaliselt tekstides, mis käsitlevad mängimist, lõbusaid tegevusi, laste kasvatamist, haridust või vaba aja veetmist. Seda võib leida ka kirjanduses, ajakirjanduses, blogides ja reklaamides, kus rõhutatakse mängimise rõõmu ja naudingut. Kui sul on konkreetne kontekst või tekst, kus seda sõna kasutatakse, saan anda täpsema vastuse.
+-----------
+Input: märss
+Response: kasutatakse eesti keeles ja see tähendab tavaliselt kotti või kotti sarnast eset, mida kasutatakse esemete kandmiseks. Seda sõna võib leida erinevates tekstides, sealhulgas: 1. Ilukirjandus: Romaanides, novellides ja luuletustes, kus kirjeldatakse tegelaste varustust või esemeid, mida nad kannavad. 2. Rahvajutud ja muinasjutud: Traditsioonilistes lugudes, kus tegelased võivad kanda märssi, et hoida toitu, varustust või muid esemeid. 3. Ajaloolised tekstid: Kirjeldustes vanaaegsetest eluviisidest ja igapäevaelust, kus märss võis olla tavaline ese. 4. Lastekirjandus: Lasteraamatutes ja -lugudes, kus tegelased võivad kasutada märssi seiklustel või mängudes. 5. Rahvalaulud ja -luuletused: Traditsioonilistes lauludes ja luuletustes, kus märss võib esineda sümbolina või praktilise esemena.
+-----------
+Input: neuropsühholoogia
+Response: kasutatakse tekstides, mis käsitlevad aju ja käitumise vahelist seost. See võib hõlmata teadusartikleid, õpikuid, uurimusi ja populaarteaduslikke kirjutisi, mis keskenduvad neuroteadusele, psühholoogiale, kliinilisele psühholoogiale ja psühhiaatriale. Neuropsühholoogia on oluline valdkond ka meditsiinilistes ja tervishoiualastes tekstides, eriti kui arutatakse neuroloogiliste häirete, ajukahjustuste ja nende mõju üle inimese käitumisele ja kognitiivsetele funktsioonidele.
+-----------
+Input: nokkapidi
+Response: kasutatakse eesti keeles tavaliselt kirjeldamaks olukorda, kus kaks või enam inimest on omavahel tihedalt seotud või vastamisi, sageli vaidluses või konfliktis. Seda võib leida erinevates tekstides, sealhulgas ilukirjanduses, ajakirjanduses, vestlustes ja muudes kontekstides, kus kirjeldatakse inimestevahelisi suhteid või konflikte. Näiteks võib ajaleheartiklis kirjutada, et kaks poliitikut on omavahel "nokkapidi" vaidluses mingi teema üle.
+-----------
+Input: oskar
+Response: võib esineda mitmesugustes eesti tekstides, sealhulgas: 1. Ilukirjandus: Romaanides, novellides, luuletustes ja näidendites, kus tegelase nimi on Oskar. 2. Ajaloolised tekstid: Artiklid, raamatud või dokumendid, mis käsitlevad ajaloolisi isikuid nimega Oskar. 3. Biograafiad: Elulood inimestest, kelle nimi on Oskar. 4. Ajakirjandus: Uudised, intervjuud ja artiklid, kus mainitakse isikut nimega Oskar. 5. Akadeemilised tööd: Uurimused ja esseed, kus viidatakse isikule nimega Oskar. 6. Igapäevased tekstid: Kirjad, e-kirjad, blogipostitused ja sotsiaalmeedia postitused, kus mainitakse Oskarit.
+-----------
+Input: pange panema
+Response: kasutatakse eesti keeles erinevates kontekstides ja tekstides. Siin on mõned näited: 1. Igapäevane kõnekeel ja vestlused: "Pange raamat lauale.", "Palun pange uks kinni." 2. Kirjandus ja ilukirjandus: "Ta palus, et nad pange oma asjad kokku ja lahkuksid.", "Pange tähele, kuidas loodus muutub sügisel." 3. Ametlikud ja formaalsed tekstid: "Pange oma allkiri lepingule.", "Palun pange tähele järgmisi juhiseid." 4. Õppematerjalid ja juhendid: "Pange tähele, et see ülesanne tuleb lahendada iseseisvalt.", "Pange kirja kõik olulised punktid." 5. Reklaamid ja teated: "Pange oma nimi kirja ja võida auhind!", "Pange tähele, et pood on suletud pühade ajal.
+-----------
+Input: paroodiline
+Response: kasutatakse tekstides, mis käsitlevad paroodiat või sisaldavad paroodilisi elemente. Paroodia on kirjanduslik, kunstiline või muusikaline teos, mis matkib teist teost, autorit või stiili, sageli humoristlikul või kriitilisel eesmärgil. Seega võib "paroodiline" esineda näiteks kirjanduskriitikas, filmianalüüsides, teatriarvustustes, muusikakriitikas ja muudes kultuurianalüüsi tekstides.
+-----------
+Input: pekki keerama
+Response: kasutatakse eesti keeles tavaliselt mitteametlikes ja kõnekeelsetes tekstides. See fraas tähendab midagi ebaõnnestuma või halvasti minema. Näiteks võib seda kasutada sõpradevahelises vestluses, sotsiaalmeedia postitustes või blogides, kus kasutatakse vabamat ja igapäevasemat keelt. Ametlikes dokumentides ja formaalsetes tekstides seda väljendit tavaliselt ei kasutata.
+-----------
+Input: pepu
+Response: kasutatakse eesti keeles tavaliselt mitteametlikes ja igapäevastes vestlustes, eriti lastega rääkides või humoorikates kontekstides. Seda sõna võib leida ka lastekirjanduses, naljatekstides ja mõnikord ka sotsiaalmeedias või blogides. Ametlikes dokumentides ja tõsisemates tekstides kasutatakse tavaliselt neutraalsemaid termineid nagu "tuhar" või "tagumik".
+-----------
+Input: pildinäitus
+Response: kasutatakse tavaliselt tekstides, mis käsitlevad kunsti, kultuuri ja näitusi. See võib esineda näiteks kunstinäituste reklaamides, muuseumide ja galeriide kodulehtedel, kultuurikalendrites, ajalehtede ja ajakirjade artiklites, mis kajastavad kunstisündmusi, ning ka haridusmaterjalides, mis tutvustavad kunsti ja kultuuri.
+-----------
+Input: pisisekeldus
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "pisisekeldus". See võib olla harvaesinev või kontekstispetsiifiline sõna, mida ei pruugi sageli kohata.
+-----------
+Input: poeg
+Response: kasutatakse eesti keeles mitmesugustes tekstides, sealhulgas: 1. Ilukirjandus: Romaanid, novellid, luuletused ja jutustused, kus räägitakse peresuhetest, perekonnalugudest või isiklikest suhetest. 2. Ajakirjandus: Artiklid, intervjuud ja uudised, mis käsitlevad perekonda, kasvatust, haridust või sotsiaalseid teemasid. 3. Ametlikud dokumendid: Perekonnaseisuaktid, juriidilised dokumendid ja ametlikud kirjad, kus on vaja täpsustada pereliikmeid. 4. Õpikud ja teadustekstid: Bioloogia, geneetika ja sotsioloogia õpikud, kus käsitletakse inimeste või loomade järglasi. 5. Igapäevane suhtlus: Kirjad, e-kirjad, sõnumid ja vestlused, kus räägitakse pereliikmetest.
+-----------
+Input: pontu
+Response: võib kasutada mitmesugustes kontekstides, kuid kõige sagedamini kasutatakse seda Eestis koera hüüdnime või hellitusnime tähenduses. Näiteks võib see esineda ilukirjanduses, lasteraamatutes, vestlustes või sotsiaalmeedias, kus räägitakse lemmikloomadest. Kui sul on konkreetsem kontekst või tekstiliik, mille kohta soovid teada, siis palun täpsusta.
+-----------
+Input: poolteisene
+Response: kasutatakse eesti keeles tavaliselt tekstides, mis käsitlevad ajavahemikke, vanuseid või mõõtühikuid. Näiteks võib seda sõna leida järgmistes kontekstides: 1. Ajavahemikud: "Projekt kestis poolteisene aasta." 2. Vanus: "Laps on poolteisene." 3. Mõõtühikud: "Poolteisene meeter kangast.
+-----------
+Input: possessiivadjektiiv
+Response: kasutatakse eesti keeles tekstides, kus on vaja väljendada omandit või kuuluvust. Need adjektiivid näitavad, kellele mingi asi kuulub. Näiteks sõnad "minu", "sinu", "tema", "meie", "teie" ja "nende" on possessiivadjektiivid. Neid võib leida igapäevastes vestlustes, kirjanduses, ametlikes dokumentides ja muudes tekstides, kus on oluline täpsustada, kellele mingi objekt või omadus kuulub.
+-----------
+Input: prääksatama
+Response: kasutatakse tavaliselt tekstides, mis kirjeldavad hääli, mida pardid või teised vees elavad linnud teevad. Seda võib leida lasteraamatutes, looduskirjeldustes, ilukirjanduses või muudes tekstides, kus on vaja edasi anda sellist konkreetset heli. Näiteks võib see sõna esineda muinasjutus, kus tegelased suhtlevad loomadega, või loodusteaduslikus artiklis, mis kirjeldab lindude käitumist.
+-----------
+Input: pudrupööris
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "pudrupööris". See võib olla haruldane või kontekstispetsiifiline termin, mida ei leidu laialdaselt tuntud kirjanduses või tekstides.
+-----------
+Input: põhitekst
+Response: termin, mida kasutatakse erinevates kontekstides, sealhulgas kirjanduses, akadeemilises kirjutamises ja ametlikes dokumentides. See viitab tavaliselt teksti peamisele sisule või kesksele osale, eristades seda näiteks lisadest, kommentaaridest või viidetest. 
+-----------
+Input: pärastlõunauinak
+Response: kasutatakse eesti keeles tekstides, mis käsitlevad igapäevaelu, tervist, heaolu ja uneharjumusi. Seda võib leida artiklites, mis räägivad puhkamise ja taastumise olulisusest, samuti ajakirjades ja blogides, mis keskenduvad elustiilile ja tervislikele harjumustele. Lisaks võib seda sõna kohata ka ilukirjanduses, kus kirjeldatakse tegelaste päevaseid tegevusi ja rutiine.
+-----------
+Input: püksikud
+Response: kasutatakse eesti keeles peamiselt igapäevastes vestlustes ja tekstides, mis käsitlevad rõivaid, eriti aluspesu. Seda võib leida ka moeajakirjades, pesupoodide kirjeldustes, veebipoodide tootekirjeldustes ja isikliku hügieeni või riietumise teemalistes artiklites. Kui sul on konkreetsem kontekst või tekstiliik, milles soovid teada selle sõna kasutust, anna palun teada.
+-----------
+Input: rahalaenamine
+Response: kasutatakse tekstides, mis käsitlevad finantsteemasid, eriti laenude ja krediidi andmise ja võtmisega seotud küsimusi. Näiteks võib seda sõna leida: 1. Pankade ja finantsasutuste laenutingimuste kirjeldustes 2. Laenulepingutes ja -lepingute näidistes. 3. Finantsnõuannetes ja -juhendites. 4. Majandus- ja finantsuudistes. 5. Isiklike finantsblogide ja -artiklite tekstides. 6. Õpikutes ja õppevahendites, mis käsitlevad majandust ja rahandust.
+-----------
+Input: rahapada
+Response: kasutatakse eesti keeles tavaliselt muinasjuttudes, rahvapärimustes ja legendides. See viitab sageli müütilisele aardele või rikkusele, mis on peidetud või maagiliselt kaitstud. Näiteks võib rahapada esineda lugudes, kus tegelased leiavad peidetud varanduse või saavad selle maagiliste olendite abiga. Kui sul on konkreetne tekst või kontekst, kus seda sõna kasutatakse, saan proovida anda täpsema vastuse.
+-----------
+Input: ravimküünal
+Response: kasutatakse meditsiinilistes tekstides, eriti nendes, mis käsitlevad ravimite manustamisviise ja -vorme. Ravimküünal on ravimvorm, mida manustatakse rektaalselt või vaginaalselt ja mis lahustub kehatemperatuuril, vabastades toimeained. Selliseid tekste võib leida meditsiinilistes õpikutes, ravimite infolehtedel, apteekide veebilehtedel ja tervishoiualastes artiklites.
+-----------
+Input: reanimatsioon
+Response: kasutatakse eesti keeles meditsiinilistes tekstides ja kontekstides. See viitab elustamisprotsessile, kus püütakse taastada inimese elutähtsaid funktsioone, nagu hingamine ja südametegevus, pärast nende seiskumist. Seda sõna võib kohata haiglate ja meditsiinikeskuste dokumentatsioonis, meditsiinilistes artiklites, õpikutes, juhendites ja ka erakorralise meditsiini käsiraamatutes.
+-----------
+Input: reig
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "reig". See võib olla haruldane või spetsiifiline sõna, mida ei esine laialdaselt tuntud eesti keele sõnavaras.
+-----------
+Input: reisihimu
+Response: kasutatakse tavaliselt tekstides, mis käsitlevad reisimist, seiklemist ja avastamist. See võib esineda reisiblogides, reisikirjeldustes, turismialastes artiklites, reisiraamatutes ja isiklikes päevikutes, kus autorid väljendavad oma soovi ja kirge reisida ning uusi kohti avastada.
+-----------
+Input: relvakamber
+Response: kasutatakse tekstides, mis käsitlevad relvi ja laskemoona. See võib esineda näiteks: 1. Relvade tehnilistes kirjeldustes ja käsiraamatutes. 2. Sõjalises kirjanduses ja dokumentides. 3. Kriminaalromaanides ja -lugudes, kus kirjeldatakse relvade kasutamist. 4. Õigusaktides ja määrustes, mis reguleerivad relvade omamist ja kasutamist. 5. Ajaloolistes tekstides, mis käsitlevad sõdu ja lahinguid. 6. Relvade hooldus- ja kasutusjuhendites.
+-----------
+Input: relvasuu
+Response: kasutatakse eesti keeles peamiselt sõjanduse, relvastuse ja militaarteemalistes tekstides. See võib esineda ka kirjanduses, ajakirjanduses ja tehnilistes kirjeldustes, kus käsitletakse relvade ehitust, kasutamist või mõju. Näiteks võib seda sõna leida sõjalistes raportites, relvade käsiraamatutes, ajaloolistes ülevaadetes või ilukirjanduslikes teostes, mis sisaldavad sõjategevust või relvade kasutamist.
+-----------
+Input: reumatoidartriit
+Response: kasutatakse meditsiinilistes ja tervishoiualastes tekstides, eriti nendes, mis käsitlevad liigesehaigusi, autoimmuunhaigusi ja kroonilisi põletikulisi seisundeid. Seda võib leida ka patsientidele suunatud informatiivsetes materjalides, teadusartiklites, meditsiinilistes õpikutes ja terviseajakirjades.
+-----------
+Input: rodster
+Response: Eesti keeles kasutatakse sõna "rodster" peamiselt autotööstuse ja autohuviliste seas. See viitab tavaliselt kahekohalisele kabriolett-tüüpi autole, millel on eemaldatav või kokkupandav katus. Sõna võib esineda autoajakirjades, foorumites, reklaamides ja muudes tekstides, mis käsitlevad autosid ja autokultuuri.
+-----------
+Input: rõvedalt
+Response: kasutatakse eesti keeles tavaliselt tekstides, mis kirjeldavad midagi vulgaarset, ebameeldivat või solvavat. Seda võib leida näiteks ilukirjanduses, kus tegelased kasutavad roppu keelt, samuti arvustustes, kommentaarides või arvamusartiklites, kus autor väljendab tugevat negatiivset hinnangut. Samuti võib seda sõna kohata igapäevases kõnes või sotsiaalmeedia postitustes, kus inimesed väljendavad oma pahameelt või vastikust millegi suhtes. 
+-----------
+Input: sahkerdama
+Response: kasutatakse eesti keeles tavaliselt tekstides, mis käsitlevad ebaausaid või kahtlaseid tehinguid, petuskeeme või muid ebaeetilisi tegevusi. Seda sõna võib leida nii ajakirjanduslikes artiklites, ilukirjanduses kui ka igapäevases kõnepruugis, kui räägitakse kellegi kahtlastest või ebaausatest tegudest. Näiteks võib seda kasutada, kui räägitakse korruptsioonist, altkäemaksust või muust sarnasest tegevusest.
+-----------
+Input: santehnik
+Response: kasutatakse tekstides, mis käsitlevad sanitaartehnikat, torutöid, veevarustust, kanalisatsiooni ja muid sellega seotud teemasid. Näiteks võib seda sõna leida ehitusalastes artiklites, remondijuhendites, töökuulutustes, teenusepakkujate veebilehtedel ja foorumites, kus arutatakse kodu hoolduse ja remondi küsimusi.
+-----------
+Input: sara
+Response: kasutatakse eesti keeles mitmesugustes kontekstides. Näiteks: 1. Kirjanduses ja luules: Sõna "sara" võib esineda kirjanduslikes tekstides ja luules, kus see võib tähendada väikest hoonet või varjualust. 2. Rahvapärimustes ja folklooris: Rahvapärimustes võib "sara" viidata vanadele talumajapidamistele või hoonetele. 3. Igapäevases kõnes: Inimesed võivad kasutada sõna "sara" igapäevases kõnes, kui nad räägivad vanadest või lagunenud hoonetest.
+-----------
+Input: sebima
+Response: kasutatakse eesti keeles mitmesugustes tekstides, sealhulgas argikeeles, ilukirjanduses, ajakirjanduses ja sotsiaalmeedias. See sõna tähendab tavaliselt toimetamist, askeldamist või millegi aktiivset korraldamist. Näiteks võib seda kasutada lausetes nagu "Ta sebis terve päeva ringi" või "Ma pean veel mõned asjad ära sebima enne, kui saan puhata.
+-----------
+Input: segast panema
+Response: kasutatakse eesti keeles mitmesugustes kontekstides, tavaliselt kõnekeeles ja mitteametlikes tekstides. See väljend tähendab üldiselt kellegi segadusse ajamist või segadust tekitavat käitumist. Seda võib kohata näiteks: 1. Igapäevases kõnepruugis ja vestlustes 2. Ilukirjanduses, kus tegelased võivad kasutada kõnekeelset väljendit. 3. Ajakirjanduses, eriti arvamuslugudes või kolumnides, kus autorid kasutavad vabamat ja kõnekeelsemat stiili. 4. Sotsiaalmeedias ja foorumites, kus inimesed suhtlevad mitteametlikult.
+-----------
+Input: seinavalgusti
+Response: kasutatakse tekstides, mis käsitlevad valgustust, sisekujundust, ehitust ja kodu renoveerimist. Seda võib leida ka toodete kirjeldustes e-poodides, mis müüvad valgustusseadmeid, samuti ajakirjades ja blogides, mis keskenduvad kodu ja interjööri teemadele.
+-----------
+Input: seksuaalvahekord
+Response: kasutatakse tavaliselt meditsiinilistes, teaduslikes, hariduslikes ja õiguslikes tekstides. Seda võib leida ka tervisealastes juhendites, seksuaalhariduse materjalides ning sotsiaal- ja psühholoogiaalastes artiklites. Lisaks võib seda sõna kohata ka meedias ja populaarteaduslikes väljaannetes, kui käsitletakse seksuaalsusega seotud teemasid.
+-----------
+Input: serbak
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "serbak". See ei tundu olevat tavaline eesti keele sõna. Võimalik, et see on spetsiifiline termin või släng, kuid ilma täiendava kontekstita on raske täpselt öelda, kus ja kuidas seda kasutatakse.
+-----------
+Input: siin
+Response: kasutatakse eesti keeles mitmesugustes tekstides, sealhulgas: 1. Igapäevases suhtluses ja vestlustes, et viidata konkreetsele kohale või asukohale. 2. Kirjanduses ja ilukirjanduslikes tekstides, et kirjeldada tegevuskohta. 3. Ametlikes dokumentides ja kirjavahetuses, et täpsustada asukohta või konteksti. 4. Teaduslikes ja akadeemilistes töödes, et viidata uurimisobjektile või -kohale. 5. Meedias ja ajakirjanduses, et anda teada sündmuste toimumiskohast.
+-----------
+Input: silmakae
+Response: kasutatakse eesti keeles meditsiinilistes ja tervishoiualastes tekstides, eriti oftalmoloogia kontekstis. Silmakae viitab silmahaigusele, mida tuntakse ka katarakti nime all, ja see tähendab silmaläätse hägustumist, mis võib põhjustada nägemise halvenemist. Tekstid, kus seda sõna võib kohata, hõlmavad arstide ja patsientide vahelisi suhtlusi, tervisealaseid artikleid, teadusuuringuid ja meditsiinilisi õpikuid.
+-----------
+Input: sinepivann
+Response: kasutatakse tavaliselt tervise ja heaolu kontekstis, eriti rahvameditsiinis ja looduslike ravimeetodite kirjeldustes. Sinepivannid on traditsiooniline meetod, mida kasutatakse külmetushaiguste, lihaspingete ja vereringe parandamiseks. Sellest võib lugeda terviseajakirjades, loodusmeditsiini käsitlevates raamatutes ja artiklites, samuti internetifoorumites ja blogides, mis keskenduvad looduslikele ravimeetoditele ja kodustele tervisenõuannetele.
+-----------
+Input: sisse ajama
+Response: Sisse ajama on eesti keeles mitmetähenduslik väljend, mida võib kasutada erinevates kontekstides. Siin on mõned näited, kus seda väljendit võib kohata: 1. Igapäevane kõnekeel: "Sisse ajama" võib kasutada igapäevases kõnepruugis, näiteks toidu kohta: "Ta ajas kogu koogi korraga sisse." 2. Meditsiiniline kontekst: Seda väljendit võib kasutada ka meditsiinilises kontekstis, näiteks ravimite manustamise kohta: "Arst ajas patsiendile ravimi sisse." 3. Mehaaniline kontekst: "Sisse ajama" võib kasutada ka mehaanilises või tehnilises kontekstis, näiteks mootori käivitamise kohta: "Ta ajas auto mootori sisse." 4. Majanduslik või äriline kontekst: Seda väljendit võib kasutada ka ärilises kontekstis, näiteks investeeringute kohta: "Ta ajas oma raha uude projekti sisse.
+-----------
+Input: sotsmaa
+Response: eesti keeles harva kasutatav sõna, mis võib viidata sotsialistlikule maale või riigile. Seda terminit võib leida ajaloolistes või poliitilistes tekstides, eriti nendes, mis käsitlevad Nõukogude Liidu perioodi või sotsialistlikke riike üldiselt. Kui sul on konkreetsem kontekst või tekst, kus seda sõna kasutatakse, siis saaksin täpsemalt vastata. Praegu saan öelda, et see sõna võib esineda ajaloolistes, poliitilistes või ideoloogilistes aruteludes ja tekstides.
+-----------
+Input: spets
+Response: kasutatakse eesti keeles mitmesugustes tekstides, sealhulgas igapäevases kõnes, ajakirjanduses, tehnilistes dokumentides ja erialastes artiklites. See on lühend sõnast "spetsialist" ja viitab tavaliselt inimesele, kes on oma ala ekspert või professionaal. Näiteks võib seda sõna kohata töökuulutustes, kus otsitakse teatud valdkonna spetsialisti, või intervjuudes, kus räägitakse kellegi erialastest oskustest ja teadmistest.
+-----------
+Input: suva
+Response: kasutatakse eesti keeles mitmesugustes tekstides ja kontekstides. See sõna tähendab üldiselt ükskõiksust või huvipuudust millegi suhtes. Näiteks võib seda kasutada igapäevases kõnes, kirjanduses, ajakirjanduses ja sotsiaalmeedias. Siin on mõned näited: 1. Igapäevane kõne: "Mul on täiesti suva, mida me täna õhtul teeme." 2. Kirjandus: "Tema suva suhtumine kõigesse ajas mind närvi.  3. Ajakirjandus: "Poliitiku suva vastused ajakirjanike küsimustele tekitasid pahameelt." 4. Sotsiaalmeedia: "Täna on mul lihtsalt suva päev, ei viitsi midagi teha.
+-----------
+Input: söögikaalikas
+Response: kasutatakse tekstides, mis käsitlevad toitumist, põllumajandust, aiandust ja toiduvalmistamist. Näiteks võib seda sõna leida retseptides, kus kaalikas on koostisosana, aiandusjuhendites, mis annavad nõu kaalika kasvatamise kohta, või toitumisalastes artiklites, mis räägivad kaalika toiteväärtusest ja tervislikkusest.
+-----------
+Input: süstamees
+Response: kasutatakse tekstides, mis käsitlevad veespordialasid, eriti süstasõitu või kajakisõitu. Seda võib leida spordiuudistes, harrastajate blogides, veespordiklubide veebilehtedel, treeningjuhendites ja võistluste kirjeldustes. Kui kontekst on seotud spordiga, siis tõenäoliselt kasutatakse seda sõna süstasõidu harrastaja või võistleja tähistamiseks.
+-----------
+Input: tantsukihk
+Response: kasutatakse eesti keeles tekstides, mis käsitlevad tantsimist või tantsimise soovi. See võib esineda kirjanduses, ajakirjanduses, blogides, muusikatekstides või vestlustes, kus räägitakse tantsimise soovist või tungist tantsida. Näiteks võib see sõna esineda romaanides, novellides, luuletustes, artiklites või isegi sotsiaalmeedia postitustes, kus kirjeldatakse kellegi kirge või tungi tantsida.
+-----------
+Input: targema
+Response: kasutatakse eesti keeles tavaliselt kirjanduses, artiklites, vestlustes ja muudes tekstides, kus räägitakse tarkusest või arukamaks muutumisest. Näiteks võib seda sõna leida haridusteemalistes tekstides, eneseabi raamatutes või filosoofilistes aruteludes.
+-----------
+Input: teeperv
+Response: kasutatakse eesti keeles tekstides, mis käsitlevad liiklust, teede infrastruktuuri, maastikukujundust või keskkonnateemasid. Näiteks võib seda sõna leida liiklusohutuse juhendites, teede hoolduse ja ehituse dokumentides, looduskaitse ja maastikukujunduse artiklites ning ka ilukirjanduslikes teostes, kus kirjeldatakse maastikku või teekonda.
+-----------
+Input: tegevsõjaväelane
+Response: kasutatakse tekstides, mis käsitlevad sõjaväeteenistust, kaitseväge, riigikaitset ja militaarteemasid. See võib esineda ametlikes dokumentides, seadustes, kaitseväe aruannetes, ajakirjanduses, uudistes, artiklites ja raamatutes, mis räägivad sõjaväelastest, nende rollidest ja ülesannetest. Samuti võib seda sõna leida personalidokumentides ja sõjaväelaste karjääriga seotud materjalides.
+-----------
+Input: tillist tõmbama
+Response: eesti keeles slängi kuuluv väljend, mida kasutatakse tavaliselt kellegi narrimise või petmise tähenduses. Seda võib kohata mitteametlikes vestlustes, huumoriga seotud tekstides või noorte kõnepruugis. Täpsemat konteksti, kus seda väljendit kasutatakse, ei oska ma öelda, kuna see sõltub suuresti situatsioonist ja kõnelejatest.
+-----------
+Input: tire
+Response: eesti keeles harva kasutatav sõna ja selle tähendus võib varieeruda kontekstist sõltuvalt. Kui "tire" on mõeldud ingliskeelse sõnana, siis see tähendab "rehv" ja seda kasutatakse autode, jalgrataste ja muude sõidukite rehvide kohta. Kui see on eesti keeles, siis võib see olla haruldane või vananenud sõna, mille tähendus ei ole laialt tuntud. Ilma täiendava kontekstita on raske täpselt öelda, millistes tekstides seda kasutatakse.
+-----------
+Input: tolk
+Response: kasutatakse eesti keeles tavaliselt tähenduses "mõte" või "tähendus". Seda võib leida erinevates tekstides, sealhulgas kirjanduses, ajakirjanduses, vestlustes ja ametlikes dokumentides, kus arutatakse, kas mingil tegevusel, sõnal või olukorral on mõtet või tähendust. Näiteks võib öelda: "Sellest jutust ei saanud ma mingit tolku" või "Kas sellel tegevusel on üldse mingit tolku?
+-----------
+Input: traatsõel
+Response: kasutatakse tavaliselt tekstides, mis käsitlevad köögitarvikuid, toiduvalmistamist või laboriseadmeid. Seda võib leida kokaraamatutes, köögitarvikute kirjeldustes, teaduslaborite varustuse loeteludes ja muudes sarnastes kontekstides, kus on vaja sõeluda või filtreerida aineid. Kui sul on konkreetne tekst või kontekst, milles seda sõna kasutatakse, saan anda täpsema vastuse.
+-----------
+Input: tuhajuhan
+Response: Tuhajuhan on tegelane eesti rahvajuttudes ja muinasjuttudes. Tuhajuhan on tuntud kui vaene, kuid nutikas ja töökas noormees, kes suudab oma nutikuse ja visadusega raskustest üle saada. Tuhajuhan on sageli võrreldav teiste rahvajuttude tegelastega, nagu näiteks Tuhkatriinu, kes samuti alustab oma teekonda raskustes, kuid saavutab lõpuks edu ja õnne.
+-----------
+Input: tulenui
+Response: kasutatakse eesti keeles peamiselt fantaasia- ja ulmekirjanduses, rollimängudes ning mütoloogilistes kontekstides. See võib viidata maagilisele või müstilisele esemele, mis on seotud tule või tulejõuga. Täpsemad kasutuskohad sõltuvad konkreetse teksti sisust ja kontekstist.
+-----------
+Input: tõrkumisi
+Response: kasutatakse eesti keeles tekstides, kus kirjeldatakse vastupanu, tõrgete või raskuste esinemist. Seda võib leida erinevates kontekstides, näiteks: 1. Tehnilised tekstid: Kirjeldades seadmete või süsteemide töökatkestusi või tõrkeid. Näiteks: "Serveri töös esines tõrkumisi, mis mõjutasid andmebaasi jõudlust." 2. Kirjandus ja ilukirjandus: Kirjeldades tegelaste käitumist või sündmuste kulgu. Näiteks: "Peategelane jätkas oma teekonda hoolimata tõrkumistest ja raskustest." 3. Ametlikud aruanded ja raportid: Viidates probleemidele või takistustele projektide või protsesside elluviimisel. Näiteks: "Projekti elluviimisel esines mitmeid tõrkumisi, mis lükkasid tähtaegu edasi." Igapäevane kõnepruuk ja ajakirjandus: Kirjeldades igapäevaelu raskusi või probleeme. Näiteks: "Koolituse läbiviimisel esines mõningaid tõrkumisi, kuid lõpuks sujus kõik plaanipäraselt.
+-----------
+Input: uhjutama
+Response: kasutatakse eesti keeles ja see tähendab tavaliselt vee või muu vedeliku voolamise või üleujutamise tekitamist. Seda sõna võib leida erinevates tekstides, sealhulgas: 1. Ilukirjandus: Romaanides, novellides ja luuletustes, kus kirjeldatakse looduse jõude, üleujutusi või muid veega seotud sündmusi. 2. Ajakirjandus: Artiklid, mis käsitlevad looduskatastroofe, üleujutusi või veekogude taseme tõusu. 3. Teadustekstid: Uuringud ja raportid, mis käsitlevad hüdroloogiat, kliimamuutusi või keskkonnateadust. 4. Õppematerjalid: Geograafia, loodusteaduste või keskkonnaõpetuse õpikud ja õppematerjalid. 5. Tehnilised dokumendid: Inseneri- ja ehitusprojektid, mis käsitlevad veemajandust, tammide ehitamist või üleujutuste ennetamist.
+-----------
+Input: unestama
+Response: kasutatakse eesti keeles tavaliselt kirjanduses, luules või ilukirjanduses, kus kirjeldatakse unele suikumist või unistamisse langemist. Seda võib leida ka filosoofilistes või psühholoogilistes tekstides, kus käsitletakse teemasid nagu teadvus, uni ja unistused. Kui sul on konkreetne kontekst või tekst, kus seda sõna on kasutatud, siis saaksin täpsemalt vastata.
+-----------
+Input: vastu lonti andma
+Response: eesti keeles kõnekeelne ja vulgaarne fraas, mida kasutatakse tavaliselt ähvarduse või füüsilise karistuse kontekstis. See tähendab kedagi lööma või füüsiliselt karistama. Selliseid väljendeid võib leida mitmesugustes tekstides, sealhulgas ilukirjanduses, rahvajuttudes, filmides, telesaadetes või igapäevases kõnepruugis, kus kasutatakse rahvalikku või argikeelt. Täpsemalt, see võib esineda dialoogides või kirjeldustes, kus tegelased väljendavad viha, frustratsiooni või ähvardust.
+-----------
+Input: veneetslane
+Response: kasutatakse tekstides, mis räägivad Veneetsia elanikest või inimestest, kes on pärit Veneetsiast. Selliseid tekste võib leida ajalooraamatutes, reisikirjeldustes, kultuurilistes ülevaadetes, ilukirjanduses ja artiklites, mis käsitlevad Itaalia linna Veneetsiat ja selle elanikke.
+-----------
+Input: viidakil
+Response: ei ole mulle tuttav ning ma ei suuda tuvastada selle tähendust ega konteksti, milles seda kasutatakse. Võib-olla on tegemist väga spetsiifilise või haruldase sõnaga, murdesõnaga või kirjaveaga.
+-----------
+Input: viksima
+Response: kasutatakse eesti keeles ja see tähendab tavaliselt millegi, näiteks kingade, puhastamist ja poleerimist, et need näeksid välja korralikud ja läikivad. Seda sõna võib leida erinevates tekstides, sealhulgas: Igapäevastes vestlustes ja kõnekeeles, kui räägitakse kingade hooldamisest; kodumajapidamise ja hoolduse juhendites või artiklites, mis annavad nõu, kuidas hoida esemeid heas seisukorras; Ilukirjanduses, kus tegelased võivad tegeleda kingade viksimisega; Reklaamides ja turundusmaterjalides, mis reklaamivad kingahooldustooteid.
+-----------
+Input: võrdõigus
+Response: kasutatakse eesti keeles tekstides, mis käsitlevad võrdsust ja õigusi, eriti soolist võrdõiguslikkust. Seda võib leida seadusandlikes dokumentides, poliitikaaruteludes, sotsiaalteaduslikes uurimustes, inimõiguste raportites ja organisatsioonide tegevuskavades, mis keskenduvad diskrimineerimise vähendamisele ja võrdsete võimaluste tagamisele kõigile ühiskonnaliikmetele.
+-----------
+Input: välja kraamima
+Response: kasutatakse eesti keeles tavaliselt kontekstides, kus räägitakse millegi esile toomisest, leidmisest või välja otsimisest.
+-----------
+Input: õhturiietus
+Response: kasutatakse tekstides, mis käsitlevad moodi, etiketti, ürituste korraldamist ja sotsiaalseid sündmusi. See võib esineda kutsetel, mis määravad kindlaks riietumisstiili, või juhendites, mis annavad nõu, kuidas sobivalt riietuda ametlikeks õhtusteks üritusteks nagu galaõhtusöögid, ballid, teatrikülastused või muud pidulikud sündmused.
+-----------
+Input: õkva
+Response: eesti murdesõna, mida kasutatakse Lõuna-Eestis, eriti Võru ja Setu murretes. See tähendab "otse" või "kohe". Seda sõna võib leida tekstides, mis on kirjutatud nendes murretes või mis käsitlevad Lõuna-Eesti kultuuri ja keelt. Näiteks võib seda sõna kohata murdekeelsetes juttudes, luuletustes, rahvajuttudes ja muudes kirjanduslikes teostes, mis peegeldavad Lõuna-Eesti keelepruuki.
+-----------
+Input: õli
+Response: kasutatakse eesti keeles erinevates kontekstides ja tekstides, sealhulgas: 1. Toiduvalmistamine ja retseptid: Näiteks retseptides, kus kasutatakse erinevaid õlisid nagu oliiviõli, rapsiõli, kookosõli jne. 2. Kosmeetika ja nahahooldus: Artiklid ja juhendid, mis käsitlevad nahahooldustoodete koostisosi, näiteks eeterlikud õlid, massaažiõlid jne. 3. Tehnika ja autotööstus: Tekstid, mis käsitlevad mootoriõlisid, määrdeõlisid ja muid tehnilisi õlisid. 4. Kunst ja maalimine: Kunstitekstid, mis räägivad õlivärvidest ja õlimaalidest. 5. Tervishoid ja alternatiivmeditsiin: Artiklid, mis käsitlevad erinevate õlide tervislikke omadusi ja kasutusviise, näiteks kalaõli, kanepiõli jne.
+-----------
+Input: õnnetuselind
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "õnnetuselind". See võib olla haruldane või kontekstispetsiifiline termin, mida ei pruugi laialdaselt kasutada.
+-----------
+Input: õudkallis
+Response: Ma ei oska öelda, millistes tekstides kasutatakse sõna "õudkallis". See võib olla haruldane või kontekstispetsiifiline sõna, mille tähendus ja kasutus ei ole laialt levinud.
+-----------
+Input: äh
+Response: kasutatakse eesti keeles tavaliselt kõnekeeles ja mitteametlikes tekstides, et väljendada segadust, kõhklust, mõtlemispausi või kergelt negatiivset reaktsiooni. Seda võib kohata dialoogides, sotsiaalmeedia postitustes, kommentaarides ja muudes mitteametlikes kirjutistes.
+-----------
+Input: äks
+Response: kasutatakse eesti keeles tavaliselt kõnekeeles ja mitteametlikes tekstides, et väljendada segadust, kõhklust, mõtlemispausi või kergelt negatiivset reaktsiooni. Seda võib kohata dialoogides, sotsiaalmeedia postitustes, kommentaarides ja muudes mitteametlikes kirjutistes. kasutatakse eesti keeles tavaliselt murdekeeles või kõnekeeles, eriti Lõuna-Eestis. See võib tähendada midagi äkilist, kiiret või ootamatut. Näiteks võib see viidata äkilisele vihale või emotsioonipuhangule. Täpsem kasutus sõltub kontekstist ja piirkondlikust murdest. Kui sul on konkreetne tekst või kontekst, kus seda sõna kasutatakse, saan aidata täpsema selgitusega.
+-----------
+Input: ülakardin
+Response: kasutatakse tavaliselt sisustust ja kodukujundust käsitlevates tekstides. See võib esineda näiteks kodu sisustamise juhendites, mööblipoe tootekirjeldustes, sisekujundusajakirjades ja -blogides, samuti ehitus- ja remonditeemalistes artiklites. Ülakardinad on aknakatete tüüp, mis paigaldatakse akna ülaossa ja võivad olla nii dekoratiivsed kui ka funktsionaalsed, pakkudes privaatsust ja varju.
+-----------
