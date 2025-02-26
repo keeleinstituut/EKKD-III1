@@ -1,3 +1,6 @@
+#Kood EKKD-III1 registrite töörühma esimese katse päringute tegemiseks Anthropicu mudelilt Claude 3 Sonnet.
+#Autor: Eleri Aedmaa
+
 import anthropic
 import os
 
