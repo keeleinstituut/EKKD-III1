@@ -1,0 +1,240 @@
+meteoroloogia, geograafilised tekstid, keskkonnatekstid
+filosoofia, füüsika, kirjandus
+meremeeste, laevaehituse, tehnilised tekstid
+geoloogilised tekstid, kaevandustekstid, keemilised tekstid
+ehitus- ja arhitektuuria tekstid, ajaloolised tekstid
+ürituste korraldamise tekstid, juriidilised tekstid, protokollid
+muusika, ajaloolised tekstid, religioossed tekstid
+zooloogia, metsandus, jahikirjandus
+argikeel, psühholoogilised tekstid, filosoofia tekstid
+majanduslikud, poliitilised, sõjalised tekstid
+geoloogilised, kaevandustekstid, keemilised tekstid
+teaduslikud, hariduslikud, meditsiinilised tekstid
+teaduslikud, filosoofilised, keskkonnatekstid
+kunsti-, spordi-, poliitilised tekstid
+zooloogia, reisikirjeldused, jahikirjandus
+majanduslikud tekstid, juriidilised tekstid, äriplaanid
+religioossed tekstid, ajaloolised tekstid, kultuurilised tekstid
+araabia keele ja kultuuri tekstid, ajaloolised tekstid, reisikirjeldused
+ehitus- ja remonditekstid, kangaid käsitlevad tekstid
+geoloogilised tekstid, keemilised tekstid, bioloogilised tekstid
+ajaloolised tekstid, poliitilised tekstid, sõjalised tekstid
+Hiina keele ja kultuuri tekstid, ajaloolised tekstid, reisikirjeldused
+ehitus- ja arhitektuuria tekstid, ajaloolised tekstid
+tehnilised tekstid, kasutusjuhendid, meditsiinilised tekstid
+argikeel, kirjandus, släng
+argikeel, kirjandus, lastekirjandus
+meteoroloogia, füüsika tekstid, keemilised tekstid
+matemaatilised tekstid, füüsika tekstid, keemilised tekstid
+argikeel, kirjandus, emotsionaalsed tekstid
+matemaatilised tekstid, keemilised tekstid, muusika
+bioloogilised tekstid, ülikoolide tekstid, ajaloolised tekstid
+matemaatilised tekstid, füüsika tekstid, geomeetria
+argikeel, toiduvalmistamise tekstid, keemia
+argikeel, kirjandus, emotsionaalsed tekstid
+argikeel, spordi tekstid, ajaloolised tekstid
+argikeel, loomade käitumise tekstid, lastekirjandus
+argikeel, jahikirjandus, loomade käitumise tekstid
+geograafilised tekstid, meremeeste tekstid, luuletused
+argikeel, ehitus- ja remonditekstid, tehnilised tekstid
+psühholoogilised tekstid, meditsiinilised tekstid, argikeel
+tehnilised tekstid, keeleteadus, majanduslikud tekstid
+kirjandus, epistolaarne kirjandus, ajaloolised tekstid
+religioossed tekstid, ajaloolised tekstid, kirikuõiguse tekstid
+matemaatilised tekstid, filosoofia, religioossed tekstid
+matemaatilised tekstid, keeleteadus, muusika
+argikeel, släng, noortekultuuri tekstid
+argikeel, lastekirjandus, loomade käitumise tekstid
+matemaatilised tekstid, füüsika tekstid, keemia
+argikeel, turismi tekstid, meditsiinilised tekstid
+argikeel, füüsika tekstid, geograafilised tekstid
+argikeel, filosoofia, eetika
+argikeel, släng, emotsionaalsed tekstid
+argikeel, filosoofia, religioossed tekstid
+argikeel, spordi tekstid, tootmisprotsesside tekstid
+argikeel, anatoomia tekstid, meditsiinilised tekstid
+argikeel, spordi tekstid, vägivalla tekstid
+argikeel, loomade käitumise tekstid, emotsionaalsed tekstid
+tervisega seotud tekstid, meditsiinilised tekstid, haavahoolduse tekstid, hooldusravi tekstid, patsiendiinfo tekstid.
+argikeel, ehitus- ja remonditekstid, tehnilised tekstid
+argikeel, ehitus- ja remonditekstid, mööbli tekstid
+argikeel, släng, noortekultuuri tekstid, emotsionaalsed tekstid.
+geoloogilised tekstid, keemilised tekstid, ehitusmaterjalide tekstid
+argikeel, zooloogia, bioloogia
+argikeel, lastekirjandus, loomade käitumise tekstid
+mullateaduse tekstid, aianduse tekstid, põllumajanduse tekstid
+argikeel, mänguasjade tekstid, tehnilised tekstid
+argikeel, lastekirjandus, emotsionaalsed tekstid
+argikeel, släng, noortekultuuri tekstid
+argikeel, tehnilised tekstid, arvutiteaduse tekstid
+argikeel, detektiivitekstid, kuulutused
+argikeel, kriminaalsed tekstid, emotsionaalsed tekstid
+argikeel, lastekirjandus, meditsiinilised tekstid
+argikeel, sõjalised tekstid, emotsionaalsed tekstid
+argikeel, loomade käitumise tekstid, bioloogilised tekstid
+religioossed tekstid, ajaloolised tekstid, mütoloogia
+meditsiinilised tekstid, neuroteaduse tekstid, bioloogilised tekstid
+bioloogilised tekstid, anatoomia tekstid, histoloogia tekstid
+ehitus- ja remonditekstid, energiatõhususe tekstid, keskkonnatekstid
+argikeel, tekstiilide tekstid, lastekirjandus
+argikeel, lastekirjandus, loomade käitumise tekstid
+keeleteaduse tekstid, ajaloolised tekstid, kultuurilised tekstid
+geograafilised tekstid, ajaloolised tekstid, kultuurilised tekstid
+argikeel, riiete tekstid, ajaloolised tekstid
+ajaloolised tekstid, ehitus- ja remonditekstid, käsitöö tekstid
+ajaloolised tekstid, kirjandus, mütoloogia
+argikeel, spordi tekstid, kriminaalsed tekstid
+ajaloolised tekstid, sõjalised tekstid, poliitilised tekstid
+argikeel, lastekirjandus, pidustuste tekstid
+argikeel, emotsionaalsed tekstid, psühholoogilised tekstid
+argikeel, ehitus- ja remonditekstid, geoloogilised tekstid
+meditsiinilised tekstid, füsioloogia tekstid, toiduvalmistamise tekstid
+argikeel, jahikirjandus, ajaloolised tekstid
+argikeel, loomade käitumise tekstid, lastekirjandus
+argikeel, toiduvalmistamise tekstid, botaanika tekstid
+argikeel, emotsionaalsed tekstid, kirjeldavad tekstid
+argikeel, värvide tekstid, kunsti tekstid
+ehitus- ja remonditekstid, kunstiajalugu, arhitektuuri tekstid
+fotograafia tekstid, tehnilised tekstid, optika tekstid
+argikeel, igapäevased tekstid, ruumilise kirjeldamise tekstid
+metsandus tekstid, ehitus- ja remonditekstid, majanduslikud tekstid
+argikeel, riiete tekstid, spordi tekstid
+argikeel, tehnilised tekstid, valgustehnika tekstid
+argikeel, kriminaalsed tekstid, emotsionaalsed tekstid
+argikeel, tehnilised tekstid, füüsika tekstid
+ajaloolised tekstid, geograafilised tekstid, mütoloogia tekstid
+argikeel, füüsika tekstid, muusika tekstid
+argikeel, släng, emotsionaalsed tekstid
+argikeel, maagia tekstid, spordi tekstid
+spordi tekstid, meditsiinilised tekstid, igapäevased tekstid
+transpordi tekstid, geograafilised tekstid, ehitus- ja remonditekstid
+keeleteaduse tekstid, arvutiteaduse tekstid, trükitehnika tekstid
+zooloogia, bioloogia, linnuvaatluste tekstid
+argikeel, tehnilised tekstid, käsitöö tekstid
+argikeel, spordi tekstid, jahikirjandus
+argikeel, filosoofia tekstid, kunsti tekstid
+argikeel, meditsiinilised tekstid, psühholoogilised tekstid
+argikeel, släng, emotsionaalsed tekstid
+juriidilised tekstid, majanduslikud tekstid, finantstekstid
+argikeel, spordi tekstid, omadussõnade tekstid
+tehnilised tekstid, transpordi tekstid, ajaloolised tekstid
+hariduslikud, raamatukogude, teaduslikud tekstid
+bioloogilised, reisikirjeldused, meditsiinilised tekstid
+veeteemade, bioloogilised, keemilised tekstid
+meremeeste, kaardid, ajaloolised tekstid
+ajaloolised, spordi, kultuurilised tekstid
+psühholoogilised, eneseabi, meditsiinilised tekstid
+muusika, füüsika, elektroonikatekstid
+ajaloolised, geograafilised, poliitilised tekstid
+ajaloolised tekstid, kunstiajalugu, arhitektuuria
+psühholoogilised tekstid, kirjandus, filosoofia
+geograafilised tekstid, geoloogilised tekstid, botaanika
+religioossed tekstid, mütoloogia, kirjandus
+argikeel, kirjandus, juriidilised tekstid, tehnilised tekstid, meditsiinilised tekstid, spordi tekstid, muusika tekstid, igapäevased tekstid.
+argikeel, füüsika tekstid, metafoorsed tekstid
+LGBT tekstid, släng, argikeel
+keemilised tekstid, geoloogilised tekstid, materjaliteadus
+matemaatilised tekstid, füüsika tekstid, astronoomia
+mütoloogia, arvutiturve, rollimängud
+ajaloolised tekstid, kunstiajalugu, filosoofia
+argikeel, lastekirjandus, loomade käitumise tekstid
+toiduvalmistamise tekstid, meremeeste tekstid, ajaloolised tekstid
+argikeel, kirjandus, emotsionaalsed tekstid
+juriidilised tekstid, majanduslikud tekstid, finantstekstid
+argikeel, kirjandus, armastuse tekstid
+argikeel, loomade käitumise tekstid, emotsionaalsed tekstid
+argikeel, ehitus- ja remonditekstid, toiduvalmistamise tekstid
+luuletused, kirjandus, meteoroloogia
+argikeel, spordi tekstid, füüsika tekstid
+psühholoogilised tekstid, matemaatilised tekstid, keemia
+statistika tekstid, majanduslikud tekstid, sotsiaalteaduste tekstid
+argikeel, meditsiinilised tekstid, lastekirjandus
+juriidilised tekstid, ajaloolised tekstid, argikeel
+geoloogilised tekstid, keemilised tekstid, ehitusmaterjalide tekstid
+psühholoogilised tekstid, loomade käitumise tekstid, sotsiaalteaduste tekstid
+bioloogilised tekstid, anatoomia tekstid, meditsiinilised tekstid
+geograafilised tekstid, geoloogilised tekstid, hüdroloogia
+argikeel, majanduslikud tekstid, poliitilised tekstid
+spordi tekstid, ajaloolised tekstid, poliitilised tekstid
+argikeel, majanduslikud tekstid, turismi tekstid
+argikeel, meditsiinilised tekstid, juriidilised tekstid
+argikeel, ehitus- ja remonditekstid, kunstiajalugu
+zooloogia, bioloogia, aianduse tekstid
+keeleteaduse tekstid, dialektoloogia tekstid, kultuurilised tekstid
+toiduvalmistamise tekstid, botaanika, keemilised tekstid
+argikeel, toiduvalmistamise tekstid, lastekirjandus
+psühholoogilised tekstid, filosoofia, hariduslikud tekstid
+muusika, sõjalised tekstid, ajaloolised tekstid
+psühholoogilised tekstid, neuroteaduse tekstid, meditsiinilised tekstid
+argikeel, lastekirjandus, emotsionaalsed tekstid
+filmimaailma tekstid, auhindade tekstid, biograafilised tekstid
+argikeel, ehitus- ja remonditekstid, tehnilised tekstid
+kirjandus, teater, muusika
+argikeel, emotsionaalsed tekstid, släng
+argikeel, lastekirjandus, anatoomia tekstid
+kunsti tekstid, kultuurilised tekstid, ajaloolised tekstid
+argikeel, igapäevased tekstid, emotsionaalsed tekstid
+argikeel, perekondlikud tekstid, bioloogilised tekstid
+argikeel, släng, noortekultuuri tekstid
+matemaatilised tekstid, argikeel, majanduslikud tekstid
+keeleteaduse tekstid, grammatika tekstid, hariduslikud tekstid
+argikeel, loomade käitumise tekstid, emotsionaalsed tekstid
+argikeel, toiduvalmistamise tekstid, emotsionaalsed tekstid
+keeleteaduse tekstid, filosoofia tekstid, kirjandusteadus
+argikeel, igapäevased tekstid, meditsiinilised tekstid
+argikeel, riiete tekstid, lastekirjandus
+majanduslikud tekstid, juriidilised tekstid, finantstekstid
+argikeel, majanduslikud tekstid, muinasjutud
+meditsiinilised tekstid, alternatiivmeditsiini tekstid, apteekide tekstid
+meditsiinilised tekstid, esmaabitekstid, kriitilise meditsiini tekstid
+argikeel, släng, noortekultuuri tekstid
+reisikirjandus, turismi tekstid, psühholoogilised tekstid
+ajaloolised tekstid, sõjalised tekstid, muuseumide tekstid
+ajaloolised tekstid, sõjalised tekstid, jahikirjandus
+meditsiinilised tekstid, reumatoloogia tekstid, teaduslikud tekstid
+autode tekstid, tehnilised tekstid, ajaloolised tekstid
+argikeel, emotsionaalsed tekstid, släng
+argikeel, släng, ärimaailma tekstid
+ehitus- ja remonditekstid, tehnilised tekstid, torutööde tekstid
+argikeel, taimede tekstid, aiapidamise tekstid
+argikeel, igapäevased tekstid, emotsionaalsed tekstid
+argikeel, emotsionaalsed tekstid, släng
+ehitus- ja remonditekstid, valgustehnika tekstid, sisekujunduse tekstid
+bioloogilised tekstid, meditsiinilised tekstid, eetilised tekstid
+argikeel, toiduvalmistamise tekstid, taimede tekstid
+argikeel, geograafilised tekstid, deiktilised tekstid
+meditsiinilised tekstid, oftalmoloogia tekstid, optikatekstid
+meditsiinilised tekstid, alternatiivmeditsiini tekstid, spaatekstid
+argikeel, tehnilised tekstid, spordi tekstid
+poliitilised tekstid, ajaloolised tekstid, sotsiaalteaduste tekstid
+argikeel, släng, erialase teksti kontekstis
+argikeel, igapäevased tekstid, noortekultuuri tekstid
+toiduvalmistamise tekstid, botaanika tekstid, aiapidamise tekstid
+meditsiinilised tekstid, narkootikumide tekstid, kriminaalsed tekstid
+argikeel, tantsu tekstid, emotsionaalsed tekstid
+argikeel, filosoofia tekstid, hariduslikud tekstid
+geograafilised tekstid, transpordi tekstid, turismi tekstid
+sõjalised tekstid, ajaloolised tekstid, poliitilised tekstid
+argikeel, släng, emotsionaalsed tekstid
+argikeel, kirjavahemärkide tekstid, keeleteaduse tekstid
+keeleteaduse tekstid, tõlkimise tekstid, reisikirjandus
+ehitus- ja remonditekstid, aianduse tekstid, käsitöö tekstid
+argikeel, muinasjutud, lastekirjandus
+argikeel, släng, emotsionaalsed tekstid
+argikeel, igapäevased tekstid, emotsionaalsed tekstid
+argikeel, veespordi tekstid, metafoorsed tekstid
+argikeel, meditsiinilised tekstid, muinasjutud
+argikeel, emotsionaalsed tekstid, släng
+geograafilised tekstid, ajaloolised tekstid, kultuurilised tekstid
+argikeel, släng, emotsionaalsed tekstid
+argikeel, loomade käitumise tekstid, emotsionaalsed tekstid
+poliitilised tekstid, filosoofia tekstid, juriidilised tekstid
+argikeel, igapäevased tekstid, emotsionaalsed tekstid
+argikeel, moe tekstid, pidustuste tekstid
+argikeel, toiduvalmistamise tekstid, taimede tekstid
+argikeel, keemia tekstid, toiduvalmistamise tekstid
+argikeel, uskumuste tekstid, metafoorsed tekstid
+argikeel, majanduslikud tekstid, emotsionaalsed tekstid
+argikeel, emotsionaalsed tekstid, hüüatused
+argikeel, meditsiinilised tekstid, emotsionaalsed tekstid
+argikeel, sisekujunduse tekstid, kodu tekstid
