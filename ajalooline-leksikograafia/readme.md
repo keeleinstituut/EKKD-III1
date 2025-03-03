@@ -1,1 +1,1 @@
-EKKD-III1 ajalooliste sõnakujude töörühma materjalid.
+EKKD-III1 ajaloolise leksikograafia töörühma repositoorium.
