@@ -1,0 +1,1 @@
+Projektis katsetatud promptide kogum
