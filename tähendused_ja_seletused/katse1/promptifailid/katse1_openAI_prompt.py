@@ -1,4 +1,5 @@
-#Kood EKKD-III1 registrite töörühma esimese katse päringute tegemiseks OpenAI mudelitelt.
+#EKKD-III1 tähenduste töörühma esimese katse päringukood, et promptida OpenAI mudeleid.
+#Küsimus puudutab etteantud sõnade tähendusi. 
 #Autor: Eleri Aedmaa
 from openai import OpenAI
 
