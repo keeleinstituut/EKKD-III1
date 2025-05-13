@@ -1,4 +1,5 @@
-#Kood EKKD-III1 tähenduste töörühma esimese katse päringute tegemiseks Google'i Gemini mudelitelt.
+#EKKD-III1 tähenduste töörühma esimese katse päringukood, et promptida Google'i mudelit Gemini 1.5 Pro.
+#Küsimus puudutab etteantud sõnade tähendusi. 
 #Autor: Eleri Aedmaa
 
 import os
