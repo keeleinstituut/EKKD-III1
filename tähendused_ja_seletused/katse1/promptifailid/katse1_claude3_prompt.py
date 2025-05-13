@@ -1,4 +1,4 @@
-#Kood EKKD-III1 tähenduste töörühma esimese katse päringute tegemiseks Anthropicu mudelitelt Claude 3 Opus ja S.
+#Kood EKKD-III1 tähenduste töörühma esimese katse päringute tegemiseks Anthropicu mudelitelt Claude 3 Opus ja Sonnet.
 #Autor: Eleri Aedmaa
 import anthropic
 import os
