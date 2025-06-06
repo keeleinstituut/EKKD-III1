@@ -18,7 +18,7 @@ def read_inputs_from_file(file_path):
 def get_response_for_input(client, word):
     try:
         user_prompt = (
-            f"Kirjuta sõnale '{word}' kolm definitsiooni, kus seletad, mida see sõna eesti keeles tähendab. "
+            f"Sa oled eesti keele sõnaraamatu koostaja. Kirjuta sõnale '{word}' kolm definitsiooni, kus seletad, mida see sõna eesti keeles tähendab. "
             "Esimene seletus kirjuta samas stiilis nagu definitsioon ÜS, teine seletus kirjuta samas stiilis nagu definitsioon ÕS "
             "ja kolmas seletus kirjuta samas stiilis nagu definitsioon KÕ. "
             "Vastus peab olema järgmisel kujul:\n"
