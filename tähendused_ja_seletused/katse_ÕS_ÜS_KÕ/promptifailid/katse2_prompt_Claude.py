@@ -17,7 +17,7 @@ def get_response_for_input(api_key, word, meaning):
     client = anthropic.Client(api_key=api_key)
     response = client.messages.create(
         model="claude-3-opus-latest", #muuda vajadusel
-        system=f"Sa oled sõnastikukoostaja. Kirjuta sõnale '{word}' kolm definitsiooni, kus seletad, mida see sõna eesti keeles tähendab. "
+        system=f"Sa oled eesti keele sõnaraamatu koostaja. Kirjuta sõnale '{word}' kolm definitsiooni, kus seletad, mida see sõna eesti keeles tähendab. "
                "Esimene seletus kirjuta samas stiilis nagu definitsioon ÜS, "
                "teine seletus kirjuta samas stiilis nagu definitsioon ÕS ja "
                "kolmas seletus kirjuta samas stiilis nagu definitsioon KÕ. Järgi näidete stiili:\n\n"
