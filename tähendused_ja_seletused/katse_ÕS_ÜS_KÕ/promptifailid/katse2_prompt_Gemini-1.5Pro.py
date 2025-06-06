@@ -21,7 +21,7 @@ def read_inputs_from_file(file_path):
 def get_response_for_input(word):
     model = genai.GenerativeModel("models/gemini-1.5-pro")
 
-    prompt = f"""Kirjuta sõnale '{word}' kolm definitsiooni, kus seletad, mida see sõna eesti keeles tähendab. 
+    prompt = f"""Sa oled eesti keele sõnaraamatu koostaja. Kirjuta sõnale '{word}' kolm definitsiooni, kus seletad, mida see sõna eesti keeles tähendab. 
         Esimene seletus kirjuta samas stiilis nagu definitsioon ÜS, 
         teine seletus kirjuta samas stiilis nagu definitsioon ÕS ja 
         kolmas seletus kirjuta samas stiilis nagu definitsioon KÕ. Järgi näidete stiili:
