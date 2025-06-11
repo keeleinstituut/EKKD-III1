@@ -1,9 +1,9 @@
-import os
-import csv
-import time
 #Kood EKKD-III1 registrite töörühma teise katse päringute tegemiseks Google'i mudelilt Gemini 1.5 Pro.
 #Autor: Eleri Aedmaa
 
+import os
+import csv
+import time
 
 import pandas as pd
 import google.generativeai as genai
