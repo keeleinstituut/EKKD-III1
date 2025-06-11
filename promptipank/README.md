@@ -1,1 +1,1 @@
-Projektis katsetatud promptide kogum
+Projektis kasutatud promptide koondatud kogum (täieneb). 
