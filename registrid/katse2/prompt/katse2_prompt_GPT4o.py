@@ -22,16 +22,13 @@ def get_response_for_input(api_key, word, meaning):
                 "role": "system",
                 "content": (
                     "Roll: Oled eesti keele sõnaraamatu koostaja, kelle ülesandeks on määrata, kas sõnale või väljendile tuleks lisada registrimärgend."
-                    "Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] registrites? "
+                    "Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] tekstides? "
                     "Kui sa ei oska eristust teha või see ei tule selgelt esile, siis ütle, et 'ei kohaldu'. "
-                    "Informaalsed registrid on teiste seas näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, vahel ka raamatutegelaste otsekõne. "
-                    "Palun põhjenda oma valikut. Lähtu vastates ainult oma treeningandmetest, mitte välisotsingutest ja andmebaasidest. "
-                    "Kui sõna '{word}' kasutatakse pigem informaalsetes registrites, siis mis on '{word}-i' neutraalsed/formaalsed sünonüümid eesti keeles? "
-                    "Kui sõna kasutatakse pigem neutraalsetes/formaalsetes registrites, siis vasta 'ei kohaldu'. "
+                    "Informaalsed tekstid on teiste seas näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, vahel ka raamatutegelaste otsekõne. "
+                    "Palun põhjenda oma valikut. Lähtu vastates ainult oma treeningandmetest, mitte välisotsingutest ja välistest andmebaasidest. "
                     "Vastus peab olema järgmisel kujul:\n"
                     "Kasutus: [informaalsetes / neutraalsetes/formaalsetes / ei kohaldu]\n"
-                    "Põhjendus: [Selgitus kasutuse kohta]\n"
-                    "Sünonüümid: [Sünonüümid või 'ei kohaldu']"
+                    "Põhjendus: [Selgitus kasutuse kohta]"
                 )
             },
             {
@@ -55,7 +52,6 @@ def process_response(api_key, word, meaning):
         # Default values
         category = ""
         explanation = ""
-        synonyms = ""
 
         # Parse the structured response
         for line in lines:
@@ -63,10 +59,8 @@ def process_response(api_key, word, meaning):
                 category = line.replace("Kasutus:", "").strip()
             elif line.startswith("Põhjendus:"):
                 explanation = line.replace("Põhjendus:", "").strip()
-            elif line.startswith("Sünonüümid:"):
-                synonyms = line.replace("Sünonüümid:", "").strip()
 
-        return pd.Series([category, explanation, synonyms])
+        return pd.Series([category, explanation])
     except Exception as e:
         return pd.Series(["Viga", f"Töötlemise viga: {e}", ""])
 
@@ -76,8 +70,8 @@ def main():
     api_key = ""  # Asenda oma API võtmega
 
     # Sisendfaili tee
-    input_file_path = 'katse2_sisend2.csv'  # Fail peab sisaldama "Katsesõna" ja "Tähendus" veerge
-    output_file_path = 'katse2_prompt3_väljund_gpt4o.csv'
+    input_file_path = 'ekkd_i_k6nek_6s.csv'  # Fail peab sisaldama "Katsesõna" ja "Tähendus" veerge
+    output_file_path = 'ekkd_i_k6nek_6s_väljund_gpt4o.csv'
 
     try:
         user_inputs = read_inputs_from_file(input_file_path)
@@ -86,7 +80,7 @@ def main():
         if 'Katsesõna' not in user_inputs.columns or 'Tähendus' not in user_inputs.columns:
             raise ValueError("Sisendfail peab sisaldama veerge 'Katsesõna' ja 'Tähendus'.")
 
-        user_inputs[['vastus', 'põhjendus', 'sünonüümid']] = user_inputs.apply(
+        user_inputs[['vastus', 'põhjendus']] = user_inputs.apply(
             lambda row: process_response(api_key, row['Katsesõna'], row['Tähendus']),
             axis=1
         )
