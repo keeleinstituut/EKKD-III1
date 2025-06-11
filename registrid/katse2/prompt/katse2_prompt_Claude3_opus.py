@@ -1,4 +1,4 @@
-#Kood EKKD-III1 registrite töörühma teise katse päringute tegemiseks Anthropicu mudelilt Claude 3.5 Haiku.
+#Kood EKKD-III1 registrite töörühma teise katse päringute tegemiseks Anthropicu mudelilt Claude 3 Opus.
 #Autor: Eleri Aedmaa
 
 import anthropic
