@@ -16,21 +16,27 @@ def read_inputs_from_file(file_path):
 def get_response_for_input(client, word, meaning):
     try:
         user_prompt = (
-            f"Sa oled eesti keele sõnaraamatu koostaja. Eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes, võrdselt] tekstides. "
-            "Informaalsed tekstid on näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, otsekõnes. "
-            "Kui sa ei tea, siis ütle, et sa ei oska öelda. Palun põhjenda oma valikut selgelt ning esita põhjenduse järel sõna võimalikud neutraalsed sünonüümid, "
-            "kui sõna kasutatakse pigem informaalsetes tekstides. Kui sõna kasutatakse pigem neutraalsetes/formaalsetes tekstides, siis vasta 'ei kohaldu'. "
+            f"Oled eesti keele sõnaraamatu koostaja, kelle ülesandeks on määrata, kas sõnale või väljendile tuleks lisada registrimärgend. "
+            f"Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] tekstides? "
+            "Kui sa ei oska eristust teha või see ei tule selgelt esile, siis ütle, et 'ei kohaldu'. "
+            "Informaalsed tekstid on teiste seas näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, vahel ka raamatutegelaste otsekõne. "
+            "Palun põhjenda oma valikut. Lähtu vastates ainult oma treeningandmetest, mitte välisotsingutest ja andmebaasidest. "
+            f"Kui sõna '{word}' kasutatakse pigem informaalsetes tekstides, siis mis on sõna '{word}' neutraalsed/formaalsed sünonüümid eesti keeles? "
+            "Kui sõna kasutatakse pigem neutraalsetes/formaalsetes tekstides, siis vasta 'ei kohaldu'. "
             "Vastus peab olema järgmisel kujul:\n"
-            "Kasutus: [informaalsetes / neutraalsetes/formaalsetes / võrdselt]\n"
+            "Kasutus: [informaalsetes / neutraalsetes/formaalsetes / ei kohaldu]\n"
             "Põhjendus: [Selgitus kasutuse kohta]\n"
             "Sünonüümid: [Sünonüümid või 'ei kohaldu']"
         )
 
         response = client.chat.completions.create(
-            model="o1",
-            messages=[
-                {"role": "user", "content": user_prompt}
-            ],
+            model="o1-mini-2024-09-12",  # kohandage vastavalt vajadusele
+            # Võite lisada ka system-role, kui tahate:
+            # messages=[
+            #     {"role": "system", "content": "System-level juhised..."},
+            #     {"role": "user", "content": user_prompt}
+            # ],
+            messages=[{"role": "user", "content": user_prompt}],
             temperature=1,
             max_completion_tokens=4096,
             top_p=1
@@ -68,10 +74,10 @@ def process_response(client, word, meaning):
         return pd.Series(["Viga", f"Töötlemise viga: {e}", ""])
 
 def main():
-    api_key = ""  # Replace with your API key
+    api_key = ""  # Replace with your actual API key
     client = OpenAI(api_key=api_key)  # Initialize client here
 
-    input_file_path = 'katse2_sisend.csv'
+    input_file_path = 'katse2_sisend2.csv'
     output_file_path = 'katse2_väljund_o1mini.csv'
 
     try:

@@ -1,5 +1,6 @@
-#Kood EKKD-III1 registrite töörühma teise katse päringute tegemiseks Google'i mudelilt Gemini 1.5 Pro.
+#Kood EKKD-III1 registrite töörühma teise katse päringute tegemiseks Google'i mudelilt Gemini 2.0 Flash (exp).
 #Autor: Eleri Aedmaa
+
 
 import os
 import csv
@@ -8,7 +9,7 @@ import pandas as pd
 import google.generativeai as genai
 from google.api_core import exceptions
 
-# Seadista API võti (ära pane seda otse koodi sisse produktsioonis!)
+# Seadista API võti
 # Kasuta keskkonnamuutujaid või turvalisemat meetodit.
 os.environ["GOOGLE_API_KEY"] = ""  # Asenda oma API võtmega
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
@@ -20,7 +21,7 @@ def read_inputs_from_file(file_path):
         raise ValueError(f"Sisendfaili lugemisel tekkis viga: {e}")
 
 def get_response_for_input(word, meaning):
-    model = genai.GenerativeModel("models/gemini-1.5-pro") # Kasuta soovitud mudelit
+    model = genai.GenerativeModel("models/gemini-2.0-flash") # Kasuta soovitud mudelit
 
     prompt = f"""Oled eesti keele sõnaraamatu koostaja, kelle ülesandeks on määrata, kas sõnale või väljendile tuleks lisada registrimärgend.
             Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] tekstides? 
@@ -77,7 +78,7 @@ def process_response(word, meaning):
 
 def main():
     input_file_path = 'katse2_sisend2.csv'
-    output_file_path = 'katse2_prompt2_väljund_gemini1.5pro.csv'
+    output_file_path = 'katse2_prompt2_väljund_gemini2.0flash.csv'
 
     try:
         user_inputs = read_inputs_from_file(input_file_path)

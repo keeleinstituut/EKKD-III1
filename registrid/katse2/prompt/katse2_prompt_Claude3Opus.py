@@ -1,4 +1,4 @@
-#Kood EKKD-III1 registrite töörühma teise katse päringute tegemiseks Anthropicu mudelilt Claude 3.5 Sonnet.
+#Kood EKKD-III1 registrite töörühma teise katse päringute tegemiseks Anthropicu mudelilt Claude 3 Opus.
 #Autor: Eleri Aedmaa
 
 import anthropic
@@ -14,7 +14,7 @@ def read_inputs_from_file(file_path):
 def get_response_for_input(api_key, word, meaning):
     client = anthropic.Client(api_key=api_key)
     response = client.messages.create(
-        model="claude-3-5-sonnet-20241022",
+        model="claude-3-opus-20240229",
         system=f"Oled eesti keele sõnaraamatu koostaja, kelle ülesandeks on määrata, kas sõnale või väljendile tuleks lisada registrimärgend. "
             f"Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] tekstides? "
             "Kui sa ei oska eristust teha või see ei tule selgelt esile, siis ütle, et 'ei kohaldu'. "
@@ -61,7 +61,7 @@ def process_response(api_key, word, meaning):
 def main():
     api_key = ""
     input_file_path = 'katse2_sisend2.csv'
-    output_file_path = 'katse2_prompt2_väljund_claude35_sonnet.csv'
+    output_file_path = 'katse2_prompt2_väljund_claude3opus.csv'
 
     try:
         user_inputs = read_inputs_from_file(input_file_path)

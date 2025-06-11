@@ -1,7 +1,6 @@
 #Kood EKKD-III1 registrite töörühma teise katse päringute tegemiseks OpenAI mudelilt GPT-4o.
 #Autor: Eleri Aedmaa
 
-
 import openai
 import csv
 import pandas as pd
@@ -15,19 +14,22 @@ def read_inputs_from_file(file_path):
 
 # OpenAI mudelilt vastuse pärimine
 def get_response_for_input(api_key, word, meaning):
-    openai.api_key = api_key  # OpenAI API võtme seadistamine
-    response = openai.ChatCompletion.create(
-        model="gpt-4o-2024-08-06",  # Kasuta õiget mudeli nime (GPT versioonid võivad muutuda)
+    client = openai.OpenAI(api_key=api_key)  # OpenAI API kliendi loomine
+    response = client.chat.completions.create(
+        model="gpt-4o-2024-08-06",  # Kasuta õiget mudeli nime
         messages=[
             {
                 "role": "system",
                 "content": (
-                    f"Sa oled eesti keele sõnaraamatu koostaja. Eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes, võrdselt] tekstides. "
-                    "Informaalsed tekstid on näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, otsekõnes. "
-                    "Kui sa ei tea, siis ütle, et sa ei oska öelda. Palun põhjenda oma valikut selgelt ning esita põhjenduse järel sõna võimalikud neutraalsed sünonüümid, "
-                    "kui sõna kasutatakse pigem informaalsetes tekstides. Kui sõna kasutatakse pigem neutraalsetes/formaalsetes tekstides, siis vasta 'ei kohaldu'. "
+                    "Oled eesti keele sõnaraamatu koostaja, kelle ülesandeks on määrata, kas sõnale või väljendile tuleks lisada registrimärgend."
+                    "Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] tekstides? "
+                    "Kui sa ei oska eristust teha või see ei tule selgelt esile, siis ütle, et 'ei kohaldu'. "
+                    "Informaalsed tekstid on teiste seas näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, vahel ka raamatutegelaste otsekõne. "
+                    "Palun põhjenda oma valikut. Lähtu vastates ainult oma treeningandmetest, mitte välisotsingutest ja andmebaasidest. "
+                    "Kui sõna '{word}' kasutatakse pigem informaalsetes tekstides, siis mis on sõna '{word}' neutraalsed/formaalsed sünonüümid eesti keeles? "
+                    "Kui sõna kasutatakse pigem neutraalsetes/formaalsetes tekstides, siis vasta 'ei kohaldu'. "
                     "Vastus peab olema järgmisel kujul:\n"
-                    "Kasutus: [informaalsetes / neutraalsetes/formaalsetes / võrdselt]\n"
+                    "Kasutus: [informaalsetes / neutraalsetes/formaalsetes / ei kohaldu]\n"
                     "Põhjendus: [Selgitus kasutuse kohta]\n"
                     "Sünonüümid: [Sünonüümid või 'ei kohaldu']"
                 )
@@ -41,8 +43,8 @@ def get_response_for_input(api_key, word, meaning):
         max_tokens=4096,
         top_p=1
     )
-    print(f"GPT vastus sõnale '{word}': {response['choices'][0]['message']['content']}")  # Print vastus
-    return response['choices'][0]['message']['content']
+    print(f"GPT vastus sõnale '{word}': {response.choices[0].message.content}")  # Print vastus
+    return response.choices[0].message.content
 
 # Parandatud funktsioon vastuste töötlemiseks
 def process_response(api_key, word, meaning):
@@ -71,11 +73,11 @@ def process_response(api_key, word, meaning):
 # Peafunktsioon
 def main():
     # OpenAI API võtme sisestamine
-    api_key = ""  # Asenda see oma API võtmega
+    api_key = ""  # Asenda oma API võtmega
 
     # Sisendfaili tee
-    input_file_path = 'katse2_sisend.csv'  # Fail peab sisaldama "Katsesõna" ja "Tähendus" veerge
-    output_file_path = 'katse2_väljund_gpt4o.csv'
+    input_file_path = 'katse2_sisend2.csv'  # Fail peab sisaldama "Katsesõna" ja "Tähendus" veerge
+    output_file_path = 'katse2_prompt2_väljund_gpt4o.csv'
 
     try:
         user_inputs = read_inputs_from_file(input_file_path)
@@ -97,4 +99,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
