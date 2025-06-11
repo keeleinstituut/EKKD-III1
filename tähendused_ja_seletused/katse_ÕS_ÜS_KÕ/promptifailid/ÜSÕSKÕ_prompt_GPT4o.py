@@ -97,8 +97,8 @@ def process_response(word):
 # Peafunktsioon
 def main():
     # Sisendfaili tee
-    input_file_path = 'katse2_sisend.csv'  # Fail peab sisaldama "Katsesõna" veergu
-    output_file_path = 'katse2_väljund_gpt4o.csv'
+    input_file_path = 'ÜSÕSKÕ_sisend.csv'  # Fail peab sisaldama "Katsesõna" veergu
+    output_file_path = 'ÜSÕSKÕ_väljund_gpt4o.csv'
 
     try:
         user_inputs = read_inputs_from_file(input_file_path)
