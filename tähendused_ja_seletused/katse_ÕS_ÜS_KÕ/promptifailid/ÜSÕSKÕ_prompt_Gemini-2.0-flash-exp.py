@@ -96,8 +96,8 @@ def process_response(word):
             return pd.Series(["Viga", f"Töötlemise viga: {e}", ""])
 
 def main():
-    input_file_path = 'katse2_sisend.csv'
-    output_file_path = 'katse2_väljund_gemini2.0flash-exp_II.csv'
+    input_file_path = 'ÜSÕSKÕ_sisend.csv'
+    output_file_path = 'ÜSÕSKÕ_väljund_gemini2.0flash-exp_II.csv'
 
     try:
         user_inputs = read_inputs_from_file(input_file_path)
