@@ -1,5 +1,4 @@
 #EKKD-III1 tähenduste töörühma päringukood, et promptida Anthropicu mudeleid.
-
 #Küsimus puudutab erinevat tüüpi definitsioonide vormistamist. 
 #Autor: Eleri Aedmaa
 
