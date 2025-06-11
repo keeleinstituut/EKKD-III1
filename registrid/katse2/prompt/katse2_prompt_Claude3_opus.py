@@ -14,15 +14,18 @@ def read_inputs_from_file(file_path):
 def get_response_for_input(api_key, word, meaning):
     client = anthropic.Client(api_key=api_key)
     response = client.messages.create(
-        model="claude-3-opus-latest",
-        system=f"Sa oled eesti keele sõnaraamatu koostaja. Eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes, võrdselt] tekstides. "
-               "Informaalsed tekstid on näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, otsekõnes. "
-               "Kui sa ei tea, siis ütle, et sa ei oska öelda. Palun põhjenda oma valikut selgelt ning esita põhjenduse järel sõna võimalikud neutraalsed sünonüümid, "
-               "kui sõna kasutatakse pigem informaalsetes tekstides. Kui sõna kasutatakse pigem neutraalsetes/formaalsetes tekstides, siis vasta 'ei kohaldu'. "
-               "Vastus peab olema järgmisel kujul:\n"
-               "Kasutus: [informaalsetes / neutraalsetes/formaalsetes / võrdselt]\n"
-               "Põhjendus: [Selgitus kasutuse kohta]\n"
-               "Sünonüümid: [Sünonüümid või 'ei kohaldu']",
+        model="claude-3-opus-20240229",
+        system=f"Oled eesti keele sõnaraamatu koostaja, kelle ülesandeks on määrata, kas sõnale või väljendile tuleks lisada registrimärgend. "
+            f"Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] registrites? "
+            "Kui sa ei oska eristust teha või see ei tule selgelt esile, siis ütle, et 'ei kohaldu'. "
+            "Informaalsed registrid on teiste seas näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, vahel ka raamatutegelaste otsekõne. "
+            "Palun põhjenda oma valikut. Lähtu vastates ainult oma treeningandmetest, mitte välisotsingutest ja andmebaasidest. "
+            f"Kui sõna '{word}' kasutatakse pigem informaalsetes registrites, siis mis on sõna '{word}' neutraalsed/formaalsed sünonüümid eesti keeles? "
+            "Kui sõna kasutatakse pigem neutraalsetes/formaalsetes registrites, siis vasta 'ei kohaldu'. "
+            "Vastus peab olema järgmisel kujul:\n"
+            "Kasutus: [informaalsetes / neutraalsetes/formaalsetes / ei kohaldu]\n"
+            "Põhjendus: [Selgitus kasutuse kohta]\n"
+            "Sünonüümid: [Sünonüümid või 'ei kohaldu']",
         messages=[{
             "role": "user",
             "content": f"Sõna: {word}\nTähendus: {meaning}"
@@ -57,8 +60,8 @@ def process_response(api_key, word, meaning):
 
 def main():
     api_key = ""
-    input_file_path = 'katse2_sisend.csv'
-    output_file_path = 'katse2_väljund_claude3_opus.csv'
+    input_file_path = 'katse2_sisend2.csv'
+    output_file_path = 'katse2_prompt3_väljund_claude3opus.csv'
 
     try:
         user_inputs = read_inputs_from_file(input_file_path)
