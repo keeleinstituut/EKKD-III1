@@ -96,7 +96,7 @@ def process_response(word):
             return pd.Series(["Viga", f"Töötlemise viga: {e}", ""])
 
 def main():
-    input_file_path = 'katse2_sisend2.csv'
+    input_file_path = 'katse2_sisend.csv'
     output_file_path = 'katse2_väljund_gemini2.0flash-exp_II.csv'
 
     try:
