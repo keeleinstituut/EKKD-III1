@@ -17,12 +17,12 @@ def get_response_for_input(client, word, meaning):
     try:
         user_prompt = (
             f"Oled eesti keele sõnaraamatu koostaja, kelle ülesandeks on määrata, kas sõnale või väljendile tuleks lisada registrimärgend. "
-            f"Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] tekstides? "
+            f"Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] registrites? "
             "Kui sa ei oska eristust teha või see ei tule selgelt esile, siis ütle, et 'ei kohaldu'. "
-            "Informaalsed tekstid on teiste seas näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, vahel ka raamatutegelaste otsekõne. "
+            "Informaalsed registrid on teiste seas näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, vahel ka raamatutegelaste otsekõne. "
             "Palun põhjenda oma valikut. Lähtu vastates ainult oma treeningandmetest, mitte välisotsingutest ja andmebaasidest. "
-            f"Kui sõna '{word}' kasutatakse pigem informaalsetes tekstides, siis mis on sõna '{word}' neutraalsed/formaalsed sünonüümid eesti keeles? "
-            "Kui sõna kasutatakse pigem neutraalsetes/formaalsetes tekstides, siis vasta 'ei kohaldu'. "
+            f"Kui sõna '{word}' kasutatakse pigem informaalsetes registrites, siis mis on sõna '{word}' neutraalsed/formaalsed sünonüümid eesti keeles? "
+            "Kui sõna kasutatakse pigem neutraalsetes/formaalsetes registrites, siis vasta 'ei kohaldu'. "
             "Vastus peab olema järgmisel kujul:\n"
             "Kasutus: [informaalsetes / neutraalsetes/formaalsetes / ei kohaldu]\n"
             "Põhjendus: [Selgitus kasutuse kohta]\n"
@@ -78,7 +78,7 @@ def main():
     client = OpenAI(api_key=api_key)  # Initialize client here
 
     input_file_path = 'katse2_sisend2.csv'
-    output_file_path = 'katse2_väljund_o1mini.csv'
+    output_file_path = 'katse2_prompt3_väljund_o1mini.csv'
 
     try:
         user_inputs = read_inputs_from_file(input_file_path)

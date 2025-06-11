@@ -8,7 +8,7 @@ import pandas as pd
 import google.generativeai as genai
 from google.api_core import exceptions
 
-# Seadista API võti
+# Seadista API võti (ära pane seda otse koodi sisse produktsioonis!)
 # Kasuta keskkonnamuutujaid või turvalisemat meetodit.
 os.environ["GOOGLE_API_KEY"] = ""  # Asenda oma API võtmega
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
@@ -23,12 +23,12 @@ def get_response_for_input(word, meaning):
     model = genai.GenerativeModel("models/gemini-2.0-flash") # Kasuta soovitud mudelit
 
     prompt = f"""Oled eesti keele sõnaraamatu koostaja, kelle ülesandeks on määrata, kas sõnale või väljendile tuleks lisada registrimärgend.
-            Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] tekstides? 
+            Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] registrites? 
             Kui sa ei oska eristust teha või see ei tule selgelt esile, siis ütle, et 'ei kohaldu'. 
-            Informaalsed tekstid on teiste seas näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, vahel ka raamatutegelaste otsekõne.
+            Informaalsed registrid on teiste seas näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, vahel ka raamatutegelaste otsekõne.
             Palun põhjenda oma valikut. Lähtu vastates ainult oma treeningandmetest, mitte välisotsingutest ja andmebaasidest. 
-            Kui sõna '{word}' kasutatakse pigem informaalsetes tekstides, siis mis on sõna '{word}' neutraalsed/formaalsed sünonüümid eesti keeles? 
-            Kui sõna kasutatakse pigem neutraalsetes/formaalsetes tekstides, siis vasta 'ei kohaldu'. 
+            Kui sõna '{word}' kasutatakse pigem informaalsetes registrites, siis mis on sõna '{word}' neutraalsed/formaalsed sünonüümid eesti keeles? 
+            Kui sõna kasutatakse pigem neutraalsetes/formaalsetes registrites, siis vasta 'ei kohaldu'. 
             Vastus peab olema järgmisel kujul:
             Kasutus: [informaalsetes / neutraalsetes/formaalsetes / ei kohaldu]
             Põhjendus: [Selgitus kasutuse kohta]
@@ -77,7 +77,7 @@ def process_response(word, meaning):
 
 def main():
     input_file_path = 'katse2_sisend2.csv'
-    output_file_path = 'katse2_prompt2_väljund_gemini2.0flash.csv'
+    output_file_path = 'katse2_prompt3_väljund_gemini2.0flash.csv'
 
     try:
         user_inputs = read_inputs_from_file(input_file_path)
