@@ -1,4 +1,4 @@
-#Kood EKKD-III1 registrite töörühma teise katse päringute tegemiseks Google'i mudelilt Gemini 2.0 Flash (exp).
+#Kood EKKD-III1 registrite töörühma teise katse päringute tegemiseks Google'i mudelilt Gemini 2.0 Flash.
 #Autor: Eleri Aedmaa
 
 import os
@@ -8,7 +8,7 @@ import pandas as pd
 import google.generativeai as genai
 from google.api_core import exceptions
 
-# Seadista API võti (ära pane seda otse koodi sisse produktsioonis!)
+# Seadista API võti
 # Kasuta keskkonnamuutujaid või turvalisemat meetodit.
 os.environ["GOOGLE_API_KEY"] = ""  # Asenda oma API võtmega
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
@@ -20,18 +20,19 @@ def read_inputs_from_file(file_path):
         raise ValueError(f"Sisendfaili lugemisel tekkis viga: {e}")
 
 def get_response_for_input(word, meaning):
-    model = genai.GenerativeModel("models/gemini-2.0-flash-exp") # Kasuta soovitud mudelit
+    model = genai.GenerativeModel("models/gemini-2.0-flash") # Kasuta soovitud mudelit
 
-    prompt = f"""Sa oled eesti keele sõnaraamatu koostaja. Eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes, võrdselt] tekstides. 
-        Informaalsed tekstid on näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, otsekõnes. 
-        Kui sa ei tea, siis ütle, et sa ei oska öelda. Palun põhjenda oma valikut selgelt ning esita põhjenduse järel sõna võimalikud neutraalsed sünonüümid, 
-        kui sõna kasutatakse pigem informaalsetes tekstides. Kui sõna kasutatakse pigem neutraalsetes/formaalsetes tekstides, siis vasta 'ei kohaldu'. 
-        Vastus peab olema järgmisel kujul:
-        Kasutus: [informaalsetes / neutraalsetes/formaalsetes / võrdselt]
-        Põhjendus: [Selgitus kasutuse kohta]
-        Sünonüümid: [Sünonüümid või 'ei kohaldu']
-        Sõna: {word}
-        Tähendus: {meaning}"""
+    prompt = f"""Oled eesti keele sõnaraamatu koostaja, kelle ülesandeks on määrata, kas sõnale või väljendile tuleks lisada registrimärgend.
+            Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] tekstides? 
+            Kui sa ei oska eristust teha või see ei tule selgelt esile, siis ütle, et 'ei kohaldu'. 
+            Informaalsed tekstid on teiste seas näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, vahel ka raamatutegelaste otsekõne.
+            Palun põhjenda oma valikut. Lähtu vastates ainult oma treeningandmetest, mitte välisotsingutest ja andmebaasidest. 
+            Kui sõna '{word}' kasutatakse pigem informaalsetes tekstides, siis mis on sõna '{word}' neutraalsed/formaalsed sünonüümid eesti keeles? 
+            Kui sõna kasutatakse pigem neutraalsetes/formaalsetes tekstides, siis vasta 'ei kohaldu'. 
+            Vastus peab olema järgmisel kujul:
+            Kasutus: [informaalsetes / neutraalsetes/formaalsetes / ei kohaldu]
+            Põhjendus: [Selgitus kasutuse kohta]
+            Sünonüümid: [Sünonüümid või 'ei kohaldu']"""
 
     response = model.generate_content(prompt)
     return response.text
@@ -76,7 +77,7 @@ def process_response(word, meaning):
 
 def main():
     input_file_path = 'katse2_sisend2.csv'
-    output_file_path = 'katse2_väljund_gemini2.0flash-exp.csv'
+    output_file_path = 'katse2_prompt2_väljund_gemini2.0flash.csv'
 
     try:
         user_inputs = read_inputs_from_file(input_file_path)
