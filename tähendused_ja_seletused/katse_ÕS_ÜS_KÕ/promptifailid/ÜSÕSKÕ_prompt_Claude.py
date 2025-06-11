@@ -79,8 +79,8 @@ def process_response(api_key, word):
 
 def main():
     api_key = ""
-    input_file_path = 'katse2_sisend.csv'
-    output_file_path = 'katse2_väljund_claude3.csv'
+    input_file_path = 'ÜSÕSKÕ_sisend.csv'
+    output_file_path = 'ÜSÕSKÕ_väljund_claude3.csv'
     
     try:
         user_inputs = read_inputs_from_file(input_file_path)
