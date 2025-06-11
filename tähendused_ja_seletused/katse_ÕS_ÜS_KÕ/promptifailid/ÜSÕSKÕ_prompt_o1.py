@@ -97,8 +97,8 @@ def main():
     
     client = OpenAI(api_key=api_key)
     
-    input_file_path = 'katse2_sisend.csv'
-    output_file_path = 'katse2_väljund_o1.csv'
+    input_file_path = 'ÜSÕSKÕ_sisend.csv'
+    output_file_path = 'ÜSÕSKÕ_väljund_o1.csv'
 
     try:
         user_inputs = read_inputs_from_file(input_file_path)
