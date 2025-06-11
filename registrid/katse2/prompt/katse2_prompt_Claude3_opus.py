@@ -59,7 +59,7 @@ def process_response(api_key, word, meaning):
         return pd.Series(["Viga", f"Töötlemise viga: {e}", ""])
 
 def main():
-    api_key = ""
+    api_key = "" #asenda oma võtmega
     input_file_path = 'katse2_sisend2.csv'
     output_file_path = 'katse2_prompt3_väljund_claude3opus.csv'
 

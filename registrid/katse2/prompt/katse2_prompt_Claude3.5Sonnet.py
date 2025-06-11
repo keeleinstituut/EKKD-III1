@@ -14,7 +14,7 @@ def read_inputs_from_file(file_path):
 def get_response_for_input(api_key, word, meaning):
     client = anthropic.Client(api_key=api_key)
     response = client.messages.create(
-        model="claude-3-opus-20240229",
+        model="claude-3-5-sonnet-20241022",
         system=f"Oled eesti keele sõnaraamatu koostaja, kelle ülesandeks on määrata, kas sõnale või väljendile tuleks lisada registrimärgend. "
             f"Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] registrites? "
             "Kui sa ei oska eristust teha või see ei tule selgelt esile, siis ütle, et 'ei kohaldu'. "
@@ -59,7 +59,7 @@ def process_response(api_key, word, meaning):
         return pd.Series(["Viga", f"Töötlemise viga: {e}", ""])
 
 def main():
-    api_key = ""
+    api_key = "" #asenda oma võtmega
     input_file_path = 'katse2_sisend2.csv'
     output_file_path = 'katse2_prompt3_väljund_claude35_sonnet.csv'
 
