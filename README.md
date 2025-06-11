@@ -1,1 +1,1 @@
-EKI teadus- ja arendusprojekti "Suurte keelemudelite rakendamine leksikograafias: uued võimalused ja väljakutsed" (EKKD-III1) avalik repositoorium. Projektinfo ETISes: https://www.etis.ee/Portal/Projects/Display/8d08c5e9-e052-4480-bffd-e102090df536
+EKI teadus- ja arendusprojekti "Suurte keelemudelite rakendamine leksikograafias: uued võimalused ja väljakutsed" (EKKD-III1) avalik repositoorium. Projekt ETISes: https://www.etis.ee/Portal/Projects/Display/8d08c5e9-e052-4480-bffd-e102090df536
