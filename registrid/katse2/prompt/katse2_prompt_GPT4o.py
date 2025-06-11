@@ -4,6 +4,7 @@
 import openai
 import csv
 import pandas as pd
+import os
 
 # Failist sisendi lugemine
 def read_inputs_from_file(file_path):
@@ -16,16 +17,16 @@ def read_inputs_from_file(file_path):
 def get_response_for_input(api_key, word, meaning):
     client = openai.OpenAI(api_key=api_key)  # OpenAI API kliendi loomine
     response = client.chat.completions.create(
-        model="gpt-4o-2024-08-06",  # Kasuta õiget mudeli nime
+        model="gpt-4o",  # Kasuta õiget mudeli nime
         messages=[
             {
                 "role": "system",
                 "content": (
-                    "Roll: Oled eesti keele sõnaraamatu koostaja, kelle ülesandeks on määrata, kas sõnale või väljendile tuleks lisada registrimärgend."
-                    "Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] tekstides? "
+                    f"Roll: Oled eesti keele sõnaraamatu koostaja, kelle ülesandeks on määrata, kas sõnale või väljendile tuleks lisada registrimärgend."
+                    f"Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] tekstides? "
                     "Kui sa ei oska eristust teha või see ei tule selgelt esile, siis ütle, et 'ei kohaldu'. "
                     "Informaalsed tekstid on teiste seas näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, vahel ka raamatutegelaste otsekõne. "
-                    "Palun põhjenda oma valikut. Lähtu vastates ainult oma treeningandmetest, mitte välisotsingutest ja välistest andmebaasidest. "
+                    "Palun põhjenda oma valikut. Lähtu vastates ainult oma treeningandmetest, mitte välisotsingutest ja välistest andmebaasidest (sh EKI sõnastikest). "
                     "Vastus peab olema järgmisel kujul:\n"
                     "Kasutus: [informaalsetes / neutraalsetes/formaalsetes / ei kohaldu]\n"
                     "Põhjendus: [Selgitus kasutuse kohta]"
@@ -40,36 +41,30 @@ def get_response_for_input(api_key, word, meaning):
         max_tokens=4096,
         top_p=1
     )
-    print(f"GPT vastus sõnale '{word}': {response.choices[0].message.content}")  # Print vastus
     return response.choices[0].message.content
 
-# Parandatud funktsioon vastuste töötlemiseks
+# Vastuste töötlemine
 def process_response(api_key, word, meaning):
     try:
         response = get_response_for_input(api_key, word, meaning)
-        lines = response.split('\n')
+        category, explanation = "", ""
 
-        # Default values
-        category = ""
-        explanation = ""
-
-        # Parse the structured response
-        for line in lines:
+        for line in response.split("\n"):
             if line.startswith("Kasutus:"):
                 category = line.replace("Kasutus:", "").strip()
             elif line.startswith("Põhjendus:"):
                 explanation = line.replace("Põhjendus:", "").strip()
 
-        return pd.Series([category, explanation])
+        return pd.Series([category or "Määramata", explanation or "Pole infot"])  # Täpselt kaks väärtust
     except Exception as e:
-        return pd.Series(["Viga", f"Töötlemise viga: {e}", ""])
+        return pd.Series(["Viga", "Pole infot"])  # Kindlusta kaks veergu
 
 # Peafunktsioon
 def main():
-    # OpenAI API võtme sisestamine
-    api_key = ""  # Asenda oma API võtmega
+    api_key = os.getenv("OPENAI_API_KEY")  # API võti keskkonnamuutujatest
+    if not api_key:
+        raise ValueError("API võti puudub! Palun määra see keskkonnamuutujates.")
 
-    # Sisendfaili tee
     input_file_path = 'ekkd_i_k6nek_6s.csv'  # Fail peab sisaldama "Katsesõna" ja "Tähendus" veerge
     output_file_path = 'ekkd_i_k6nek_6s_väljund_gpt4o.csv'
 
@@ -85,8 +80,12 @@ def main():
             axis=1
         )
 
+        # Kontrolli tulemusi enne salvestamist
+        print("Esimesed 5 rida pärast vastuste lisamist:")
+        print(user_inputs.head())
+
         # Salvesta tulemused faili
-        user_inputs.to_csv(output_file_path, index=False, quoting=csv.QUOTE_NONNUMERIC, sep='\t')
+        user_inputs.to_csv(output_file_path, index=False, quoting=csv.QUOTE_NONNUMERIC, sep=',')
         print(f"Tulemused salvestatud faili: {output_file_path}")
     except Exception as e:
         print(f"Tekkis viga: {e}")

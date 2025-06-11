@@ -15,14 +15,14 @@ def get_response_for_input(api_key, word, meaning):
     client = anthropic.Client(api_key=api_key)
     response = client.messages.create(
         model="claude-3-7-sonnet-20250219",
-        system=f"Sa oled eesti keele sõnaraamatu koostaja. Eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes, võrdselt] tekstides. "
-               "Informaalsed tekstid on näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, otsekõnes. "
-               "Kui sa ei tea, siis ütle, et sa ei oska öelda. Palun põhjenda oma valikut selgelt ning esita põhjenduse järel sõna võimalikud neutraalsed sünonüümid, "
-               "kui sõna kasutatakse pigem informaalsetes tekstides. Kui sõna kasutatakse pigem neutraalsetes/formaalsetes tekstides, siis vasta 'ei kohaldu'. "
-               "Vastus peab olema järgmisel kujul:\n"
-               "Kasutus: [informaalsetes / neutraalsetes/formaalsetes / võrdselt]\n"
-               "Põhjendus: [Selgitus kasutuse kohta]\n"
-               "Sünonüümid: [Sünonüümid või 'ei kohaldu']",
+        system=f"Oled eesti keele sõnaraamatu koostaja ja pead otsustama, kas sõnale/väljendile on vaja lisada registrimärgend. "
+            f"Kas eesti(keelset) sõna '{word}' tähenduses '{meaning}' kasutatakse pigem [informaalsetes, neutraalsetes/formaalsetes] tekstides? "
+            "Kui sa ei oska eristust teha või see ei tule selgelt esile, siis ütle, et 'ei kohaldu'. "
+            "Informaalsed tekstid on teiste seas näiteks blogid, foorumid, kommentaariumid, chativestlused, sotsiaalmeedia tekstid, trükivigasid täis tekstid, vahel ka raamatutegelaste otsekõne. "
+            "Palun põhjenda oma valikut. Lähtu vastates ainult oma treeningandmetest, mitte välisotsingutest ja välistest andmebaasidest (sh EKI sõnastikest)."
+            "Vastus peab olema järgmisel kujul:\n"
+            "Kasutus: [informaalsetes / neutraalsetes/formaalsetes / ei kohaldu]\n"
+            "Põhjendus: [Selgitus kasutuse kohta]",
         messages=[{
             "role": "user",
             "content": f"Sõna: {word}\nTähendus: {meaning}"
@@ -41,31 +41,27 @@ def process_response(api_key, word, meaning):
         
         category = ""
         explanation = ""
-        synonyms = ""
-        
         for line in lines:
             if line.startswith("Kasutus:"):
                 category = line.replace("Kasutus:", "").strip()
             elif line.startswith("Põhjendus:"):
                 explanation = line.replace("Põhjendus:", "").strip()
-            elif line.startswith("Sünonüümid:"):
-                synonyms = line.replace("Sünonüümid:", "").strip()
                 
-        return pd.Series([category, explanation, synonyms])
+        return pd.Series([category, explanation])
     except Exception as e:
         return pd.Series(["Viga", f"Töötlemise viga: {e}", ""])
 
 def main():
     api_key = ""
-    input_file_path = 'katse2_sisend.csv'
-    output_file_path = 'katse2_väljund_claude37_sonnet.csv'
+    input_file_path = 'ekkd_i_k6nek_6s.csv'
+    output_file_path = 'ekkd_i_k6nek_6s_väljund_claude3.7sonnet.csv'
 
     try:
         user_inputs = read_inputs_from_file(input_file_path)
         
         if 'Katsesõna' not in user_inputs.columns or 'Tähendus' not in user_inputs.columns:
             raise ValueError("Sisendfail peab sisaldama veerge 'Katsesõna' ja 'Tähendus'.")
-        user_inputs[['vastus', 'põhjendus', 'sünonüümid']] = user_inputs.apply(
+        user_inputs[['vastus', 'põhjendus']] = user_inputs.apply(
             lambda row: process_response(api_key, row['Katsesõna'], row['Tähendus']),
             axis=1
         )
