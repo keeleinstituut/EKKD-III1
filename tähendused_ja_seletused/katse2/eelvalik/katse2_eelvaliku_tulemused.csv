@@ -1,0 +1,721 @@
+Katsesõna;Mudel;Definitsioon;Hinnang;Kommentaar
+kasutajaskond;Llama-4-Maverick-17B-128E-Instruct;kindla teenuse, toote või vahendi kasutajate kogumik või ringkond;3;ringkond' ei sobi
+kasutajaskond;Claude 3 Opus;mingi toote, teenuse, süsteemi vms kasutajate ring;3;ring' ei sobi
+kasutajaskond;Gmeini 2.0 Flash;mingit toodet, teenust, veebisaiti vms regulaarselt kasutavate inimeste kogum;4;
+kasutajaskond;Gemini 2.5 Pro Preview;mingi toote, teenuse, süsteemi vm kõigi kasutajate kogum, hulk;4;
+kasutajaskond;GPT-4o;inimeste rühm, kes kasutab mingit teenust, toodet või süsteemi, moodustades selle tarbijaskonna või sihtrühma;4;
+peoloom;Gemini 2.5 Pro Preview;Innukas ja sage pidutseja.;4;
+peoloom;GPT-4o;inimene, kes armastab sageli pidudel käia ja neis aktiivselt osaleda, pidutsemist nautiv isik;4;
+pesakond;Llama-4-Maverick-17B-128E-Instruct;ühe ema või vanema poolt ühel ajal sünnitatud või koorunud järglased, poegade või järglaste kogu, peres elavad lapsed;2;kohmakas, vajab ümbersõnastamist
+pesakond;Gmeini 2.0 Flash;ühekorraga ilmale toodud loomapojad (enamasti imetajatel ja lindudel);4;
+pesakond;Gemini 2.5 Pro Preview;loomade (hrl imetajate, lindude) samal poegimis- või haudumiskorral ilmale tulnud järglased;4;
+pesakond;GPT-4o;lindude, loomade vm järglaste rühm, kes on sündinud samal ajal ja keda kasvatatakse koos ühe vanemapaariga;2;vanemapaar' ei tundu asjakohane
+pesakond;GPT-4.1;ühest pesast pärit loomapojad, kes on sündinud või koorunud samal ajal;2;kas ainult loomapojad?
+suitsetama;EuroLLM-9b-instruct;Tegevus, mille käigus hingatakse sisse ja välja suitsu, mis tekib tubaka või mõne muu aine põletamisel. Suitsetamine on väga kahjulik tervisele ning võib põhjustada tõsiseid terviseprobleeme, sealhulgas kopsuvähki, südame-veresoonkonna haigusi ja hingamisteede haigusi.;2;esimene lause oleks piisav, liiga pikk
+suitsetama;Claude 3.5 Sonnet;tubakat või muud suitsetatavat ainet põletades selle suitsu sisse hingama ja välja puhuma;4;
+suitsetama;Claude 3 Opus;tubakasaadusi (nt sigarette, sigareid) põletades suitsu sisse hingama ja välja puhuma;4;
+suitsetama;o3;suitsevast tubakast või muust põlevast ainest tekkivat suitsu sisse hingates tarvitama ja välja puhuma;3;natuke kohmakas
+sugupuu;Claude 3 Opus;skemaatiline kujutis, mis näitab isikute põlvnemist ja sugulust mitme põlvkonna vältel;3;oleneb tähendusest, kui skeemi kohta, siis sobib
+sugupuu;Gemini 1.5 Pro;Perekonna või suguvõsa liikmete sugulussidemeid ja põlvnemisjärjestust kujutav skemaatiline esitus, tavaliselt puu kujul.;3;oleneb tähendusest, kui skeemi kohta, siis sobib
+sugupuu;Gemini 2.5 Pro Preview;ühe isiku v suguvõsa põlvnemist (esivanemaid ja/või järglasi) kajastav skeem v loetelu;3;oleneb tähendusest, kui skeemi kohta, siis sobib
+sugupuu;GPT-4.1;ühe isiku või suguvõsa esivanemaid ja järeltulijaid põlvkondade kaupa näitav skeem või loetelu;3;oleneb tähendusest, kui skeemi kohta, siis sobib
+kategooriline;Claude 3.5 Sonnet;kindel, otsustav, tingimusteta ja vastuväiteid mittesalliv, kompromissitu;4;
+kategooriline;Claude 3 Opus;tingimusteta, vastuväiteid või erandeid välistav, täiesti kindel ja otsustav;4;
+kategooriline;Gmeini 2.0 Flash;"tingimusteta, mööndusteta, kindel, otsustav; jäik";4;
+kategooriline;o4-mini;selgesõnaliselt ja otsustavalt väljendatud, mis ei jäta ruumi kahtlusele, vahevariantidele ega eranditele;3;natuke kohmakas, vahevariant?
+personal;Llama-4-Maverick-17B-128E-Instruct;asutuse, ettevõtte vms koosseis, töötajad, töölised;4;
+personal;Claude 3.5 Sonnet;"asutuse või ettevõtte koosseisulised töötajad, kes täidavad seal ametikohustusi; töötajaskond";3;kes täidavad seal ametikohustusi' on ebaoluline info, sest töötajad ju seda teevadki
+personal;Claude 3 Opus;isiklik, isikuga seotud, isikule kuuluv või teda puudutav;1;seletab ingliskeelset tähendust
+personal;Gmeini 2.0 Flash;"mingi organisatsiooni või ettevõtte töötajate koosseis; kaadrikoosseis.";4;
+perspektiivitu;Gmeini 2.0 Flash;"tulevikuväljavaadeteta, lootusetu; arengu- või edenemisvõimaluseta";4;
+perspektiivitu;GPT-4o;tulevikuväljavaadeteta, edasise arengu või eduvõimalusteta, lootusetu või sihitu olukord või seisund;4;
+perspektiivitu;GPT-4.1;"ilma arengu-, edu- või tulevikuvõimaluseta; lootusetu";4;
+pesto;Claude 3.7 Sonnet;basiilikust, küüslaugust, parmesanist, männiseemnetest ja oliiviõlist valmistatud pastataoline kaste, mida kasutatakse pastaroogade maitsestamiseks või leivakattena;3;pastataoline kaste' tuleks ümbersõnastada
+pesto;Gemini 1.5 Pro;Itaaliast pärit kaste, mis on tavaliselt valmistatud basiilikust, küüslaugust, männipähklitest, Parmesani juustust ja oliiviõlist.;3;männipähkel on õige nimetus?
+pesto;GPT-4.1;paks, tavaliselt basiilikust, küüslaugust, oliiviõlist, seedermänniseemnetest ja juustust valmistatud külm kaste või määre;3;lisaks, et pastakaste ja Itaaliast pärit
+pesto;o4-mini;Itaalia päritolu roheline kaste, mis koosneb peenestatud basiilikulehtedest, küüslaugust, piniaseemnetest, Parmesani juustust ja oliiviõlist;3;piniaseemned võiks olla seedermänniseemned või siis piinia?
+summaarne;Llama-4-Maverick-17B-128E-Instruct;kõiki osi, hulka või kogust kokku haarav, kokkuvõtlik, üldine;4;
+summaarne;Claude 3.7 Sonnet;"kõiki osi või üksikasju kokku võttev, koondav; kogu hulka, kogumit või tervikut hõlmav";4;
+summaarne;Claude 3 Opus;kogusummat, üldkogust, tervikut hõlmav või väljendav, kokkuvõtlik, summariseeriv;4;
+transport;Llama-4-Maverick-17B-128E-Instruct;"inimeste või kaupade vedu, edasitoimetamine; selleks kasutatavad vahendid (sõidukid, teed vms)";4;
+transport;Claude 3 Opus;inimeste, kaupade või loomade ühest kohast teise toimetamine selleks ettenähtud sõidukite abil;4;
+transs;Claude 3.5 Sonnet;teadvuse muutunud seisund, milles inimene on välismaailmast osaliselt või täielikult eraldunud ning keskendunud oma sisemaailmale;4;
+transs;Claude 3.7 Sonnet;"teadvuse muutunud seisund, milles inimene on eraldunud tavapärasest reaalsustajust, olles sügavalt keskendunud või mõjutatud välisest stiimulust (nt muusikast, rütmist, meditatsioonist); ka selline seisund, mille tekitab šamaan või meedium üleloomulike jõududega suhtlemiseks";3;lühendaks, väiksed keelevead
+transs;o3;muutunud, sügavalt keskendunud teadvusseisund, kus välisärritajad tajutakse ähmaselt ja tähelepanu koondub sisemistele kogemustele või hüpnootilisele mõjutusele;4;
+akne;EuroLLM-9b-instruct;Akne on nahahaigus, mille tunnused on komedoonid (mustad täpid ja valged punktid), punased sõlmed ja mädavillid. See tekib tavaliselt puberteedieas, kui rasunäärmed toodavad rohkem rasu, mis ummistab poorid ja põhjustab põletikku ning infektsiooni. Akne võib olla põhjustatud mitmetest teguritest, sealhulgas geneetiline eelsoodumus, hormonaalsed muutused, toitumine, stress või muud põhjused. Akne on levinud nahahaigus, mida saab ravida erinevate meetoditega, nagu näiteks ravimite kasutamine, kosmeetilised protseduurid ja muud.;2;liiga pikk ja detailne
+akne;Llama-4-Maverick-17B-128E-Instruct;tavaliselt puberteedieas nahka, harvemini teisi elundeid haarav krooniline põletikuline nahahaigus, mis väljendub komedone (mustpeade), punetavate sõlmekeste, mädakoldeid sisaldavate põletikunärude ja armide tekkes;2;pikk, keelevigadega
+akne;Claude 3.5 Sonnet;noorukieas nahale, eriti näole tekkiv põletikuline haigusseisund, mis avaldub punaste muhukeste ja vistrike näol;4;
+akne;Gemini 1.5 Pro;nahal, eriti näol, seljal ja rinnal esinev põletikuline haigus, mille korral ummistuvad rasunäärmed ja tekivad vistrikud.;4;
+akne;GPT-4o;nahahaigus, mida iseloomustavad põletikulised ja mittepõletikulised vistrikud, tavaliselt näol, seljal ja rinnal, sageli seotud rasunäärmete talitlushäiretega;4;
+akne;GPT-4.1;nahahaigus, mille korral rasunäärmed ja karvafolliikulid ummistuvad ning tekivad vistrikud, komedoonid ja põletikulised sõlmed;4;
+akne;o4-mini;naha haigus, mida iseloomustab rasunäärmete ummistumine ja põletik, põhjustades vistrike, komedoonide ja mädasõlmede teket;3;mõned keelevead
+aktiivsüsi;EuroLLM-9b-instruct;Aktiivsüsi on süsinikmaterjal, mis sisaldab suurt hulka poore. Neid auke kasutatakse adsorptsiooniks - protsessiks, mille käigus aine seob ennast aktiivsöega ja eemaldatakse keskkonnast. Aktiivsütt kasutatakse tavaliselt kahjulike ainete filtreerimiseks, näiteks toiduainetes või õhufiltrides. See on ka populaarne vahend toksiinide eemaldamiseks kehast ja seedetraktis.;3;liiga pikk
+aktiivsüsi;Llama-4-Maverick-17B-128E-Instruct;suure eripinnaga käsitletud süsi, mida kasutatakse absorbendina gaaside või vedelike puhastamisel või värvainete eraldamisel lahustitest;3;natuke keeruline, nt absorbent
+aktiivsüsi;Claude 3.5 Sonnet;suure poorsusega süsinikurikas aine, mida kasutatakse mürgiste või kahjulike ainete filtreerimiseks ja sidumiseks;4;
+aktiivsüsi;Gemini 2.5 Pro Preview;suure adsorbeerimisvõimega poorne süsi;3;tahaks natuke sisukamalt
+aktiivsüsi;GPT-4.1;poorne ja väga suure pindalaga süsi, mida kasutatakse peamiselt ainete, eriti gaaside ja vedelike puhastamiseks ning filtreerimiseks;4;
+aktiivsüsi;o3;kõrge poorsuse ja väga suure adsorbeerimisvõimega, spetsiaalselt töödeldud süsi, mida kasutatakse gaaside ja vedelike puhastamiseks ning mürkainete sidumiseks;3;ei kasutaks võõrsõnu
+aktsent;Gemini 1.5 Pro;"häälduse eripära, rõhk silbil, sõnal või sõnaosal, mis eristab seda teistest; rõhuasetus, esiletõstmine";4;
+aktsent;o3;iseloomulik hääldus- ja rõhuviis, mis viitab kõneleja keele- või murdelisele päritolule, ühtlasi silbi või sõna esiletõstmiseks kasutatav hääle- või kirjamärk;4;
+debatt;Llama-4-Maverick-17B-128E-Instruct;avalik vaidlus või arutelu, kus osapooled esitavad oma seisukohti ja argumente mõne küsimuse või probleemi kohta, sageli avalikus või ametlikus keskkonnas;4;
+debatt;Claude 3.7 Sonnet;avalik arutelu, kus erinevate seisukohtadega osalejad esitavad oma argumente mingi küsimuse või probleemi kohta;4;
+debatt;Claude 3 Opus;avalik vaidlus, milles osalejad esitavad mingis küsimuses oma seisukohti ja argumente ning püüavad üksteist ümber veenda;4;
+debatt;Gemini 1.5 Pro;avalik arutelu mingil kindlal teemal, kus osalejad esitavad oma seisukohti ja argumente, sageli eesmärgiga jõuda ühisele lahendusele või veenda publikut.;4;
+debatt;Gmeini 2.0 Flash;avalik arutelu, väitlus kindlaksmääratud reeglite järgi, kus osalejad püüavad oma seisukohti argumentidega kaitsta ja teisi veenda;4;
+debatt;GPT-4o;avalik arutelu või vaidlus, kus osalejad esitavad ja kaitsevad oma seisukohti teatud teemal, eesmärgiga jõuda selgusele või veenda teisi oma vaatenurgas;4;
+deegu;EuroLLM-9b-instruct;Deeg on väikeste mõõtmetega loom, kes kuulub näriliste hulka. See on levinud kogu maailmas ja seda peetakse lemmikloomana või lemmiklinnuna. Deed saavad hästi kohaneda erinevate keskkondadega ja neid hoitakse tavaliselt puuris või akvaariumis. Deed võivad olla erinevat värvi ja kuju, kuid neil on üldiselt sarnased tunnused, nagu näiteks pikk saba ja suured kõrvad. Neid peetakse sõbralikeks loomadeks, kes suudavad hästi kohaneda inimestega ja õppida trikke tegema. Deege saab toita mitmesuguste toiduainetega, sealhulgas teravilja, puu- ja köögiviljadega.;1;pikk ja keeleliselt vigane
+deegu;Claude 3.5 Sonnet;Lõuna-Ameerika päritolu väike näriline, kes on kasvult hamstri ja merisea vahepealne, hallikas-pruuni karvaga ning pika koheva sabaga lemmikloom;4;
+deegu;Claude 3.7 Sonnet;Tšiilist pärit väike näriline, kes on hallikas-pruunikat värvi, pika saba ja suurte kõrvadega ning keda peetakse lemmikloomana;4;
+deegu;GPT-4o;väike näriline, kes kuulub okassaba-deegude sugukonda, tuntud oma sotsiaalse käitumise ja aktiivsuse poolest, sageli peetav lemmikloomana.;3;liiga detailne
+deegu;GPT-4.1;Lõuna-Ameerikast pärit väike näriline, keda sageli peetakse lemmikloomana;4;
+defekt;EuroLLM-9b-instruct;Defekt on viga või puudus, mis võib esineda materjalis, toote disainis või funktsioonis. See võib olla põhjustatud erinevatest teguritest, nagu näiteks tootmisprotsessi kõrvalekalded, kasutusvead või muud põhjused. Defekti saab tuvastada visuaalselt või spetsiaalsete testide abil. Sõltuvalt defekti raskusastmest ja tüübist võib seda parandada või asendada. Defektid võivad olla ohtlikud, kui need ei ole õigesti tuvastatud ja parandatud, näiteks tööstuslike seadmete või sõidukite puhul.;2;liiga pikk
+defekt;Claude 3.5 Sonnet;puudus, viga või rike eseme, seadme või organismi normaalses seisundis või toimimises;4;
+defekt;Claude 3 Opus;toote, detaili, materjali vms viga või puudus, mis takistab selle kasutamist ettenähtud otstarbel või vähendab selle töökindlust ja vastupidavust;4;
+defekt;Gemini 1.5 Pro;vigane koht, viga, puudus, rike;4;
+filosofeerima;Claude 3.5 Sonnet;mõtisklema ja arutlema üldiste eluliste või abstraktsete küsimuste üle, sageli teoreetiliselt ja süvitsi minnes;4;
+filosofeerima;Claude 3 Opus;mõtisklema, arutlema või targutama elulistel, sageli sügavamõttelistel teemadel, püüdes jõuda asjade ja nähtuste olemuseni;4;
+filosofeerima;Gemini 1.5 Pro;eluliste küsimuste, näiteks maailma olemuse, teadmiste, väärtuste, mõtlemise jms üle sügavuti ja üldistavalt mõtisklema, arutlema;4;
+huligaan;Gmeini 2.0 Flash;avalikku korda jämedalt rikkuv, teisi inimesi ähvardav ja kahjustav isik;3;lisaks, et ta teeb seda tahtlikult
+huligaan;GPT-4o;isik, kes käitub avalikus kohas häirivalt, korda rikkudes või vägivaldselt, sageli teistele kahju tekitades või neid ohustades;3;lisaks, et ta teeb seda tahtlikult
+huligaan;GPT-4.1;inimene, kes käitub tahtlikult pahatahtlikult, häirivalt või vägivaldselt, rikub avalikku korda ja tekitab teistele kahju või ebamugavust;4;
+huligaan;o4-mini;avalikus kohas lärmi, vägivalda või korratust tekitav isik;3;lisaks, et ta teeb seda tahtlikult
+kasutajaskond;EuroLLM-9b-instruct;"Rühm inimesi, kes kasutavad või on huvitatud mingist konkreetsest teenusest, tootest või platvormist. Näitena ""Google'i kasutajaskond"" viitab inimestele, kes kasutavad Google'i tooteid ja teenuseid.";3;
+kasutajaskond;Claude 3.5 Sonnet;mingi toote, teenuse, süsteemi või keskkonna tarbijate või rakendajate kogum;2;
+kasutajaskond;Claude 3.7 Sonnet;mingi toote, teenuse, süsteemi vms kasutajate kogum või rühm;2;
+peoloom;EuroLLM-9b-instruct;Inimene, kes armastab pidutseda ja osaleda erinevatel üritustel koos sõpradega. Peoloom on tavaliselt seltskondlik ja hea suhtleja, kellel on palju sõpru ning ta naudib pidude nautimist.;2;
+peoloom;Llama-4-Maverick-17B-128E-Instruct;seltskondlikult aktiivne, pidudel teiste lõbustamiseks nalja ja lõbu pärast erinevaid tegevusi tegev inimene;3;
+peoloom;Claude 3.7 Sonnet;inimene, kes armastab pidutseda, on seltskonnas aktiivne, lõbus ja energiline, sageli pidude keskpunkt;3;
+peoloom;Gmeini 2.0 Flash;inimene, kes naudib väga pidudel käimist ja on seal alati aktiivne ning lõbus;4;
+pesakond;Claude 3.5 Sonnet;"ühest pesakonnast sündinud või koorunud järglased; samasse pessa kuuluvad linnupojad, loomapojad vm järglased";3;
+pesakond;Gmeini 2.0 Flash;ühekorraga ilmale toodud loomapojad (enamasti imetajatel ja lindudel);2;
+pesakond;GPT-4o;lindude, loomade vm järglaste rühm, kes on sündinud samal ajal ja keda kasvatatakse koos ühe vanemapaariga;3;
+pesakond;o4-mini;samal ajal koorunud või sündinud lindude või loomade poegade rühm;4;
+suitsetama;Claude 3.7 Sonnet;tubakat, kanepit vm taimset ainet põletades tekkivat suitsu sisse hingama, tavaliselt naudingu saamiseks või harjumusest;3;
+suitsetama;Gemini 2.5 Pro Preview;põlevast ainest (hrl tubakast) suitsu suhu ja kopsudesse tõmbama;3;
+suitsetama;GPT-4o;tubakat või muid suitsetatavaid aineid sigareti, sigari, piibu vm kaudu sisse hingama ja välja puhuma;2;
+suitsetama;o3;suitsevast tubakast või muust põlevast ainest tekkivat suitsu sisse hingates tarvitama ja välja puhuma;2;
+sugupuu;EuroLLM-9b-instruct;Sugupuust saab lugeda inimese või looma esivanemate kohta. See näitab, kuidas inimesed on seotud omavahel ning oma vanemate ja vanavanematega. Näiteks võib sugupuu sisaldada teavet inimeste sünni- ja surmadaatumite, nende elukohtade ja ametite kohta.;3;rõhub skemaatilisele esitusele
+sugupuu;Claude 3.5 Sonnet;skemaatiline joonis või kirjalik ülevaade, mis näitab perekonnaliikmete omavahelisi sugulussuhteid ja põlvnemist läbi mitme põlvkonna;3;rõhub skemaatilisele esitusele
+sugupuu;Gmeini 2.0 Flash;perekonna põlvnemise skeem, esivanemate ja järeltulijate järjestikune loetelu;3;rõhub skemaatilisele esitusele
+sugupuu;o4-mini;perekonna sugulussuhete skeem, mis kujutab eri põlvkondade kaupa pärilussidemeid;3;rõhub skemaatilisele esitusele
+kategooriline;Claude 3.5 Sonnet;kindel, otsustav, tingimusteta ja vastuväiteid mittesalliv, kompromissitu;4;
+kategooriline;Gemini 2.5 Pro Preview;tingimusteta, kindel;4;
+kategooriline;GPT-4o;"kindel, tingimusteta, järeleandmatu; midagi kindlalt väitma või nõudma, ilma kahtluste või eranditeta";2;
+kategooriline;o3;igasugust kõhklust või erandit välistavalt kindel ja lõplik, tingimusteta (nt eituse, otsuse või väite puhul);3;
+personal;Claude 3.5 Sonnet;"asutuse või ettevõtte koosseisulised töötajad, kes täidavad seal ametikohustusi; töötajaskond";4;
+personal;Claude 3 Opus;isiklik, isikuga seotud, isikule kuuluv või teda puudutav;1;
+personal;Gemini 1.5 Pro;asutuse, ettevõtte või organisatsiooni kõik töötajad kokku;4;
+personal;Gmeini 2.0 Flash;"mingi organisatsiooni või ettevõtte töötajate koosseis; kaadrikoosseis.";4;
+personal;o3;mingis asutuses, ettevõttes või organisatsioonis töötavate inimeste kogum, töötajaskond;4;
+perspektiivitu;Llama-4-Maverick-17B-128E-Instruct;tulevikuväljavaateid mitteomav, lootusetu, edutuna näiv;4;
+perspektiivitu;Claude 3.5 Sonnet;tulevikuvõimalusi, edasimineku- või arenemisvõimalusi mittepakkuv, lootusetu;4;
+perspektiivitu;Gmeini 2.0 Flash;"tulevikuväljavaadeteta, lootusetu; arengu- või edenemisvõimaluseta";4;
+perspektiivitu;o3;"ÜSi definitsioon - ilma tuleviku- ja arenguväljavaadeteta, edulootuseta; lootusetu, väljavaateta";4;mainib ÜS-i
+pesto;Llama-4-Maverick-17B-128E-Instruct;basiilikust, küüslaugust, männipähklitest, Parmesani juustust ja oliiviõlist valmistatud püree või pasta Itaalia päritolu kaste toitude maitsestamiseks;2;
+pesto;Gemini 1.5 Pro;Itaaliast pärit kaste, mis on tavaliselt valmistatud basiilikust, küüslaugust, männipähklitest, Parmesani juustust ja oliiviõlist.;4;
+summaarne;EuroLLM-9b-instruct;Summaarne tähendab lühikokkuvõtet või kokkuvõtlikku ülevaadet mingist teemast, sündmusest või olukorrast. See võib viidata sellele, et andmeid on esitatud lihtsustatud ja kiire vormis, ilma üksikasjadeta. Näiteks võib öelda, et aruanne on tehtud summaariliselt, kui see sisaldab ainult peamisi fakte ja mõjutusi, kuid mitte kõiki üksikasju.;2;
+summaarne;Gmeini 2.0 Flash;kokkuvõtlik, üldistav, peamisi punkte esile toov;4;
+summaarne;Gemini 2.5 Pro Preview;"Kogusummat esitav või moodustav; koond-; üld-";2;
+summaarne;o4-mini;"mitme osa või näitaja summana moodustuv või nii esitatud; kokkuvõtlikult kogu hulka või üldpilti näitav";4;
+transport;EuroLLM-9b-instruct;Transport viitab inimeste või kaupade vedamisele ühest kohast teise. See hõlmab mitmesuguseid transpordiliike, nagu autotransport, rongitransport, õhutransport, veetransport ja muud. Transporti kasutatakse tavaliselt selleks, et inimesed saaksid liikuda ühest punktist teise või et kaubad jõuaksid sihtkohta.;2;
+transport;Llama-4-Maverick-17B-128E-Instruct;"inimeste või kaupade vedu, edasitoimetamine; selleks kasutatavad vahendid (sõidukid, teed vms)";4;
+transport;Claude 3.5 Sonnet;inimeste, kaupade või muu vedu ühest kohast teise erinevate liiklusvahendite abil;4;
+transport;Claude 3.7 Sonnet;inimeste, kaupade, materjalide vm liikumine või vedamine ühest kohast teise, kasutades selleks erinevaid liiklusvahendeid või -viise;3;
+transport;Claude 3 Opus;inimeste, kaupade või loomade ühest kohast teise toimetamine selleks ettenähtud sõidukite abil;3;
+transport;Gemini 1.5 Pro;ÜSi definitsioon - inimeste, kaupade või muu sellise ühest kohast teise viimine või toimetamine.;4;mainib ÜS-i
+transs;EuroLLM-9b-instruct;Transs on seisund, kus inimene on piiratud teadvusega või täielikult teadvuse kaotanud. See võib olla põhjustatud mitmetest teguritest, nagu näiteks unetus, vaimne häire või muud põhjused. Kui inimesel on transis, ei pruugi ta reageerida välistele stiimulitele ja tema tegevus on piiratud. Transs on erinev seisund võrreldes tavalise une või teadvusekaotusega.;3;
+transs;Llama-4-Maverick-17B-128E-Instruct;"teadvuseseisund, mida iseloomustab kõrgenenud vastuvõtlikkus sisendusele või oma tegevuse ja ümbruse suhtes vähese teadlikkusega sooritatavad toimingud; hüpnootiline uni või sellega sarnane seisund";2;
+transs;Claude 3.7 Sonnet;"teadvuse muutunud seisund, milles inimene on eraldunud tavapärasest reaalsustajust, olles sügavalt keskendunud või mõjutatud välisest stiimulust (nt muusikast, rütmist, meditatsioonist); ka selline seisund, mille tekitab šamaan või meedium üleloomulike jõududega suhtlemiseks";3;
+transs;GPT-4o;teadvuse seisund, kus inimene on sügavalt keskendunud, sageli välismaailmast eraldunud ja tavapärasest erinevas vaimses seisundis;4;
+transs;GPT-4.1;Määramata definitsioon;1;
+akne;Claude 3.7 Sonnet;naha rasunäärmete põletikuline haigus, mis avaldub näol, rinnal või seljal esinevate vistrike või punnilistena;3;
+akne;Claude 3 Opus;naha rasunäärmete krooniline põletikuline haigus, mille korral tekivad näole, kaelale, seljale ja rinnale vistrikud, sõlmekesed või paised;4;
+akne;Gmeini 2.0 Flash;peamiselt näo, selja ja rinna nahal esinevad põletikulised vistrikud ja punnid;4;
+akne;o4-mini;naha haigus, mida iseloomustab rasunäärmete ummistumine ja põletik, põhjustades vistrike, komedoonide ja mädasõlmede teket;3;
+aktiivsüsi;EuroLLM-9b-instruct;Aktiivsüsi on süsinikmaterjal, mis sisaldab suurt hulka poore. Neid auke kasutatakse adsorptsiooniks - protsessiks, mille käigus aine seob ennast aktiivsöega ja eemaldatakse keskkonnast. Aktiivsütt kasutatakse tavaliselt kahjulike ainete filtreerimiseks, näiteks toiduainetes või õhufiltrides. See on ka populaarne vahend toksiinide eemaldamiseks kehast ja seedetraktis.;3;
+aktiivsüsi;Claude 3.7 Sonnet;poorne süsinikurikas materjal, mida kasutatakse mürgiste ainete või ebameeldivate lõhnade imamiseks, filtreerimiseks või puhastamiseks;4;
+aktiivsüsi;Gemini 1.5 Pro;poorne süsiniku vorm, millel on suur pindala ja mis seetõttu suudab tõhusalt adsorbeerida gaase, vedelikke ja lahustunud aineid.;3;
+aktsent;Gemini 2.5 Pro Preview;võõrkeele v murde mõjuline hääldusviis;3;
+aktsent;GPT-4o;kõneviisile iseloomulik hääldus, mis viitab kõneleja keelelisele või piirkondlikule taustale, rõhuasetus sõnades või lausetes, mis võib eristada kõnelejat teistest keelekasutajatest.;3;
+aktsent;GPT-4.1;Määramata definitsioon;1;
+debatt;Claude 3.5 Sonnet;avalik arutelu või vaidlus kindlal teemal, kus eri seisukohti esindavad pooled esitavad oma argumente ja vastuargumente;4;
+debatt;o4-mini;kahe või enama osapoole vahel toimuv argumenteeritud arutelu, kus vahetatakse ja põhjendatakse erinevaid seisukohti;4;
+deegu;Claude 3.7 Sonnet;Tšiilist pärit väike näriline, kes on hallikas-pruunikat värvi, pika saba ja suurte kõrvadega ning keda peetakse lemmikloomana;3;
+deegu;Gemini 2.5 Pro Preview;väike Tšiili päritolu näriline, keda sageli peetakse lemmikloomana;4;
+deegu;o4-mini;poolvedel või pastataoline jahu- ja vedelikusegu, mida sõtkutakse ja vormitakse taignana erinevate pagari- ja kondiitritoodete valmistamiseks;1;
+defekt;EuroLLM-9b-instruct;Defekt on viga või puudus, mis võib esineda materjalis, toote disainis või funktsioonis. See võib olla põhjustatud erinevatest teguritest, nagu näiteks tootmisprotsessi kõrvalekalded, kasutusvead või muud põhjused. Defekti saab tuvastada visuaalselt või spetsiaalsete testide abil. Sõltuvalt defekti raskusastmest ja tüübist võib seda parandada või asendada. Defektid võivad olla ohtlikud, kui need ei ole õigesti tuvastatud ja parandatud, näiteks tööstuslike seadmete või sõidukite puhul.;2;
+defekt;Claude 3.7 Sonnet;ese, seade, toode vm, millel on puudus, viga või rike, mis takistab selle normaalset toimimist või kasutamist;1;
+defekt;Claude 3 Opus;toote, detaili, materjali vms viga või puudus, mis takistab selle kasutamist ettenähtud otstarbel või vähendab selle töökindlust ja vastupidavust;3;
+defekt;GPT-4.1;mingi eseme, seadme, organismi vms puudus, viga või kahjustus, mis takistab selle normaalset toimimist või vähendab väärtust;3;
+defekt;o4-mini;eseme, seadme või muu objekti terviklikkuses või toimimises esinev viga või rike;4;
+filosofeerima;Llama-4-Maverick-17B-128E-Instruct;sügavama mõtte või tähenduse otsimiseks või leidmiseks mõtlema, arutlema või vestlema, sageli abstraktselt või põhimõtteliselt.;4;
+filosofeerima;Claude 3.7 Sonnet;mõtisklema, arutlema filosoofiliste küsimuste üle, püüdes jõuda sügavama arusaamani maailma, inimese või elu olemusest;3;
+filosofeerima;Gmeini 2.0 Flash;mõtlema ja arutlema sügavate, üldiste küsimuste üle, eriti elu, teadmiste, moraali ja olemise kohta;4;
+filosofeerima;GPT-4o;sügavamõtteliselt arutlema, mõtisklema elu, maailma või abstraktsete teemade üle, sageli teoreetilises või spekulatiivses võtmes;4;
+filosofeerima;GPT-4.1;filosoofilisi mõtteid arendama või arutlema, abstraktseid ja üldisi küsimusi mõtisklevalt käsitlema;3;
+filosofeerima;o3;abstraktselt ja teoreetiliselt arutlema ning mõtisklema eluküsimuste, maailma olemuse jms üle;2;
+huligaan;Claude 3 Opus;ühiskondlikku korda rikkuv, teisi inimesi tülitav või neile kahju tekitav isik;4;
+huligaan;Gemini 1.5 Pro;vägivaldne ja korrarikkumisele kalduv isik, kes tekitab avalikus kohas pahandusi ja häirib avalikku korda.;3;
+huligaan;Gmeini 2.0 Flash;avalikku korda jämedalt rikkuv, teisi inimesi ähvardav ja kahjustav isik;4;
+huligaan;GPT-4.1;inimene, kes käitub tahtlikult pahatahtlikult, häirivalt või vägivaldselt, rikub avalikku korda ja tekitab teistele kahju või ebamugavust;2;
+huligaan;o3;avalikus kohas üldtunnustatud käitumisnorme rikkuv ja lärmi, vandaalitsemist või vägivalda põhjustav korrarikkuja;2;
+kasutajaskond;Gmeini 2.0 Flash;mingit toodet, teenust, veebisaiti vms regulaarselt kasutavate inimeste kogum;4;
+kasutajaskond;GPT-4o;inimeste rühm, kes kasutab mingit teenust, toodet või süsteemi, moodustades selle tarbijaskonna või sihtrühma;3;
+kasutajaskond;GPT-4.1;inimeste rühm, kes kasutab mingit teenust, toodet või süsteemi;4;
+kasutajaskond;o3;ühte ja sedasama toodet, teenust, süsteemi vms kasutavate inimeste kogum;4;
+peoloom;Gemini 1.5 Pro;Seltskondlik ja lõbus inimene, kes naudib pidusid ja oskab luua head meeleolu.;4;
+peoloom;Gmeini 2.0 Flash;inimene, kes naudib väga pidudel käimist ja on seal alati aktiivne ning lõbus;3;
+peoloom;GPT-4.1;inimene, kes armastab sageli pidudel käia ja neis aktiivselt osaleda;3;
+pesakond;EuroLLM-9b-instruct;"Rühm loomi, kes on sündinud samast emasloomast või kuuluvad sama rühma. Näiteks ""koerasportlase pesakond"" viitab kutsikatele, kelle sünnitas koer ja kes on mõeldud kasvatamiseks ning kasutamiseks teatud spordialadel.";2;
+pesakond;Llama-4-Maverick-17B-128E-Instruct;ühe ema või vanema poolt ühel ajal sünnitatud või koorunud järglased, poegade või järglaste kogu, peres elavad lapsed;3;
+pesakond;Gemini 1.5 Pro;ÜSi definitsioon - üheaegselt, tavaliselt ühest loomast sündinud poegade rühm;3;
+pesakond;o3;ühe ja sama emase korraga sündinud või koorunud järglaste kogum;4;
+suitsetama;Claude 3.5 Sonnet;tubakat või muud suitsetatavat ainet põletades selle suitsu sisse hingama ja välja puhuma;4;
+suitsetama;Claude 3 Opus;tubakasaadusi (nt sigarette, sigareid) põletades suitsu sisse hingama ja välja puhuma;3;
+suitsetama;Gmeini 2.0 Flash;põletatavaid (tubaka)tooteid (sigaretti, piipu jne) sisse hingama, et omandada nikotiinist või muudest ainetest tekitatud mõnu;3;
+suitsetama;GPT-4o;tubakat või muid suitsetatavaid aineid sigareti, sigari, piibu vm kaudu sisse hingama ja välja puhuma;4;
+sugupuu;EuroLLM-9b-instruct;Sugupuust saab lugeda inimese või looma esivanemate kohta. See näitab, kuidas inimesed on seotud omavahel ning oma vanemate ja vanavanematega. Näiteks võib sugupuu sisaldada teavet inimeste sünni- ja surmadaatumite, nende elukohtade ja ametite kohta.;1;
+sugupuu;Llama-4-Maverick-17B-128E-Instruct;perekonna liikmete põlvnemist ja nendevahelisi sugulussuhteid näitlikult kujutav skeem või tabel;4;
+sugupuu;Claude 3.7 Sonnet;skemaatiline joonis või kirjalik ülevaade, mis kujutab perekonna või suguvõsa liikmete omavahelisi sugulussuhteid mitme põlvkonna lõikes;3;
+sugupuu;Gmeini 2.0 Flash;perekonna põlvnemise skeem, esivanemate ja järeltulijate järjestikune loetelu;4;
+sugupuu;GPT-4.1;ühe isiku või suguvõsa esivanemaid ja järeltulijaid põlvkondade kaupa näitav skeem või loetelu;4;
+sugupuu;o3;põlvkondade kaupa järjestatud ülevaade inimese või perekonna esivanematest ja järeltulijatest, sageli graafilise skeemi või loeteluna kujutatud põlvnevusjärjestus;3;
+kategooriline;Gemini 2.5 Pro Preview;tingimusteta, kindel;3;
+kategooriline;GPT-4.1;ilma kahtluse või kõhkluseta, tingimusteta ja kindlalt väitev või otsustav;4;
+kategooriline;o3;igasugust kõhklust või erandit välistavalt kindel ja lõplik, tingimusteta (nt eituse, otsuse või väite puhul);3;
+personal;EuroLLM-9b-instruct;Personal viitab töötajatele ettevõttes, asutuses või organisatsioonis. See hõlmab kõiki töötajaid, alates juhtidest kuni tavatöötajateni, kes on osa organisatsiooni struktuurist ja aitavad kaasa selle toimimisele.;1;
+personal;Claude 3 Opus;isiklik, isikuga seotud, isikule kuuluv või teda puudutav;1;
+personal;GPT-4.1;ühes asutuses, ettevõttes vm töötavad inimesed tervikuna;4;
+personal;o4-mini;konkreetse asutuse, ettevõtte või organisatsiooni töötajatest koosnev kogu;4;
+perspektiivitu;Llama-4-Maverick-17B-128E-Instruct;tulevikuväljavaateid mitteomav, lootusetu, edutuna näiv;4;
+perspektiivitu;Claude 3.5 Sonnet;tulevikuvõimalusi, edasimineku- või arenemisvõimalusi mittepakkuv, lootusetu;4;
+perspektiivitu;Claude 3 Opus;tulevikuväljavaateid mittepakkuv, edasiminekuvõimalusteta, lootusetu;4;
+pesto;Llama-4-Maverick-17B-128E-Instruct;basiilikust, küüslaugust, männipähklitest, Parmesani juustust ja oliiviõlist valmistatud püree või pasta Itaalia päritolu kaste toitude maitsestamiseks;3;
+pesto;Claude 3.5 Sonnet;basiilikust, küüslaugust, oliiviõlist, parmesani juustust ja männiseemnetest valmistatud pastataoline kaste või määre;3;
+pesto;Claude 3.7 Sonnet;basiilikust, küüslaugust, parmesanist, männiseemnetest ja oliiviõlist valmistatud pastataoline kaste, mida kasutatakse pastaroogade maitsestamiseks või leivakattena;2;
+pesto;Claude 3 Opus;Itaalia päritolu rohelist värvi kaste, mille põhikoostisosad on basiilik, oliiviõli, küüslauk, parmesani juust ja seedermänniseemned;3;
+pesto;Gmeini 2.0 Flash;itaaliapärane basiilikust, küüslaugust, seedermänniseemnetest, Parmesani juustust ja oliiviõlist valmistatud roheline kaste, mida kasutatakse peamiselt pasta, aga ka teiste toitude maitsestamiseks;2;
+pesto;Gemini 2.5 Pro Preview;peamiselt basiilikust, pähklitest v seemnetest, küüslaugust, juustust ja õlist valmistatud paks (hrl roheline) kaste v maitselisand;3;
+pesto;o3;Itaaliast pärit paks toorelt kokku hõõrutud basiiliku, küüslaugu, pähklite, oliiviõli ja kõva juustu baasil valmistatud maitse- ehk ürdikaste;2;
+summaarne;Llama-4-Maverick-17B-128E-Instruct;kõiki osi, hulka või kogust kokku haarav, kokkuvõtlik, üldine;3;
+summaarne;GPT-4.1;kokkuvõtlik, kõiki osi või andmeid hõlmav ja üldistav;3;
+summaarne;o3;üksikasju eritlemata tervikuna, kogusummana arvestatav või esitatav;4;
+transport;EuroLLM-9b-instruct;Transport viitab inimeste või kaupade vedamisele ühest kohast teise. See hõlmab mitmesuguseid transpordiliike, nagu autotransport, rongitransport, õhutransport, veetransport ja muud. Transporti kasutatakse tavaliselt selleks, et inimesed saaksid liikuda ühest punktist teise või et kaubad jõuaksid sihtkohta.;1;
+transport;Gemini 1.5 Pro;ÜSi definitsioon - inimeste, kaupade või muu sellise ühest kohast teise viimine või toimetamine.;2;
+transport;Gmeini 2.0 Flash;inimeste või kaupade toimetamine ühest kohast teise, veondus;3;
+transport;Gemini 2.5 Pro Preview;kaupade või reisijate edasitoimetamine ühest kohast teise;3;
+transport;o3;inimeste, kaupade või muude esemete vedamine ühest kohast teise, samuti sellega seotud korraldus ja teenindus;3;
+transs;Claude 3.7 Sonnet;"teadvuse muutunud seisund, milles inimene on eraldunud tavapärasest reaalsustajust, olles sügavalt keskendunud või mõjutatud välisest stiimulust (nt muusikast, rütmist, meditatsioonist); ka selline seisund, mille tekitab šamaan või meedium üleloomulike jõududega suhtlemiseks";2;
+transs;Gmeini 2.0 Flash;"teadvuse muundunud seisund, kus välismaailmaga kontakt on nõrgenenud ja keskendutakse sisemistele aistingutele, mõtetele vms; ekstaasitaoline seisund";2;
+transs;Gemini 2.5 Pro Preview;eriline teadvusseisund, milles reaktsioon välisärritustele on nõrgenenud või puudub;2;
+akne;Llama-4-Maverick-17B-128E-Instruct;tavaliselt puberteedieas nahka, harvemini teisi elundeid haarav krooniline põletikuline nahahaigus, mis väljendub komedone (mustpeade), punetavate sõlmekeste, mädakoldeid sisaldavate põletikunärude ja armide tekkes;2;
+akne;Gemini 1.5 Pro;nahal, eriti näol, seljal ja rinnal esinev põletikuline haigus, mille korral ummistuvad rasunäärmed ja tekivad vistrikud.;2;
+akne;Gmeini 2.0 Flash;peamiselt näo, selja ja rinna nahal esinevad põletikulised vistrikud ja punnid;3;
+akne;Gemini 2.5 Pro Preview;vistrikke tekitav rasunäärmete põletikuline nahahaigus;3;
+aktiivsüsi;GPT-4.1;poorne ja väga suure pindalaga süsi, mida kasutatakse peamiselt ainete, eriti gaaside ja vedelike puhastamiseks ning filtreerimiseks;3;
+aktiivsüsi;o4-mini;"kõrgel temperatuuril töötlemise teel saadav mikropoorne süsinikmaterjal, mille suured pindalad võimaldavad gaasidest ja vedelikest saasteaineid neelata; kasutatakse filtrimaterjalina ja puhastusainena";2;
+aktiivsüsi;o3;kõrge poorsuse ja väga suure adsorbeerimisvõimega, spetsiaalselt töödeldud süsi, mida kasutatakse gaaside ja vedelike puhastamiseks ning mürkainete sidumiseks;2;
+aktsent;EuroLLM-9b-instruct;Aktsent on helivärv, mida inimene kasutab teatud keele rääkimiseks või hääldamisel konkreetses piirkonnas. See sisaldab kõiki individuaalseid helisid ja rütme, mis eristavad kõnelejat teistest. Aktsent võib olla iseloomulik teatud piirkonnale, rahvale või rahvusele. Näiteks on ameerika inglise aktsent erinev briti inglise aktsendist. Samuti võivad inimesed rääkida oma kodumaal omapärase aktsendiga, kuid võõrastes piirkondades võivad nad omandada uue aktsendi.;1;
+aktsent;Llama-4-Maverick-17B-128E-Instruct;"sõna või lause heli eriliselt rõhutatud või tugevalt esiletõstetav hääldamine; rõhk; teatud murdele või võõrkeele häälduskujule iseloomulik hääldusviis või selle avaldumine kõnes";2;
+aktsent;Claude 3.7 Sonnet;"kõnes avalduvad häälduslikud iseärasused, mis on tingitud kõneleja emakeelest või murdest; rõhk, rõhuasetus";3;
+aktsent;GPT-4.1;Määramata definitsioon;1;
+aktsent;o4-mini;sõna või fraasi silp, mille hääldamisel on teistega võrreldes tugevam rõhk, või kõneleja murde- või võõrkeelset päritolu paljastav hääldusomadus;2;
+debatt;EuroLLM-9b-instruct;Debatt on avalik arutelu või vaidlus, mille eesmärk on kaaluda erinevaid seisukohti ja argumente mõne küsimuse või probleemi kohta. Osalejad võivad esitada oma arvamusi ja väiteid ning neid kaitsta, kasutades fakte, statistikat, näiteid ja muid tõendeid. Debatit juhib tavaliselt moderaator, kes korraldab arutelu ja tagab selle reeglitele vastavuse. Debatt võib toimuda kas kirjalikult või suuliselt, näiteks ülekandena või otseülekandena. Debati eesmärk on tavaliselt saavutada üksmeel või otsus, kuid see võib olla ka meelelahutuslik eesmärk.;1;
+debatt;Claude 3 Opus;avalik vaidlus, milles osalejad esitavad mingis küsimuses oma seisukohti ja argumente ning püüavad üksteist ümber veenda;3;
+debatt;GPT-4o;avalik arutelu või vaidlus, kus osalejad esitavad ja kaitsevad oma seisukohti teatud teemal, eesmärgiga jõuda selgusele või veenda teisi oma vaatenurgas;3;
+debatt;GPT-4.1;avalik arutelu mingi küsimuse või probleemi üle, kus eri seisukohtade esindajad esitavad oma argumente ja vastuväiteid;3;
+debatt;o4-mini;kahe või enama osapoole vahel toimuv argumenteeritud arutelu, kus vahetatakse ja põhjendatakse erinevaid seisukohti;3;
+deegu;Gmeini 2.0 Flash;Lõuna-Ameerikast pärit väike näriline (Octodon degus), keda peetakse ka lemmikloomana;3;
+deegu;Gemini 2.5 Pro Preview;väike Tšiili päritolu näriline, keda sageli peetakse lemmikloomana;4;
+deegu;o4-mini;poolvedel või pastataoline jahu- ja vedelikusegu, mida sõtkutakse ja vormitakse taignana erinevate pagari- ja kondiitritoodete valmistamiseks;1;
+defekt;Claude 3.5 Sonnet;puudus, viga või rike eseme, seadme või organismi normaalses seisundis või toimimises;3;
+defekt;Gemini 1.5 Pro;vigane koht, viga, puudus, rike;3;
+defekt;Gmeini 2.0 Flash;mingi puudus, viga või rike, mis teeb midagi ebatäiuslikuks või töökorrast välja viib;3;
+defekt;GPT-4o;puudus või viga, mis rikub terviklikkust, funktsionaalsust või välimust;4;
+defekt;o4-mini;eseme, seadme või muu objekti terviklikkuses või toimimises esinev viga või rike;4;
+defekt;o3;ettenähtud või normaalsetest omadustest kõrvalekalduv puudus, viga või kahjustus, mis vähendab eseme, organismi, seadme vms terviklikkust, välimust või toimimist;3;
+filosofeerima;EuroLLM-9b-instruct;Filosofeerima on tegevus, mille käigus inimesed arutavad erinevaid filosoofilisi teemasid, nagu näiteks elu mõte, inimloomuse olemus, teadmiste päritolu ja tähendus. See võib hõlmata mitmesuguseid küsimusi ja probleeme, mis puudutavad maailma ja inimese kohta selles maailmas. Filosofeerimine võib toimuda kas suuliselt või kirjalikult, näiteks kirjade vahetuses, foorumites või muudes suhtluskeskkondades. Filosofeerimist peetakse sageli meeldivaks ja huvitavaks tegevuseks, mis aitab inimestel paremini mõista ennast ja maailma enda ümber. See võib samuti aidata arendada kriitilist mõtlemist, analüüsivõimet ja loovust.;1;
+filosofeerima;Gemini 1.5 Pro;eluliste küsimuste, näiteks maailma olemuse, teadmiste, väärtuste, mõtlemise jms üle sügavuti ja üldistavalt mõtisklema, arutlema;3;
+huligaan;EuroLLM-9b-instruct;Huligaan on isik, kes teeb ebaseaduslikke või ebasoovitavaid asju, näiteks murrab seadusi, tekitab konflikte teiste inimestega või kahjustab vara. See võib hõlmata mitmesuguseid tegevusi, nagu näiteks vandalism, vargus, vägivald või muu kuritegelik käitumine. Huligaanid võivad olla nii üksikisikud kui ka rühmitused, kes tegutsevad koos eesmärgiga kahjustada teisi inimesi või ühiskonda. Hulklemist peetakse tavaliselt negatiivseks ja ebaseaduslikuks tegevuseks, mis võib põhjustada tõsiseid tagajärgi nii huligaanile endale kui ka teistele inimestele. Huligaanid võivad olla ka ohtlikud, kuna nad võivad kasutada vägivalda või muid ebaseaduslikke meetodeid oma eesmärkide saavutamiseks.;1;
+huligaan;Claude 3.7 Sonnet;avalikus kohas teisi häiriv, ühiskondlikke norme eirav ja korda rikkuv isik, kes käitub jõhkralt, agressiivselt või lugupidamatult;3;
+huligaan;Gmeini 2.0 Flash;avalikku korda jämedalt rikkuv, teisi inimesi ähvardav ja kahjustav isik;4;
+kasutajaskond;Llama-4-Maverick-17B-128E-Instruct;kindla teenuse, toote või vahendi kasutajate kogumik või ringkond;2;
+kasutajaskond;Claude 3.5 Sonnet;mingi toote, teenuse, süsteemi või keskkonna tarbijate või rakendajate kogum;3;
+kasutajaskond;Gemini 1.5 Pro;mingi teenuse, toote või süsteemi kasutajate kogum;4;
+kasutajaskond;Gemini 2.5 Pro Preview;mingi toote, teenuse, süsteemi vm kõigi kasutajate kogum, hulk;4;
+kasutajaskond;o3;ühte ja sedasama toodet, teenust, süsteemi vms kasutavate inimeste kogum;4;
+peoloom;Claude 3.7 Sonnet;inimene, kes armastab pidutseda, on seltskonnas aktiivne, lõbus ja energiline, sageli pidude keskpunkt;3;
+peoloom;Claude 3 Opus;pidutsemist, lõbutsemist ja alkoholi tarbimist liialduseni viiv isik;2;
+peoloom;Gemini 1.5 Pro;Seltskondlik ja lõbus inimene, kes naudib pidusid ja oskab luua head meeleolu.;2;
+peoloom;Gemini 2.5 Pro Preview;Innukas ja sage pidutseja.;3;
+peoloom;GPT-4o;inimene, kes armastab sageli pidudel käia ja neis aktiivselt osaleda, pidutsemist nautiv isik;3;
+peoloom;GPT-4.1;inimene, kes armastab sageli pidudel käia ja neis aktiivselt osaleda;3;
+pesakond;Llama-4-Maverick-17B-128E-Instruct;ühe ema või vanema poolt ühel ajal sünnitatud või koorunud järglased, poegade või järglaste kogu, peres elavad lapsed;2;
+pesakond;Claude 3.5 Sonnet;"ühest pesakonnast sündinud või koorunud järglased; samasse pessa kuuluvad linnupojad, loomapojad vm järglased";3;
+pesakond;Claude 3.7 Sonnet;"ühest pesakonnast pärit loomade, lindude või putukate järglaste kogum; ka lasterohke pere kohta";3;
+pesakond;Claude 3 Opus;ühel sigimisperioodil sündinud (linnu)poegade rühm;3;
+pesakond;o4-mini;samal ajal koorunud või sündinud lindude või loomade poegade rühm;3;
+suitsetama;Llama-4-Maverick-17B-128E-Instruct;tubakat või muud suitsetamiseks mõeldud ainet põletades sisse hingama;4;
+suitsetama;Gmeini 2.0 Flash;põletatavaid (tubaka)tooteid (sigaretti, piipu jne) sisse hingama, et omandada nikotiinist või muudest ainetest tekitatud mõnu;3;
+suitsetama;Gemini 2.5 Pro Preview;põlevast ainest (hrl tubakast) suitsu suhu ja kopsudesse tõmbama;3;
+kategooriline;Llama-4-Maverick-17B-128E-Instruct;vaieldamatut, absoluutset või üldkehtivat väidet, seisukohta või otsust väljendav või kujutav;3;
+kategooriline;Claude 3.5 Sonnet;kindel, otsustav, tingimusteta ja vastuväiteid mittesalliv, kompromissitu;3;
+kategooriline;Gemini 1.5 Pro;täiesti kindel, tingimusteta, kahtlust mitte võimaldav;3;
+kategooriline;Gmeini 2.0 Flash;"tingimusteta, mööndusteta, kindel, otsustav; jäik";3;
+kategooriline;Gemini 2.5 Pro Preview;tingimusteta, kindel;2;
+personal;Claude 3.7 Sonnet;"asutuse, ettevõtte vm organisatsiooni töötajaskond, ametnikud või teenistujad; isiklik, üksikisikut puudutav või temale kuuluv";2;esimene pool enne semikat sobib, teine on ju puhas ingliskeelse sõna tõlge
+personal;Gemini 2.5 Pro Preview;asutuse, ettevõtte vms töötajaskond v. teenistujad;3;
+personal;GPT-4o;töötajaskond, mingi asutuse, ettevõtte vms teenistuses olevad inimesed, kes täidavad teatud ülesandeid ja kohustusi;3;
+personal;o4-mini;konkreetse asutuse, ettevõtte või organisatsiooni töötajatest koosnev kogu;3;
+perspektiivitu;EuroLLM-9b-instruct;Perspektiivitu tähendab midagi, mis ei näe tulevikus head tulemust või edu. See võib viidata tegevusele, projektile või olukorrale, mis tõenäoliselt ei too oodatavat kasu või positiivseid tulemusi. Näiteks võib öelda, et mõni äriprojekt on perspektiivitu, kui sellel pole piisavalt tugevaid eeldusi edukaks toimimiseks.;2;
+perspektiivitu;Claude 3.7 Sonnet;tulevikuväljavaateta, edasise arengu või edu võimaluseta, lootusetu;4;
+perspektiivitu;Claude 3 Opus;tulevikuväljavaateid mittepakkuv, edasiminekuvõimalusteta, lootusetu;4;
+perspektiivitu;Gmeini 2.0 Flash;"tulevikuväljavaadeteta, lootusetu; arengu- või edenemisvõimaluseta";3;
+perspektiivitu;GPT-4o;tulevikuväljavaadeteta, edasise arengu või eduvõimalusteta, lootusetu või sihitu olukord või seisund;2;deff on substantiivi oma
+pesto;EuroLLM-9b-instruct;Pesto on Itaalia päritolu maitseaine, mis põhineb basiilikulehedel, küüslaugul, oliiviõli, pinoleemutteritel (kõrvitsaseemned) ja sool. Seda kasutatakse tavaliselt pasta, risotto või teiste roogade maitsestamiseks. Pesto on populaarne kogu maailmas ja seda saab kasutada erinevat tüüpi toitude maitsestamiseks.;2;
+pesto;Claude 3.5 Sonnet;basiilikust, küüslaugust, oliiviõlist, parmesani juustust ja männiseemnetest valmistatud pastataoline kaste või määre;3;
+pesto;Claude 3.7 Sonnet;basiilikust, küüslaugust, parmesanist, männiseemnetest ja oliiviõlist valmistatud pastataoline kaste, mida kasutatakse pastaroogade maitsestamiseks või leivakattena;2;
+pesto;Gemini 2.5 Pro Preview;peamiselt basiilikust, pähklitest v seemnetest, küüslaugust, juustust ja õlist valmistatud paks (hrl roheline) kaste v maitselisand;3;
+pesto;GPT-4o;Itaalia päritolu paks kaste, mis valmistatakse tavaliselt basiilikust, küüslaugust, oliiviõlist, seedermänniseemnetest ja juustust, ning mida kasutatakse toitude maitsestamiseks või lisandina pastaroogadele;2;
+pesto;o3;Itaaliast pärit paks toorelt kokku hõõrutud basiiliku, küüslaugu, pähklite, oliiviõli ja kõva juustu baasil valmistatud maitse- ehk ürdikaste;2;
+summaarne;Claude 3 Opus;kogusummat, üldkogust, tervikut hõlmav või väljendav, kokkuvõtlik, summariseeriv;2;
+transport;Claude 3.5 Sonnet;inimeste, kaupade või muu vedu ühest kohast teise erinevate liiklusvahendite abil;3;
+transport;Claude 3.7 Sonnet;inimeste, kaupade, materjalide vm liikumine või vedamine ühest kohast teise, kasutades selleks erinevaid liiklusvahendeid või -viise;2;
+transport;Gemini 1.5 Pro;ÜSi definitsioon - inimeste, kaupade või muu sellise ühest kohast teise viimine või toimetamine.;3;ÜSi deff?
+transport;GPT-4.1;inimeste, kaupade või esemete ühest kohast teise viimine või vedamine;4;
+transport;o4-mini;inimeste, kaupade või esemete ühest paigast teise liigutamine või selleks kasutatav vahend;3;
+transs;EuroLLM-9b-instruct;Transs on seisund, kus inimene on piiratud teadvusega või täielikult teadvuse kaotanud. See võib olla põhjustatud mitmetest teguritest, nagu näiteks unetus, vaimne häire või muud põhjused. Kui inimesel on transis, ei pruugi ta reageerida välistele stiimulitele ja tema tegevus on piiratud. Transs on erinev seisund võrreldes tavalise une või teadvusekaotusega.;2;
+transs;Claude 3 Opus;hüpnoosiga sarnanev seisund, milles inimene on oma ümbruse suhtes tundetum ja allub kergemini sisendusele;3;
+akne;Claude 3.5 Sonnet;noorukieas nahale, eriti näole tekkiv põletikuline haigusseisund, mis avaldub punaste muhukeste ja vistrike näol;3;
+akne;Claude 3.7 Sonnet;naha rasunäärmete põletikuline haigus, mis avaldub näol, rinnal või seljal esinevate vistrike või punnilistena;3;
+akne;Gemini 2.5 Pro Preview;vistrikke tekitav rasunäärmete põletikuline nahahaigus;3;
+akne;o3;rasunäärmete põletikust tingitud mädapunne tekitav krooniline nahalööve, mis esineb peamiselt näol, seljal ja rinnal;3;
+aktiivsüsi;Claude 3.5 Sonnet;suure poorsusega süsinikurikas aine, mida kasutatakse mürgiste või kahjulike ainete filtreerimiseks ja sidumiseks;3;
+aktiivsüsi;Claude 3.7 Sonnet;poorne süsinikurikas materjal, mida kasutatakse mürgiste ainete või ebameeldivate lõhnade imamiseks, filtreerimiseks või puhastamiseks;3;
+aktiivsüsi;Claude 3 Opus;poorne süsinikurikas aine, mida kasutatakse nt vee ja õhu puhastamiseks, mürgistuste ravis, seedehäirete korral jm tänu tema suurele imamisvõimele;2;
+aktiivsüsi;Gemini 2.5 Pro Preview;suure adsorbeerimisvõimega poorne süsi;2;
+aktiivsüsi;GPT-4o;poorne süsinikmaterjal, millel on suur pindala ja mida kasutatakse adsorbendina gaaside, vedelike või lahustunud ainete eemaldamiseks või puhastamiseks;2;
+aktsent;Llama-4-Maverick-17B-128E-Instruct;"sõna või lause heli eriliselt rõhutatud või tugevalt esiletõstetav hääldamine; rõhk; teatud murdele või võõrkeele häälduskujule iseloomulik hääldusviis või selle avaldumine kõnes";3;
+aktsent;Claude 3.5 Sonnet;"võõrapärane hääldusviis või kõnemaneer, mis tuleneb emakeele või muu keele mõjust; rõhk või pearõhk kõnes, muusikas või kunstis";2;
+aktsent;Claude 3 Opus;kõnes esinev hääldusviis, mis on omane teisest piirkonnast või riigist pärit isikule ja erineb kirjakeele normist;2;
+aktsent;Gmeini 2.0 Flash;hääldusviis, mis on omane mingile keelelisele või geograafilisele piirkonnale, sotsiaalsele grupile või isikule ja mis erineb mingist standardsest hääldusest.;2;
+aktsent;Gemini 2.5 Pro Preview;võõrkeele v murde mõjuline hääldusviis;3;
+debatt;EuroLLM-9b-instruct;Debatt on avalik arutelu või vaidlus, mille eesmärk on kaaluda erinevaid seisukohti ja argumente mõne küsimuse või probleemi kohta. Osalejad võivad esitada oma arvamusi ja väiteid ning neid kaitsta, kasutades fakte, statistikat, näiteid ja muid tõendeid. Debatit juhib tavaliselt moderaator, kes korraldab arutelu ja tagab selle reeglitele vastavuse. Debatt võib toimuda kas kirjalikult või suuliselt, näiteks ülekandena või otseülekandena. Debati eesmärk on tavaliselt saavutada üksmeel või otsus, kuid see võib olla ka meelelahutuslik eesmärk.;2;
+debatt;Llama-4-Maverick-17B-128E-Instruct;avalik vaidlus või arutelu, kus osapooled esitavad oma seisukohti ja argumente mõne küsimuse või probleemi kohta, sageli avalikus või ametlikus keskkonnas;3;
+debatt;Claude 3.5 Sonnet;avalik arutelu või vaidlus kindlal teemal, kus eri seisukohti esindavad pooled esitavad oma argumente ja vastuargumente;3;
+debatt;Gemini 1.5 Pro;avalik arutelu mingil kindlal teemal, kus osalejad esitavad oma seisukohti ja argumente, sageli eesmärgiga jõuda ühisele lahendusele või veenda publikut.;3;
+debatt;Gemini 2.5 Pro Preview;avalik v korraldatud vaidlus, arutelu;3;
+deegu;Llama-4-Maverick-17B-128E-Instruct;Lõuna-Ameerikast pärit näriline, kes sarnaneb välimuselt hiire või oravaga, ning on populaarne lemmikloom oma sotsiaalse ja uudishimuliku loomuse tõttu;2;
+deegu;Claude 3.5 Sonnet;Lõuna-Ameerika päritolu väike näriline, kes on kasvult hamstri ja merisea vahepealne, hallikas-pruuni karvaga ning pika koheva sabaga lemmikloom;2;
+deegu;Claude 3.7 Sonnet;Tšiilist pärit väike näriline, kes on hallikas-pruunikat värvi, pika saba ja suurte kõrvadega ning keda peetakse lemmikloomana;2;
+deegu;Claude 3 Opus;väike Lõuna-Ameerika näriline, keda peetakse lemmikloomana;3;
+deegu;Gemini 1.5 Pro;Tšiili päritolu väike näriline, keda peetakse ka lemmikloomana.;3;
+defekt;Gemini 2.5 Pro Preview;"viga, rike vm puudus; ebatäiuslikkus";2;
+defekt;o3;ettenähtud või normaalsetest omadustest kõrvalekalduv puudus, viga või kahjustus, mis vähendab eseme, organismi, seadme vms terviklikkust, välimust või toimimist;2;
+filosofeerima;GPT-4o;sügavamõtteliselt arutlema, mõtisklema elu, maailma või abstraktsete teemade üle, sageli teoreetilises või spekulatiivses võtmes;3;
+filosofeerima;GPT-4.1;filosoofilisi mõtteid arendama või arutlema, abstraktseid ja üldisi küsimusi mõtisklevalt käsitlema;2;ei kasutaks samatüvelist sõna defineerides
+filosofeerima;o4-mini;mõtlikult või teoreetiliselt arutlema elu, maailma, teadmiste ja väärtuste olemuslike küsimuste üle;3;
+filosofeerima;o3;abstraktselt ja teoreetiliselt arutlema ning mõtisklema eluküsimuste, maailma olemuse jms üle;3;
+huligaan;Claude 3.5 Sonnet;avalikus kohas teisi häiriv ja korda rikkuv isik, kes käitub vägivaldselt või ebaviisakalt ning eirab ühiskondlikke norme;3;
+huligaan;o4-mini;avalikus kohas lärmi, vägivalda või korratust tekitav isik;3;
+huligaan;o3;avalikus kohas üldtunnustatud käitumisnorme rikkuv ja lärmi, vandaalitsemist või vägivalda põhjustav korrarikkuja;3;
+kasutajaskond;Claude 3.7 Sonnet;mingi toote, teenuse, süsteemi vms kasutajate kogum või rühm;4;
+kasutajaskond;Gemini 1.5 Pro;mingi teenuse, toote või süsteemi kasutajate kogum;3;"kuna siit puudu ""vms"" vms, siis 3, sest selle lisaks. ma ei jätaks piiratud valikut asju, mille kasutajate kogumiga tegu võib olla"
+kasutajaskond;Gemini 2.5 Pro Preview;mingi toote, teenuse, süsteemi vm kõigi kasutajate kogum, hulk;3;
+kasutajaskond;o4-mini;mingi teenuse, toote või süsteemi kasutajatest koosnev kogum;3;
+peoloom;Llama-4-Maverick-17B-128E-Instruct;seltskondlikult aktiivne, pidudel teiste lõbustamiseks nalja ja lõbu pärast erinevaid tegevusi tegev inimene;2;mu arust ei pea peoloom teisi lõbustama, seepärast valisin, et suurte muudatustega, sest seletus täiesti mööda ka pole
+peoloom;Claude 3.5 Sonnet;pidutsemist ja seltskondlikku meelelahutust armastav, pidudel sageli käiv ja seal aktiivne inimene;4;
+peoloom;Claude 3.7 Sonnet;inimene, kes armastab pidutseda, on seltskonnas aktiivne, lõbus ja energiline, sageli pidude keskpunkt;3;"muidu paneks 4, ent asendaksin sõna ""keskpunkt"" või sõnastaks sama sõna kasutades teisiti, prg mu jaoks lõppeb kuidagi järsult"
+peoloom;Gmeini 2.0 Flash;inimene, kes naudib väga pidudel käimist ja on seal alati aktiivne ning lõbus;3;muidu paneks 4, ent midagi natuke jääb nagu vajaka, praegune on pigem selline keeleõppija Sõnaveebi lühike seletus vist?
+peoloom;GPT-4.1;inimene, kes armastab sageli pidudel käia ja neis aktiivselt osaleda;4;okei, eelnevates on asi lõbususe mainimises, see tundub mu jaoks üleliigne. siin seda pole, siis kohe täispunktid
+peoloom;o4-mini;seltskonnas meeleolu loov ja tähelepanu keskmes olev inimene;2;siit mitu olulist aspekti välja jäänud
+pesakond;Gemini 1.5 Pro;ÜSi definitsioon - üheaegselt, tavaliselt ühest loomast sündinud poegade rühm;2;"""ÜSi definitsioon"" on täiesti üleliigne ja kui ma peaks kopeerima siit Ekilexi, siis segaks, et see ees on. hindeks ei saa 3 panna, sest mumst suht suur muudatus see ära kustutada"
+pesakond;Gmeini 2.0 Flash;ühekorraga ilmale toodud loomapojad (enamasti imetajatel ja lindudel);3;"""ilmale toodud"" jätab mulje keisrilõikest vms, et ise ei sünnita"
+pesakond;GPT-4.1;ühest pesast pärit loomapojad, kes on sündinud või koorunud samal ajal;4;
+suitsetama;Llama-4-Maverick-17B-128E-Instruct;tubakat või muud suitsetamiseks mõeldud ainet põletades sisse hingama;3;"""põletades sisse hingama"" jääb mu jaoks ähmaseks, tahaks osutust paberanumale vms, mis seda tubakat hoiab :D"
+suitsetama;Claude 3.7 Sonnet;tubakat, kanepit vm taimset ainet põletades tekkivat suitsu sisse hingama, tavaliselt naudingu saamiseks või harjumusest;3;täpsustus, mille jaoks, on ebavajalik, sest vabalt võib olla ka megalt stressis olemisest, aga seda pole mainitud. st siis võiks juba rohkem asju loetleda, aga pigemini mitte mainima hakatagi, seda aspekti võiks näitelausetes välja tuua
+suitsetama;Claude 3 Opus;tubakasaadusi (nt sigarette, sigareid) põletades suitsu sisse hingama ja välja puhuma;4;ohoo, siin on väljapuhumise aspekt lisaks, teised ütlevad ainult, et sisse hingatakse
+suitsetama;GPT-4.1;tubakat või muud taolist ainet suitsetamise teel sisse hingama;2;suitsetama suitsetamise teel ei ole hea seletus
+sugupuu;Llama-4-Maverick-17B-128E-Instruct;perekonna liikmete põlvnemist ja nendevahelisi sugulussuhteid näitlikult kujutav skeem või tabel;4;
+sugupuu;Gemini 1.5 Pro;Perekonna või suguvõsa liikmete sugulussidemeid ja põlvnemisjärjestust kujutav skemaatiline esitus, tavaliselt puu kujul.;3;ei meeldi suur algustäht ja punkt lõpus, seega ei saa 4 panna
+sugupuu;o3;põlvkondade kaupa järjestatud ülevaade inimese või perekonna esivanematest ja järeltulijatest, sageli graafilise skeemi või loeteluna kujutatud põlvnevusjärjestus;3;"puud pole mainitud, ""graafiline skeem"" jääb ebamääraseks"
+kategooriline;EuroLLM-9b-instruct;Kategooriline on isik, kes on väga kindel oma arvamuses või arvamustes ning ei luba alternatiive ega muudatusi. Ta nõuab, et teised järgiksid tema seisukohti, ilma eriarvamuste või küsimisteta. See võib olla nii positiivne kui ka negatiivne omadus, sõltuvalt olukorrast ja kontekstist.;2;pmst oleks võimalik siit sobiv sisu välja noppida, seega 1 ei pannud, kuigi see on seletuse kohta liiiiiiga pikk täislausete kogum, mis jääb jaurama, selmet konkreetselt ära öelda
+kategooriline;Claude 3.7 Sonnet;kindel, tingimusteta, eranditeta, vaieldamatult kehtiv või esitatud, kompromisse välistav;4;
+kategooriline;Gemini 1.5 Pro;täiesti kindel, tingimusteta, kahtlust mitte võimaldav;4;
+kategooriline;o4-mini;selgesõnaliselt ja otsustavalt väljendatud, mis ei jäta ruumi kahtlusele, vahevariantidele ega eranditele;4;
+personal;Llama-4-Maverick-17B-128E-Instruct;asutuse, ettevõtte vms koosseis, töötajad, töölised;4;
+personal;Gemini 1.5 Pro;asutuse, ettevõtte või organisatsiooni kõik töötajad kokku;3;"""kõik"" on liiga kategooriline ;) ja loetelu on liiga ammendav"
+personal;GPT-4o;töötajaskond, mingi asutuse, ettevõtte vms teenistuses olevad inimesed, kes täidavad teatud ülesandeid ja kohustusi;4;"kahtlesin, kas mitte 3 panna, sest ma lisaks ""töötajaskond"" järele ÜSi tavast lähtuvalt semikooloni, mitte kooloni, ent sisuliselt norm seletus"
+personal;GPT-4.1;ühes asutuses, ettevõttes vm töötavad inimesed tervikuna;3;"""tervikuna"" häirib, saaks vb ilma selleta"
+perspektiivitu;Gemini 1.5 Pro;"edasimineku-, arengu- või lootusetust tähistav; ilma tulevikuväljavaateteta";2;sisuliselt saan aru, mida öeldakse, ehkki sõnastus on kohmakas ja siin on ka ortograafiavigu: milleks sidekriipsud? ning -tete- -> -dete-
+perspektiivitu;Gemini 2.5 Pro Preview;Arengu- või tulevikuväljavaadeteta;2;ausalt öeldes ei oska hinnangut anda. esimese hooga tundus liiga lühike, aga samas mida väga siia juurde lisada? algustähe muudaks aga väikseks
+perspektiivitu;GPT-4.1;"ilma arengu-, edu- või tulevikuvõimaluseta; lootusetu";4;
+perspektiivitu;o4-mini;millegi arenguvõimalust ega lootust mitte pakkuv;3;midagi kergelt segab, veits kohmakas sõnastus vist
+perspektiivitu;o3;"ÜSi definitsioon - ilma tuleviku- ja arenguväljavaadeteta, edulootuseta; lootusetu, väljavaateta";3;"sisu on ok, aga ""ÜSi definitsioon -"" tuleb ära kustutada"
+pesto;GPT-4o;Itaalia päritolu paks kaste, mis valmistatakse tavaliselt basiilikust, küüslaugust, oliiviõlist, seedermänniseemnetest ja juustust, ning mida kasutatakse toitude maitsestamiseks või lisandina pastaroogadele;3;see mumst pole oluline, et see Itaalia päritolu (algselt!) on, sama asja saab Eestis ka kokku mökerdada
+pesto;GPT-4.1;paks, tavaliselt basiilikust, küüslaugust, oliiviõlist, seedermänniseemnetest ja juustust valmistatud külm kaste või määre;4;
+pesto;o4-mini;Itaalia päritolu roheline kaste, mis koosneb peenestatud basiilikulehtedest, küüslaugust, piniaseemnetest, Parmesani juustust ja oliiviõlist;2;"muuta tuleks ""pinia"" ja ""Parmesani juust"", lisada et paks kaste, nagu teistes (ilma võrdluseta poleks ise selle peale tuld, et see paks peab olema, ent kuna kaste saab olla ka vedel, siis see on siiski oluline kastme puhul)"
+pesto;o3;Itaaliast pärit paks toorelt kokku hõõrutud basiiliku, küüslaugu, pähklite, oliiviõli ja kõva juustu baasil valmistatud maitse- ehk ürdikaste;2;"ei meeldi: ""toorelt kokku hõõrutud"" (miks hõõrutud? ebaloomulik sõnastus), ""baasil"" (vb tarbetu võõrsõnaviha), ""maitse- ehk ürdi"" (pole sama asi)"
+summaarne;Gemini 1.5 Pro;"kokkuvõtlik, üldine, terviklik;  mitmest osast või komponendist koosnev tervik käsitletud ühe ühikuna.";3;topelttühik ja punkt lõpus
+summaarne;Gmeini 2.0 Flash;kokkuvõtlik, üldistav, peamisi punkte esile toov;4;
+summaarne;GPT-4.1;kokkuvõtlik, kõiki osi või andmeid hõlmav ja üldistav;4;
+summaarne;o3;üksikasju eritlemata tervikuna, kogusummana arvestatav või esitatav;3;segasem kui teised
+transport;EuroLLM-9b-instruct;Transport viitab inimeste või kaupade vedamisele ühest kohast teise. See hõlmab mitmesuguseid transpordiliike, nagu autotransport, rongitransport, õhutransport, veetransport ja muud. Transporti kasutatakse tavaliselt selleks, et inimesed saaksid liikuda ühest punktist teise või et kaubad jõuaksid sihtkohta.;2;pmst oleks võimalik siit sobiv sisu välja noppida, seega 1 ei pannud, kuigi see on seletuse kohta liiiiiiga pikk täislausete kogum, mis jääb jaurama, selmet konkreetselt ära öelda
+transport;Gemini 2.5 Pro Preview;kaupade või reisijate edasitoimetamine ühest kohast teise;3;"""edasi"" on üleliigne, loetelu asjadest, mida transporditakse, ka vb liiga napp"
+transport;o4-mini;inimeste, kaupade või esemete ühest paigast teise liigutamine või selleks kasutatav vahend;4;
+transs;Claude 3 Opus;hüpnoosiga sarnanev seisund, milles inimene on oma ümbruse suhtes tundetum ja allub kergemini sisendusele;3;midagi häirib
+transs;Gemini 1.5 Pro;teadvusseisund, kus inimene on osaliselt või täielikult eraldunud tavapärasest reaalsustajust, näiteks sügava keskendumise, meditatsiooni, hüpnoosi või teatud rituaalide tagajärjel.;3;punkti kustutaks ära
+transs;Gemini 2.5 Pro Preview;eriline teadvusseisund, milles reaktsioon välisärritustele on nõrgenenud või puudub;3;veis napp
+transs;GPT-4o;teadvuse seisund, kus inimene on sügavalt keskendunud, sageli välismaailmast eraldunud ja tavapärasest erinevas vaimses seisundis;3;
+transs;o4-mini;muudetud teadvuseseisund, mille korral inimene kaotab osaliselt või täielikult kontakti välismaailmaga ja keskendub sisemisele kogemusele;3;kas ta meelega ikka keskendub
+transs;o3;muutunud, sügavalt keskendunud teadvusseisund, kus välisärritajad tajutakse ähmaselt ja tähelepanu koondub sisemistele kogemustele või hüpnootilisele mõjutusele;3;okei, võib öelda, et kuna ma ei tea transsi omadusi, siis oli raske öelda, kas seletus on ammendav. üldkeelesõnaraamatu jaoks ilmselt tegelt kõik okeid
+akne;o4-mini;naha haigus, mida iseloomustab rasunäärmete ummistumine ja põletik, põhjustades vistrike, komedoonide ja mädasõlmede teket;3;nahahaigus kirjutaks kokku
+akne;o3;rasunäärmete põletikust tingitud mädapunne tekitav krooniline nahalööve, mis esineb peamiselt näol, seljal ja rinnal;4;
+aktiivsüsi;Claude 3.5 Sonnet;suure poorsusega süsinikurikas aine, mida kasutatakse mürgiste või kahjulike ainete filtreerimiseks ja sidumiseks;4;
+aktiivsüsi;Claude 3.7 Sonnet;poorne süsinikurikas materjal, mida kasutatakse mürgiste ainete või ebameeldivate lõhnade imamiseks, filtreerimiseks või puhastamiseks;4;
+aktiivsüsi;Gemini 1.5 Pro;poorne süsiniku vorm, millel on suur pindala ja mis seetõttu suudab tõhusalt adsorbeerida gaase, vedelikke ja lahustunud aineid.;2;kahtlane sõnastus ja punkt lõpus
+aktiivsüsi;GPT-4.1;poorne ja väga suure pindalaga süsi, mida kasutatakse peamiselt ainete, eriti gaaside ja vedelike puhastamiseks ning filtreerimiseks;3;"sõnastus ""väga suure pindalaga"" segab mind. pole aimugi, kas erialainimesed nii räägivad, aga üldkeele jaoks kohmakas"
+aktsent;Llama-4-Maverick-17B-128E-Instruct;"sõna või lause heli eriliselt rõhutatud või tugevalt esiletõstetav hääldamine; rõhk; teatud murdele või võõrkeele häälduskujule iseloomulik hääldusviis või selle avaldumine kõnes";4;
+aktsent;Claude 3.5 Sonnet;"võõrapärane hääldusviis või kõnemaneer, mis tuleneb emakeele või muu keele mõjust; rõhk või pearõhk kõnes, muusikas või kunstis";3;võõrapärane ja emakeel ei lähe mu jaoks kokku, ehkki uuesti lugedes saan aru, mida mõeldud. veits muudaks sõnastust
+aktsent;Claude 3.7 Sonnet;"kõnes avalduvad häälduslikud iseärasused, mis on tingitud kõneleja emakeelest või murdest; rõhk, rõhuasetus";3;murre on ka kõneleja emakeel :P
+aktsent;Gemini 1.5 Pro;"häälduse eripära, rõhk silbil, sõnal või sõnaosal, mis eristab seda teistest; rõhuasetus, esiletõstmine";3;teistest sõnadest või :) peaks täpsustama, et teistest kõnelejatest
+aktsent;GPT-4o;kõneviisile iseloomulik hääldus, mis viitab kõneleja keelelisele või piirkondlikule taustale, rõhuasetus sõnades või lausetes, mis võib eristada kõnelejat teistest keelekasutajatest.;3;muidu väga hea, aga punkt lõpus tuleks kustutada
+aktsent;o3;iseloomulik hääldus- ja rõhuviis, mis viitab kõneleja keele- või murdelisele päritolule, ühtlasi silbi või sõna esiletõstmiseks kasutatav hääle- või kirjamärk;3;"""ühtlasi"" asemel semikoolin ÜSis"
+debatt;Gemini 2.5 Pro Preview;avalik v korraldatud vaidlus, arutelu;2;"""v"", ühtlasi ei pea olema või-suhe. muidu oleks 3 pannud, ent kuna ÜSi jaoks on vaja detailsemat kirjeldust, siis 2 - tuleks juurde kirjutada"
+debatt;o3;kahe või enama osapoole avalik ja argumenteeritud arutelu mõne küsimuse või teema üle, kus vastandlikke seisukohti esitatakse ja võrreldakse kindlate reeglite või kokkulepitud korra alusel;4;
+deegu;Gemini 1.5 Pro;Tšiili päritolu väike näriline, keda peetakse ka lemmikloomana.;3;punkt lõpus
+deegu;GPT-4o;väike näriline, kes kuulub okassaba-deegude sugukonda, tuntud oma sotsiaalse käitumise ja aktiivsuse poolest, sageli peetav lemmikloomana.;2;deegu kuulub deegude sugukonda - ei selgita midagi. punkt lõpus. lemmikloomana pidamine vist ebavajalik?
+deegu;o3;väike Lõuna-Ameerikast pärit seltsilembene päevaliine näriline, keda peetakse sageli lemmikloomana;4;samas siin ei häiri lemmikloomana pidamine, paremini seletuse sisse kirjutatud ilmselt
+defekt;Gmeini 2.0 Flash;mingi puudus, viga või rike, mis teeb midagi ebatäiuslikuks või töökorrast välja viib;3;eba sõnajärg, muidu ok
+defekt;o4-mini;eseme, seadme või muu objekti terviklikkuses või toimimises esinev viga või rike;3;
+filosofeerima;EuroLLM-9b-instruct;Filosofeerima on tegevus, mille käigus inimesed arutavad erinevaid filosoofilisi teemasid, nagu näiteks elu mõte, inimloomuse olemus, teadmiste päritolu ja tähendus. See võib hõlmata mitmesuguseid küsimusi ja probleeme, mis puudutavad maailma ja inimese kohta selles maailmas. Filosofeerimine võib toimuda kas suuliselt või kirjalikult, näiteks kirjade vahetuses, foorumites või muudes suhtluskeskkondades. Filosofeerimist peetakse sageli meeldivaks ja huvitavaks tegevuseks, mis aitab inimestel paremini mõista ennast ja maailma enda ümber. See võib samuti aidata arendada kriitilist mõtlemist, analüüsivõimet ja loovust.;2;liiga pikk, aga mitte mööda seletatud
+filosofeerima;Llama-4-Maverick-17B-128E-Instruct;sügavama mõtte või tähenduse otsimiseks või leidmiseks mõtlema, arutlema või vestlema, sageli abstraktselt või põhimõtteliselt.;3;punkt lõpus
+filosofeerima;Claude 3 Opus;mõtisklema, arutlema või targutama elulistel, sageli sügavamõttelistel teemadel, püüdes jõuda asjade ja nähtuste olemuseni;3;"""targutama"" segab vist"
+filosofeerima;Gemini 1.5 Pro;eluliste küsimuste, näiteks maailma olemuse, teadmiste, väärtuste, mõtlemise jms üle sügavuti ja üldistavalt mõtisklema, arutlema;4;
+filosofeerima;Gmeini 2.0 Flash;mõtlema ja arutlema sügavate, üldiste küsimuste üle, eriti elu, teadmiste, moraali ja olemise kohta;3;"häirib ""sügavate, üldiste"" - paneks koma asemel ""või"" vms, maitea"
+filosofeerima;GPT-4.1;filosoofilisi mõtteid arendama või arutlema, abstraktseid ja üldisi küsimusi mõtisklevalt käsitlema;3;"""filosoofilisi"" ei seleta samatüvelist sõna"
+filosofeerima;o4-mini;mõtlikult või teoreetiliselt arutlema elu, maailma, teadmiste ja väärtuste olemuslike küsimuste üle;3;muidu ok, aga vb liiga vähe detaile
+huligaan;Llama-4-Maverick-17B-128E-Instruct;inimene, kes käitub korrarikkujana, teeb õigusvastaseid tegusid või põhjustab avalikus kohas segadust ja korratust, sageli vägivaldselt või ülekohtuselt.;3;punkt lõpus
+huligaan;Claude 3.7 Sonnet;avalikus kohas teisi häiriv, ühiskondlikke norme eirav ja korda rikkuv isik, kes käitub jõhkralt, agressiivselt või lugupidamatult;4;
+huligaan;Gemini 1.5 Pro;vägivaldne ja korrarikkumisele kalduv isik, kes tekitab avalikus kohas pahandusi ja häirib avalikku korda.;3;muidu 4, aga punkt lõpus
+huligaan;GPT-4.1;inimene, kes käitub tahtlikult pahatahtlikult, häirivalt või vägivaldselt, rikub avalikku korda ja tekitab teistele kahju või ebamugavust;4;
+kasutajaskond;EuroLLM-9b-instruct;"Rühm inimesi, kes kasutavad või on huvitatud mingist konkreetsest teenusest, tootest või platvormist. Näitena ""Google'i kasutajaskond"" viitab inimestele, kes kasutavad Google'i tooteid ja teenuseid.";3;
+kasutajaskond;GPT-4.1;inimeste rühm, kes kasutab mingit teenust, toodet või süsteemi;4;
+peoloom;Llama-4-Maverick-17B-128E-Instruct;seltskondlikult aktiivne, pidudel teiste lõbustamiseks nalja ja lõbu pärast erinevaid tegevusi tegev inimene;3;
+peoloom;Claude 3.5 Sonnet;pidutsemist ja seltskondlikku meelelahutust armastav, pidudel sageli käiv ja seal aktiivne inimene;4;
+peoloom;Claude 3 Opus;pidutsemist, lõbutsemist ja alkoholi tarbimist liialduseni viiv isik;3;
+peoloom;o3;pidusid, lõbutsemist ja seltskonda armastav inimene, kes käib sageli ning meelsasti pidudel;3;
+pesakond;EuroLLM-9b-instruct;"Rühm loomi, kes on sündinud samast emasloomast või kuuluvad sama rühma. Näiteks ""koerasportlase pesakond"" viitab kutsikatele, kelle sünnitas koer ja kes on mõeldud kasvatamiseks ning kasutamiseks teatud spordialadel.";3;
+pesakond;Claude 3.5 Sonnet;"ühest pesakonnast sündinud või koorunud järglased; samasse pessa kuuluvad linnupojad, loomapojad vm järglased";4;
+pesakond;Gemini 1.5 Pro;ÜSi definitsioon - üheaegselt, tavaliselt ühest loomast sündinud poegade rühm;4;
+pesakond;Gemini 2.5 Pro Preview;loomade (hrl imetajate, lindude) samal poegimis- või haudumiskorral ilmale tulnud järglased;4;
+suitsetama;EuroLLM-9b-instruct;Tegevus, mille käigus hingatakse sisse ja välja suitsu, mis tekib tubaka või mõne muu aine põletamisel. Suitsetamine on väga kahjulik tervisele ning võib põhjustada tõsiseid terviseprobleeme, sealhulgas kopsuvähki, südame-veresoonkonna haigusi ja hingamisteede haigusi.;1;
+suitsetama;Gemini 1.5 Pro;Tubakat või muud ainet põletades sellest eralduvat suitsu sisse hingama ja välja puhuma.;4;
+suitsetama;Gmeini 2.0 Flash;põletatavaid (tubaka)tooteid (sigaretti, piipu jne) sisse hingama, et omandada nikotiinist või muudest ainetest tekitatud mõnu;3;
+suitsetama;GPT-4o;tubakat või muid suitsetatavaid aineid sigareti, sigari, piibu vm kaudu sisse hingama ja välja puhuma;4;
+suitsetama;o4-mini;tubaka või muu suitsutava aine põletamisest eralduva suitsu sisse- ja väljahingamine;1;
+sugupuu;GPT-4.1;ühe isiku või suguvõsa esivanemaid ja järeltulijaid põlvkondade kaupa näitav skeem või loetelu;4;
+kategooriline;EuroLLM-9b-instruct;Kategooriline on isik, kes on väga kindel oma arvamuses või arvamustes ning ei luba alternatiive ega muudatusi. Ta nõuab, et teised järgiksid tema seisukohti, ilma eriarvamuste või küsimisteta. See võib olla nii positiivne kui ka negatiivne omadus, sõltuvalt olukorrast ja kontekstist.;2;
+kategooriline;Llama-4-Maverick-17B-128E-Instruct;vaieldamatut, absoluutset või üldkehtivat väidet, seisukohta või otsust väljendav või kujutav;4;
+kategooriline;Claude 3.7 Sonnet;kindel, tingimusteta, eranditeta, vaieldamatult kehtiv või esitatud, kompromisse välistav;4;
+kategooriline;Claude 3 Opus;tingimusteta, vastuväiteid või erandeid välistav, täiesti kindel ja otsustav;4;
+kategooriline;Gemini 1.5 Pro;täiesti kindel, tingimusteta, kahtlust mitte võimaldav;3;
+kategooriline;Gmeini 2.0 Flash;"tingimusteta, mööndusteta, kindel, otsustav; jäik";2;ainult sünod
+kategooriline;GPT-4o;"kindel, tingimusteta, järeleandmatu; midagi kindlalt väitma või nõudma, ilma kahtluste või eranditeta";4;
+kategooriline;o4-mini;selgesõnaliselt ja otsustavalt väljendatud, mis ei jäta ruumi kahtlusele, vahevariantidele ega eranditele;2;
+personal;EuroLLM-9b-instruct;Personal viitab töötajatele ettevõttes, asutuses või organisatsioonis. See hõlmab kõiki töötajaid, alates juhtidest kuni tavatöötajateni, kes on osa organisatsiooni struktuurist ja aitavad kaasa selle toimimisele.;4;
+personal;Claude 3.5 Sonnet;"asutuse või ettevõtte koosseisulised töötajad, kes täidavad seal ametikohustusi; töötajaskond";4;
+personal;Gemini 2.5 Pro Preview;asutuse, ettevõtte vms töötajaskond v. teenistujad;4;
+personal;o3;mingis asutuses, ettevõttes või organisatsioonis töötavate inimeste kogum, töötajaskond;4;
+perspektiivitu;Gemini 2.5 Pro Preview;Arengu- või tulevikuväljavaadeteta;4;
+perspektiivitu;o4-mini;millegi arenguvõimalust ega lootust mitte pakkuv;3;
+pesto;EuroLLM-9b-instruct;Pesto on Itaalia päritolu maitseaine, mis põhineb basiilikulehedel, küüslaugul, oliiviõli, pinoleemutteritel (kõrvitsaseemned) ja sool. Seda kasutatakse tavaliselt pasta, risotto või teiste roogade maitsestamiseks. Pesto on populaarne kogu maailmas ja seda saab kasutada erinevat tüüpi toitude maitsestamiseks.;2;
+pesto;Llama-4-Maverick-17B-128E-Instruct;basiilikust, küüslaugust, männipähklitest, Parmesani juustust ja oliiviõlist valmistatud püree või pasta Itaalia päritolu kaste toitude maitsestamiseks;4;
+pesto;GPT-4o;Itaalia päritolu paks kaste, mis valmistatakse tavaliselt basiilikust, küüslaugust, oliiviõlist, seedermänniseemnetest ja juustust, ning mida kasutatakse toitude maitsestamiseks või lisandina pastaroogadele;3;
+pesto;o4-mini;Itaalia päritolu roheline kaste, mis koosneb peenestatud basiilikulehtedest, küüslaugust, piniaseemnetest, Parmesani juustust ja oliiviõlist;4;
+summaarne;Llama-4-Maverick-17B-128E-Instruct;kõiki osi, hulka või kogust kokku haarav, kokkuvõtlik, üldine;4;
+summaarne;Claude 3.5 Sonnet;kõiki osi või üksikasju kokku võttev, kogu hulka hõlmav, kokkuvõtlik;3;
+summaarne;GPT-4o;kogusummana esinev, kokkuvõtlikult arvestatud või väljendatud, kõigi osade või elementide kogumina käsitletav;4;
+summaarne;o4-mini;"mitme osa või näitaja summana moodustuv või nii esitatud; kokkuvõtlikult kogu hulka või üldpilti näitav";4;
+summaarne;o3;üksikasju eritlemata tervikuna, kogusummana arvestatav või esitatav;4;
+transport;Claude 3 Opus;inimeste, kaupade või loomade ühest kohast teise toimetamine selleks ettenähtud sõidukite abil;4;
+transport;Gmeini 2.0 Flash;inimeste või kaupade toimetamine ühest kohast teise, veondus;4;
+transport;GPT-4o;inimeste, kaupade või informatsiooni liikumine ühest kohast teise, sageli sõidukite või muude vahendite abil, et hõlbustada liikumist ja ühendust erinevate paikade vahel;3;
+transport;GPT-4.1;inimeste, kaupade või esemete ühest kohast teise viimine või vedamine;4;
+transport;o3;inimeste, kaupade või muude esemete vedamine ühest kohast teise, samuti sellega seotud korraldus ja teenindus;3;
+transs;EuroLLM-9b-instruct;Transs on seisund, kus inimene on piiratud teadvusega või täielikult teadvuse kaotanud. See võib olla põhjustatud mitmetest teguritest, nagu näiteks unetus, vaimne häire või muud põhjused. Kui inimesel on transis, ei pruugi ta reageerida välistele stiimulitele ja tema tegevus on piiratud. Transs on erinev seisund võrreldes tavalise une või teadvusekaotusega.;2;
+transs;Claude 3.5 Sonnet;teadvuse muutunud seisund, milles inimene on välismaailmast osaliselt või täielikult eraldunud ning keskendunud oma sisemaailmale;4;
+transs;Gemini 1.5 Pro;teadvusseisund, kus inimene on osaliselt või täielikult eraldunud tavapärasest reaalsustajust, näiteks sügava keskendumise, meditatsiooni, hüpnoosi või teatud rituaalide tagajärjel.;4;
+transs;GPT-4.1;Määramata definitsioon;1;
+akne;Claude 3.5 Sonnet;noorukieas nahale, eriti näole tekkiv põletikuline haigusseisund, mis avaldub punaste muhukeste ja vistrike näol;3;
+akne;Claude 3 Opus;naha rasunäärmete krooniline põletikuline haigus, mille korral tekivad näole, kaelale, seljale ja rinnale vistrikud, sõlmekesed või paised;4;
+akne;Gemini 2.5 Pro Preview;vistrikke tekitav rasunäärmete põletikuline nahahaigus;4;
+akne;GPT-4.1;nahahaigus, mille korral rasunäärmed ja karvafolliikulid ummistuvad ning tekivad vistrikud, komedoonid ja põletikulised sõlmed;4;
+aktiivsüsi;Llama-4-Maverick-17B-128E-Instruct;suure eripinnaga käsitletud süsi, mida kasutatakse absorbendina gaaside või vedelike puhastamisel või värvainete eraldamisel lahustitest;3;
+aktiivsüsi;Gemini 1.5 Pro;poorne süsiniku vorm, millel on suur pindala ja mis seetõttu suudab tõhusalt adsorbeerida gaase, vedelikke ja lahustunud aineid.;3;
+aktiivsüsi;GPT-4o;poorne süsinikmaterjal, millel on suur pindala ja mida kasutatakse adsorbendina gaaside, vedelike või lahustunud ainete eemaldamiseks või puhastamiseks;3;
+aktiivsüsi;o4-mini;"kõrgel temperatuuril töötlemise teel saadav mikropoorne süsinikmaterjal, mille suured pindalad võimaldavad gaasidest ja vedelikest saasteaineid neelata; kasutatakse filtrimaterjalina ja puhastusainena";2;
+aktsent;GPT-4.1;Määramata definitsioon;1;
+aktsent;o4-mini;sõna või fraasi silp, mille hääldamisel on teistega võrreldes tugevam rõhk, või kõneleja murde- või võõrkeelset päritolu paljastav hääldusomadus;3;
+aktsent;o3;iseloomulik hääldus- ja rõhuviis, mis viitab kõneleja keele- või murdelisele päritolule, ühtlasi silbi või sõna esiletõstmiseks kasutatav hääle- või kirjamärk;3;
+debatt;Gemini 1.5 Pro;avalik arutelu mingil kindlal teemal, kus osalejad esitavad oma seisukohti ja argumente, sageli eesmärgiga jõuda ühisele lahendusele või veenda publikut.;3;
+debatt;GPT-4.1;avalik arutelu mingi küsimuse või probleemi üle, kus eri seisukohtade esindajad esitavad oma argumente ja vastuväiteid;4;
+debatt;o3;kahe või enama osapoole avalik ja argumenteeritud arutelu mõne küsimuse või teema üle, kus vastandlikke seisukohti esitatakse ja võrreldakse kindlate reeglite või kokkulepitud korra alusel;2;
+deegu;EuroLLM-9b-instruct;Deeg on väikeste mõõtmetega loom, kes kuulub näriliste hulka. See on levinud kogu maailmas ja seda peetakse lemmikloomana või lemmiklinnuna. Deed saavad hästi kohaneda erinevate keskkondadega ja neid hoitakse tavaliselt puuris või akvaariumis. Deed võivad olla erinevat värvi ja kuju, kuid neil on üldiselt sarnased tunnused, nagu näiteks pikk saba ja suured kõrvad. Neid peetakse sõbralikeks loomadeks, kes suudavad hästi kohaneda inimestega ja õppida trikke tegema. Deege saab toita mitmesuguste toiduainetega, sealhulgas teravilja, puu- ja köögiviljadega.;1;
+deegu;Llama-4-Maverick-17B-128E-Instruct;Lõuna-Ameerikast pärit näriline, kes sarnaneb välimuselt hiire või oravaga, ning on populaarne lemmikloom oma sotsiaalse ja uudishimuliku loomuse tõttu;3;
+deegu;Claude 3 Opus;väike Lõuna-Ameerika näriline, keda peetakse lemmikloomana;4;
+deegu;Gemini 1.5 Pro;Tšiili päritolu väike näriline, keda peetakse ka lemmikloomana.;4;
+defekt;EuroLLM-9b-instruct;Defekt on viga või puudus, mis võib esineda materjalis, toote disainis või funktsioonis. See võib olla põhjustatud erinevatest teguritest, nagu näiteks tootmisprotsessi kõrvalekalded, kasutusvead või muud põhjused. Defekti saab tuvastada visuaalselt või spetsiaalsete testide abil. Sõltuvalt defekti raskusastmest ja tüübist võib seda parandada või asendada. Defektid võivad olla ohtlikud, kui need ei ole õigesti tuvastatud ja parandatud, näiteks tööstuslike seadmete või sõidukite puhul.;1;
+defekt;Llama-4-Maverick-17B-128E-Instruct;mingi asja või objekti viga või puudus, mis võib olla seotud selle valmistamise, ehitamise või funktsioneerimisega ning mis võib takistada selle normaalset toimimist või halvendada selle kvaliteeti.;2;
+defekt;Claude 3.5 Sonnet;puudus, viga või rike eseme, seadme või organismi normaalses seisundis või toimimises;4;
+defekt;Gemini 2.5 Pro Preview;"viga, rike vm puudus; ebatäiuslikkus";2;ainult sünod
+defekt;GPT-4o;puudus või viga, mis rikub terviklikkust, funktsionaalsust või välimust;4;
+defekt;GPT-4.1;mingi eseme, seadme, organismi vms puudus, viga või kahjustus, mis takistab selle normaalset toimimist või vähendab väärtust;4;
+filosofeerima;Claude 3.5 Sonnet;mõtisklema ja arutlema üldiste eluliste või abstraktsete küsimuste üle, sageli teoreetiliselt ja süvitsi minnes;4;
+filosofeerima;Gmeini 2.0 Flash;mõtlema ja arutlema sügavate, üldiste küsimuste üle, eriti elu, teadmiste, moraali ja olemise kohta;4;
+filosofeerima;o3;abstraktselt ja teoreetiliselt arutlema ning mõtisklema eluküsimuste, maailma olemuse jms üle;4;
+huligaan;Claude 3.7 Sonnet;avalikus kohas teisi häiriv, ühiskondlikke norme eirav ja korda rikkuv isik, kes käitub jõhkralt, agressiivselt või lugupidamatult;3;
+huligaan;Claude 3 Opus;ühiskondlikku korda rikkuv, teisi inimesi tülitav või neile kahju tekitav isik;4;
+huligaan;Gemini 2.5 Pro Preview;avalikku korda rikkuv, teisi häiriv või vara lõhkuv isik;4;
+huligaan;GPT-4o;isik, kes käitub avalikus kohas häirivalt, korda rikkudes või vägivaldselt, sageli teistele kahju tekitades või neid ohustades;4;
+huligaan;o3;avalikus kohas üldtunnustatud käitumisnorme rikkuv ja lärmi, vandaalitsemist või vägivalda põhjustav korrarikkuja;3;
+kasutajaskond;Claude 3.7 Sonnet;mingi toote, teenuse, süsteemi vms kasutajate kogum või rühm;3;
+kasutajaskond;Claude 3 Opus;mingi toote, teenuse, süsteemi vms kasutajate ring;3;
+kasutajaskond;GPT-4o;inimeste rühm, kes kasutab mingit teenust, toodet või süsteemi, moodustades selle tarbijaskonna või sihtrühma;2;
+peoloom;GPT-4o;inimene, kes armastab sageli pidudel käia ja neis aktiivselt osaleda, pidutsemist nautiv isik;4;
+peoloom;o4-mini;seltskonnas meeleolu loov ja tähelepanu keskmes olev inimene;3;
+peoloom;o3;pidusid, lõbutsemist ja seltskonda armastav inimene, kes käib sageli ning meelsasti pidudel;4;
+pesakond;EuroLLM-9b-instruct;"Rühm loomi, kes on sündinud samast emasloomast või kuuluvad sama rühma. Näiteks ""koerasportlase pesakond"" viitab kutsikatele, kelle sünnitas koer ja kes on mõeldud kasvatamiseks ning kasutamiseks teatud spordialadel.";2;
+pesakond;Claude 3.7 Sonnet;"ühest pesakonnast pärit loomade, lindude või putukate järglaste kogum; ka lasterohke pere kohta";3;
+pesakond;Gemini 2.5 Pro Preview;loomade (hrl imetajate, lindude) samal poegimis- või haudumiskorral ilmale tulnud järglased;4;
+pesakond;GPT-4o;lindude, loomade vm järglaste rühm, kes on sündinud samal ajal ja keda kasvatatakse koos ühe vanemapaariga;3;
+pesakond;GPT-4.1;ühest pesast pärit loomapojad, kes on sündinud või koorunud samal ajal;3;
+pesakond;o4-mini;samal ajal koorunud või sündinud lindude või loomade poegade rühm;3;
+pesakond;o3;ühe ja sama emase korraga sündinud või koorunud järglaste kogum;4;
+suitsetama;Llama-4-Maverick-17B-128E-Instruct;tubakat või muud suitsetamiseks mõeldud ainet põletades sisse hingama;3;
+suitsetama;Gemini 1.5 Pro;Tubakat või muud ainet põletades sellest eralduvat suitsu sisse hingama ja välja puhuma.;3;
+suitsetama;GPT-4.1;tubakat või muud taolist ainet suitsetamise teel sisse hingama;4;
+sugupuu;Claude 3.5 Sonnet;skemaatiline joonis või kirjalik ülevaade, mis näitab perekonnaliikmete omavahelisi sugulussuhteid ja põlvnemist läbi mitme põlvkonna;4;
+sugupuu;Gemini 2.5 Pro Preview;ühe isiku v suguvõsa põlvnemist (esivanemaid ja/või järglasi) kajastav skeem v loetelu;4;
+sugupuu;GPT-4o;esivanemate ja järeltulijate järjestikune loetelu või skeem, mis näitab perekondlikke seoseid ja päritolu;4;
+sugupuu;o4-mini;perekonna sugulussuhete skeem, mis kujutab eri põlvkondade kaupa pärilussidemeid;3;
+sugupuu;o3;põlvkondade kaupa järjestatud ülevaade inimese või perekonna esivanematest ja järeltulijatest, sageli graafilise skeemi või loeteluna kujutatud põlvnevusjärjestus;3;
+kategooriline;EuroLLM-9b-instruct;Kategooriline on isik, kes on väga kindel oma arvamuses või arvamustes ning ei luba alternatiive ega muudatusi. Ta nõuab, et teised järgiksid tema seisukohti, ilma eriarvamuste või küsimisteta. See võib olla nii positiivne kui ka negatiivne omadus, sõltuvalt olukorrast ja kontekstist.;2;
+kategooriline;GPT-4o;"kindel, tingimusteta, järeleandmatu; midagi kindlalt väitma või nõudma, ilma kahtluste või eranditeta";2;antud lisaks adjektiivile ka verbi tüüpi seletus
+kategooriline;GPT-4.1;ilma kahtluse või kõhkluseta, tingimusteta ja kindlalt väitev või otsustav;3;
+kategooriline;o3;igasugust kõhklust või erandit välistavalt kindel ja lõplik, tingimusteta (nt eituse, otsuse või väite puhul);3;
+personal;Claude 3.7 Sonnet;"asutuse, ettevõtte vm organisatsiooni töötajaskond, ametnikud või teenistujad; isiklik, üksikisikut puudutav või temale kuuluv";2;vale tähendus ka juurde lisatud
+personal;Gemini 2.5 Pro Preview;asutuse, ettevõtte vms töötajaskond v. teenistujad;3;
+personal;o4-mini;konkreetse asutuse, ettevõtte või organisatsiooni töötajatest koosnev kogu;3;
+perspektiivitu;Llama-4-Maverick-17B-128E-Instruct;tulevikuväljavaateid mitteomav, lootusetu, edutuna näiv;4;
+perspektiivitu;Claude 3.7 Sonnet;tulevikuväljavaateta, edasise arengu või edu võimaluseta, lootusetu;4;
+perspektiivitu;Gemini 1.5 Pro;"edasimineku-, arengu- või lootusetust tähistav; ilma tulevikuväljavaateteta";3;
+perspektiivitu;GPT-4.1;"ilma arengu-, edu- või tulevikuvõimaluseta; lootusetu";4;
+perspektiivitu;o4-mini;millegi arenguvõimalust ega lootust mitte pakkuv;3;
+pesto;Claude 3.5 Sonnet;basiilikust, küüslaugust, oliiviõlist, parmesani juustust ja männiseemnetest valmistatud pastataoline kaste või määre;3;
+pesto;Gmeini 2.0 Flash;itaaliapärane basiilikust, küüslaugust, seedermänniseemnetest, Parmesani juustust ja oliiviõlist valmistatud roheline kaste, mida kasutatakse peamiselt pasta, aga ka teiste toitude maitsestamiseks;4;tegelikult veidi liiga pikk, aga otseselt midagi viga ei ole, et eristada teisest, panin siiski kõrgema hinnangu
+summaarne;EuroLLM-9b-instruct;Summaarne tähendab lühikokkuvõtet või kokkuvõtlikku ülevaadet mingist teemast, sündmusest või olukorrast. See võib viidata sellele, et andmeid on esitatud lihtsustatud ja kiire vormis, ilma üksikasjadeta. Näiteks võib öelda, et aruanne on tehtud summaariliselt, kui see sisaldab ainult peamisi fakte ja mõjutusi, kuid mitte kõiki üksikasju.;2;
+summaarne;Claude 3.5 Sonnet;kõiki osi või üksikasju kokku võttev, kogu hulka hõlmav, kokkuvõtlik;3;
+summaarne;Claude 3.7 Sonnet;"kõiki osi või üksikasju kokku võttev, koondav; kogu hulka, kogumit või tervikut hõlmav";3;
+summaarne;GPT-4.1;kokkuvõtlik, kõiki osi või andmeid hõlmav ja üldistav;2;"sisuviga sees, pole ""kõiki osi hõlmav"""
+transport;Claude 3.5 Sonnet;inimeste, kaupade või muu vedu ühest kohast teise erinevate liiklusvahendite abil;4;
+transport;GPT-4o;inimeste, kaupade või informatsiooni liikumine ühest kohast teise, sageli sõidukite või muude vahendite abil, et hõlbustada liikumist ja ühendust erinevate paikade vahel;3;
+transport;o3;inimeste, kaupade või muude esemete vedamine ühest kohast teise, samuti sellega seotud korraldus ja teenindus;4;
+transs;Llama-4-Maverick-17B-128E-Instruct;"teadvuseseisund, mida iseloomustab kõrgenenud vastuvõtlikkus sisendusele või oma tegevuse ja ümbruse suhtes vähese teadlikkusega sooritatavad toimingud; hüpnootiline uni või sellega sarnane seisund";2;
+transs;Gmeini 2.0 Flash;"teadvuse muundunud seisund, kus välismaailmaga kontakt on nõrgenenud ja keskendutakse sisemistele aistingutele, mõtetele vms; ekstaasitaoline seisund";3;
+transs;GPT-4o;teadvuse seisund, kus inimene on sügavalt keskendunud, sageli välismaailmast eraldunud ja tavapärasest erinevas vaimses seisundis;3;
+transs;GPT-4.1;Määramata definitsioon;1;defi pole antud
+transs;o4-mini;muudetud teadvuseseisund, mille korral inimene kaotab osaliselt või täielikult kontakti välismaailmaga ja keskendub sisemisele kogemusele;3;
+akne;EuroLLM-9b-instruct;Akne on nahahaigus, mille tunnused on komedoonid (mustad täpid ja valged punktid), punased sõlmed ja mädavillid. See tekib tavaliselt puberteedieas, kui rasunäärmed toodavad rohkem rasu, mis ummistab poorid ja põhjustab põletikku ning infektsiooni. Akne võib olla põhjustatud mitmetest teguritest, sealhulgas geneetiline eelsoodumus, hormonaalsed muutused, toitumine, stress või muud põhjused. Akne on levinud nahahaigus, mida saab ravida erinevate meetoditega, nagu näiteks ravimite kasutamine, kosmeetilised protseduurid ja muud.;2;pikkuse tõttu vajab rohkem toimetamist
+akne;o3;rasunäärmete põletikust tingitud mädapunne tekitav krooniline nahalööve, mis esineb peamiselt näol, seljal ja rinnal;3;
+aktiivsüsi;EuroLLM-9b-instruct;Aktiivsüsi on süsinikmaterjal, mis sisaldab suurt hulka poore. Neid auke kasutatakse adsorptsiooniks - protsessiks, mille käigus aine seob ennast aktiivsöega ja eemaldatakse keskkonnast. Aktiivsütt kasutatakse tavaliselt kahjulike ainete filtreerimiseks, näiteks toiduainetes või õhufiltrides. See on ka populaarne vahend toksiinide eemaldamiseks kehast ja seedetraktis.;2;
+aktiivsüsi;Llama-4-Maverick-17B-128E-Instruct;suure eripinnaga käsitletud süsi, mida kasutatakse absorbendina gaaside või vedelike puhastamisel või värvainete eraldamisel lahustitest;3;
+aktiivsüsi;Claude 3 Opus;poorne süsinikurikas aine, mida kasutatakse nt vee ja õhu puhastamiseks, mürgistuste ravis, seedehäirete korral jm tänu tema suurele imamisvõimele;3;
+aktiivsüsi;Gmeini 2.0 Flash;poorne süsinikmaterjal, mida saadakse orgaaniliste ainete (nt puidu, kookospähklikoorte) kuumutamisel ja aktiveerimisel ning mida kasutatakse adsorbendina gaaside, vedelike ja värvainete puhastamiseks.;3;
+aktiivsüsi;Gemini 2.5 Pro Preview;suure adsorbeerimisvõimega poorne süsi;2;ei sisalda piisavalt infot
+aktiivsüsi;GPT-4o;poorne süsinikmaterjal, millel on suur pindala ja mida kasutatakse adsorbendina gaaside, vedelike või lahustunud ainete eemaldamiseks või puhastamiseks;2;
+aktiivsüsi;o3;kõrge poorsuse ja väga suure adsorbeerimisvõimega, spetsiaalselt töödeldud süsi, mida kasutatakse gaaside ja vedelike puhastamiseks ning mürkainete sidumiseks;3;
+aktsent;EuroLLM-9b-instruct;Aktsent on helivärv, mida inimene kasutab teatud keele rääkimiseks või hääldamisel konkreetses piirkonnas. See sisaldab kõiki individuaalseid helisid ja rütme, mis eristavad kõnelejat teistest. Aktsent võib olla iseloomulik teatud piirkonnale, rahvale või rahvusele. Näiteks on ameerika inglise aktsent erinev briti inglise aktsendist. Samuti võivad inimesed rääkida oma kodumaal omapärase aktsendiga, kuid võõrastes piirkondades võivad nad omandada uue aktsendi.;2;
+aktsent;Claude 3.7 Sonnet;"kõnes avalduvad häälduslikud iseärasused, mis on tingitud kõneleja emakeelest või murdest; rõhk, rõhuasetus";3;
+aktsent;Claude 3 Opus;kõnes esinev hääldusviis, mis on omane teisest piirkonnast või riigist pärit isikule ja erineb kirjakeele normist;3;
+aktsent;Gemini 1.5 Pro;"häälduse eripära, rõhk silbil, sõnal või sõnaosal, mis eristab seda teistest; rõhuasetus, esiletõstmine";2;
+aktsent;GPT-4o;kõneviisile iseloomulik hääldus, mis viitab kõneleja keelelisele või piirkondlikule taustale, rõhuasetus sõnades või lausetes, mis võib eristada kõnelejat teistest keelekasutajatest.;3;
+debatt;Llama-4-Maverick-17B-128E-Instruct;avalik vaidlus või arutelu, kus osapooled esitavad oma seisukohti ja argumente mõne küsimuse või probleemi kohta, sageli avalikus või ametlikus keskkonnas;3;
+debatt;Claude 3.5 Sonnet;avalik arutelu või vaidlus kindlal teemal, kus eri seisukohti esindavad pooled esitavad oma argumente ja vastuargumente;3;
+debatt;Claude 3.7 Sonnet;avalik arutelu, kus erinevate seisukohtadega osalejad esitavad oma argumente mingi küsimuse või probleemi kohta;4;
+debatt;Claude 3 Opus;avalik vaidlus, milles osalejad esitavad mingis küsimuses oma seisukohti ja argumente ning püüavad üksteist ümber veenda;3;
+debatt;Gmeini 2.0 Flash;avalik arutelu, väitlus kindlaksmääratud reeglite järgi, kus osalejad püüavad oma seisukohti argumentidega kaitsta ja teisi veenda;3;
+debatt;GPT-4.1;avalik arutelu mingi küsimuse või probleemi üle, kus eri seisukohtade esindajad esitavad oma argumente ja vastuväiteid;4;
+debatt;o3;kahe või enama osapoole avalik ja argumenteeritud arutelu mõne küsimuse või teema üle, kus vastandlikke seisukohti esitatakse ja võrreldakse kindlate reeglite või kokkulepitud korra alusel;3;
+deegu;EuroLLM-9b-instruct;Deeg on väikeste mõõtmetega loom, kes kuulub näriliste hulka. See on levinud kogu maailmas ja seda peetakse lemmikloomana või lemmiklinnuna. Deed saavad hästi kohaneda erinevate keskkondadega ja neid hoitakse tavaliselt puuris või akvaariumis. Deed võivad olla erinevat värvi ja kuju, kuid neil on üldiselt sarnased tunnused, nagu näiteks pikk saba ja suured kõrvad. Neid peetakse sõbralikeks loomadeks, kes suudavad hästi kohaneda inimestega ja õppida trikke tegema. Deege saab toita mitmesuguste toiduainetega, sealhulgas teravilja, puu- ja köögiviljadega.;2;Kasutab defis vigast vormi märksõnast
+deegu;Llama-4-Maverick-17B-128E-Instruct;Lõuna-Ameerikast pärit näriline, kes sarnaneb välimuselt hiire või oravaga, ning on populaarne lemmikloom oma sotsiaalse ja uudishimuliku loomuse tõttu;4;
+deegu;Gmeini 2.0 Flash;Lõuna-Ameerikast pärit väike näriline (Octodon degus), keda peetakse ka lemmikloomana;4;
+deegu;Gemini 2.5 Pro Preview;väike Tšiili päritolu näriline, keda sageli peetakse lemmikloomana;4;
+deegu;o3;väike Lõuna-Ameerikast pärit seltsilembene päevaliine näriline, keda peetakse sageli lemmikloomana;3;
+defekt;Llama-4-Maverick-17B-128E-Instruct;mingi asja või objekti viga või puudus, mis võib olla seotud selle valmistamise, ehitamise või funktsioneerimisega ning mis võib takistada selle normaalset toimimist või halvendada selle kvaliteeti.;3;
+defekt;Claude 3.7 Sonnet;ese, seade, toode vm, millel on puudus, viga või rike, mis takistab selle normaalset toimimist või kasutamist;3;
+defekt;o3;ettenähtud või normaalsetest omadustest kõrvalekalduv puudus, viga või kahjustus, mis vähendab eseme, organismi, seadme vms terviklikkust, välimust või toimimist;3;
+filosofeerima;Gemini 2.5 Pro Preview;Sügavalt, abstraktselt v kaalutlevalt mõtisklema v arutlema.;4;
+filosofeerima;o4-mini;mõtlikult või teoreetiliselt arutlema elu, maailma, teadmiste ja väärtuste olemuslike küsimuste üle;3;
+huligaan;Llama-4-Maverick-17B-128E-Instruct;inimene, kes käitub korrarikkujana, teeb õigusvastaseid tegusid või põhjustab avalikus kohas segadust ja korratust, sageli vägivaldselt või ülekohtuselt.;3;
+huligaan;Claude 3.5 Sonnet;avalikus kohas teisi häiriv ja korda rikkuv isik, kes käitub vägivaldselt või ebaviisakalt ning eirab ühiskondlikke norme;4;
+kasutajaskond;EuroLLM-9b-instruct;"Rühm inimesi, kes kasutavad või on huvitatud mingist konkreetsest teenusest, tootest või platvormist. Näitena ""Google'i kasutajaskond"" viitab inimestele, kes kasutavad Google'i tooteid ja teenuseid.";4;
+kasutajaskond;Claude 3.5 Sonnet;mingi toote, teenuse, süsteemi või keskkonna tarbijate või rakendajate kogum;3;
+kasutajaskond;Gemini 1.5 Pro;mingi teenuse, toote või süsteemi kasutajate kogum;3;
+kasutajaskond;GPT-4.1;inimeste rühm, kes kasutab mingit teenust, toodet või süsteemi;4;
+kasutajaskond;o4-mini;mingi teenuse, toote või süsteemi kasutajatest koosnev kogum;3;
+peoloom;EuroLLM-9b-instruct;Inimene, kes armastab pidutseda ja osaleda erinevatel üritustel koos sõpradega. Peoloom on tavaliselt seltskondlik ja hea suhtleja, kellel on palju sõpru ning ta naudib pidude nautimist.;4;
+peoloom;Claude 3.5 Sonnet;pidutsemist ja seltskondlikku meelelahutust armastav, pidudel sageli käiv ja seal aktiivne inimene;3;
+peoloom;Gemini 1.5 Pro;Seltskondlik ja lõbus inimene, kes naudib pidusid ja oskab luua head meeleolu.;3;
+peoloom;Gemini 2.5 Pro Preview;Innukas ja sage pidutseja.;3;
+peoloom;o3;pidusid, lõbutsemist ja seltskonda armastav inimene, kes käib sageli ning meelsasti pidudel;4;
+pesakond;Claude 3 Opus;ühel sigimisperioodil sündinud (linnu)poegade rühm;2;
+suitsetama;EuroLLM-9b-instruct;Tegevus, mille käigus hingatakse sisse ja välja suitsu, mis tekib tubaka või mõne muu aine põletamisel. Suitsetamine on väga kahjulik tervisele ning võib põhjustada tõsiseid terviseprobleeme, sealhulgas kopsuvähki, südame-veresoonkonna haigusi ja hingamisteede haigusi.;4;
+suitsetama;Claude 3.5 Sonnet;tubakat või muud suitsetatavat ainet põletades selle suitsu sisse hingama ja välja puhuma;4;
+suitsetama;Claude 3.7 Sonnet;tubakat, kanepit vm taimset ainet põletades tekkivat suitsu sisse hingama, tavaliselt naudingu saamiseks või harjumusest;4;
+suitsetama;GPT-4.1;tubakat või muud taolist ainet suitsetamise teel sisse hingama;3;
+suitsetama;o4-mini;tubaka või muu suitsutava aine põletamisest eralduva suitsu sisse- ja väljahingamine;4;
+suitsetama;o3;suitsevast tubakast või muust põlevast ainest tekkivat suitsu sisse hingates tarvitama ja välja puhuma;3;
+sugupuu;EuroLLM-9b-instruct;Sugupuust saab lugeda inimese või looma esivanemate kohta. See näitab, kuidas inimesed on seotud omavahel ning oma vanemate ja vanavanematega. Näiteks võib sugupuu sisaldada teavet inimeste sünni- ja surmadaatumite, nende elukohtade ja ametite kohta.;2;
+sugupuu;Claude 3.7 Sonnet;skemaatiline joonis või kirjalik ülevaade, mis kujutab perekonna või suguvõsa liikmete omavahelisi sugulussuhteid mitme põlvkonna lõikes;4;
+sugupuu;Claude 3 Opus;skemaatiline kujutis, mis näitab isikute põlvnemist ja sugulust mitme põlvkonna vältel;4;
+sugupuu;Gemini 2.5 Pro Preview;ühe isiku v suguvõsa põlvnemist (esivanemaid ja/või järglasi) kajastav skeem v loetelu;4;
+sugupuu;GPT-4o;esivanemate ja järeltulijate järjestikune loetelu või skeem, mis näitab perekondlikke seoseid ja päritolu;4;
+sugupuu;o4-mini;perekonna sugulussuhete skeem, mis kujutab eri põlvkondade kaupa pärilussidemeid;4;
+kategooriline;Llama-4-Maverick-17B-128E-Instruct;vaieldamatut, absoluutset või üldkehtivat väidet, seisukohta või otsust väljendav või kujutav;3;
+kategooriline;GPT-4.1;ilma kahtluse või kõhkluseta, tingimusteta ja kindlalt väitev või otsustav;4;
+personal;Llama-4-Maverick-17B-128E-Instruct;asutuse, ettevõtte vms koosseis, töötajad, töölised;4;
+personal;Claude 3.7 Sonnet;"asutuse, ettevõtte vm organisatsiooni töötajaskond, ametnikud või teenistujad; isiklik, üksikisikut puudutav või temale kuuluv";3;
+personal;GPT-4.1;ühes asutuses, ettevõttes vm töötavad inimesed tervikuna;3;
+perspektiivitu;EuroLLM-9b-instruct;Perspektiivitu tähendab midagi, mis ei näe tulevikus head tulemust või edu. See võib viidata tegevusele, projektile või olukorrale, mis tõenäoliselt ei too oodatavat kasu või positiivseid tulemusi. Näiteks võib öelda, et mõni äriprojekt on perspektiivitu, kui sellel pole piisavalt tugevaid eeldusi edukaks toimimiseks.;3;
+perspektiivitu;Claude 3.5 Sonnet;tulevikuvõimalusi, edasimineku- või arenemisvõimalusi mittepakkuv, lootusetu;4;
+perspektiivitu;Claude 3.7 Sonnet;tulevikuväljavaateta, edasise arengu või edu võimaluseta, lootusetu;4;
+perspektiivitu;Gemini 1.5 Pro;"edasimineku-, arengu- või lootusetust tähistav; ilma tulevikuväljavaateteta";3;
+pesto;EuroLLM-9b-instruct;Pesto on Itaalia päritolu maitseaine, mis põhineb basiilikulehedel, küüslaugul, oliiviõli, pinoleemutteritel (kõrvitsaseemned) ja sool. Seda kasutatakse tavaliselt pasta, risotto või teiste roogade maitsestamiseks. Pesto on populaarne kogu maailmas ja seda saab kasutada erinevat tüüpi toitude maitsestamiseks.;2;
+pesto;Claude 3 Opus;Itaalia päritolu rohelist värvi kaste, mille põhikoostisosad on basiilik, oliiviõli, küüslauk, parmesani juust ja seedermänniseemned;4;
+pesto;Gemini 2.5 Pro Preview;peamiselt basiilikust, pähklitest v seemnetest, küüslaugust, juustust ja õlist valmistatud paks (hrl roheline) kaste v maitselisand;4;
+pesto;GPT-4.1;paks, tavaliselt basiilikust, küüslaugust, oliiviõlist, seedermänniseemnetest ja juustust valmistatud külm kaste või määre;4;
+summaarne;EuroLLM-9b-instruct;Summaarne tähendab lühikokkuvõtet või kokkuvõtlikku ülevaadet mingist teemast, sündmusest või olukorrast. See võib viidata sellele, et andmeid on esitatud lihtsustatud ja kiire vormis, ilma üksikasjadeta. Näiteks võib öelda, et aruanne on tehtud summaariliselt, kui see sisaldab ainult peamisi fakte ja mõjutusi, kuid mitte kõiki üksikasju.;2;
+summaarne;Claude 3 Opus;kogusummat, üldkogust, tervikut hõlmav või väljendav, kokkuvõtlik, summariseeriv;3;
+summaarne;Gemini 1.5 Pro;"kokkuvõtlik, üldine, terviklik;  mitmest osast või komponendist koosnev tervik käsitletud ühe ühikuna.";4;
+summaarne;Gmeini 2.0 Flash;kokkuvõtlik, üldistav, peamisi punkte esile toov;4;
+summaarne;Gemini 2.5 Pro Preview;"Kogusummat esitav või moodustav; koond-; üld-";4;
+summaarne;GPT-4o;kogusummana esinev, kokkuvõtlikult arvestatud või väljendatud, kõigi osade või elementide kogumina käsitletav;4;
+transport;Llama-4-Maverick-17B-128E-Instruct;"inimeste või kaupade vedu, edasitoimetamine; selleks kasutatavad vahendid (sõidukid, teed vms)";4;
+transport;GPT-4o;inimeste, kaupade või informatsiooni liikumine ühest kohast teise, sageli sõidukite või muude vahendite abil, et hõlbustada liikumist ja ühendust erinevate paikade vahel;3;
+transport;o4-mini;inimeste, kaupade või esemete ühest paigast teise liigutamine või selleks kasutatav vahend;3;
+transs;Gemini 1.5 Pro;teadvusseisund, kus inimene on osaliselt või täielikult eraldunud tavapärasest reaalsustajust, näiteks sügava keskendumise, meditatsiooni, hüpnoosi või teatud rituaalide tagajärjel.;4;
+transs;Gmeini 2.0 Flash;"teadvuse muundunud seisund, kus välismaailmaga kontakt on nõrgenenud ja keskendutakse sisemistele aistingutele, mõtetele vms; ekstaasitaoline seisund";4;
+transs;Gemini 2.5 Pro Preview;eriline teadvusseisund, milles reaktsioon välisärritustele on nõrgenenud või puudub;3;
+akne;EuroLLM-9b-instruct;Akne on nahahaigus, mille tunnused on komedoonid (mustad täpid ja valged punktid), punased sõlmed ja mädavillid. See tekib tavaliselt puberteedieas, kui rasunäärmed toodavad rohkem rasu, mis ummistab poorid ja põhjustab põletikku ning infektsiooni. Akne võib olla põhjustatud mitmetest teguritest, sealhulgas geneetiline eelsoodumus, hormonaalsed muutused, toitumine, stress või muud põhjused. Akne on levinud nahahaigus, mida saab ravida erinevate meetoditega, nagu näiteks ravimite kasutamine, kosmeetilised protseduurid ja muud.;3;
+akne;Claude 3.7 Sonnet;naha rasunäärmete põletikuline haigus, mis avaldub näol, rinnal või seljal esinevate vistrike või punnilistena;4;
+akne;Claude 3 Opus;naha rasunäärmete krooniline põletikuline haigus, mille korral tekivad näole, kaelale, seljale ja rinnale vistrikud, sõlmekesed või paised;4;
+akne;Gemini 1.5 Pro;nahal, eriti näol, seljal ja rinnal esinev põletikuline haigus, mille korral ummistuvad rasunäärmed ja tekivad vistrikud.;4;
+akne;GPT-4o;nahahaigus, mida iseloomustavad põletikulised ja mittepõletikulised vistrikud, tavaliselt näol, seljal ja rinnal, sageli seotud rasunäärmete talitlushäiretega;4;
+akne;GPT-4.1;nahahaigus, mille korral rasunäärmed ja karvafolliikulid ummistuvad ning tekivad vistrikud, komedoonid ja põletikulised sõlmed;4;
+aktiivsüsi;Gmeini 2.0 Flash;poorne süsinikmaterjal, mida saadakse orgaaniliste ainete (nt puidu, kookospähklikoorte) kuumutamisel ja aktiveerimisel ning mida kasutatakse adsorbendina gaaside, vedelike ja värvainete puhastamiseks.;3;
+aktiivsüsi;o4-mini;"kõrgel temperatuuril töötlemise teel saadav mikropoorne süsinikmaterjal, mille suured pindalad võimaldavad gaasidest ja vedelikest saasteaineid neelata; kasutatakse filtrimaterjalina ja puhastusainena";4;
+aktsent;Claude 3 Opus;kõnes esinev hääldusviis, mis on omane teisest piirkonnast või riigist pärit isikule ja erineb kirjakeele normist;4;
+aktsent;Gmeini 2.0 Flash;hääldusviis, mis on omane mingile keelelisele või geograafilisele piirkonnale, sotsiaalsele grupile või isikule ja mis erineb mingist standardsest hääldusest.;4;
+aktsent;Gemini 2.5 Pro Preview;võõrkeele v murde mõjuline hääldusviis;3;
+aktsent;o4-mini;sõna või fraasi silp, mille hääldamisel on teistega võrreldes tugevam rõhk, või kõneleja murde- või võõrkeelset päritolu paljastav hääldusomadus;3;
+debatt;EuroLLM-9b-instruct;Debatt on avalik arutelu või vaidlus, mille eesmärk on kaaluda erinevaid seisukohti ja argumente mõne küsimuse või probleemi kohta. Osalejad võivad esitada oma arvamusi ja väiteid ning neid kaitsta, kasutades fakte, statistikat, näiteid ja muid tõendeid. Debatit juhib tavaliselt moderaator, kes korraldab arutelu ja tagab selle reeglitele vastavuse. Debatt võib toimuda kas kirjalikult või suuliselt, näiteks ülekandena või otseülekandena. Debati eesmärk on tavaliselt saavutada üksmeel või otsus, kuid see võib olla ka meelelahutuslik eesmärk.;3;
+debatt;Claude 3.7 Sonnet;avalik arutelu, kus erinevate seisukohtadega osalejad esitavad oma argumente mingi küsimuse või probleemi kohta;4;
+debatt;Gemini 2.5 Pro Preview;avalik v korraldatud vaidlus, arutelu;3;
+debatt;GPT-4o;avalik arutelu või vaidlus, kus osalejad esitavad ja kaitsevad oma seisukohti teatud teemal, eesmärgiga jõuda selgusele või veenda teisi oma vaatenurgas;4;
+debatt;o4-mini;kahe või enama osapoole vahel toimuv argumenteeritud arutelu, kus vahetatakse ja põhjendatakse erinevaid seisukohti;4;
+deegu;Claude 3.5 Sonnet;Lõuna-Ameerika päritolu väike näriline, kes on kasvult hamstri ja merisea vahepealne, hallikas-pruuni karvaga ning pika koheva sabaga lemmikloom;4;
+deegu;Gmeini 2.0 Flash;Lõuna-Ameerikast pärit väike näriline (Octodon degus), keda peetakse ka lemmikloomana;3;
+deegu;GPT-4.1;Lõuna-Ameerikast pärit väike näriline, keda sageli peetakse lemmikloomana;3;
+deegu;o3;väike Lõuna-Ameerikast pärit seltsilembene päevaliine näriline, keda peetakse sageli lemmikloomana;3;
+defekt;Llama-4-Maverick-17B-128E-Instruct;mingi asja või objekti viga või puudus, mis võib olla seotud selle valmistamise, ehitamise või funktsioneerimisega ning mis võib takistada selle normaalset toimimist või halvendada selle kvaliteeti.;3;
+defekt;Gemini 2.5 Pro Preview;"viga, rike vm puudus; ebatäiuslikkus";4;
+defekt;GPT-4.1;mingi eseme, seadme, organismi vms puudus, viga või kahjustus, mis takistab selle normaalset toimimist või vähendab väärtust;4;
+filosofeerima;EuroLLM-9b-instruct;Filosofeerima on tegevus, mille käigus inimesed arutavad erinevaid filosoofilisi teemasid, nagu näiteks elu mõte, inimloomuse olemus, teadmiste päritolu ja tähendus. See võib hõlmata mitmesuguseid küsimusi ja probleeme, mis puudutavad maailma ja inimese kohta selles maailmas. Filosofeerimine võib toimuda kas suuliselt või kirjalikult, näiteks kirjade vahetuses, foorumites või muudes suhtluskeskkondades. Filosofeerimist peetakse sageli meeldivaks ja huvitavaks tegevuseks, mis aitab inimestel paremini mõista ennast ja maailma enda ümber. See võib samuti aidata arendada kriitilist mõtlemist, analüüsivõimet ja loovust.;3;
+filosofeerima;Llama-4-Maverick-17B-128E-Instruct;sügavama mõtte või tähenduse otsimiseks või leidmiseks mõtlema, arutlema või vestlema, sageli abstraktselt või põhimõtteliselt.;4;
+filosofeerima;Claude 3.7 Sonnet;mõtisklema, arutlema filosoofiliste küsimuste üle, püüdes jõuda sügavama arusaamani maailma, inimese või elu olemusest;4;
+filosofeerima;Claude 3 Opus;mõtisklema, arutlema või targutama elulistel, sageli sügavamõttelistel teemadel, püüdes jõuda asjade ja nähtuste olemuseni;4;
+filosofeerima;Gemini 2.5 Pro Preview;Sügavalt, abstraktselt v kaalutlevalt mõtisklema v arutlema.;4;
+huligaan;EuroLLM-9b-instruct;Huligaan on isik, kes teeb ebaseaduslikke või ebasoovitavaid asju, näiteks murrab seadusi, tekitab konflikte teiste inimestega või kahjustab vara. See võib hõlmata mitmesuguseid tegevusi, nagu näiteks vandalism, vargus, vägivald või muu kuritegelik käitumine. Huligaanid võivad olla nii üksikisikud kui ka rühmitused, kes tegutsevad koos eesmärgiga kahjustada teisi inimesi või ühiskonda. Hulklemist peetakse tavaliselt negatiivseks ja ebaseaduslikuks tegevuseks, mis võib põhjustada tõsiseid tagajärgi nii huligaanile endale kui ka teistele inimestele. Huligaanid võivad olla ka ohtlikud, kuna nad võivad kasutada vägivalda või muid ebaseaduslikke meetodeid oma eesmärkide saavutamiseks.;3;
+huligaan;Gemini 2.5 Pro Preview;avalikku korda rikkuv, teisi häiriv või vara lõhkuv isik;4;
+huligaan;GPT-4o;isik, kes käitub avalikus kohas häirivalt, korda rikkudes või vägivaldselt, sageli teistele kahju tekitades või neid ohustades;4;
+kasutajaskond;Llama-4-Maverick-17B-128E-Instruct;kindla teenuse, toote või vahendi kasutajate kogumik või ringkond;3;
+kasutajaskond;Claude 3 Opus;mingi toote, teenuse, süsteemi vms kasutajate ring;4;
+kasutajaskond;Gmeini 2.0 Flash;mingit toodet, teenust, veebisaiti vms regulaarselt kasutavate inimeste kogum;3;
+kasutajaskond;o4-mini;mingi teenuse, toote või süsteemi kasutajatest koosnev kogum;3;
+kasutajaskond;o3;ühte ja sedasama toodet, teenust, süsteemi vms kasutavate inimeste kogum;3;
+peoloom;EuroLLM-9b-instruct;Inimene, kes armastab pidutseda ja osaleda erinevatel üritustel koos sõpradega. Peoloom on tavaliselt seltskondlik ja hea suhtleja, kellel on palju sõpru ning ta naudib pidude nautimist.;2;
+peoloom;Claude 3 Opus;pidutsemist, lõbutsemist ja alkoholi tarbimist liialduseni viiv isik;2;
+peoloom;o4-mini;seltskonnas meeleolu loov ja tähelepanu keskmes olev inimene;3;
+pesakond;Claude 3.7 Sonnet;"ühest pesakonnast pärit loomade, lindude või putukate järglaste kogum; ka lasterohke pere kohta";3;
+pesakond;Claude 3 Opus;ühel sigimisperioodil sündinud (linnu)poegade rühm;2;
+pesakond;o3;ühe ja sama emase korraga sündinud või koorunud järglaste kogum;3;
+suitsetama;Gemini 1.5 Pro;Tubakat või muud ainet põletades sellest eralduvat suitsu sisse hingama ja välja puhuma.;3;
+suitsetama;Gemini 2.5 Pro Preview;põlevast ainest (hrl tubakast) suitsu suhu ja kopsudesse tõmbama;3;
+suitsetama;o4-mini;tubaka või muu suitsutava aine põletamisest eralduva suitsu sisse- ja väljahingamine;2;
+sugupuu;Llama-4-Maverick-17B-128E-Instruct;perekonna liikmete põlvnemist ja nendevahelisi sugulussuhteid näitlikult kujutav skeem või tabel;4;
+sugupuu;Claude 3.5 Sonnet;skemaatiline joonis või kirjalik ülevaade, mis näitab perekonnaliikmete omavahelisi sugulussuhteid ja põlvnemist läbi mitme põlvkonna;3;
+sugupuu;Claude 3.7 Sonnet;skemaatiline joonis või kirjalik ülevaade, mis kujutab perekonna või suguvõsa liikmete omavahelisi sugulussuhteid mitme põlvkonna lõikes;3;
+sugupuu;Claude 3 Opus;skemaatiline kujutis, mis näitab isikute põlvnemist ja sugulust mitme põlvkonna vältel;3;
+sugupuu;Gemini 1.5 Pro;Perekonna või suguvõsa liikmete sugulussidemeid ja põlvnemisjärjestust kujutav skemaatiline esitus, tavaliselt puu kujul.;3;
+sugupuu;Gmeini 2.0 Flash;perekonna põlvnemise skeem, esivanemate ja järeltulijate järjestikune loetelu;2;
+sugupuu;GPT-4o;esivanemate ja järeltulijate järjestikune loetelu või skeem, mis näitab perekondlikke seoseid ja päritolu;4;
+kategooriline;Claude 3.7 Sonnet;kindel, tingimusteta, eranditeta, vaieldamatult kehtiv või esitatud, kompromisse välistav;4;
+kategooriline;Claude 3 Opus;tingimusteta, vastuväiteid või erandeid välistav, täiesti kindel ja otsustav;4;
+personal;EuroLLM-9b-instruct;Personal viitab töötajatele ettevõttes, asutuses või organisatsioonis. See hõlmab kõiki töötajaid, alates juhtidest kuni tavatöötajateni, kes on osa organisatsiooni struktuurist ja aitavad kaasa selle toimimisele.;2;
+personal;Gemini 1.5 Pro;asutuse, ettevõtte või organisatsiooni kõik töötajad kokku;3;
+personal;Gmeini 2.0 Flash;"mingi organisatsiooni või ettevõtte töötajate koosseis; kaadrikoosseis.";4;
+personal;GPT-4o;töötajaskond, mingi asutuse, ettevõtte vms teenistuses olevad inimesed, kes täidavad teatud ülesandeid ja kohustusi;3;
+personal;o3;mingis asutuses, ettevõttes või organisatsioonis töötavate inimeste kogum, töötajaskond;3;
+perspektiivitu;EuroLLM-9b-instruct;Perspektiivitu tähendab midagi, mis ei näe tulevikus head tulemust või edu. See võib viidata tegevusele, projektile või olukorrale, mis tõenäoliselt ei too oodatavat kasu või positiivseid tulemusi. Näiteks võib öelda, et mõni äriprojekt on perspektiivitu, kui sellel pole piisavalt tugevaid eeldusi edukaks toimimiseks.;2;
+perspektiivitu;Claude 3 Opus;tulevikuväljavaateid mittepakkuv, edasiminekuvõimalusteta, lootusetu;3;
+perspektiivitu;Gemini 2.5 Pro Preview;Arengu- või tulevikuväljavaadeteta;4;
+perspektiivitu;GPT-4o;tulevikuväljavaadeteta, edasise arengu või eduvõimalusteta, lootusetu või sihitu olukord või seisund;3;
+perspektiivitu;o3;"ÜSi definitsioon - ilma tuleviku- ja arenguväljavaadeteta, edulootuseta; lootusetu, väljavaateta";2;
+pesto;Claude 3 Opus;Itaalia päritolu rohelist värvi kaste, mille põhikoostisosad on basiilik, oliiviõli, küüslauk, parmesani juust ja seedermänniseemned;3;
+pesto;Gemini 1.5 Pro;Itaaliast pärit kaste, mis on tavaliselt valmistatud basiilikust, küüslaugust, männipähklitest, Parmesani juustust ja oliiviõlist.;3;
+pesto;Gmeini 2.0 Flash;itaaliapärane basiilikust, küüslaugust, seedermänniseemnetest, Parmesani juustust ja oliiviõlist valmistatud roheline kaste, mida kasutatakse peamiselt pasta, aga ka teiste toitude maitsestamiseks;4;
+summaarne;Claude 3.5 Sonnet;kõiki osi või üksikasju kokku võttev, kogu hulka hõlmav, kokkuvõtlik;3;
+summaarne;Claude 3.7 Sonnet;"kõiki osi või üksikasju kokku võttev, koondav; kogu hulka, kogumit või tervikut hõlmav";3;
+summaarne;Gemini 1.5 Pro;"kokkuvõtlik, üldine, terviklik;  mitmest osast või komponendist koosnev tervik käsitletud ühe ühikuna.";2;
+summaarne;Gemini 2.5 Pro Preview;"Kogusummat esitav või moodustav; koond-; üld-";2;
+summaarne;GPT-4o;kogusummana esinev, kokkuvõtlikult arvestatud või väljendatud, kõigi osade või elementide kogumina käsitletav;2;
+summaarne;o4-mini;"mitme osa või näitaja summana moodustuv või nii esitatud; kokkuvõtlikult kogu hulka või üldpilti näitav";3;
+transport;Claude 3.7 Sonnet;inimeste, kaupade, materjalide vm liikumine või vedamine ühest kohast teise, kasutades selleks erinevaid liiklusvahendeid või -viise;4;
+transport;Gmeini 2.0 Flash;inimeste või kaupade toimetamine ühest kohast teise, veondus;4;
+transport;Gemini 2.5 Pro Preview;kaupade või reisijate edasitoimetamine ühest kohast teise;3;
+transport;GPT-4.1;inimeste, kaupade või esemete ühest kohast teise viimine või vedamine;3;
+transs;Llama-4-Maverick-17B-128E-Instruct;"teadvuseseisund, mida iseloomustab kõrgenenud vastuvõtlikkus sisendusele või oma tegevuse ja ümbruse suhtes vähese teadlikkusega sooritatavad toimingud; hüpnootiline uni või sellega sarnane seisund";3;
+transs;Claude 3.5 Sonnet;teadvuse muutunud seisund, milles inimene on välismaailmast osaliselt või täielikult eraldunud ning keskendunud oma sisemaailmale;4;
+transs;Claude 3 Opus;hüpnoosiga sarnanev seisund, milles inimene on oma ümbruse suhtes tundetum ja allub kergemini sisendusele;3;
+transs;o4-mini;muudetud teadvuseseisund, mille korral inimene kaotab osaliselt või täielikult kontakti välismaailmaga ja keskendub sisemisele kogemusele;4;
+transs;o3;muutunud, sügavalt keskendunud teadvusseisund, kus välisärritajad tajutakse ähmaselt ja tähelepanu koondub sisemistele kogemustele või hüpnootilisele mõjutusele;4;
+akne;Llama-4-Maverick-17B-128E-Instruct;tavaliselt puberteedieas nahka, harvemini teisi elundeid haarav krooniline põletikuline nahahaigus, mis väljendub komedone (mustpeade), punetavate sõlmekeste, mädakoldeid sisaldavate põletikunärude ja armide tekkes;3;
+akne;Gmeini 2.0 Flash;peamiselt näo, selja ja rinna nahal esinevad põletikulised vistrikud ja punnid;3;
+akne;GPT-4o;nahahaigus, mida iseloomustavad põletikulised ja mittepõletikulised vistrikud, tavaliselt näol, seljal ja rinnal, sageli seotud rasunäärmete talitlushäiretega;3;
+aktiivsüsi;Claude 3 Opus;poorne süsinikurikas aine, mida kasutatakse nt vee ja õhu puhastamiseks, mürgistuste ravis, seedehäirete korral jm tänu tema suurele imamisvõimele;4;
+aktiivsüsi;Gmeini 2.0 Flash;poorne süsinikmaterjal, mida saadakse orgaaniliste ainete (nt puidu, kookospähklikoorte) kuumutamisel ja aktiveerimisel ning mida kasutatakse adsorbendina gaaside, vedelike ja värvainete puhastamiseks.;3;
+aktsent;EuroLLM-9b-instruct;Aktsent on helivärv, mida inimene kasutab teatud keele rääkimiseks või hääldamisel konkreetses piirkonnas. See sisaldab kõiki individuaalseid helisid ja rütme, mis eristavad kõnelejat teistest. Aktsent võib olla iseloomulik teatud piirkonnale, rahvale või rahvusele. Näiteks on ameerika inglise aktsent erinev briti inglise aktsendist. Samuti võivad inimesed rääkida oma kodumaal omapärase aktsendiga, kuid võõrastes piirkondades võivad nad omandada uue aktsendi.;2;
+aktsent;Claude 3.5 Sonnet;"võõrapärane hääldusviis või kõnemaneer, mis tuleneb emakeele või muu keele mõjust; rõhk või pearõhk kõnes, muusikas või kunstis";3;
+aktsent;Gmeini 2.0 Flash;hääldusviis, mis on omane mingile keelelisele või geograafilisele piirkonnale, sotsiaalsele grupile või isikule ja mis erineb mingist standardsest hääldusest.;4;
+debatt;Gmeini 2.0 Flash;avalik arutelu, väitlus kindlaksmääratud reeglite järgi, kus osalejad püüavad oma seisukohti argumentidega kaitsta ja teisi veenda;4;
+deegu;Claude 3 Opus;väike Lõuna-Ameerika näriline, keda peetakse lemmikloomana;3;
+deegu;GPT-4o;väike näriline, kes kuulub okassaba-deegude sugukonda, tuntud oma sotsiaalse käitumise ja aktiivsuse poolest, sageli peetav lemmikloomana.;2;
+deegu;GPT-4.1;Lõuna-Ameerikast pärit väike näriline, keda sageli peetakse lemmikloomana;4;
+deegu;o4-mini;poolvedel või pastataoline jahu- ja vedelikusegu, mida sõtkutakse ja vormitakse taignana erinevate pagari- ja kondiitritoodete valmistamiseks;1;
+defekt;Claude 3.7 Sonnet;ese, seade, toode vm, millel on puudus, viga või rike, mis takistab selle normaalset toimimist või kasutamist;1;
+defekt;Claude 3 Opus;toote, detaili, materjali vms viga või puudus, mis takistab selle kasutamist ettenähtud otstarbel või vähendab selle töökindlust ja vastupidavust;4;
+defekt;Gemini 1.5 Pro;vigane koht, viga, puudus, rike;2;
+defekt;Gmeini 2.0 Flash;mingi puudus, viga või rike, mis teeb midagi ebatäiuslikuks või töökorrast välja viib;2;
+defekt;GPT-4o;puudus või viga, mis rikub terviklikkust, funktsionaalsust või välimust;3;
+filosofeerima;Claude 3.5 Sonnet;mõtisklema ja arutlema üldiste eluliste või abstraktsete küsimuste üle, sageli teoreetiliselt ja süvitsi minnes;3;
+filosofeerima;Claude 3.7 Sonnet;mõtisklema, arutlema filosoofiliste küsimuste üle, püüdes jõuda sügavama arusaamani maailma, inimese või elu olemusest;4;
+filosofeerima;Gemini 2.5 Pro Preview;Sügavalt, abstraktselt v kaalutlevalt mõtisklema v arutlema.;3;
+filosofeerima;GPT-4o;sügavamõtteliselt arutlema, mõtisklema elu, maailma või abstraktsete teemade üle, sageli teoreetilises või spekulatiivses võtmes;3;
+huligaan;EuroLLM-9b-instruct;Huligaan on isik, kes teeb ebaseaduslikke või ebasoovitavaid asju, näiteks murrab seadusi, tekitab konflikte teiste inimestega või kahjustab vara. See võib hõlmata mitmesuguseid tegevusi, nagu näiteks vandalism, vargus, vägivald või muu kuritegelik käitumine. Huligaanid võivad olla nii üksikisikud kui ka rühmitused, kes tegutsevad koos eesmärgiga kahjustada teisi inimesi või ühiskonda. Hulklemist peetakse tavaliselt negatiivseks ja ebaseaduslikuks tegevuseks, mis võib põhjustada tõsiseid tagajärgi nii huligaanile endale kui ka teistele inimestele. Huligaanid võivad olla ka ohtlikud, kuna nad võivad kasutada vägivalda või muid ebaseaduslikke meetodeid oma eesmärkide saavutamiseks.;2;
+huligaan;Llama-4-Maverick-17B-128E-Instruct;inimene, kes käitub korrarikkujana, teeb õigusvastaseid tegusid või põhjustab avalikus kohas segadust ja korratust, sageli vägivaldselt või ülekohtuselt.;2;
+huligaan;Claude 3.5 Sonnet;avalikus kohas teisi häiriv ja korda rikkuv isik, kes käitub vägivaldselt või ebaviisakalt ning eirab ühiskondlikke norme;4;
+huligaan;Claude 3 Opus;ühiskondlikku korda rikkuv, teisi inimesi tülitav või neile kahju tekitav isik;3;
+huligaan;Gemini 1.5 Pro;vägivaldne ja korrarikkumisele kalduv isik, kes tekitab avalikus kohas pahandusi ja häirib avalikku korda.;4;
+huligaan;Gemini 2.5 Pro Preview;avalikku korda rikkuv, teisi häiriv või vara lõhkuv isik;3;
+huligaan;o4-mini;avalikus kohas lärmi, vägivalda või korratust tekitav isik;3;
