@@ -4,4 +4,4 @@ Kaust **katse1** sisaldab meie esimese eksperimendiga seotud materjale. Katse tu
 
 Kaust **katse2** sisaldab meie teise eksperimendiga seotud materjale. 2025. aasta juunikuu seisuga on katse jõudnud faasi, kus materjal, sh võrdlusandmestiku esimene versioon, on kokku pandud ja järgneb analüüs. 
 
-Kaust **katse3** sisaldab meie kolmnda eksperimendiga seotud materjale. 2025. aasta septembrikuu seisuga on katse jõudnud faasi, kus materjal on kokku pandud ja järgneb analüüs.
+Kaust **katse3** sisaldab meie kolmanda eksperimendiga seotud materjale. 2025. aasta septembrikuu seisuga on katse jõudnud faasi, kus materjal on kokku pandud ja järgneb analüüs.
