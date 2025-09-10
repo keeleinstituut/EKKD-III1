@@ -20,8 +20,8 @@ client = openai.OpenAI()
 MODEL = "gpt-4o"
 EMBED_MODEL = SentenceTransformer("intfloat/multilingual-e5-base")
 DATA_FOLDER = "contexts"
-OUTPUT_FOLDER = "vastused_v2"
-FINAL_CSV = "vastused_koond_v2.csv"
+OUTPUT_FOLDER = "vastused"
+FINAL_CSV = "vastused_koond.csv"
 
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 os.makedirs("vector_cache", exist_ok=True)
@@ -257,7 +257,7 @@ def process_word_analysis(word: str):
 def main():
     all_rows = []
     
-    # Loeme sisend_2.tsv faili (ainult sõnad)
+    # Loeme sisend faili (ainult sõnad)
     with open("sisend_2.tsv", newline="", encoding="utf-8") as csvfile:
         reader = csv.reader(csvfile)
         next(reader, None)  # jäta päis vahele, kui on
