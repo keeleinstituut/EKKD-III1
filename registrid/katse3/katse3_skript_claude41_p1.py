@@ -1,9 +1,9 @@
-#Kood, registrite töörühma 3. katse tarvis. Eesmärk on OpenAI mudelile kaasa anda korpusest andmed, mida ta analüüsima peab.
+#Kood, registrite töörühma 3. katse tarvis. Eesmärk on Anthropicu mudelile kaasa anda korpusest andmed, mida ta analüüsima peab.
 #Kui kontekst on liiga suur, siis see vektoriseeritakse.
 #Autor: Eleri Aedmaa
+
 import os
 import csv
-import openai
 import pickle
 import faiss
 import tiktoken
@@ -12,10 +12,17 @@ import re
 import time
 from typing import List, Dict, Any
 from sentence_transformers import SentenceTransformer
+from anthropic import Anthropic
 
 # --- Konfiguratsioon ---
-client = openai.OpenAI()
-MODEL = "gpt-4o"
+# API klient
+api_key = os.getenv("ANTHROPIC_API_KEY")
+if not api_key:
+    raise RuntimeError("ANTHROPIC_API_KEY puudub. Palun määrake keskkonnamuutuja.")
+
+client = Anthropic(api_key=api_key)
+
+MODEL = "claude-opus-4-1-20250805"  # Claude 4.1 Opus
 EMBED_MODEL = SentenceTransformer("intfloat/multilingual-e5-base")
 DATA_FOLDER = "contexts"
 OUTPUT_FOLDER = "vastused"
@@ -25,7 +32,7 @@ os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 os.makedirs("vector_cache", exist_ok=True)
 
 # --- Abi funktsioonid ---
-def tokenize_length(text: str, model=MODEL):
+def tokenize_length(text: str, model="gpt-4o"):  # Jätame tiktoken GPT mudeli jaoks
     enc = tiktoken.encoding_for_model(model)
     return len(enc.encode(text))
 
@@ -64,16 +71,26 @@ def get_relevant_chunks_max(query: str, chunks: List[str], index, max_k=None):
     return sorted_chunks
 
 def get_completion(prompt: str, context: str) -> str:
-    response = client.chat.completions.create(
-        model=MODEL,
-        messages=[
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": context}
-        ],
-        max_tokens=16000,
-        temperature=0.1
-    )
-    return response.choices[0].message.content
+    """Küsib Claude 4.1 Opuselt vastuse."""
+    try:
+        response = client.messages.create(
+            model=MODEL,
+            max_tokens=10000,
+            temperature=0.1,
+            messages=[
+                {
+                    "role": "user", 
+                    "content": f"{prompt}\n\nTekstimaterjal:\n{context}"
+                }
+            ]
+        )
+        
+        # Claude API tagastab vastuse sõnumite kujul
+        return response.content[0].text if response.content else ""
+        
+    except Exception as e:
+        print(f"Claude API päringu viga: {e}")
+        return ""
 
 def sanitize_filename(text):
     return re.sub(r'[<>:"/\\|?*]', '_', text)[:100]
@@ -84,17 +101,17 @@ def create_analysis_prompt(word: str):
 
 Vasta järgmistele küsimustele, tuginedes ainult etteantud materjalile:
 
-1. Nimeta sõna „{word}" kõik tähendused, mida etteantud tekstides näed. Ära erista alammõisteid erinevateks tähendusteks (näiteks „alukad" ei tähenda eraldi „aluspesu" ja „vanaema aluspükse", vaid üksnes „aluspesu").
+1. Nimeta sõna „{word}" kõik tähendused, mida etteantud tekstides näed. Ära erista alamõisteid erinevateks tähendusteks (näiteks „alukad" ei tähenda eraldi „aluspesu" ja „vanaema aluspükse", vaid üksnes „aluspesu").
 
 2. Nimeta sõna „{word}" erinevate tähenduste arv.
 
-3. Iga tähenduse juurde lisa, kas sõna on selles tähenduses sage, keskmine või vähene. Sagedusrühm vali võrdluses sõna teiste tähendustega.
+3. Iga tähenduse juurde lisa, kas sõna on selles tähenduses sage, keskmine või vähene. Sageduserühm vali võrdluses sõna teiste tähendustega.
 
 4. Too iga tähenduse kohta etteantud materjalist 5 näitelauset, kus „{word}" selles tähenduses esineb.
 
 5. Otsusta sõna iga tähenduse kohta, kas seda kasutatakse pigem informaalsetes või neutraalsetes/formaalsetes tekstides? Kui sa ei oska eristust teha, sest see ei tule selgelt esile, siis ütle, et „ei kohaldu". Palun põhjenda oma valikut 5-10 lausega.
 
-6. Ütle iga tähenduse juures, kui kindel sa oled oma vastuses selle kohta, kas tähendust kasutatakse informaalsetes või neutraalsetes/formaalsetes tekstides või „ei kohaldu“. Vali, kas oled „väga kindel“, „pigem kindel“, „pigem ebakindel“, „väga ebakindel“.
+6. Ütle iga tähenduse juures, kui kindel sa oled oma vastuses selle kohta, kas tähendust kasutatakse informaalsetes või neutraalsetes/formaalsetes tekstides või „ei kohaldu". Vali, kas oled „väga kindel", „pigem kindel", „pigem ebakindel", „väga ebakindel".
 
 7. Kui mõnda tähendust kasutatakse tekstides mingil viisil eripäraselt, siis vali sellele sobiv registrimärgend järgmistest:
 
@@ -109,7 +126,7 @@ Vasta järgmistele küsimustele, tuginedes ainult etteantud materjalile:
 - vananenud (vali siis, kui sõna selles tähenduses on iganenud, aegunud; näiteks automobiil, aeroplaan, drogist)
 - vulgaarne (vali siis, kui sõna selles tähenduses on labane, jäme, tahumatu; näiteks hoorapoeg, koinima, perse saatma)
 
-Iga valiku korral põhjenda 5-10 lausega, miks just see märgend sobib. Igal informaalsel tähendusel peab olema vähemalt üks märgend. Kui sobib mitu, too mitu. Neutraalsele/formaalsele ja „ei kohaldu“ tähendusele lisa märgend ainult siis, kui see tundub tekstimaterjali põhjal vajalik.
+Iga valiku korral põhjenda 5-10 lausega, miks just see märgend sobib. Igal informaalsel tähendusel peab olema vähemalt üks märgend. Kui sobib mitu, too mitu. Neutraalsele/formaalsele ja „ei kohaldu" tähendusele lisa märgend ainult siis, kui see tundub tekstimaterjali põhjal vajalik.
 
 OLULINE: Pärast küsimustele vastamist anna oma vastused TÄPSELT järgmises struktureeritud formaadis parsimiseks. Kasuta erinevat eraldajat (§§§) iga tähenduse andmete vahel:
 
@@ -248,7 +265,7 @@ def parse_analysis_response(txt: str, word: str) -> List[Dict[str, Any]]:
             print(f"   ✅ Tähendus {i+1}: {meaning}")
             print(f"      📈 Sagedus: {fval}")
             print(f"      📊 Register: {reg}  ({rc})")
-            print(f"      🔍 Reg.põhjendus: {rj[:100]}{'...' if len(rj) > 100 else ''}")
+            print(f"      📝 Reg.põhjendus: {rj[:100]}{'...' if len(rj) > 100 else ''}")
             print(f"      🏷️ Märgend(id): {tag_text}")
             if tj != "ei-kohaldu":
                 print(f"      📝 Märgendi põhjendus: {tj[:100]}{'...' if len(tj) > 100 else ''}")
@@ -298,11 +315,11 @@ def process_word_analysis(word: str):
         lines = [line.strip() for line in f if line.strip()]
 
     full_text = "\n".join(lines)
-    if tokenize_length(full_text) < 120000:
+    if tokenize_length(full_text) < 150000:
         context = full_text
         print(f"📄 Kasutan täielikku konteksti ({len(lines)} rida)")
     else:
-        print(f"ℹ️ Fail on suur – kasutatakse embedding-põhist lõiguvalikut ({word})")
+        print(f"ℹ️ Fail on suur – kasutatakse embedding-põhist lõikuvalikut ({word})")
         index, chunks = ensure_index_exists(word, lines)
         relevant_chunks = get_relevant_chunks_max(word, chunks, index, max_k=150)
         context = "\n---\n".join(relevant_chunks)
@@ -334,11 +351,11 @@ def process_word_analysis(word: str):
             print(f"      📋 Register: {result['Tekstiregister']} ({result['Registri kindlus']})")
             print(f"      🏷️ Märgend: {result['Registrimärk']}")
 
-        print(f"✅ {word} — Analüüs lõpetatud\n")
+        print(f"✅ {word} – Analüüs lõpetatud\n")
         return parsed_results
 
     except Exception as e:
-        print(f"❌ Viga sõnaga {word}: {e}")
+        print(f"⌛ Viga sõnaga {word}: {e}")
         return None
 
 # --- Põhiprogramm ---
@@ -362,7 +379,7 @@ def main():
 
     for i, word in enumerate(words, 1):
         print(f"\n{'='*60}")
-        print(f"📝 ANALÜÜSIN ({i}/{len(words)}): '{word}'")
+        print(f"🔍 ANALÜÜSIN ({i}/{len(words)}): '{word}'")
         print(f"{'='*60}")
 
         result = process_word_analysis(word)
@@ -403,14 +420,14 @@ def main():
 
     # Statistika
     unikaalsed_sõnad = len(set(row["Sõna"] for row in all_rows))
-    toötletud_sõnad = len(set(row["Sõna"] for row in all_rows if row["Tähendus"] != "töötlemata"))
-    toötlemata_sõnad = unikaalsed_sõnad - toötletud_sõnad
+    töödeldud_sõnad = len(set(row["Sõna"] for row in all_rows if row["Tähendus"] != "töötlemata"))
+    töötlemata_sõnad = unikaalsed_sõnad - töödeldud_sõnad
     keskmine_tähendusi = len(all_rows) / unikaalsed_sõnad if unikaalsed_sõnad > 0 else 0
 
     print(f"\n📈 Analüüsi statistika:")
     print(f"  Kokku sõnu: {unikaalsed_sõnad}")
-    print(f"  Edukalt töödeldud sõnu: {toötletud_sõnad}")
-    print(f"  Töötlemata sõnu (puuduvad failid): {toötlemata_sõnad}")
+    print(f"  Edukalt töödeldud sõnu: {töödeldud_sõnad}")
+    print(f"  Töötlemata sõnu (puuduvad failid): {töötlemata_sõnad}")
     print(f"  Keskmine tähendusi sõna kohta: {keskmine_tähendusi:.1f}")
 
 if __name__ == "__main__":

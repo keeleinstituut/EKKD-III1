@@ -1,16 +1,20 @@
-#Kood, registrite töörühma 3. katse tarvis. Eesmärk on OpenAI mudelilt küsida vastuseid ainult ta enda treeningandmete põhjal. 
+#Kood, registrite töörühma 3. katse tarvis. Eesmärk on Anthropicu mudelilt küsida vastuseid ainult ta enda treeningandmete põhjal. 
 #Autor: Eleri Aedmaa
 import os
 import csv
 import re
 import time
 from typing import List, Dict, Any
-
-import openai
+from anthropic import Anthropic
 
 # --- Konfiguratsioon ---
-client = openai.OpenAI()
-MODEL = "gpt-4o"
+# API klient
+api_key = os.getenv("ANTHROPIC_API_KEY")
+if not api_key:
+    raise RuntimeError("ANTHROPIC_API_KEY puudub. Palun määrake keskkonnamuutuja.")
+
+client = Anthropic(api_key=api_key)
+MODEL = "claude-opus-4-1-20250805"  # Claude 4.1 Opus
 OUTPUT_FOLDER = "vastused"
 FINAL_CSV = "vastused_koond.csv"
 
@@ -18,16 +22,26 @@ os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 # --- Abifunktsioonid ---
 def get_completion(prompt: str, user_msg: str) -> str:
-    resp = client.chat.completions.create(
-        model=MODEL,
-        messages=[
-            {"role": "system", "content": prompt},
-            {"role": "user", "content": user_msg}
-        ],
-        max_tokens=16000,
-        temperature=0.1
-    )
-    return resp.choices[0].message.content
+    """Küsib Claude 4.1 Opuselt vastuse."""
+    try:
+        response = client.messages.create(
+            model=MODEL,
+            max_tokens=16000,
+            temperature=0.1,
+            messages=[
+                {
+                    "role": "user", 
+                    "content": f"{prompt}\n\n{user_msg}"
+                }
+            ]
+        )
+        
+        # Claude API tagastab vastuse sõnumite kujul
+        return response.content[0].text if response.content else ""
+        
+    except Exception as e:
+        print(f"Claude API päringu viga: {e}")
+        return ""
 
 def sanitize_filename(text: str) -> str:
     return re.sub(r'[<>:"/\\|?*]', '_', text)[:100]
@@ -48,7 +62,7 @@ Vasta järgmistele küsimustele, tuginedes ainult enda treeningandmetele:
 
 5. Otsusta sõna iga tähenduse kohta, kas seda kasutatakse pigem informaalsetes või neutraalsetes/formaalsetes tekstides? Kui sa ei oska eristust teha, sest see ei tule selgelt esile, siis ütle, et „ei kohaldu". Palun põhjenda oma valikut 5-10 lausega.
 
-6. Ütle iga tähenduse juures, kui kindel sa oled oma vastuses selle kohta, kas tähendust kasutatakse informaalsetes või neutraalsetes/formaalsetes tekstides või „ei kohaldu“. Vali, kas oled „väga kindel“, „pigem kindel“, „pigem ebakindel“, „väga ebakindel“.
+6. Ütle iga tähenduse juures, kui kindel sa oled oma vastuses selle kohta, kas tähendust kasutatakse informaalsetes või neutraalsetes/formaalsetes tekstides või „ei kohaldu". Vali, kas oled „väga kindel", „pigem kindel", „pigem ebakindel", „väga ebakindel".
 
 7. Kui mõnda tähendust kasutatakse mingil viisil eripäraselt, siis vali sellele sobiv registrimärgend järgmistest:
 
@@ -63,7 +77,7 @@ Vasta järgmistele küsimustele, tuginedes ainult enda treeningandmetele:
 - vananenud (vali siis, kui sõna selles tähenduses on iganenud, aegunud; näiteks automobiil, aeroplaan, drogist)
 - vulgaarne (vali siis, kui sõna selles tähenduses on labane, jäme, tahumatu; näiteks hoorapoeg, koinima, perse saatma)
 
-Iga valiku korral põhjenda 5-10 lausega, miks just see märgend sobib. Igal informaalsel tähendusel peab olema vähemalt üks märgend. Kui sobib mitu, too mitu. Neutraalsele/formaalsele ja „ei kohaldu“ tähendusele lisa märgend ainult siis, kui see tundub treeningandmete põhjal vajalik.
+Iga valiku korral põhjenda 5-10 lausega, miks just see märgend sobib. Igal informaalsel tähendusel peab olema vähemalt üks märgend. Kui sobib mitu, too mitu. Neutraalsele/formaalsele ja „ei kohaldu" tähendusele lisa märgend ainult siis, kui see tundub treeningandmete põhjal vajalik.
 
 OLULINE: Pärast küsimustele vastamist anna oma vastused TÄPSELT järgmises struktureeritud formaadis parsimiseks. Kasuta erinevat eraldajat (§§§) iga tähenduse andmete vahel:
 
@@ -185,16 +199,16 @@ def parse_analysis_response(txt: str, word: str) -> List[Dict[str, Any]]:
                     })
 
             # Lühilog
-            print(f"   ✅ Tähendus {i+1}: {meaning}")
-            print(f"      📈 Sagedus: {fval}")
-            print(f"      📊 Register: {reg}  ({rc})")
-            print(f"      🔍 Reg.põhjendus: {rj[:120]}{'...' if len(rj) > 120 else ''}")
-            print(f"      🏷️ Märgend(id): {tag_text}")
+            print(f"   Tähendus {i+1}: {meaning}")
+            print(f"      Sagedus: {fval}")
+            print(f"      Register: {reg}  ({rc})")
+            print(f"      Reg.põhjendus: {rj[:120]}{'...' if len(rj) > 120 else ''}")
+            print(f"      Märgend(id): {tag_text}")
             if tj != "ei-kohaldu":
-                print(f"      📝 Märgendi põhjendus: {tj[:120]}{'...' if len(tj) > 120 else ''}")
+                print(f"      Märgendi põhjendus: {tj[:120]}{'...' if len(tj) > 120 else ''}")
 
     except Exception as e:
-        print(f"   ⚠️ Parsimise viga: {e}")
+        print(f"   Parsimise viga: {e}")
         results.append({
             "Sõna": word,
             "Tähenduse nr": 1,
@@ -228,14 +242,14 @@ def parse_analysis_response(txt: str, word: str) -> List[Dict[str, Any]]:
 # --- Töötlemine (ilma kontekstifailideta) ---
 def process_word_analysis(word: str):
     prompt = create_analysis_prompt(word)
-    user_msg = f"Analüüsi sõna „{word}” ainult oma treeningandmete põhjal ja tagasta täpselt nõutud struktuur."
+    user_msg = f"Analüüsi sõna \"{word}\" ainult oma treeningandmete põhjal ja tagasta täpselt nõutud struktuur."
 
     try:
         reply = get_completion(prompt, user_msg)
 
         # logi ja salvesta toorvastus
         print("\n" + "="*80)
-        print(f"🤖 MUDELI VASTUS sõnale '{word}':")
+        print(f"MUDELI VASTUS sõnale '{word}':")
         print("="*80)
         print(reply)
         print("="*80)
@@ -248,25 +262,25 @@ def process_word_analysis(word: str):
         parsed = parse_analysis_response(reply, word)
 
         # lühikokkuvõte
-        print(f"\n📊 PARSITUD TULEMUS:")
-        print(f"   📝 Ridu kokku: {len(parsed)}")
+        print(f"\nPARSITUD TULEMUS:")
+        print(f"   Ridu kokku: {len(parsed)}")
         for r in parsed:
             print(f"   {r['Tähenduse nr']}. {r['Tähendus'][:60]}{'...' if len(r['Tähendus']) > 60 else ''}")
-            print(f"      📈 {r['Sagedus']} | 📋 {r['Tekstiregister']} ({r['Registri kindlus']}) | 🏷️ {r['Registrimärk']}")
+            print(f"      {r['Sagedus']} | {r['Tekstiregister']} ({r['Registri kindlus']}) | {r['Registrimärk']}")
 
-        print(f"✅ {word} — Analüüs lõpetatud\n")
+        print(f"{word} — Analüüs lõpetatud\n")
         return parsed
 
     except Exception as e:
-        print(f"❌ Viga sõnaga {word}: {e}")
+        print(f"Viga sõnaga {word}: {e}")
         return None
 
 # --- Põhiprogramm ---
 def main():
     all_rows: List[Dict[str, Any]] = []
 
-    # Loeme sisendfaili (tab-eraldaja). Kui päis „Sõna“, jäta vahele.
-    with open("katse3_loppsonad_2.txt", newline="", encoding="utf-8") as csvfile:
+    # Loeme sisendfaili (tab-eraldaja). Kui päis „Sõna", jäta vahele.
+    with open("sisend.txt", newline="", encoding="utf-8") as csvfile:
         reader = csv.reader(csvfile, delimiter="\t")
         first_row = next(reader, None)
         if first_row and len(first_row) == 1 and first_row[0].strip().lower() in ("sõna", "sona", "word"):
@@ -281,14 +295,14 @@ def main():
 
     for i, word in enumerate(words, 1):
         print(f"\n{'='*60}")
-        print(f"📝 ANALÜÜSIN ({i}/{len(words)}): '{word}'")
+        print(f"ANALÜÜSIN ({i}/{len(words)}): '{word}'")
         print(f"{'='*60}")
 
         result = process_word_analysis(word)
         if result:
             all_rows.extend(result)
         else:
-            print("⚠️ Lisame tühja rea järjekorra säilitamiseks")
+            print("Lisame tühja rea järjekorra säilitamiseks")
             all_rows.append({
                 "Sõna": word,
                 "Tähenduse nr": 1,
@@ -317,15 +331,15 @@ def main():
         for row in all_rows:
             writer.writerow(row)
 
-    print(f"\n✅ Lõplik fail salvestatud: {FINAL_CSV}")
-    print(f"📊 Kokku analüüsitud ridu: {len(all_rows)}")
+    print(f"\nLõplik fail salvestatud: {FINAL_CSV}")
+    print(f"Kokku analüüsitud ridu: {len(all_rows)}")
 
     # Stat
     uniq = len(set(r["Sõna"] for r in all_rows))
     processed = len(set(r["Sõna"] for r in all_rows if r["Tähendus"] != "töötlemata"))
     unprocessed = uniq - processed
     avg_meanings = (len(all_rows) / uniq) if uniq > 0 else 0.0
-    print(f"\n📈 Analüüsi statistika:")
+    print(f"\nAnalüüsi statistika:")
     print(f"  Kokku sõnu: {uniq}")
     print(f"  Edukalt töödeldud sõnu: {processed}")
     print(f"  Töötlemata sõnu: {unprocessed}")
