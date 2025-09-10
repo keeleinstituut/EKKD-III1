@@ -1,8 +1,6 @@
 #Kood registrite töörühma 3. katse tarvis. Eesmärk on OpenAI mudelile kaasa anda korpusest andmed, mida ta analüüsima peab. Sõna antakse ilma tähenduseta.
 #Kui kontekst on liiga suur, siis see vektoriseeritakse.
 #Autor: Eleri Aedmaa
-
-
 import os
 import csv
 import openai
@@ -12,7 +10,7 @@ import tiktoken
 import pandas as pd
 import re
 import time
-from typing import List
+from typing import List, Dict, Any
 from sentence_transformers import SentenceTransformer
 
 # --- Konfiguratsioon ---
@@ -73,7 +71,7 @@ def get_completion(prompt: str, context: str) -> str:
             {"role": "system", "content": prompt},
             {"role": "user", "content": context}
         ],
-        max_tokens=2000,
+        max_tokens=16000,
         temperature=0.1
     )
     return response.choices[0].message.content
@@ -81,120 +79,242 @@ def get_completion(prompt: str, context: str) -> str:
 def sanitize_filename(text):
     return re.sub(r'[<>:"/\\|?*]', '_', text)[:100]
 
-# --- Uus prompt sõna analüüsimiseks ---
+# --- Prompt sõna analüüsimiseks ---
 def create_analysis_prompt(word: str):
     return f"""Oled eesti keele sõnaraamatu koostaja. Sinu ülesanne on analüüsida sõna „{word}" kasutust etteantud tekstimaterjalis ja otsustada, kas selle tähendustele tuleks lisada registrimärgend.
 
-Vasta järgmistele küsimustele, tuginedes ainult etteantud materjalile. Ole lühike ja konkreetne:
+Vasta järgmistele küsimustele, tuginedes ainult etteantud materjalile:
 
-1. Nimeta sõna „{word}" kõik tähendused, mida etteantud tekstides näed.
-2. Iga tähenduse juurde lisa, mitmes lauses sõna selles tähenduses esineb.
-3. Too iga tähenduse kohta etteantud materjalist kuni 10 näitelauset. Kui neid on andmetes vähem, siis too nii palju, kui leidub.
-4. Otsusta sõna iga tähenduse kohta, kas seda kasutatakse pigem informaalsetes või neutraalsetes/formaalsetes tekstides? Kui sa ei oska eristust teha või see ei tule selgelt esile, siis ütle, et „ei kohaldu". Palun põhjenda oma valikut.
-5. Kui mõnda tähendust kasutatakse pigem informaalsetes tekstides, siis vali sellele sobiv registrimärgend järgmistest:
-• halvustav
-• harv
-• kõnekeelne
-• lastekeelne
-• luulekeelne
-• murdekeelne
-• rahvakeelne
-• stiilitundlik
-• unarsõna
-• vananenud
-• vulgaarne
+1. Nimeta sõna „{word}" kõik tähendused, mida etteantud tekstides näed. Ära erista alammõisteid erinevateks tähendusteks (näiteks „alukad" ei tähenda eraldi „aluspesu" ja „vanaema aluspükse", vaid üksnes „aluspesu").
 
-Iga valiku korral põhjenda, miks just see märgend sobib. Igal informaalsel tähendusel peab olema vähemalt üks märgend. Kui sobib mitu, too mitu.
+2. Nimeta sõna „{word}" erinevate tähenduste arv.
 
-OLULINE: Pärast küsimustele vastamist anna oma vastused TÄPSELT järgmises struktureeritud formaadis:
+3. Iga tähenduse juurde lisa, kas sõna on selles tähenduses sage, keskmine või harv. Sagedusrühm vali võrdluses sõna teiste tähendustega.
 
-VASTUS||TÄHENDUSED: [tähendus1; tähendus2; tähendus3]||ESINEMISED: [tähendus1: X lauses; tähendus2: Y lauses]||NÄITED: [TÄHENDUS1: näide1 | näide2 | näide3; TÄHENDUS2: näide1 | näide2]||REGISTRID: [TÄHENDUS1: informaalsetes/neutraalsetes-formaalsetes/ei-kohaldu; TÄHENDUS2: informaalsetes/neutraalsetes-formaalsetes/ei-kohaldu]||PÕHJENDUSED: [TÄHENDUS1: põhjendus1; TÄHENDUS2: põhjendus2]||MÄRGENDID: [TÄHENDUS1: märgend1, märgend2 või ei-kohaldu; TÄHENDUS2: märgend1 või ei-kohaldu]||MÄRGENDITE-PÕHJENDUS: [TÄHENDUS1: märgend1: põhjendus1, märgend2: põhjendus2; TÄHENDUS2: ei-kohaldu]||LÕPP"""
+4. Too iga tähenduse kohta etteantud materjalist 3 näitelauset. Kui neid on andmetes vähem, siis too nii palju, kui leidub.
 
-# --- Uus parsimise funktsioon ---
-def parse_analysis_response(txt, word):
-    result = {
-        "Sõna": word,
-        "Tähendused": "",
-        "Esinemiste arv": "",
-        "Näited": "",
-        "Tekstiregistrid": "",
-        "Registri põhjendused": "",
-        "Registrimärgendid": "",
-        "Märgendite põhjendused": ""
-    }
+5. Otsusta sõna iga tähenduse kohta, kas seda kasutatakse pigem informaalsetes või neutraalsetes/formaalsetes tekstides? Kui sa ei oska eristust teha või see ei tule selgelt esile, siis ütle, et „ei kohaldu". Palun põhjenda oma valikut 5-10 lausega.
+
+6. Kui valid „ei kohaldu", siis ja ainult siis vaata enda treeningandmetesse ja otsusta selle põhjal. Palun põhjenda oma valikut 5-10 lausega.
+
+7. Kui mõnda tähendust kasutatakse pigem informaalsetes tekstides, siis vali sellele sobiv registrimärgend järgmistest:
+• halvustav (näiteks ajuhälvik, debiilik, inimrämps)
+• harv (näiteks ahvatama, mõistamisi, siinap). Märgend „harv" vali iga kord, kui tähendust leidub etteantud tekstimaterjalis vähe.
+• kõnekeelne (näiteks igastahes, nokats, ära flippima)
+• lastekeelne (näiteks jänku, kätu, nuku)
+• luulekeelne (näiteks ehavalu, koidukuld, meeleheit)
+• murdekeelne (näiteks hämmelgas, jõõrdlik, kidelema)
+• rahvakeelne (näiteks heinakuu, viinakuu, männiseen)
+• stiilitundlik (näiteks armastet, kirjutet, seitung)
+• unarsõna (näiteks absurdum, ööp)
+• vananenud (näiteks automobiil, drogist)
+• vulgaarne (näiteks hoorapoeg, koinima, munn)
+
+Iga valiku korral põhjenda 5-10 lausega, miks just see märgend sobib. Igal informaalsel tähendusel peab olema vähemalt üks märgend. Kui sobib mitu, too mitu.
+
+OLULINE: Pärast küsimustele vastamist anna oma vastused TÄPSELT järgmises struktureeritud formaadis parsimiseks. Kasuta erinevat eraldajat (§§§) iga tähenduse andmete vahel:
+
+--- STRUKTUREERITUD VASTUS ALGAB ---
+TÄHENDUSED: kodukits§§§Hiina sodiaagimärk§§§halvustav termin politseinikule
+TÄHENDUSTE-ARV: 3
+SAGEDUSED: kodukits-sage§§§Hiina sodiaagimärk-keskmine§§§halvustav termin politseinikule-harv
+NÄITED: kodukits-Kits on väike lehmake|Kitsed on intelligentsed loomad|Kits talub äärmuslikke tingimusi§§§Hiina sodiaagimärk-Kits on sodiaagi kaheksas loom|Kits on sitke ja järjekindel§§§halvustav termin politseinikule-Miks politseinikud kitsed on|Kriminaalidele tulebki kitse panna
+REGISTRID: kodukits-neutraalsetes-formaalsetes§§§Hiina sodiaagimärk-neutraalsetes-formaalsetes§§§halvustav termin politseinikule-informaalsetes
+REGISTRI-PÕHJENDUSED: kodukits-Kodukitse tähendus on neutraalne ja informatiivne. Seda kasutatakse loomakasvatus- ja põllumajandusalases kirjanduses. Terminoloogia on objektiivne ja faktiline. Sõnakasutus on ametlik ja teaduslik. Kontekst on tavaliselt hariduslik või informatsioonialane§§§Hiina sodiaagimärk-Horoskoobid on neutraalsed kultuuritekstid. Need kuuluvad populaarkultuuri valdkonda. Stiil on kirjeldav ja informeeriv. Kasutus on üldlevinud meedias. Puudub emotsionaalne värvitud sõnakasutus§§§halvustav termin politseinikule-Kasutatakse vaenulikus või kriitilises kontekstis. Sõnakasutus on emotsionaalselt laetud. Esineb tavaliselt konfliktides või protestides. Väljendab negatiivset suhtumist võimuesindajatesse. Kontekst on sageli poliitiliselt pingeline
+MÄRGENDID: kodukits-ei-kohaldu§§§Hiina sodiaagimärk-ei-kohaldu§§§halvustav termin politseinikule-halvustav
+MÄRGENDITE-PÕHJENDUSED: kodukits-ei-kohaldu§§§Hiina sodiaagimärk-ei-kohaldu§§§halvustav termin politseinikule-Selgelt negatiivne suhtumine politseinike suhtes. Sõna kannab halvustavat konnotatsiooni. Kasutatakse derogatiivses mõttes. Väljendab põlgust või vihkamist. Eesmärk on alandada ja maha teha. Kuulub konflikti- ja protestikeele hulka
+--- STRUKTUREERITUD VASTUS LÕPEB ---"""
+
+# --- Parandatud parsimise funktsioon ---
+def parse_analysis_response(txt: str, word: str) -> List[Dict[str, Any]]:
+    """
+    Tagastab listi, kus iga element on üks tähendus koos kõigi andmetega
+    """
+    results = []
     
-    # Otsime struktureeritud vastust
-    structured_match = re.search(r'VASTUS\|\|(.*?)\|\|LÕPP', txt, re.DOTALL)
-    
-    if structured_match:
-        print("   ✅ Struktureeritud vastus leitud")
-        structured_text = structured_match.group(1)
-        parts = structured_text.split('||')
+    try:
+        # Otsime struktureeritud vastust märgendite vahelt
+        structured_match = re.search(r'--- STRUKTUREERITUD VASTUS ALGAB ---(.*?)--- STRUKTUREERITUD VASTUS LÕPEB ---', txt, re.DOTALL)
         
-        for part in parts:
-            part = part.strip()
+        if not structured_match:
+            print("   ⚠️ Struktureeritud vastust ei leitud, parsime kogu teksti")
+            structured_text = txt
+        else:
+            structured_text = structured_match.group(1)
+        
+        lines = structured_text.split('\n')
+        data = {}
+        
+        for line in lines:
+            line = line.strip()
+            if ':' in line and not line.startswith('http'):
+                key, value = line.split(':', 1)
+                key = key.strip()
+                value = value.strip()
+                data[key] = value
+        
+        # Parsime tähendused (kasutame §§§ eraldajat)
+        tähendused = []
+        if 'TÄHENDUSED' in data:
+            tähendused = [t.strip() for t in data['TÄHENDUSED'].split('§§§') if t.strip()]
+        
+        # Parsime sagedused
+        sagedused = []
+        if 'SAGEDUSED' in data:
+            sagedused_raw = data['SAGEDUSED'].split('§§§')
+            for item in sagedused_raw:
+                if '-' in item:
+                    sagedused.append(item.split('-', 1)[1].strip())
+                else:
+                    sagedused.append(item.strip())
+        
+        # Parsime registrid
+        registrid = []
+        if 'REGISTRID' in data:
+            registrid_raw = data['REGISTRID'].split('§§§')
+            for item in registrid_raw:
+                if '-' in item:
+                    registrid.append(item.split('-', 1)[1].strip())
+                else:
+                    registrid.append(item.strip())
+        
+        # Parsime registri põhjendused (nüüd säilivad pikad tekstid)
+        registri_põhjendused = []
+        if 'REGISTRI-PÕHJENDUSED' in data:
+            põhjendused_raw = data['REGISTRI-PÕHJENDUSED'].split('§§§')
+            for item in põhjendused_raw:
+                if '-' in item:
+                    registri_põhjendused.append(item.split('-', 1)[1].strip())
+                else:
+                    registri_põhjendused.append(item.strip())
+        
+        # Parsime märgendid
+        märgendid = []
+        if 'MÄRGENDID' in data:
+            märgendid_raw = data['MÄRGENDID'].split('§§§')
+            for item in märgendid_raw:
+                if '-' in item:
+                    märgendid.append(item.split('-', 1)[1].strip())
+                else:
+                    märgendid.append(item.strip())
+        
+        # Parsime märgendite põhjendused (nüüd säilivad pikad tekstid)
+        märgendite_põhjendused = []
+        if 'MÄRGENDITE-PÕHJENDUSED' in data:
+            märgendite_põhjendused_raw = data['MÄRGENDITE-PÕHJENDUSED'].split('§§§')
+            for item in märgendite_põhjendused_raw:
+                if '-' in item:
+                    märgendite_põhjendused.append(item.split('-', 1)[1].strip())
+                else:
+                    märgendite_põhjendused.append(item.strip())
+        
+        # Parsime näited
+        näited = []
+        if 'NÄITED' in data:
+            näited_raw = data['NÄITED'].split('§§§')
+            for item in näited_raw:
+                if '-' in item:
+                    näited_part = item.split('-', 1)[1].strip()
+                    näited.append(näited_part.replace('|', ' | '))
+                else:
+                    näited.append(item.strip())
+        
+        # Loome iga tähenduse jaoks eraldi kirje
+        for i, tähendus in enumerate(tähendused):
+            # Võtame andmed järjekorra alusel, aga kontrollime pikkust
+            sagedus = sagedused[i] if i < len(sagedused) else "ei määratletud"
+            näited_text = näited[i] if i < len(näited) else "ei leitud"
+            register = registrid[i] if i < len(registrid) else "ei määratletud"
+            registri_põhjendus = registri_põhjendused[i] if i < len(registri_põhjendused) else "ei määratletud"
+            märgendid_text = märgendid[i] if i < len(märgendid) else "ei-kohaldu"
+            märgendite_põhjendus = märgendite_põhjendused[i] if i < len(märgendite_põhjendused) else "ei-kohaldu"
             
-            if part.startswith('TÄHENDUSED:'):
-                tahendused_text = part.replace('TÄHENDUSED:', '').strip()
-                if tahendused_text:
-                    tahendused = [t.strip() for t in tahendused_text.split(';') if t.strip()]
-                    result["Tähendused"] = ' | '.join([f"{i+1}. {t}" for i, t in enumerate(tahendused)])
+            # Jagame märgendid komaga (kui on mitu)
+            märgendid_list = []
+            if märgendid_text and märgendid_text != "ei-kohaldu":
+                märgendid_list = [m.strip() for m in märgendid_text.split(',') if m.strip()]
+            
+            # Kui märgendeid pole või on "ei-kohaldu", teeme ühe rea
+            if not märgendid_list or märgendid_text == "ei-kohaldu":
+                result = {
+                    "Sõna": word,
+                    "Tähenduse nr": i + 1,
+                    "Tähendus": tähendus,
+                    "Tähenduste arv kokku": data.get('TÄHENDUSTE-ARV', str(len(tähendused))),
+                    "Sagedus": sagedus,
+                    "Näited": näited_text,
+                    "Tekstiregister": register,
+                    "Registri põhjendus": registri_põhjendus,
+                    "Treeningandmete põhjendus": "ei-kohaldu",
+                    "Registrimärk": "ei-kohaldu",
+                    "Märgendi põhjendus": "ei-kohaldu"
+                }
+                results.append(result)
+            else:
+                # Iga märgendi jaoks eraldi rida
+                for j, märgend in enumerate(märgendid_list):
+                    # Kui on mitu märgendit, kasutame sama põhjendust kõigi jaoks
+                    # (kuna märgendite põhjendused on tihti ühe tähenduse kohta koos)
+                    märgendi_põhjendus = märgendite_põhjendus if märgendite_põhjendus != "ei-kohaldu" else "ei leitud"
                     
-            elif part.startswith('ESINEMISED:'):
-                esinemised_text = part.replace('ESINEMISED:', '').strip()
-                result["Esinemiste arv"] = esinemised_text
-                
-            elif part.startswith('NÄITED:'):
-                naited_text = part.replace('NÄITED:', '').strip()
-                result["Näited"] = naited_text
-                
-            elif part.startswith('REGISTRID:'):
-                registrid_text = part.replace('REGISTRID:', '').strip()
-                result["Tekstiregistrid"] = registrid_text
-                
-            elif part.startswith('PÕHJENDUSED:'):
-                pohjendused_text = part.replace('PÕHJENDUSED:', '').strip()
-                result["Registri põhjendused"] = pohjendused_text
-                
-            elif part.startswith('MÄRGENDID:'):
-                margendid_text = part.replace('MÄRGENDID:', '').strip()
-                result["Registrimärgendid"] = margendid_text
-                
-            elif part.startswith('MÄRGENDITE-PÕHJENDUS:'):
-                margendite_pohjendused_text = part.replace('MÄRGENDITE-PÕHJENDUS:', '').strip()
-                result["Märgendite põhjendused"] = margendite_pohjendused_text
+                    result = {
+                        "Sõna": word,
+                        "Tähenduse nr": i + 1,
+                        "Tähendus": tähendus,
+                        "Tähenduste arv kokku": data.get('TÄHENDUSTE-ARV', str(len(tähendused))),
+                        "Sagedus": sagedus,
+                        "Näited": näited_text,
+                        "Tekstiregister": register,
+                        "Registri põhjendus": registri_põhjendus,
+                        "Treeningandmete põhjendus": "ei-kohaldu",
+                        "Registrimärk": märgend.strip(),
+                        "Märgendi põhjendus": märgendi_põhjendus
+                    }
+                    results.append(result)
+            
+            print(f"   ✅ Tähendus {i+1}: {tähendus}")
+            print(f"      📈 Sagedus: {sagedus}")
+            print(f"      📊 Register: {register}")
+            print(f"      🔍 Registri põhjendus: {registri_põhjendus[:100]}{'...' if len(registri_põhjendus) > 100 else ''}")
+            print(f"      🏷️ Märgendid: {märgendid_text}")
+            if märgendite_põhjendus != "ei-kohaldu":
+                print(f"      📝 Märgendi põhjendus: {märgendite_põhjendus[:100]}{'...' if len(märgendite_põhjendus) > 100 else ''}")
     
-    else:
-        print("   ⚠️ Struktureeritud vastust ei leitud, kasutame vaba teksti parsimist")
-        
-        # Vaba teksti parsimise loogika (lihtsustatud versioon)
-        # Otsime tähendusi
-        tahendused_match = re.search(r'1\.\s*([^2]*?)(?=2\.|$)', txt, re.DOTALL)
-        if tahendused_match:
-            tahendused_text = tahendused_match.group(1).strip()
-            # Lihtne heuristika - otsime loetelu märke
-            tahendused_lines = [line.strip() for line in tahendused_text.split('\n') if line.strip()]
-            tahendused = []
-            for line in tahendused_lines:
-                if re.match(r'^[•\-\*]\s*|^\d+\.\s*|^[a-z]\)\s*', line):
-                    tahendused.append(re.sub(r'^[•\-\*]\s*|^\d+\.\s*|^[a-z]\)\s*', '', line))
-            if tahendused:
-                result["Tähendused"] = ' | '.join([f"{i+1}. {t}" for i, t in enumerate(tahendused)])
-        
-        # Muud väljad jätame tühjaks või märgime "vaba tekst"
-        result["Esinemiste arv"] = "vaba tekst - vt toorvastust"
-        result["Näited"] = "vaba tekst - vt toorvastust"
-        result["Tekstiregistrid"] = "vaba tekst - vt toorvastust"
-        result["Registri põhjendused"] = "vaba tekst - vt toorvastust"
-        result["Registrimärgendid"] = "vaba tekst - vt toorvastust"
-        result["Märgendite põhjendused"] = "vaba tekst - vt toorvastust"
+    except Exception as e:
+        print(f"   ⚠️ Parsimise viga: {e}")
+        import traceback
+        traceback.print_exc()
+        results.append({
+            "Sõna": word,
+            "Tähenduse nr": 1,
+            "Tähendus": "parsimise viga",
+            "Tähenduste arv kokku": 0,
+            "Sagedus": "ei määratletud",
+            "Näited": "ei leitud",
+            "Tekstiregister": "ei määratletud",
+            "Registri põhjendus": "ei määratletud",
+            "Treeningandmete põhjendus": "ei-kohaldu",
+            "Registrimärk": "ei-kohaldu",
+            "Märgendi põhjendus": "ei-kohaldu"
+        })
     
-    # Vaikeväärtused tühjadele väljadele
-    for key in result:
-        if not result[key]:
-            result[key] = "ei määratletud"
+    # Kui mingil põhjusel ei ole tulemusi, lisa vähemalt üks tühi kirje
+    if not results:
+        results.append({
+            "Sõna": word,
+            "Tähenduse nr": 1,
+            "Tähendus": "ei määratletud",
+            "Tähenduste arv kokku": 0,
+            "Sagedus": "ei määratletud",
+            "Näited": "ei leitud",
+            "Tekstiregister": "ei määratletud",
+            "Registri põhjendus": "ei määratletud",
+            "Treeningandmete põhjendus": "ei-kohaldu",
+            "Registrimärk": "ei-kohaldu",
+            "Märgendi põhjendus": "ei-kohaldu"
+        })
     
-    return result
+    return results
 
 # --- Sõna töötlemise funktsioon ---
 def process_word_analysis(word: str):
@@ -236,18 +356,20 @@ def process_word_analysis(word: str):
             out_f.write(reply)
         
         # Parsime vastuse
-        parsed_result = parse_analysis_response(reply, word)
+        parsed_results = parse_analysis_response(reply, word)
         
         # Prindime parsimise tulemuse
         print(f"\n📊 PARSITUD TULEMUS:")
-        print(f"   📝 Tähendused: {parsed_result['Tähendused'][:100]}{'...' if len(parsed_result['Tähendused']) > 100 else ''}")
-        print(f"   📊 Esinemised: {parsed_result['Esinemiste arv'][:100]}{'...' if len(parsed_result['Esinemiste arv']) > 100 else ''}")
-        print(f"   📋 Registrid: {parsed_result['Tekstiregistrid'][:100]}{'...' if len(parsed_result['Tekstiregistrid']) > 100 else ''}")
-        print(f"   🏷️ Märgendid: {parsed_result['Registrimärgendid'][:100]}{'...' if len(parsed_result['Registrimärgendid']) > 100 else ''}")
+        print(f"   📝 Tähendusi kokku: {len(parsed_results)}")
+        for result in parsed_results:
+            print(f"   {result['Tähenduse nr']}. {result['Tähendus'][:50]}{'...' if len(result['Tähendus']) > 50 else ''}")
+            print(f"      📈 Sagedus: {result['Sagedus']}")
+            print(f"      📋 Register: {result['Tekstiregister']}")
+            print(f"      🏷️ Märgend: {result['Registrimärk']}")
         
         print(f"✅ {word} — Analüüs lõpetatud\n")
         
-        return parsed_result
+        return parsed_results
 
     except Exception as e:
         print(f"❌ Viga sõnaga {word}: {e}")
@@ -257,7 +379,7 @@ def process_word_analysis(word: str):
 def main():
     all_rows = []
     
-    # Loeme sisend faili (ainult sõnad)
+    # Loeme sisendfaili
     with open("sisend_2.tsv", newline="", encoding="utf-8") as csvfile:
         reader = csv.reader(csvfile)
         next(reader, None)  # jäta päis vahele, kui on
@@ -270,28 +392,31 @@ def main():
         
         result = process_word_analysis(word)
         if result:
-            all_rows.append(result)
+            all_rows.extend(result)  # Lisame kõik tähendused
         else:
             # Lisa tühi rida järjekorra säilitamiseks
             print(f"⚠️ Lisame tühja rea järjekorra säilitamiseks")
             all_rows.append({
                 "Sõna": word,
-                "Tähendused": "töötlemata",
-                "Esinemiste arv": "kontekstifail puudub",
+                "Tähenduse nr": 1,
+                "Tähendus": "töötlemata",
+                "Tähenduste arv kokku": 0,
+                "Sagedus": "kontekstifail puudub",
                 "Näited": "ei saadaval",
-                "Tekstiregistrid": "ei määratletud",
-                "Registri põhjendused": "ei saadaval",
-                "Registrimärgendid": "ei kohaldu",
-                "Märgendite põhjendused": "ei saadaval"
+                "Tekstiregister": "ei määratletud",
+                "Registri põhjendus": "ei saadaval",
+                "Treeningandmete põhjendus": "ei saadaval",
+                "Registrimärk": "ei kohaldu",
+                "Märgendi põhjendus": "ei saadaval"
             })
         
         time.sleep(0.5)  # Väike paus
 
     # Salvesta CSV
     fieldnames = [
-        "Sõna", "Tähendused", "Esinemiste arv", "Näited", 
-        "Tekstiregistrid", "Registri põhjendused", 
-        "Registrimärgendid", "Märgendite põhjendused"
+        "Sõna", "Tähenduse nr", "Tähendus", "Tähenduste arv kokku", "Sagedus", 
+        "Näited", "Tekstiregister", "Registri põhjendus", "Treeningandmete põhjendus",
+        "Registrimärk", "Märgendi põhjendus"
     ]
 
     with open(FINAL_CSV, "w", encoding="utf-8", newline="") as f:
@@ -301,15 +426,19 @@ def main():
             writer.writerow(row)
 
     print(f"\n✅ Lõplik fail salvestatud: {FINAL_CSV}")
-    print(f"📊 Kokku analüüsitud {len(all_rows)} sõna")
+    print(f"📊 Kokku analüüsitud ridu: {len(all_rows)}")
 
     # Statistika
-    toötletud = len([row for row in all_rows if row["Tähendused"] != "töötlemata"])
-    toötlemata = len(all_rows) - toötletud
+    unikaalsed_sõnad = len(set(row["Sõna"] for row in all_rows))
+    toötletud_sõnad = len(set(row["Sõna"] for row in all_rows if row["Tähendus"] != "töötlemata"))
+    toötlemata_sõnad = unikaalsed_sõnad - toötletud_sõnad
+    keskmine_tähendusi = len(all_rows) / unikaalsed_sõnad if unikaalsed_sõnad > 0 else 0
 
     print(f"\n📈 Analüüsi statistika:")
-    print(f"  Edukalt töödeldud: {toötletud}")
-    print(f"  Töötlemata (puuduvad failid): {toötlemata}")
+    print(f"  Kokku sõnu: {unikaalsed_sõnad}")
+    print(f"  Edukalt töödeldud sõnu: {toötletud_sõnad}")
+    print(f"  Töötlemata sõnu (puuduvad failid): {toötlemata_sõnad}")
+    print(f"  Keskmine tähendusi sõna kohta: {keskmine_tähendusi:.1f}")
 
 if __name__ == "__main__":
     main()
