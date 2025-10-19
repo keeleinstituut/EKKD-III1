@@ -1,1 +1,3 @@
-Siin on teise katse failide kirjeldus.
+Failid EKKD-III1 publikatsioonile "Eesti Rakenduslingvistika Ühingu aastaraamatu" 2025. a väljaandes.
+
+Katse 2: lõunaeestilise taustaga sõnad.
