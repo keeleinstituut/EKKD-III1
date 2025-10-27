@@ -1,0 +1,678 @@
+<div type="page" n="184" corresp="#p184">
+    <entry xml:id="koddapolik" xml:lang="et">
+        <form type="lemma"><orth>koddapolik</orth></form>
+        <sense xml:id="koddapolik.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">der Einwohner</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Badstüber</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="koddapolinne" xml:lang="et">
+        <form type="variant"><orth>koddapolinne</orth></form>
+        <sense xml:id="koddapolinne.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">der Einwohner</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Badstüber</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="kodda" xml:lang="et">
+        <form type="lemma"><orth>kodda</orth></form>
+        <form type="variant"><orth>koddo</orth></form>
+        <sense xml:id="kodda.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">falsus Hausstand</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="koddasu" xml:lang="et">
+        <form type="lemma"><orth>Koddasu</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="pos" value="noun"/></gramGrp>
+            <orth extent="suffix">m.</orth>
+        </form>
+        <sense xml:id="koddasu.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Kotzum in <placeName ref="#harjumaa" type="region">H.</placeName></quote></cit>
+        </sense>
+    </entry>
+    <entry xml:id="koddo" xml:lang="et">
+        <form type="lemma"><orth>koddo</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="case" value="genitive"/></gramGrp>
+            <orth extent="suffix">koto</orth>
+        </form>
+        <sense xml:id="koddo.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">das Haus</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="koddo_zu_hause" xml:lang="et">
+        <form type="phrase"><orth>koddo zu Hause</orth></form>
+        <sense xml:id="koddo_zu_hause.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">nach Hause</quote></cit>
+        </sense>
+        <gramGrp><gram type="pos" value="adverb">Ad.</gram></gramGrp>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="koddo_otsma" xml:lang="et">
+        <form type="compound"><orth>koddo otsma</orth></form>
+        <sense xml:id="koddo_otsma.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">heimsuchen</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="koddo_pannema" xml:lang="et">
+        <form type="compound"><orth>koddo pannema</orth></form>
+        <sense xml:id="koddo_pannema.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">(ein Mädchen) verheren, damit es nicht verheyrathet werde</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="koddo_rahwas" xml:lang="et">
+        <form type="compound"><orth>koddo rahwas</orth></form>
+        <sense xml:id="koddo_rahwas.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Hausgenossen</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="koddo_wäi" xml:lang="et">
+        <form type="compound"><orth>koddo wäi</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <orth extent="suffix">e.</orth>
+        </form>
+        <sense xml:id="koddo_wäi.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">ein Schwiegersohn, der bey den Schwiegereltern bleibt</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="wäi" xml:lang="et">
+        <form type="lemma"><orth>wäi</orth></form>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="variant"><orth>wäümees</orth>
+            <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        </form>
+    </entry>
+    <entry xml:id="jännes_kaninchen" xml:lang="et">
+        <form type="compound"><orth>jännes Kaninchen</orth></form>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="käla" xml:lang="et">
+        <form type="lemma"><orth>käla</orth></form>
+        <sense xml:id="käla.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">ein Verstorbener, dessen Gestalt sich sehen läßt</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="koddoma" xml:lang="et">
+        <form type="lemma"><orth>koddoma</orth></form>
+        <form type="variant"><orth>koa</orth></form>
+        <metamark function="inflectionGroupStart">(</metamark>
+        <form type="variant"><orth>daſi</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="variant"><orth>das</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="variant"><orth>dada</orth></form>
+        <metamark function="inflectionGroupEnd">)</metamark>
+        <sense xml:id="koddoma.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">weben</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">knitten</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">stricken</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="koddunt" xml:lang="et">
+        <form type="lemma"><orth>koddunt</orth></form>
+        <sense xml:id="koddunt.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">von Hause</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="koddutama" xml:lang="et">
+        <form type="lemma"><orth>koddutama</orth></form>
+        <sense xml:id="koddutama.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">den ersten Besuch nach der Hochzeit in der vorigen Wohnung ablegen (von jungen Weibern)</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="kodi" xml:lang="et">
+        <form type="lemma"><orth>kodi</orth></form>
+        <sense xml:id="kodi.s1">
+            <xr type="related"><ref type="entry" target="#kood">s. kood</ref></xr>
+        </sense>
+    </entry>
+    <entry xml:id="koe" xml:lang="et">
+        <form type="lemma"><orth>koe</orth></form>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        <form type="variant"><orth>koed</orth>
+            <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        </form>
+        <sense xml:id="koe.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Einschlag bey dem Weben</quote></cit>
+        </sense>
+    </entry>
+    <entry xml:id="koer" xml:lang="et">
+        <form type="lemma"><orth>koer</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="case" value="genitive"/></gramGrp>
+            <orth extent="suffix">a</orth>
+        </form>
+        <sense xml:id="koer.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Hund</quote></cit>
+        </sense>
+        <metamark function="senseDelimiter">;</metamark>
+        <sense xml:id="koer.s2">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">ein böser Mensch</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="koera_köömid" xml:lang="et">
+        <form type="compound"><orth>koera köömid</orth></form>
+        <sense xml:id="koera_köömid.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Wildkümmel</quote></cit>
+        </sense>
+    </entry>
+    <entry xml:id="koera_putk" xml:lang="et">
+        <form type="compound"><orth>koera (koer) putk</orth></form>
+        <sense xml:id="koera_putk.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Schierling</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="koera_köömnid" xml:lang="et">
+        <form type="compound">
+            <orth>koera köömnid</orth>
+        </form>
+        <sense xml:id="koera_köömnid.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Wildkümmel</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Schierling</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="koera" xml:lang="et">
+        <form type="lemma">
+            <orth>koera</orth>
+        </form>
+        <form type="variant">
+            <orth>koer</orth>
+        </form>
+        <sense xml:id="koera.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">putk</quote>
+            </cit>
+        </sense>
+        <sense xml:id="koera.s2">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Schierling</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="koera_pöri_rohhi" xml:lang="et">
+        <form type="compound">
+            <orth>koera pöri rohhi</orth>
+        </form>
+        <sense xml:id="koera_pöri_rohhi.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Bilsenkraut</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="koera_naelad" xml:lang="et">
+        <form type="compound">
+            <orth>koera naelad</orth>
+        </form>
+        <sense xml:id="koera_naelad.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Pinnägel</quote>
+            </cit>
+        </sense>
+        <metamark function="inflectionDelimiter">.</metamark>
+        <gramGrp>
+            <gram type="number" value="plural">Pl.</gram>
+        </gramGrp>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="koera_oispu" xml:lang="et">
+        <form type="compound">
+            <orth>koera oispu</orth>
+        </form>
+        <form type="variant">
+            <orth>koera öispu</orth>
+        </form>
+        <sense xml:id="koera_oispu.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">ein gewisser Strauchbaum mit rothen Beeren</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#harjumaa_dialect">H.</usg>
+    </entry>
+    <entry xml:id="koera_selts" xml:lang="et">
+        <form type="compound">
+            <orth>koera selts</orth>
+        </form>
+        <sense xml:id="koera_selts.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">gottloses Gesindel</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="koera_többi" xml:lang="et">
+        <form type="compound">
+            <orth>koera többi</orth>
+        </form>
+        <sense xml:id="koera_többi.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Schwindsucht</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="koeroke" xml:lang="et">
+        <form type="lemma">
+            <orth>koeroke</orth>
+        </form>
+        <sense xml:id="koeroke.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Hündchen</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="koerus" xml:lang="et">
+        <form type="lemma">
+            <orth>koerus</orth>
+        </form>
+        <form type="variant">
+            <orth>koerustük</orth>
+        </form>
+        <sense xml:id="koerus.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Schelmstück</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Bosheit</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="koerem" xml:lang="et">
+        <form type="lemma">
+            <orth>koerem</orth>
+        </form>
+        <sense xml:id="koerem.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">boshaftiger</quote>
+            </cit>
+        </sense>
+        <metamark function="inflectionDelimiter">.</metamark>
+        <gramGrp>
+            <gram type="degree" value="comparative">Compar.</gram>
+        </gramGrp>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <note xml:lang="de">(hat keinen Positiv.)</note>
+    </entry>
+    <entry xml:id="koewa_jöggi" xml:lang="et">
+        <form type="compound">
+            <orth>Koewa jöggi</orth>
+        </form>
+        <sense xml:id="koewa_jöggi.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">der Aa Fluß</quote>
+            </cit>
+        </sense>
+    </entry>
+    <entry xml:id="koetu" xml:lang="et">
+        <form type="lemma">
+            <orth>koetu</orth>
+        </form>
+        <sense xml:id="koetu.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">gewebt</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">gewirkt</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">gestrickt</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="käbba" xml:lang="et">
+        <form type="lemma">
+            <orth>käbba</orth>
+        </form>
+        <form type="variant">
+            <orth>männa käbba</orth>
+        </form>
+        <sense xml:id="käbba.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Tannenrinde</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="köbjas" xml:lang="et">
+        <form type="lemma">
+            <orth>köbjas</orth>
+        </form>
+        <sense xml:id="köbjas.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Schwamm von frischen Birken, der unzubereitet zündet</quote>
+            </cit>
+        </sense>
+    </entry>
+    <entry xml:id="köblas" xml:lang="et">
+        <form type="lemma"><orth>köblas</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="case" value="genitive"/></gramGrp>
+            <orth extent="suffix">la</orth>
+        </form>
+        <sense xml:id="köblas.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">eine Radehaue</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="köbbar" xml:lang="et">
+        <form type="lemma"><orth>köbbar</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="case" value="genitive"/></gramGrp>
+            <orth extent="suffix">a</orth>
+        </form>
+        <sense xml:id="köbbar.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">die Speiche am Rad</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="köbber" xml:lang="et">
+        <form type="lemma"><orth>köbber</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="case" value="genitive"/></gramGrp>
+            <orth extent="suffix">a</orth>
+        </form>
+        <sense xml:id="köbber.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">die Schöte</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="kööditama" xml:lang="et">
+        <form type="lemma"><orth>kööditama</orth></form>
+        <sense xml:id="kööditama.s1">
+            <xr type="related"><ref type="entry" target="#kibditama">f. kibditama</ref></xr>
+        </sense>
+    </entry>
+    <entry xml:id="köggisema" xml:lang="et">
+        <form type="lemma"><orth>köggisema</orth></form>
+        <sense xml:id="köggisema.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">durch Husten die Brust reinigen</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="köggistama" xml:lang="et">
+        <form type="lemma"><orth>köggistama</orth></form>
+        <sense xml:id="köggistama.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">durch Husten die Brust reinigen</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#harjumaa_dialect">H.</usg>
+    </entry>
+    <entry xml:id="kögi" xml:lang="et">
+        <form type="lemma"><orth>kögi</orth></form>
+        <sense xml:id="kögi.s1">
+            <xr type="related"><ref type="entry" target="#köök">f. köök</ref></xr>
+        </sense>
+    </entry>
+    <entry xml:id="köhha" xml:lang="et">
+        <form type="lemma"><orth>köhha</orth></form>
+        <sense xml:id="köhha.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">der Husten</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="köhheto" xml:lang="et">
+        <form type="lemma"><orth>köhheto</orth></form>
+        <sense xml:id="köhheto.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">unvermögend</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="köhhima" xml:lang="et">
+        <form type="lemma"><orth>köhhima</orth></form>
+        <metamark function="inflectionGroupStart">(</metamark>
+        <metamark function="inflectionDelimiter">a</metamark>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="tense" value="present"/></gramGrp>
+            <orth extent="suffix">i</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="tense" value="past"/></gramGrp>
+            <orth extent="suffix">s</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="infinitive" value="da"/></gramGrp>
+            <orth extent="suffix">da</orth>
+        </form>
+        <metamark function="inflectionGroupEnd">)</metamark>
+        <sense xml:id="köhhima.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">husten</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="köhhiminne" xml:lang="et">
+        <form type="lemma"><orth>köhhiminne</orth></form>
+        <sense xml:id="köhhiminne.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">das Husten</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="köhhitama" xml:lang="et">
+        <form type="lemma"><orth>köhhitama</orth></form>
+        <sense xml:id="köhhitama.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">lästern</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="köhholema" xml:lang="et">
+        <form type="lemma"><orth>köhholema</orth></form>
+        <sense xml:id="köhholema.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">zaudern</quote>
+            </cit>
+        </sense>
+        <usg type="textType" corresp="#poetic">r.</usg>
+    </entry>
+    <entry xml:id="fölguti" xml:lang="et">
+        <form type="lemma"><orth>fölguti</orth></form>
+        <sense xml:id="fölguti.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">der Triebstock in der Mühle</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="fölk" xml:lang="et">
+        <form type="lemma"><orth>fölk</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <metamark function="genitiveDelimiter">G.</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="case" value="genitive"/></gramGrp>
+            <orth extent="suffix">fölgo</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <sense xml:id="fölk.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">kleiner Kinderschlitten</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <metamark function="senseDelimiter">;</metamark>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <orth extent="suffix">o</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <sense xml:id="fölk.s2">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Unruhe</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Lerm</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#pärnu_dialect">P.</usg>
+    </entry>
+    <entry xml:id="fölkas" xml:lang="et">
+        <form type="lemma"><orth>fölkas</orth></form>
+        <sense xml:id="fölkas.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">kurz Stroh für das Vieh</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Gerstenstroh</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="föllane_gelb" xml:lang="et">
+        <form type="compound"><orth>föllane gelb</orth></form>
+        <sense xml:id="föllane_gelb.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">goldgelb</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        <usg type="geographic" corresp="#pärnu_dialect">P.</usg>
+    </entry>
+    <entry xml:id="föllane_karw" xml:lang="et">
+        <form type="compound"><orth>föllane karw</orth></form>
+        <sense xml:id="föllane_karw.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Wintergrün</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="fölla_többi" xml:lang="et">
+        <form type="compound"><orth>fölla többi</orth></form>
+        <sense xml:id="fölla_többi.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Gelbsucht</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="föllima" xml:lang="et">
+        <form type="lemma"><orth>föllima</orth></form>
+        <sense xml:id="föllima.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">klingen</quote>
+            </cit>
+        </sense>
+        <gramGrp><gram type="voice" value="passive">Neutr.</gram></gramGrp>
+        <usg type="geographic" corresp="#pärnu_dialect">P.</usg>
+    </entry>
+    <entry xml:id="föllisema" xml:lang="et">
+        <form type="lemma"><orth>föllisema</orth></form>
+        <sense xml:id="föllisema.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">klingeln</quote>
+            </cit>
+        </sense>
+        <gramGrp><gram type="voice" value="active">Act.</gram></gramGrp>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="fölme" xml:lang="et">
+        <form type="lemma"><orth>fölme</orth></form>
+        <sense xml:id="fölme.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">der Staar im Auge</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="fölpamiste" xml:lang="et">
+        <form type="lemma"><orth>fölpamiste</orth></form>
+        <sense xml:id="fölpamiste.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">kurz abgebrochen im Reden</quote>
+            </cit>
+        </sense>
+        <gramGrp><gram type="pos" value="adverb">Ad.</gram></gramGrp>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="fölp_sarrikas" xml:lang="et">
+        <form type="compound"><orth>fölp sarrikas</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <orth extent="suffix">ka</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <sense xml:id="fölp_sarrikas.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">die kurze Sparre</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="fölus" xml:lang="et">
+        <form type="lemma"><orth>fölus</orth></form>
+        <sense xml:id="fölus.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Darmsaite</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+</div>

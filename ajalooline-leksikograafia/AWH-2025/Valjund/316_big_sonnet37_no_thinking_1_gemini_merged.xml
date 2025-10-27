@@ -1,0 +1,923 @@
+<div type="page" n="516" corresp="#p516">
+    <entry xml:id="wörsuma" xml:lang="et">
+        <form type="lemma"><orth>wörsuma</orth></form>
+        <sense xml:id="wörsuma.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">aufſchießen zum Wachſen</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">ſich vermehren</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">wuchern</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="wörst" xml:lang="et">
+        <form type="lemma"><orth>wörſt</orth></form>
+        <sense xml:id="wörst.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">ſ. wirſt, werſt</quote></cit>
+        </sense>
+    </entry>
+    <entry xml:id="wörus" xml:lang="et">
+        <form type="lemma"><orth>wörus</orth></form>
+        <sense xml:id="wörus.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">das Gaſtmahl</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        <usg type="geographic" corresp="#pärnu_dialect">P.</usg>
+        <metamark function="senseDelimiter">.</metamark>
+        <sense xml:id="wörus.s2">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">das Wirtshaus</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="wörusse_kodda" xml:lang="et">
+        <form type="compound"><orth>wöruſſe kodda</orth></form>
+        <sense xml:id="wörusse_kodda.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">der Gaſthof</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="wörusse_jutlus" xml:lang="et">
+        <form type="compound"><orth>wöruſſe jutlus</orth></form>
+        <sense xml:id="wörusse_jutlus.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">die Gaſtpredigt</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="wörusse_witsa" xml:lang="et">
+        <form type="compound"><orth>wöruſſe witſa</orth></form>
+        <sense xml:id="wörusse_witsa.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">die Ruthen oder Stränge an Femerſtangen</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="wörs" xml:lang="et">
+        <form type="lemma"><orth>wörs</orth></form>
+        <form type="variant"><orth>ſe wörs</orth></form>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <sense xml:id="wörs.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">ſo viel</quote></cit>
+        </sense>
+    </entry>
+    <entry xml:id="wörr" xml:lang="et">
+        <form type="lemma"><orth>wörr</orth></form>
+        <form type="variant"><orth>ſe wörr</orth></form>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        <sense xml:id="wörr.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">ſo viel</quote></cit>
+        </sense>
+    </entry>
+    <entry xml:id="wössai" xml:lang="et">
+        <form type="lemma"><orth>wösſai</orth></form>
+        <form type="variant"><orth>wösſar</orth></form>
+        <sense xml:id="wössai.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">eine Art von Beil</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="wössar" xml:lang="et">
+        <form type="lemma"><orth>wössar</orth></form>
+        <metamark function="altDelimiter">/</metamark>
+        <form type="variant"><orth>wössä</orth></form>
+        <metamark function="altDelimiter">/</metamark>
+        <form type="variant"><orth>wösso</orth></form>
+        <sense xml:id="wössar.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Sprosse</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Gesträuch</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Busch</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        <entry xml:id="wössar_suggu_wössa" xml:lang="et">
+            <form type="phrase"><orth>suggu wössa</orth></form>
+            <sense xml:id="wössar_suggu_wössa.s1">
+                <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Geschlecht</quote></cit>
+                <metamark function="equivalentTranslationDelimiter">,</metamark>
+                <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Familie</quote></cit>
+            </sense>
+        </entry>
+        <entry xml:id="wössar_tühhi_wösso" xml:lang="et">
+            <form type="phrase"><orth>tühhi wösso</orth></form>
+            <sense xml:id="wössar_tühhi_wösso.s1">
+                <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Nebenprosse</quote></cit>
+            </sense>
+            <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        </entry>
+        <entry xml:id="wössar_wösso_ajama" xml:lang="et">
+            <form type="phrase"><orth>wösso ajama</orth></form>
+            <sense xml:id="wössar_wösso_ajama.s1">
+                <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Sprossen treiben</quote></cit>
+            </sense>
+            <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        </entry>
+    </entry>
+    <entry xml:id="wössokenne" xml:lang="et">
+        <form type="lemma"><orth>wössokenne</orth></form>
+        <sense xml:id="wössokenne.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">ein Reischen</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Sproßchen</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="wössone_ma" xml:lang="et">
+        <form type="phrase"><orth>wössone ma</orth></form>
+        <sense xml:id="wössone_ma.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Land wo Striffel wächst</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="wösso_tam" xml:lang="et">
+        <form type="phrase"><orth>wösso tam</orth></form>
+        <sense xml:id="wösso_tam.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">zähe Eiche</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="wössuma" xml:lang="et">
+        <form type="lemma"><orth>wössuma</orth></form>
+        <sense xml:id="wössuma.s1">
+            <xr type="related"><ref type="entry" target="#wörsuma">s. wörsuma</ref></xr>
+        </sense>
+    </entry>
+    <entry xml:id="wötma" xml:lang="et">
+        <form type="lemma"><orth>wötma</orth></form>
+        <metamark function="inflectionGroupStart">(</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="pos" value="infinitive">Infin.</gram></gramGrp>
+            <orth extent="suffix">ta</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <orth extent="suffix">ti</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <orth extent="suffix">wöt</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <orth extent="suffix">ta</orth>
+        </form>
+        <metamark function="inflectionGroupEnd">)</metamark>
+        <sense xml:id="wötma.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">nehmen</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">vornehmen</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        <entry xml:id="wötma_naese_oder_naist_oder_teitwöolt_wötma" xml:lang="et">
+            <form type="phrase"><orth>naese oder naist oder teitwöolt wötma</orth></form>
+            <sense xml:id="wötma_naese_oder_naist_oder_teitwöolt_wötma.s1">
+                <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">ein Weib nehmen</quote></cit>
+            </sense>
+        </entry>
+        <entry xml:id="wötma_kinni_wötma" xml:lang="et">
+            <form type="phrase"><orth>kinni wötma</orth></form>
+            <sense xml:id="wötma_kinni_wötma.s1">
+                <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">greifen</quote></cit>
+                <metamark function="equivalentTranslationDelimiter">,</metamark>
+                <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">fangen</quote></cit>
+            </sense>
+        </entry>
+        <entry xml:id="wötma_ta_wöttab_sedda_ennesele" xml:lang="et">
+            <form type="phrase"><orth>ta wöttab sedda ennesele</orth></form>
+            <sense xml:id="wötma_ta_wöttab_sedda_ennesele.s1">
+                <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">er zieht es auf sich</quote></cit>
+            </sense>
+        </entry>
+        <entry xml:id="wötma_sanna_wötma" xml:lang="et">
+            <form type="phrase"><orth>sanna wötma</orth></form>
+            <sense xml:id="wötma_sanna_wötma.s1">
+                <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">gehorchen</quote></cit>
+            </sense>
+        </entry>
+        <entry xml:id="wötma_ma_wöttan_leiwa" xml:lang="et">
+            <form type="phrase"><orth>ma wöttan leiwa</orth></form>
+            <sense xml:id="wötma_ma_wöttan_leiwa.s1">
+                <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">ich esse</quote></cit>
+            </sense>
+        </entry>
+    </entry>
+    <entry xml:id="wõtma" xml:lang="et">
+        <form type="lemma"><orth>wõtma</orth></form>
+        <sense xml:id="wõtma.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">nehmen</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">fassen</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="wõtan_leiwa_ich_esse" xml:lang="et">
+        <form type="phrase"><orth>wõtan leiwa ich esse</orth></form>
+        <sense xml:id="wõtan_leiwa_ich_esse.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">ich esse</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="ma_wõtsin_lahti_ich_machte_es_los" xml:lang="et">
+        <form type="phrase"><orth>ma wõtsin lahti ich machte es los</orth></form>
+        <sense xml:id="ma_wõtsin_lahti_ich_machte_es_los.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">ich machte es los</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="wõtke_luggeda" xml:lang="et">
+        <form type="compound"><orth>wõtke luggeda</orth></form>
+        <sense xml:id="wõtke_luggeda.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">fangt an zu beten</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="wõtko_kurrat" xml:lang="et">
+        <form type="phrase"><orth>wõtko kurrat</orth></form>
+        <sense xml:id="wõtko_kurrat.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">der Teufel oder Henker mag es holen!</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="wõtminne" xml:lang="et">
+        <form type="lemma"><orth>wõtminne</orth></form>
+        <sense xml:id="wõtminne.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">das Nehmen</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="wastawõtminne" xml:lang="et">
+        <form type="lemma"><orth>wastawõtminne</orth></form>
+        <sense xml:id="wastawõtminne.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Einnahme</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="wõtraja" xml:lang="et">
+        <form type="lemma"><orth>wõtraja</orth></form>
+        <form type="variant"><orth>wõtja</orth></form>
+        <sense xml:id="wõtraja.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">ein Nehmer</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="wõtka_jummal" xml:lang="et">
+        <form type="compound"><orth>wõtka jummal</orth></form>
+        <metamark function="inflectionGroupStart">(</metamark>
+        <metamark xml:lang="de" function="altDelimiter">oder</metamark>
+        <form type="variant"><orth>jummalat</orth></form>
+        <metamark function="inflectionGroupEnd">)</metamark>
+        <form type="compound"><orth>appi</orth></form>
+        <sense xml:id="wõtka_jummal.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Gott geleite dich!</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="wõtti" xml:lang="et">
+        <form type="lemma"><orth>wõtti</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <metamark function="genitiveDelimiter">G.</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="case" value="genitive"/></gramGrp>
+            <orth extent="suffix">wõtme</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <sense xml:id="wõtti.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">der Schlüssel</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        <entry xml:id="wõtti_polle_wõttit_mitte" xml:lang="et">
+            <form type="phrase"><orth>polle wõttit mitte</orth></form>
+            <sense xml:id="wõtti_polle_wõttit_mitte.s1">
+                <cit type="translationEquivalent" xml:lang="de">
+                    <quote xml:lang="de">ich habe den Schlüssel nicht</quote>
+                </cit>
+            </sense>
+        </entry>
+    </entry>
+    <entry xml:id="woggama" xml:lang="et">
+        <form type="lemma"><orth>woggama</orth></form>
+        <sense xml:id="woggama.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">fließen</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="wohho_mõõk" xml:lang="et">
+        <form type="compound"><orth>wohho mõõk</orth></form>
+        <sense xml:id="wohho_mõõk.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Wasserschwertel</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">iris paluftr.</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Kalmus</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="wohho_paatso_pu" xml:lang="et">
+        <form type="compound">
+            <orth>wohho paatso pu</orth>
+        </form>
+        <sense xml:id="wohho_paatso_pu.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">eine Art Holz dessen Kohlen zu Schießpulver gebraucht werden</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="wohl" xml:lang="et">
+        <form type="lemma">
+            <orth>wohl</orth>
+        </form>
+        <sense xml:id="wohl.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">ein Zickelchen</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">junge Ziege</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="woi" xml:lang="et">
+        <form type="lemma">
+            <orth>woi</orth>
+        </form>
+        <form type="variant">
+            <orth>oder</orth>
+        </form>
+        <sense xml:id="woi.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">leider!</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">so?</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">wie?</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">ob?</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <metamark function="equivalentTranslationDelimiter">,</metamark>
+        <cit type="translationEquivalent" xml:lang="de">
+            <quote xml:lang="de">ach!</quote>
+        </cit>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="woi" xml:lang="et">
+        <form type="lemma">
+            <orth>woi</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="case" value="accusative">Ac.</gram></gramGrp>
+            <orth extent="suffix">e</orth>
+        </form>
+        <form type="inflected">
+            <orth>woit</orth>
+        </form>
+        <sense xml:id="woi.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Butter</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="woidernd" xml:lang="et">
+        <form type="lemma">
+            <orth>woidernd</orth>
+        </form>
+        <sense xml:id="woidernd.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">überwunden</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="woidma" xml:lang="et">
+        <form type="lemma">
+            <orth>woidma</orth>
+        </form>
+        <metamark function="inflectionGroupStart">(</metamark>
+        <form type="variant">
+            <orth>ja</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="variant">
+            <orth>dfi</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="variant">
+            <orth>is</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="variant">
+            <orth>da</orth>
+        </form>
+        <metamark function="inflectionGroupEnd">)</metamark>
+        <sense xml:id="woidma.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">salben</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">schmieren</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        <entry xml:id="woidma_ma_woian" xml:lang="et">
+            <form type="phrase">
+                <orth>ma woian</orth>
+            </form>
+            <sense xml:id="woidma_ma_woian.s1">
+                <cit type="translationEquivalent" xml:lang="de">
+                    <quote xml:lang="de">ich schmiere</quote>
+                </cit>
+            </sense>
+        </entry>
+        <entry xml:id="woidma_kalli_rohhoga" xml:lang="et">
+            <form type="phrase">
+                <orth>woidma kalli rohhoga</orth>
+            </form>
+            <sense xml:id="woidma_kalli_rohhoga.s1">
+                <cit type="translationEquivalent" xml:lang="de">
+                    <quote xml:lang="de">balsamiren</quote>
+                </cit>
+            </sense>
+            <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+            <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        </entry>
+    </entry>
+    <entry xml:id="woidminne" xml:lang="et">
+        <form type="lemma">
+            <orth>woidminne</orth>
+        </form>
+        <sense xml:id="woidminne.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Salbung</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="woido" xml:lang="et">
+        <form type="lemma"><orth>woido</orth></form>
+        <sense xml:id="woido.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">and</quote>
+            </cit>
+            <metamark function="altDelimiter" xml:lang="de">oder</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">palk</quote>
+            </cit>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Gewinn im Wettlauf</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <entry xml:id="woido_jooksma" xml:lang="et">
+            <form type="compound"><orth>woido jooksma</orth></form>
+            <sense xml:id="woido_jooksma.s1">
+                <cit type="translationEquivalent" xml:lang="de">
+                    <quote xml:lang="de">wettlaufen</quote>
+                </cit>
+            </sense>
+            <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        </entry>
+    </entry>
+    <entry xml:id="woido_m" xml:lang="et">
+        <form type="lemma"><orth>Woido m.</orth></form>
+        <sense xml:id="woido_m.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Woidoma im Fellinſchen</quote>
+            </cit>
+        </sense>
+    </entry>
+    <entry xml:id="woido_pärrast" xml:lang="et">
+        <form type="compound"><orth>woido pärrast</orth></form>
+        <sense xml:id="woido_pärrast.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">um die Wette</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="woje" xml:lang="et">
+        <form type="lemma"><orth>woje</orth></form>
+        <sense xml:id="woje.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Wagenſchmier</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="woik" xml:lang="et">
+        <form type="lemma"><orth>woik</orth></form>
+        <sense xml:id="woik.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">ein gelbes (Pferd)</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="woim" xml:lang="et">
+        <form type="lemma"><orth>woim</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="case" value="genitive"/></gramGrp>
+            <orth extent="suffix">a</orth>
+        </form>
+        <metamark xml:lang="de" function="altDelimiter">oder</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="case" value="genitive"/></gramGrp>
+            <orth extent="suffix">o</orth>
+        </form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <sense xml:id="woim.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Kraft</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Vermögen</quote>
+            </cit>
+        </sense>
+        <entry xml:id="woim_polle_mul_woimo" xml:lang="et">
+            <form type="phrase"><orth>polle mul woimo ühtegi</orth></form>
+            <sense xml:id="woim_polle_mul_woimo.s1">
+                <cit type="translationEquivalent" xml:lang="de">
+                    <quote xml:lang="de">ich bin ganz kraftlos</quote>
+                </cit>
+            </sense>
+            <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        </entry>
+    </entry>
+    <entry xml:id="woima" xml:lang="et">
+        <form type="lemma"><orth>woima</orth></form>
+        <sense xml:id="woima.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">können</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        <entry xml:id="woima_woin" xml:lang="et">
+            <form type="phrase"><orth>woin</orth></form>
+            <sense xml:id="woima_woin.s1">
+                <cit type="translationEquivalent" xml:lang="de">
+                    <quote xml:lang="de">ich kann</quote>
+                </cit>
+            </sense>
+            <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        </entry>
+        <entry xml:id="woima_se_polle_minno_woima" xml:lang="et">
+            <form type="phrase"><orth>ſe polle minno woima</orth></form>
+            <sense xml:id="woima_se_polle_minno_woima.s1">
+                <cit type="translationEquivalent" xml:lang="de">
+                    <quote xml:lang="de">es ſteht nicht in meinem Vermögen</quote>
+                </cit>
+            </sense>
+            <usg type="geographic" corresp="#reval_dialect">r.</usg>
+            <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        </entry>
+    </entry>
+    <entry xml:id="woib" xml:lang="et">
+        <form type="lemma"><orth>woib</orth></form>
+        <form type="variant"><orth>woip</orth><usg type="geographic" corresp="#dorpat_dialect">d.</usg></form>
+        <form type="variant"><orth>olla</orth></form>
+        <sense xml:id="woib.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">es ist glaublich</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">oder thunlich</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">oder möglich</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="woimal" xml:lang="et">
+        <form type="lemma"><orth>woimal</orth></form>
+        <form type="variant"><orth>minno woimal</orth></form>
+        <sense xml:id="woimal.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">nach meinem Vermögen</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="woimatta" xml:lang="et">
+        <form type="lemma"><orth>woimatta</orth></form>
+        <sense xml:id="woimatta.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">unmöglich</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="woimattas" xml:lang="et">
+        <form type="lemma"><orth>woimattas</orth></form>
+        <form type="variant"><orth>woimato</orth></form>
+        <form type="variant"><orth>woimeto</orth></form>
+        <sense xml:id="woimattas.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">unvermögend</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">kraftlos</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">ohnmächtig</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">schwach</quote></cit>
+        </sense>
+        <metamark function="senseDelimiter">;</metamark>
+        <sense xml:id="woimattas.s2">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">unmöglich</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="woimus" xml:lang="et">
+        <form type="lemma"><orth>woimus</orth></form>
+        <sense xml:id="woimus.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Gewalt</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Macht</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Sieg</quote></cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Oberhand</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        <entry xml:id="woimus_sama" xml:lang="et">
+            <form type="phrase"><orth>woimust sama</orth></form>
+            <sense xml:id="woimus_sama.s1">
+                <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">siegen</quote></cit>
+            </sense>
+        </entry>
+        <entry xml:id="woimus_wotma" xml:lang="et">
+            <form type="phrase"><orth>woimust wotma</orth></form>
+            <sense xml:id="woimus_wotma.s1">
+                <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">überhand nehmen</quote></cit>
+            </sense>
+            <usg type="geographic" corresp="#reval_dialect">r.</usg>
+            <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        </entry>
+        <entry xml:id="woimusses_saatma" xml:lang="et">
+            <form type="phrase"><orth>woimusses saatma</orth></form>
+            <sense xml:id="woimusses_saatma.s1">
+                <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">zur Kraft bringen</quote></cit>
+            </sense>
+            <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        </entry>
+    </entry>
+    <entry xml:id="woipar" xml:lang="et">
+        <form type="lemma"><orth>woipar</orth></form>
+        <sense xml:id="woipar.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Geschwulste an Pferdefüßen</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#pärnu_dialect">P.</usg>
+    </entry>
+    <entry xml:id="woipöttakas" xml:lang="et">
+        <form type="lemma"><orth>woipöttakas</orth></form>
+        <sense xml:id="woipöttakas.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Spaat (Pferdekrankheit)</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#harjumaa_dialect">H.</usg>
+    </entry>
+    <entry xml:id="woist" xml:lang="et">
+        <form type="lemma"><orth>woist</orth></form>
+        <metamark function="genitiveDelimiter">G.</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="case" value="genitive"/></gramGrp>
+            <orth extent="suffix">woisma</orth>
+        </form>
+        <sense xml:id="woist.s1">
+            <cit type="translationEquivalent" xml:lang="de"><quote xml:lang="de">Butter</quote></cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="woiss" xml:lang="et">
+        <form type="lemma"><orth>woiss</orth></form>
+        <metamark function="inflectionDelimiter">,</metamark>
+        <metamark function="genitiveDelimiter">G.</metamark>
+        <form type="inflected">
+            <gramGrp><gram type="case" value="genitive"/></gramGrp>
+            <orth extent="suffix">woisma</orth>
+        </form>
+        <sense xml:id="woiss.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Butter</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        <entry xml:id="woiss_woissid_pesma">
+            <form type="phrase"><orth>woissid pesma</orth></form>
+            <metamark xml:lang="de" function="altDelimiter">oder</metamark>
+            <form type="variant"><orth>kokkotõma</orth></form>
+            <sense xml:id="woiss_woissid_pesma.s1">
+                <cit type="translationEquivalent" xml:lang="de">
+                    <quote xml:lang="de">buttern</quote>
+                </cit>
+            </sense>
+        </entry>
+    </entry>
+    <entry xml:id="woisme_kirn" xml:lang="et">
+        <form type="compound"><orth>woisme kirn</orth></form>
+        <sense xml:id="woisme_kirn.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Butterfaß</quote>
+            </cit>
+        </sense>
+    </entry>
+    <entry xml:id="woi_siis" xml:lang="et">
+        <form type="phrase"><orth>woi siis</orth></form>
+        <sense xml:id="woi_siis.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">was sonst</quote>
+            </cit>
+            <metamark function="senseDelimiter">;</metamark>
+        </sense>
+        <sense xml:id="woi_siis.s2">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">so?</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="woitlema" xml:lang="et">
+        <form type="lemma"><orth>woitlema</orth></form>
+        <sense xml:id="woitlema.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">streiten</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">kämpfen</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">ringen</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="woitleminne" xml:lang="et">
+        <form type="lemma"><orth>woitleminne</orth></form>
+        <sense xml:id="woitleminne.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Kampf</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="woitma" xml:lang="et">
+        <form type="lemma"><orth>woitma</orth></form>
+        <sense xml:id="woitma.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">kämpfen</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">übertreffen</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">siegen</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">gewinnen</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">überwinden</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="ärrawoitma" xml:lang="et">
+        <form type="compound"><orth>ärrawoitma</orth></form>
+        <sense xml:id="ärrawoitma.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">erobern</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">erwerben</quote>
+            </cit>
+        </sense>
+    </entry>
+    <entry xml:id="ärrawoitmatta" xml:lang="et">
+        <form type="lemma"><orth>ärrawoitmatta</orth></form>
+        <sense xml:id="ärrawoitmatta.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">unerobert</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="woitminne" xml:lang="et">
+        <form type="lemma"><orth>woitminne</orth></form>
+        <metamark xml:lang="de" function="altDelimiter">oder</metamark>
+        <form type="variant"><orth>ärrawoitminne</orth></form>
+        <sense xml:id="woitminne.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Gewinn</quote>
+            </cit>
+            <metamark function="equivalentTranslationDelimiter">,</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">Besiegung</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+    <entry xml:id="woito" xml:lang="et">
+        <form type="lemma"><orth>woito</orth></form>
+        <sense xml:id="woito.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">in</quote>
+            </cit>
+            <metamark xml:lang="de" function="altDelimiter">oder</metamark>
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">um die Wette</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        <entry xml:id="woito_jooksma">
+            <form type="phrase"><orth>jooksma</orth></form>
+            <sense xml:id="woito_jooksma.s1">
+                <cit type="translationEquivalent" xml:lang="de">
+                    <quote xml:lang="de">um die Wette laufen</quote>
+                </cit>
+            </sense>
+            <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        </entry>
+        <entry xml:id="woito_jooksminne">
+            <form type="phrase"><orth>jooksminne</orth></form>
+            <sense xml:id="woito_jooksminne.s1">
+                <cit type="translationEquivalent" xml:lang="de">
+                    <quote xml:lang="de">Wettlauf</quote>
+                </cit>
+            </sense>
+            <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+        </entry>
+    </entry>
+    <entry xml:id="woitud" xml:lang="et">
+        <form type="lemma"><orth>woitud</orth></form>
+        <sense xml:id="woitud.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">gesalbt</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#reval_dialect">r.</usg>
+    </entry>
+    <entry xml:id="woitu" xml:lang="et">
+        <form type="lemma"><orth>woitu</orth></form>
+        <sense xml:id="woitu.s1">
+            <cit type="translationEquivalent" xml:lang="de">
+                <quote xml:lang="de">besiegt</quote>
+            </cit>
+        </sense>
+        <usg type="geographic" corresp="#dorpat_dialect">d.</usg>
+    </entry>
+</div>
