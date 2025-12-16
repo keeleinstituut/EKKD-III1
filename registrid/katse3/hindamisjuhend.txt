@@ -1,0 +1,15 @@
+Tabelis on punaseks tehtud kirjaga lahtritesse vaja hinnata nii korpuse andmete pealt (vasakul pool rohelist piiri) kui ka treeningandmete pealt (paremal pool rohelist piiri) järgmisi asju:
+
+* Kas tähendus on olemas ja adekvaatne eesti keeles? (JAH/EI)
+
+* Kas tähendusele pakutud register (informaalne vs. neutraalne/formaalne) on adekvaatne? (JAH/EI)
+
+* Kommentaare põhjenduse kohta – lisada, kui on midagi nt keeleliselt või muul moel märgata.
+
+* Kas tähendusele pakutud märgend on adekvaatne? (JAH/EI)
+
+* Muid kommentaare ükskõik mille kohta – lisada, kui tekkis soov ükskõik mida kommenteerida
+
+Ütlen üle selle, et osa infot ridadel kordub, sest kui ühele tähendusele on SKM määranud kaks või enam märgendit, siis kõik märgendid on esitatud eraldi ridadel, aga eespool näitelaused jm on sama. Täitmisel võib jah/ei-vastuse panna korduva info puhul ainult ühele reale, ei pea igal real kordama, aga siis märgendi juures igale reale, sest iga märgendit tuleb hinnata.
+
+Korpuse näitelausete puhul eeldame, et kõik näited on korpuses päriselt olemas (enamus ongi). Seega tähenduse olemasolu ja adekvaatsust saab korpuseandmete puhul hinnata näitelausete põhjal, aga kuna nendeski võib SKM olla tõlgendanud lauset valesti, siis tuleb neid kriitilise pilguga vaadata (eriti üksikute lausete põhjal eristatud tähenduste puhul). Treeningandmete poole peal tuleb rohkem tugineda enda keeletajule – nt et pedakas ei ole pedekas.
