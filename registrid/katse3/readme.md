@@ -1,1 +1,0 @@
-Sketch Engine'ist päritud (rakendades koodi kwic_ske_api.py) kontekstid saab alla laadida [OneDrive'ist](https://eestikeeleinstituut-my.sharepoint.com/:u:/g/personal/eleri_aedmaa_eki_ee/IQA8FCtqgFD8Q4-xFWCp825ZAbZMG3u9-Ay3z9RAmA7FgOs?e=2P0PJg).
