@@ -1,0 +1,1020 @@
+{
+  "_meta": {
+    "created": "2026-07-07 16-04-31",
+    "author": "Madis Jürviste",
+    "co_authored_by": [
+      "Claude Fable 5"
+    ],
+    "note": "Public copy: the original in the working repo is the bare 144-entry list; this _meta wrapper was added for the public release only. 'changes' below is byte-identical in content to the original list."
+  },
+  "changes": [
+    {
+      "id": "am-019edb06-66a9-7f2e-a623-d7a3f51a74fe",
+      "Amt-Master-ID": "abimees",
+      "DEF_en": "helper, assistant; also 'husband, spouse' (Stahl, Vestring); Göseken also 'pettifogger, word-twister'",
+      "DEF_et": "abiline, abistaja; ka 'abikaasa, abielumees' (Stahlil Ehemann, Vestringil Ehegatte); Gösekenil ka 'seaduseväänaja, halb advokaat'",
+      "reason": "Ve Ehegatte attested (per Comment-1); Zungendrescher = halb advokaat, not keelepeksja"
+    },
+    {
+      "id": "am-019edb06-66ab-78fa-8a34-ad5784fdd04b",
+      "Amt-Master-ID": "abivaim",
+      "DEF_en": null,
+      "DEF_et": "(suvine) abitööline, jalateoline (sks Hülfsarbeiter)",
+      "reason": "'jalategija' not a real word; Fußarbeiter = jalateoline"
+    },
+    {
+      "id": "am-019edb06-66b0-74da-aae6-4551dd70d466",
+      "Amt-Master-ID": "adramees",
+      "DEF_en": null,
+      "DEF_et": "adramaad pidav talupoeg, adratalupoeg (sks Hakenbauer)",
+      "reason": "'vakutalupoeg' not real / wrong referent"
+    },
+    {
+      "id": "am-019edb06-66b6-7074-ba41-4ffb67f8de93",
+      "Amt-Master-ID": "ajaja",
+      "DEF_en": "chaser, driver; game-beater; investigator of theft; Göseken also 'hunter'",
+      "DEF_et": "ajaja, taga-ajaja; jahil peletaja (Treiber); varguse uurija (sks Nachforscher); Gösekenil ka 'jahimees' (Jäger)",
+      "reason": "Gö 'Jäger' sense omitted"
+    },
+    {
+      "id": "am-019edb06-66be-733a-b9c6-cff3e94bde8e",
+      "Amt-Master-ID": "amm",
+      "DEF_en": null,
+      "DEF_et": "amm, last imetav naine (sks Amme)",
+      "reason": "'imetajanna' not a real word"
+    },
+    {
+      "id": "am-019edb06-66cd-7496-afd9-addc9c7f7c16",
+      "Amt-Master-ID": "avanisa-amm",
+      "DEF_en": null,
+      "DEF_et": "last imetav naine, amm (sks Säugamme)",
+      "reason": "'imetajanna' not a real word"
+    },
+    {
+      "id": "am-019edb06-66d5-70cd-ab28-56d7c72f6ca9",
+      "Amt-Master-ID": "eestkostja",
+      "DEF_en": "advocate, intercessor; overseer",
+      "DEF_et": null,
+      "reason": "'guardian' unsupported by glosses"
+    },
+    {
+      "id": "am-019edb06-66d8-7977-a582-496b64c93db6",
+      "Amt-Master-ID": "eksinud mees",
+      "DEF_en": "manslayer, killer",
+      "DEF_et": "tapja (sks Totschläger)",
+      "reason": "'fallen man' literal reading unsupported"
+    },
+    {
+      "id": "am-019edb06-66dd-7a1c-8fa7-17d43d93b86e",
+      "Amt-Master-ID": "ettejooksja",
+      "DEF_en": null,
+      "DEF_et": "ettejooksja, eesjooksja, eelkäija (sks Vorläufer, Vorbote)",
+      "reason": "'eeljooksja' -> 'eesjooksja' (EKSS)"
+    },
+    {
+      "id": "am-019edb06-66e0-7b35-8cbd-ef2d131dd02b",
+      "Amt-Master-ID": "etteseisja",
+      "DEF_en": "advocate, spokesman",
+      "DEF_et": null,
+      "reason": "'overseer' unsupported; sole gloss Vorsprecher"
+    },
+    {
+      "id": "am-019edb06-66e1-71b4-8ca8-e461c1bcdc72",
+      "Amt-Master-ID": "ettetõstja",
+      "DEF_en": null,
+      "DEF_et": "lahtilõikaja, lauas liha lõikaja (sks Vorschneider)",
+      "reason": "'ettelõikaja'/'eeslõikaja' not real; editor's note gives 'lahtilõikaja'"
+    },
+    {
+      "id": "am-019edb06-66e7-725e-9b72-4d37572faa28",
+      "Amt-Master-ID": "heikaja",
+      "DEF_en": null,
+      "DEF_et": "hõikaja, väljakuulutaja, heerold (sks Ausrufer, Herold)",
+      "reason": "'herald' -> Estonian 'heerold'"
+    },
+    {
+      "id": "am-019edb06-66e8-7191-8397-340ad81410ec",
+      "Amt-Master-ID": "heinaline",
+      "DEF_en": null,
+      "DEF_et": "heinatööline, heinategija (sks auf den Heuschlag gehen)",
+      "reason": "'Heuarbeiter' not the attested gloss"
+    },
+    {
+      "id": "am-019edb06-66ea-716c-9f57-7d2de86c5f6a",
+      "Amt-Master-ID": "hirmutaja",
+      "DEF_en": null,
+      "DEF_et": "karistaja, range kasvataja (sks Zuchtmeister)",
+      "reason": "'distsiplinaator' not real"
+    },
+    {
+      "id": "am-019edb06-66f2-7d88-90f7-da7f786f0aa5",
+      "Amt-Master-ID": "hoorapealne",
+      "DEF_en": null,
+      "DEF_et": "bordelli ülevaataja (sks Hurenvogt)",
+      "reason": "'hooravoot' not real"
+    },
+    {
+      "id": "am-019edb06-66f6-733d-869f-7e7749a4cf8a",
+      "Amt-Master-ID": "hoorasaadik",
+      "DEF_en": "procuress, go-between for whores",
+      "DEF_et": "kupeldaja, vahendaja (sks Kupplerin)",
+      "reason": "'hooravahendaja' not real; Kupplerin feminine (Sugu N)"
+    },
+    {
+      "id": "am-019edb06-66f7-72a8-baab-ae59d112f6d0",
+      "Amt-Master-ID": "hoorasundija",
+      "DEF_en": null,
+      "DEF_et": "bordelli ülevaataja, kupeldaja; naistekütt (sks Hurenvogt, Hurenjäger)",
+      "reason": "'hooravoot' not real; 'hoorajaht' is activity not person"
+    },
+    {
+      "id": "am-019edb06-66f8-7df3-b8c9-0a7aa39caed5",
+      "Amt-Master-ID": "hoovimeister",
+      "DEF_en": null,
+      "DEF_et": "hoovimeister, majapidamise ülevaataja, koduõpetaja (sks Hofmeister)",
+      "reason": "'hoovmeister' nonstandard spelling"
+    },
+    {
+      "id": "am-019edb06-66fa-7622-9c34-bf3c813345cd",
+      "Amt-Master-ID": "hukkaja",
+      "DEF_en": null,
+      "DEF_et": "prassija, pillaja, raiskaja (sks Prasser, Durchbringer)",
+      "reason": "'läbilööja' = go-getter, wrong sense"
+    },
+    {
+      "id": "am-019edb06-66fc-7afe-add4-2383974e6f2c",
+      "Amt-Master-ID": "hulgus",
+      "DEF_en": null,
+      "DEF_et": "hulkur, rändaja (sks Herumläufer, Landstreicher)",
+      "reason": "'maaltkäija' not real"
+    },
+    {
+      "id": "am-019edb06-66fd-7419-9ef3-787971e7332a",
+      "Amt-Master-ID": "hulkuja",
+      "DEF_en": null,
+      "DEF_et": "hulkuja, hulkur, rändur (sks Umschweifer, Landstreicher)",
+      "reason": "'rändleja' not standard; 'rändur'"
+    },
+    {
+      "id": "am-019edb06-6706-7766-81d6-78ba99a88c24",
+      "Amt-Master-ID": "imetaja naine",
+      "DEF_en": null,
+      "DEF_et": "amm, imetav naine (sks Säugamme)",
+      "reason": "'imetajanna' not real"
+    },
+    {
+      "id": "am-019edb06-670e-7146-831d-a7b23cb611db",
+      "Amt-Master-ID": "jalapoisid",
+      "DEF_en": null,
+      "DEF_et": "lakeid, jalapoisid (mitmus; sks Lackei)",
+      "reason": "'(elu)teener' formation not real; 'lakei' standard"
+    },
+    {
+      "id": "am-019edb06-6713-7b7e-9fc1-bdca3ae5979f",
+      "Amt-Master-ID": "junkur",
+      "DEF_en": "estate steward, bailiff, estate manager; Gutslaff and Hupel (junkro) also 'maiden, young lady (Jungfrau, Jungfer)'",
+      "DEF_et": "mõisavalitseja, ametmees (sks Amtmann, Verwalter); Gutslaffil ja Hupelil (junkro) ka 'Jungfrau, Jungfer'",
+      "reason": "'mõisnik' unsupported; Jungfer sense also in Hupel"
+    },
+    {
+      "id": "am-019edb06-6714-7918-b3ba-4dff18bf7167",
+      "Amt-Master-ID": "jutleja",
+      "DEF_en": null,
+      "DEF_et": "jutlustaja (sks Prediger)",
+      "reason": "'prediker' not a real word"
+    },
+    {
+      "id": "am-019edb06-6715-7f10-98dd-9522142e7b49",
+      "Amt-Master-ID": "jutujätk",
+      "DEF_en": null,
+      "DEF_et": "lobiseja, latatara, jutukas inimene (sks Plauderer, Wäscher)",
+      "reason": "'latataja' -> 'latatara'"
+    },
+    {
+      "id": "am-019f31d3-af34-7dd9-81bd-423d22a4e498",
+      "Amt-Master-ID": "jutustaja",
+      "DEF_en": null,
+      "DEF_et": "jutlustaja (sks Prediger)",
+      "reason": "'prediker' not a real word"
+    },
+    {
+      "id": "am-019edb06-6717-7048-8c80-c6a64a5da8d0",
+      "Amt-Master-ID": "jõle",
+      "DEF_en": null,
+      "DEF_et": "rumal, narr, alp inimene; enamasti omadussõna (sks albern, Narr)",
+      "reason": "'albur' not a real word"
+    },
+    {
+      "id": "am-019edb06-671b-7af6-802c-f1f2bd431481",
+      "Amt-Master-ID": "kaarman",
+      "DEF_en": null,
+      "DEF_et": "voorimees (sks Fuhrmann)",
+      "reason": "'kaarmees', 'vooriajaja' not real words"
+    },
+    {
+      "id": "am-019edb06-6724-776d-954c-d155140aed41",
+      "Amt-Master-ID": "kaeja",
+      "DEF_en": "seer, clairvoyant",
+      "DEF_et": "selgeltnägija (sks Seher)",
+      "reason": "Seher gloss unreflected; missing (sks ...)"
+    },
+    {
+      "id": "am-019edb06-672f-7e52-b7de-3187b3b018bd",
+      "Amt-Master-ID": "kammerer",
+      "DEF_en": "treasurer, bursar",
+      "DEF_et": "laekur, varahoidja (sks Kämmerier)",
+      "reason": "gloss is Kämmerier (treasurer), not Kämmerer; chamberlain sense unsupported"
+    },
+    {
+      "id": "am-019edb06-6730-79e3-8b95-09123593dc85",
+      "Amt-Master-ID": "kanavaras",
+      "DEF_en": null,
+      "DEF_et": "kanavaras; altkulmu vaataja, kelm (sks Hühnerdieb, tückisch von Augen)",
+      "reason": "'silmaalt vaataja' not idiomatic"
+    },
+    {
+      "id": "am-019edb06-6732-758b-bece-b3b94dffcc53",
+      "Amt-Master-ID": "kandja",
+      "DEF_en": null,
+      "DEF_et": "kandja; (lipu-, raamatu)kandja (sks Träger)",
+      "reason": "'porter' is not Estonian"
+    },
+    {
+      "id": "am-019edb06-6733-7da3-83a2-25cf831f3480",
+      "Amt-Master-ID": "kandlelööja",
+      "DEF_en": null,
+      "DEF_et": "kandlemängija, harfist (sks Harfenist)",
+      "reason": "'harfenist' -> 'harfist'"
+    },
+    {
+      "id": "am-019edb06-673a-7a36-8ed6-89ed656f0614",
+      "Amt-Master-ID": "kardsepp",
+      "DEF_en": "tinsmith, sheet-metal worker",
+      "DEF_et": "plekksepp (sks Klempner)",
+      "reason": "Hupel glosses 'ein Klempner'; passementier claim contradicts evidence"
+    },
+    {
+      "id": "am-019edb06-673b-7363-8392-057c028a2883",
+      "Amt-Master-ID": "karistaja",
+      "DEF_en": null,
+      "DEF_et": "karistaja, range kasvataja (sks Zuchtmeister); vrd 'hirmutaja'",
+      "reason": "'distsiplinaator' not a real word"
+    },
+    {
+      "id": "am-019edb06-6740-766b-93e4-1fbc7eca4b4f",
+      "Amt-Master-ID": "kasuksepp",
+      "DEF_en": null,
+      "DEF_et": "köösner, karusnahatööline (sks Kürschner)",
+      "reason": "'kasukassepp' misspelled; 'kürsner' not real; köösner standard"
+    },
+    {
+      "id": "am-019edb06-6747-7242-880f-62b7d6305edb",
+      "Amt-Master-ID": "kedranaine",
+      "DEF_en": null,
+      "DEF_et": "ketraja, kedrav naine (sks Spinnerin)",
+      "reason": "'ketrajanna' not real; 'ketraja naine' = spinner's wife"
+    },
+    {
+      "id": "am-019edb06-6748-7c90-b8f9-9bacc2b9507a",
+      "Amt-Master-ID": "keelekandja",
+      "DEF_en": "slanderer, talebearer, informer; Göseken 'flatterer'",
+      "DEF_et": "keelekandja, laimaja, pealekaebaja (Gösekenil 'lipitseja'; sks Verleumder, Ohrenbläser, Fuchsschwänzer)",
+      "reason": "'kõrvasosistaja' not real; Gö Fuchsschwänzer sense omitted"
+    },
+    {
+      "id": "am-019edb06-674e-700d-a843-f6e487158bc1",
+      "Amt-Master-ID": "kekk",
+      "DEF_en": "fool, buffoon; Göseken 'fanatic'",
+      "DEF_et": "narr, tobu (Gösekenil ka 'fanaatik'; sks Narr, Stocknarr, Tor, Schwärmer)",
+      "reason": "'fop/keigar' anachronistic reading of Geck; Schwärmer omitted"
+    },
+    {
+      "id": "am-019edb06-674f-7b65-a567-2557d7eae4c1",
+      "Amt-Master-ID": "keldrimeister",
+      "DEF_en": null,
+      "DEF_et": "keldrimeister (sks Kellner)",
+      "reason": "'joogiülem' not real; Kellermeister not attested"
+    },
+    {
+      "id": "am-019edb06-6750-72bd-b5b8-1b4f826d8d7c",
+      "Amt-Master-ID": "kellakuuljad",
+      "DEF_en": null,
+      "DEF_et": "linna- v. kirikulähedased elanikud, kellahääle kuuldekaugusel elavad inimesed (sks die nahe bey der Stadt/Kirche wohnen)",
+      "reason": "'elajad' reads as 'beasts'"
+    },
+    {
+      "id": "am-019edb06-6753-7662-a422-0b0aa28d78c1",
+      "Amt-Master-ID": "kellapeksja",
+      "DEF_en": null,
+      "DEF_et": "kellamees, kellalööja (sks Glöckner)",
+      "reason": "'kellur' not a real word"
+    },
+    {
+      "id": "am-019edb06-6754-7e61-ada1-0e006d2e794f",
+      "Amt-Master-ID": "kellassepp",
+      "DEF_en": null,
+      "DEF_et": "kellassepp (sks Uhrmacher)",
+      "reason": "'kellmeister' not real (kellameister = bell-founder)"
+    },
+    {
+      "id": "am-019edb06-6755-77d9-997f-87c9fe17a614",
+      "Amt-Master-ID": "kelm",
+      "DEF_en": null,
+      "DEF_et": "kelm, suli, petis (sks Schelm)",
+      "reason": "'vurle' = city slicker, not rogue"
+    },
+    {
+      "id": "am-019edb06-675a-747d-96f0-6859685c5a51",
+      "Amt-Master-ID": "kiimane hoor",
+      "DEF_en": null,
+      "DEF_et": "paadunud hoor, kiimaline hoor (sks Erzhure)",
+      "reason": "'ülihoor' not a real word"
+    },
+    {
+      "id": "am-019f31d3-af35-78f6-9a87-62cbf2d2fc6f",
+      "Amt-Master-ID": "kiriku vöörmünder",
+      "DEF_en": "churchwarden, church elder, overseer of the church",
+      "DEF_et": "kirikuvöörmünder, kiriku eestseisja (sks Kirchenvorsteher, Kirchenvormund)",
+      "reason": "'guardian (legal)'/plain Vormund unattested"
+    },
+    {
+      "id": "am-019edb06-6762-7933-a75e-be5fbc560804",
+      "Amt-Master-ID": "kirikuhärra",
+      "DEF_en": null,
+      "DEF_et": "pastor, kirikuõpetaja, kirikuhärra (sks Pastor)",
+      "reason": "'Pfarrer' not attested for this lemma"
+    },
+    {
+      "id": "am-019edb06-676b-7d10-855d-d2629cabe383",
+      "Amt-Master-ID": "kivinek",
+      "DEF_en": null,
+      "DEF_et": "kiviraidur (halvustav nimetus; sks Steinhauer, Scheltwort)",
+      "reason": "'müürsepp' (Maurer) unsupported"
+    },
+    {
+      "id": "am-019edb06-676c-7771-8990-7f8bb62864e3",
+      "Amt-Master-ID": "kivisepp",
+      "DEF_en": null,
+      "DEF_et": "kivisepp, kiviraidur (sks Steinhauer, Steinmetz)",
+      "reason": "'müürsepp' unsupported"
+    },
+    {
+      "id": "am-019edb06-676d-7ba1-87d5-28039155d6e6",
+      "Amt-Master-ID": "kivitakar",
+      "DEF_en": null,
+      "DEF_et": "kiviraidur, kivisepp (sks Steinmetz)",
+      "reason": "'müürsepp' unsupported"
+    },
+    {
+      "id": "am-019edb06-6772-7bd4-a77b-bc9336d4fe69",
+      "Amt-Master-ID": "kodapoolik",
+      "DEF_en": null,
+      "DEF_et": "pops, vabadik, saunik, elanik (sks Einwohner, Badstüber)",
+      "reason": "'saunaüürnik' not established; 'saunik' historical term"
+    },
+    {
+      "id": "am-019edb06-6773-7ead-8913-337213f92aa6",
+      "Amt-Master-ID": "kodapooline",
+      "DEF_en": null,
+      "DEF_et": "pops, vabadik, saunik, elanik (sks Einwohner, Badstüber)",
+      "reason": "'saunaüürnik' not established; 'saunik' historical term"
+    },
+    {
+      "id": "am-019edb06-6778-702e-a294-71b2b0054103",
+      "Amt-Master-ID": "kohtumõistja",
+      "DEF_en": "judge, lord of the court",
+      "DEF_et": "kohtumõistja, kohtunik (sks Richter, Gerichtsherr)",
+      "reason": "Gerichtsherr gloss (Ve, Hu) omitted"
+    },
+    {
+      "id": "am-019edb06-6787-7d87-81f6-b73188bad8a8",
+      "Amt-Master-ID": "koorilaulja",
+      "DEF_en": null,
+      "DEF_et": "koorilauljad (mitmus; sks Chorsänger)",
+      "reason": "'korist' not a real word"
+    },
+    {
+      "id": "am-019edb06-678f-7325-9d03-e53569d6ee1a",
+      "Amt-Master-ID": "kriivlipoiss",
+      "DEF_en": null,
+      "DEF_et": "(koopia)kirjutaja, kirjutajapoiss, kopist (sks Kopist, Amanuensis)",
+      "reason": "'amanuens' not a real Estonian word"
+    },
+    {
+      "id": "am-019edb06-6792-784e-ab6f-ffe2c9da606f",
+      "Amt-Master-ID": "kubuköitja",
+      "DEF_en": null,
+      "DEF_et": "vihuköitja, vihusiduja (sks Garbenbinder)",
+      "reason": "'vihukoojaja' corrupted form"
+    },
+    {
+      "id": "am-019edb06-679b-7019-8737-f2c0506e4bd4",
+      "Amt-Master-ID": "kunstimees",
+      "DEF_en": null,
+      "DEF_et": "kunstnik, oskaja (sks Künstler)",
+      "reason": "missing (sks ...) citation"
+    },
+    {
+      "id": "am-019f31d3-af36-7a5b-b3f6-942503a310cc",
+      "Amt-Master-ID": "kõrtsnik",
+      "DEF_en": null,
+      "DEF_et": "kõrtsmik, kõrtsipidaja (sks Krüger)",
+      "reason": "'Wirt' not attested for this lemma"
+    },
+    {
+      "id": "am-019edb06-67bb-73d8-9e0d-2b5ec582f428",
+      "Amt-Master-ID": "kübarsepp",
+      "DEF_en": null,
+      "DEF_et": "kübarsepp (sks Hutmacher)",
+      "reason": "'mütsisepp' not a real word"
+    },
+    {
+      "id": "am-019edb06-67c6-7ce2-9442-e43df918eea4",
+      "Amt-Master-ID": "künnipoiss",
+      "DEF_en": null,
+      "DEF_et": "künnipoiss, künda oskav poiss (sks ein Junge der pflügen kann)",
+      "reason": "'kündmisoskaja' not a real word"
+    },
+    {
+      "id": "am-019edb06-67c7-792e-9dcb-5cc45d4a12e5",
+      "Amt-Master-ID": "küpsja",
+      "DEF_en": "roaster, one who roasts/bakes",
+      "DEF_et": "küpsetaja, praadija (sks einer der da brätet)",
+      "reason": "'cook' sense unsupported"
+    },
+    {
+      "id": "am-019edb06-67cc-78a7-b2b3-6fb9163ed53c",
+      "Amt-Master-ID": "laevasulane",
+      "DEF_en": null,
+      "DEF_et": "laevasulane, madrus, sõudja (sks Bootsknecht, Ruderknecht)",
+      "reason": "'tüürmadrus' misspelled+unsupported; Ruderknecht = sõudja"
+    },
+    {
+      "id": "am-019edb06-67dd-73ff-83ac-3465a9adbeb4",
+      "Amt-Master-ID": "lausuja",
+      "DEF_en": "sorcerer, conjurer, enchanter; soothsayer",
+      "DEF_et": null,
+      "reason": "'incantator' not English"
+    },
+    {
+      "id": "am-019f31d3-af37-74fe-8466-f42ba51470c7",
+      "Amt-Master-ID": "lesk",
+      "DEF_en": "widow or widower",
+      "DEF_et": null,
+      "reason": "widower sense attested (Ve, Hu, He; Sugu Ü)"
+    },
+    {
+      "id": "am-019edb06-67ee-781c-bdb3-1ca29e612e1d",
+      "Amt-Master-ID": "linnupüüdja",
+      "DEF_en": null,
+      "DEF_et": "linnupüüdja, linnukütt (sks Vogelfänger, Vogelsteller)",
+      "reason": "'linnuküttija' not standard; Vogelsteller attested"
+    },
+    {
+      "id": "am-019edb06-67f1-70f7-9df3-78f0f99dfc90",
+      "Amt-Master-ID": "lirva",
+      "DEF_en": null,
+      "DEF_et": "lobiseja, latatara (ajalooline täh; sks Plaudertasche)",
+      "reason": "'latataja' -> 'latatara'"
+    },
+    {
+      "id": "am-019edb06-67f3-79a9-a7bf-8fe7bcd21986",
+      "Amt-Master-ID": "loba",
+      "DEF_en": null,
+      "DEF_et": "lobiseja, latatara (sks Plapperer)",
+      "reason": "'latataja' -> 'latatara'"
+    },
+    {
+      "id": "am-019edb06-67f4-7a92-8d35-6dc4641716d8",
+      "Amt-Master-ID": "lobasuu",
+      "DEF_en": null,
+      "DEF_et": "lobasuu, lobamokk (sks Plappermaul)",
+      "reason": "'latrkõri' not a real word"
+    },
+    {
+      "id": "am-019edb06-67f6-7fb7-ae97-f0d8dc431174",
+      "Amt-Master-ID": "lobiseja",
+      "DEF_en": null,
+      "DEF_et": "lobiseja, latatara, klatšija (sks Schwätzer, Plauderer)",
+      "reason": "'latataja' -> 'latatara'"
+    },
+    {
+      "id": "am-019edb06-67fc-73f2-87ac-6c658b0ccd83",
+      "Amt-Master-ID": "läbinägija",
+      "DEF_en": null,
+      "DEF_et": "sisikonna järgi ennustaja, haruspeks (sks Eingeweideschauer; ld aruspex)",
+      "reason": "'soolepuhuja' not real; Latin marked per file convention"
+    },
+    {
+      "id": "am-019edb06-6806-7ca3-aa90-99905bb9d1bc",
+      "Amt-Master-ID": "maasundija",
+      "DEF_en": null,
+      "DEF_et": "maafoogt, maavalitseja (sks Landvogt)",
+      "reason": "'kohtufoogt' unsupported"
+    },
+    {
+      "id": "am-019edb06-680f-7253-8c2f-8e9672bb671b",
+      "Amt-Master-ID": "manrihter",
+      "DEF_en": null,
+      "DEF_et": "maakohtunik, maafoogt (sks Drost, Landvogt)",
+      "reason": "cited 'Mannrichter' is etymon, not gloss; actual 'drost, Land-Vogt'"
+    },
+    {
+      "id": "am-019edb06-6819-7619-bf46-604ee431a17b",
+      "Amt-Master-ID": "meier",
+      "DEF_en": null,
+      "DEF_et": "liignaine, armuke (sks Kebsweib, Beischläferin)",
+      "reason": "'kaasnaine' not a real word for concubine"
+    },
+    {
+      "id": "am-019edb06-6824-7ab2-95bc-7131ed1fb79b",
+      "Amt-Master-ID": "mooramees",
+      "DEF_en": null,
+      "DEF_et": "mooramaalane, tumedanahaline inimene (sks ein Mohr)",
+      "reason": "'moor' = old woman in Estonian"
+    },
+    {
+      "id": "am-019edb06-6837-7267-854e-e53433a3ed66",
+      "Amt-Master-ID": "mädanud hoor",
+      "DEF_en": null,
+      "DEF_et": "paadunud hoor, igavene hoor (sks Erzhure)",
+      "reason": "'vana läbi hoor' ungrammatical; 'ülihoor' not real"
+    },
+    {
+      "id": "am-019edb06-6840-7035-a098-b22a1ada6951",
+      "Amt-Master-ID": "müütnik",
+      "DEF_en": null,
+      "DEF_et": "tölner, tollikoguja (sks Zöllner)",
+      "reason": "'tollnik' not a real word"
+    },
+    {
+      "id": "am-019edb06-6847-74d4-a182-3835953641dd",
+      "Amt-Master-ID": "naiseline mees",
+      "DEF_en": "married man, husband; man of marriageable age",
+      "DEF_et": "abielumees, naisemees; abieluealine mees (sks Ehemann, beweibter Kerl, mannbarer Kerl)",
+      "reason": "Ve 'Manbarer Kerl' sense omitted"
+    },
+    {
+      "id": "am-019edb06-6859-77b7-bc06-1519024164f5",
+      "Amt-Master-ID": "nobedad poisid",
+      "DEF_en": null,
+      "DEF_et": "jooksupoisid, lakeid (mitmus; sks Lackei)",
+      "reason": "'eluteener' not a real word; 'lakei' standard"
+    },
+    {
+      "id": "am-019edb06-686a-71b1-944a-9b97ea3f6243",
+      "Amt-Master-ID": "ori",
+      "DEF_en": null,
+      "DEF_et": "ori, sulane, teener (sks Sklave, Diener, Dienstbote)",
+      "reason": "'Knecht' not attested for this lemma"
+    },
+    {
+      "id": "am-019edb06-6873-76a4-b015-5b038564b8c9",
+      "Amt-Master-ID": "paademooder",
+      "DEF_en": null,
+      "DEF_et": "ämmaemand; amm (sks Hebamme, Amme)",
+      "reason": "'ämm' = mother-in-law, misleading"
+    },
+    {
+      "id": "am-019edb06-6878-7593-8f19-4938c1d00b2b",
+      "Amt-Master-ID": "paganarahvas",
+      "DEF_en": null,
+      "DEF_et": "paganarahvas, paganad (mitmus; sks die Heiden, Heidentum)",
+      "reason": "'paganrahvas' misspelled"
+    },
+    {
+      "id": "am-019edb06-6880-7cb0-8ea6-0f8dae4d3250",
+      "Amt-Master-ID": "paljas mees",
+      "DEF_en": null,
+      "DEF_et": "üksik mees; vaene mees, kehvik (sks ein einzelner Kerl; ein armer Kerl)",
+      "reason": "'kehvik mees' ungrammatical (noun used attributively)"
+    },
+    {
+      "id": "am-019edb06-688c-70b9-9597-1f81e13078fd",
+      "Amt-Master-ID": "pealekaebaja",
+      "DEF_en": null,
+      "DEF_et": "pealekaebaja, süüdistaja, kaebaja (sks Verkläger)",
+      "reason": "'kaebleja' = lamenter, not accuser"
+    },
+    {
+      "id": "am-019edb06-689a-7db1-89e0-bbdf5dd5beb9",
+      "Amt-Master-ID": "piirits",
+      "DEF_en": null,
+      "DEF_et": "timukas, hukkaja; ka kohtuteener, sundija (sks Henker, Büttel)",
+      "reason": "'tapja' = killer, not executioner"
+    },
+    {
+      "id": "am-019edb06-689f-750a-b87a-06b92423b4b4",
+      "Amt-Master-ID": "plekleier",
+      "DEF_en": "tinsmith, sheet-metal worker",
+      "DEF_et": "plekksepp (sks Blechschläger, Klempner)",
+      "reason": "18th-c. Klempner = tinsmith, not plumber; 'tinatööline' not real"
+    },
+    {
+      "id": "am-019edb06-68a3-7507-be1e-59c49968e4d5",
+      "Amt-Master-ID": "poenaine",
+      "DEF_en": null,
+      "DEF_et": "poodnik, poepidaja (naine) (sks Budensitzer)",
+      "reason": "gloss is 'budensitzer', not 'Budensitzerin'"
+    },
+    {
+      "id": "am-019edb06-68a4-72e6-9d8a-5a0922add369",
+      "Amt-Master-ID": "poepoiss",
+      "DEF_en": "shopkeeper, stallholder",
+      "DEF_et": "poodnik, poepidaja (sks Budensitzer)",
+      "reason": "'shop boy' unsupported; Gö UV täh 'poodnik, poepidaja'"
+    },
+    {
+      "id": "am-019edb06-68b2-7194-a64e-6acae88844aa",
+      "Amt-Master-ID": "pordusundija",
+      "DEF_en": "whoremonger, fornicator; pimp, procurer",
+      "DEF_et": "hooraja; kupeldaja, pordusundija (sks Hurer)",
+      "reason": "attested Hurer sense should lead; pimp rests on word-form only"
+    },
+    {
+      "id": "am-019edb06-68b3-7264-b10b-e11ad7da02e2",
+      "Amt-Master-ID": "pormeister",
+      "DEF_en": null,
+      "DEF_et": "linnapea, bürgermeister (sks Bürgermeister)",
+      "reason": "'raehärra' = Ratsherr, not mayor"
+    },
+    {
+      "id": "am-019edb06-68d1-784a-8f6e-1a3aae598300",
+      "Amt-Master-ID": "päiline",
+      "DEF_en": null,
+      "DEF_et": "päiline, päevatööline (sks Tagelöhner); 'päeviline' süno",
+      "reason": "cross-ref should match master lemma 'päeviline' (verified exists)"
+    },
+    {
+      "id": "am-019edb06-68e1-76d5-a94e-497cf2278f43",
+      "Amt-Master-ID": "raamatukriivel",
+      "DEF_en": null,
+      "DEF_et": "kirjutaja, sekretär (sks Sekretär)",
+      "reason": "'notar' unsupported"
+    },
+    {
+      "id": "am-019edb06-68f1-7055-9928-ede096e21321",
+      "Amt-Master-ID": "rahurikkuja",
+      "DEF_en": null,
+      "DEF_et": "rahurikkuja, rahuhäirija (sks Störenfried)",
+      "reason": "gloss is 'stören Fried', not Friedensstörer"
+    },
+    {
+      "id": "am-019edb06-68f5-706b-8fb0-31db5c3f897c",
+      "Amt-Master-ID": "raudsõjamees",
+      "DEF_en": null,
+      "DEF_et": "kürassiir, raskeratsaväelane (sks Kürassier)",
+      "reason": "misspelling 'kürassir'"
+    },
+    {
+      "id": "am-019edb06-68fa-716b-b939-01dbd1d08ffc",
+      "Amt-Master-ID": "rendimees",
+      "DEF_en": "tenant, lessee, leaseholder",
+      "DEF_et": "rentnik, rendilevõtja (sks Pachtmann, Mietmann)",
+      "reason": "Pachtmann/Mietmann = tenant, not lessor (Grimm)"
+    },
+    {
+      "id": "am-019edb06-68fb-7411-8f7a-08c1761a45c7",
+      "Amt-Master-ID": "rentmeister",
+      "DEF_en": null,
+      "DEF_et": "rentmeister, varahoidja, rahapealik (sks Rentmeister; ld quaestor)",
+      "reason": "quaestor is Latin; file convention is '; ld ...'"
+    },
+    {
+      "id": "am-019edb06-68fd-70bd-8026-b636dc3eb3d7",
+      "Amt-Master-ID": "riidepesija",
+      "DEF_en": null,
+      "DEF_et": "rõivapesija, pesunaine (sks Wäscherin)",
+      "reason": "missing (sks ...) citation"
+    },
+    {
+      "id": "am-019edb06-6912-7971-89ab-1efdded61b9d",
+      "Amt-Master-ID": "saia kitsäja",
+      "DEF_en": null,
+      "DEF_et": "pagar (sks Becker)",
+      "reason": "missing (sks ...) citation"
+    },
+    {
+      "id": "am-019edb06-6915-7af3-8693-8d5af47058be",
+      "Amt-Master-ID": "salaja nõuandja",
+      "DEF_en": null,
+      "DEF_et": "salanõunik, salajane nõuandja (sks Geheimer Rat)",
+      "reason": "'geheimrat' is German, not Estonian"
+    },
+    {
+      "id": "am-019edb06-691e-768f-8687-3a056ccf949c",
+      "Amt-Master-ID": "seemisker",
+      "DEF_en": "tanner; tawer, white-tanner (chamois-leather dresser)",
+      "DEF_et": "(valge)parkal, seemisnahaparkal (sks Gerber, Weißgerber; ld alutarius)",
+      "reason": "'säämisknahaparkal' misspelled; plain 'gerber' sense missing"
+    },
+    {
+      "id": "am-019edb06-6926-77ca-9399-8f6f1cd312b8",
+      "Amt-Master-ID": "silmakirjutaja",
+      "DEF_en": null,
+      "DEF_et": "silmamoondaja, mustkunstnik (sks Augenblender)",
+      "reason": "'petukunstnik' not a real word"
+    },
+    {
+      "id": "am-019edb06-6928-706e-af82-5f6b5565262a",
+      "Amt-Master-ID": "silmapetja",
+      "DEF_en": null,
+      "DEF_et": "silmamoondaja, mustkunstnik (sks Gaukler)",
+      "reason": "'pettekunstnik' not a real word"
+    },
+    {
+      "id": "am-019edb06-692e-7855-91bc-a421b7fa477e",
+      "Amt-Master-ID": "sulane",
+      "DEF_en": null,
+      "DEF_et": "sulane, teener; Gösekenil ka 'kaupmees, poepidaja' (sks Knecht, Diener)",
+      "reason": "'talisulane' unsupported and non-standard"
+    },
+    {
+      "id": "am-019edb06-6937-7419-bbc5-8ed676f9917d",
+      "Amt-Master-ID": "sõidetud hoor",
+      "DEF_en": null,
+      "DEF_et": "paadunud hoor, läbi ja lõhki hoor (sks Erzhure)",
+      "reason": "'ülihoor' not a real word"
+    },
+    {
+      "id": "am-019edb06-6953-7e0c-beb8-222f8671efba",
+      "Amt-Master-ID": "taevatähe seletaja",
+      "DEF_en": null,
+      "DEF_et": "astroloog, tähetark (sks Sterndeuter)",
+      "reason": "'tähetargutaja' not a real word"
+    },
+    {
+      "id": "am-019edb06-6959-7db4-9b1e-c635cb56c814",
+      "Amt-Master-ID": "taldrikunolpija",
+      "DEF_en": null,
+      "DEF_et": "(toidu)parasiit, priileivasööja; lipitseja, silmakirjatseja (sks Suppenfresser, Tellerlecker, Augendiener, Fuchsschwänzer)",
+      "reason": "cited 'Schmarotzer' not among glosses; 'Suppenfresser' omitted"
+    },
+    {
+      "id": "am-019edb06-695e-7f43-acfc-d4dd4de59a55",
+      "Amt-Master-ID": "tallatav",
+      "DEF_en": null,
+      "DEF_et": "paadunud hoor, läbi ja lõhki hoor (sks Erzhure)",
+      "reason": "'ülihoor' not a real word (sweep)"
+    },
+    {
+      "id": "am-019edb06-6961-7393-87c9-353ccd0a97f4",
+      "Amt-Master-ID": "talumees",
+      "DEF_en": null,
+      "DEF_et": "talupoeg, talupidaja; talu peremees (sks Bauer, Bauerwirth, Gesinde-Wirth)",
+      "reason": "'pererahva peremees' confused doubling"
+    },
+    {
+      "id": "am-019edb06-6966-73f6-9eee-0857264edbc9",
+      "Amt-Master-ID": "tapja mees",
+      "DEF_en": null,
+      "DEF_et": "tapja, surmaja (sks Todschläger)",
+      "reason": "'mõrtsukas' unsupported by sole gloss Todschläger"
+    },
+    {
+      "id": "am-019edb06-696b-758f-a393-e2bca1ebdccf",
+      "Amt-Master-ID": "teadmamees",
+      "DEF_en": null,
+      "DEF_et": "teadjamees, tark, oskaja (rahvatark/ravitseja) (sks der etwas weiß)",
+      "reason": "missing conventional (sks ...) citation"
+    },
+    {
+      "id": "am-019edb06-696d-7b45-8e1e-2bec9a4da15a",
+      "Amt-Master-ID": "teekäija",
+      "DEF_en": null,
+      "DEF_et": "rändaja, teekäija, rännumees; (palve)rändur; võõras (sks Reisender, Wanderer, Pilger)",
+      "reason": "'rändmees' not standard; 'rännumees'"
+    },
+    {
+      "id": "am-019edb06-6973-75d6-b6df-b404d39a3c02",
+      "Amt-Master-ID": "teeröövel",
+      "DEF_en": null,
+      "DEF_et": "teeröövel, maanteeröövel; mõrtsukas (sks Straßenräuber, Mörder)",
+      "reason": "typo 'maantereröövel'"
+    },
+    {
+      "id": "am-019edb06-697a-7d01-b7a5-57308fd07df0",
+      "Amt-Master-ID": "tiisler",
+      "DEF_en": null,
+      "DEF_et": "tisler (sks Tischler)",
+      "reason": "'puusepp' is a different trade (Zimmermann), unsupported"
+    },
+    {
+      "id": "am-019edb06-697f-7533-8c06-e929e7eec803",
+      "Amt-Master-ID": "tollipealine",
+      "DEF_en": null,
+      "DEF_et": "tolliülem, tölner (kes on tolli rentinud) (sks Zöllner)",
+      "reason": "'tollnik' not a real word (sweep); tölner as in müütnik"
+    },
+    {
+      "id": "am-019edb06-6984-7268-85cb-22c75efb74e8",
+      "Amt-Master-ID": "torikas",
+      "DEF_en": "a quarrelsome, contentious person; brawler; (Vestring) braggart",
+      "DEF_et": "tülinorija, riiakas inimene; (Vestringil) hoopleja, kiitleja (sks ein Zanksüchtiger, Krakeeler; Prahlhans)",
+      "reason": "Ve 'Prahlhans' sense omitted"
+    },
+    {
+      "id": "am-019edb06-6987-74e0-a780-4d831b9dbc5d",
+      "Amt-Master-ID": "tragun",
+      "DEF_en": null,
+      "DEF_et": "tragun, ratsaväelane (Gösekenil); (Hupelil segiaetud) estragon-maitsetaim (sks Dragoner; Dragunkel)",
+      "reason": "'dragoon' is English; Estonian is 'tragun'"
+    },
+    {
+      "id": "am-019edb06-698f-7b14-b84f-10957deaee44",
+      "Amt-Master-ID": "tuleroog",
+      "DEF_en": null,
+      "DEF_et": "nõid (tuleriita väärt), nõiamoor; sõimusõnana (sks eine Hexe die des Feuers werth ist, Herz-Zauberin)",
+      "reason": "'väärt' governs partitive: 'tuleriita väärt'"
+    },
+    {
+      "id": "am-019edb06-6994-7e28-b515-155f6637e24d",
+      "Amt-Master-ID": "turuhoor",
+      "DEF_en": null,
+      "DEF_et": "avalik hoor, turulits; paadunud hoor (sks eine öffentliche Hure, Erzhure)",
+      "reason": "'ülihoor' not a real word (sweep)"
+    },
+    {
+      "id": "am-019edb06-6999-7e7e-ab72-530d66fe59dd",
+      "Amt-Master-ID": "tõmbaja",
+      "DEF_en": "thief",
+      "DEF_et": "varas, näppaja (sks Dieb)",
+      "reason": "'diebischer Mensch' belongs to separate lemma 'tõmbaja inimene' (verified)"
+    },
+    {
+      "id": "am-019edb06-69a1-7430-8707-0556e9937603",
+      "Amt-Master-ID": "töömees",
+      "DEF_en": "workman, labourer (in town)",
+      "DEF_et": "töömees, (linna)tööline (sks Arbeitskerl, Arbeiter)",
+      "reason": "'päeviline'/day-labourer unsupported"
+    },
+    {
+      "id": "am-019edb06-69b0-717f-bfbb-eae92ed7ffaf",
+      "Amt-Master-ID": "usklik",
+      "DEF_en": null,
+      "DEF_et": "usklik, usumees (sks gläubig; Stahlil Glaubiger)",
+      "reason": "modern 'Gläubiger' = creditor, misleading; sources gloss adjective 'gläubig'"
+    },
+    {
+      "id": "am-019edb06-69b6-7a50-a903-870254c21a2f",
+      "Amt-Master-ID": "vabatmees",
+      "DEF_en": null,
+      "DEF_et": "vabamees; vabadik, pops (Lostreiber); vähe mõisatööd tegev talupoeg (sks Freykerl, Lostreiber)",
+      "reason": "'pop' -> 'pops'"
+    },
+    {
+      "id": "am-019edb06-69ba-7f7c-89e8-ca66a51353e4",
+      "Amt-Master-ID": "vaekojamees",
+      "DEF_en": null,
+      "DEF_et": "vaekojamees, kaaluja (sks Wagekerl)",
+      "reason": "sources gloss 'Wagekerl', not 'Wägekerl'"
+    },
+    {
+      "id": "am-019edb06-69bc-702c-9fab-9d3d1ff4d163",
+      "Amt-Master-ID": "vaevaja",
+      "DEF_en": "tormentor, one who torments",
+      "DEF_et": null,
+      "reason": "'tyrant' unsupported (only Peiniger)"
+    },
+    {
+      "id": "am-019edb06-69c1-7f08-ab5e-a0f0f66aa9c3",
+      "Amt-Master-ID": "vaht",
+      "DEF_en": "watchman, guard",
+      "DEF_et": "vaht, valvur (sks Wächter)",
+      "reason": "doorkeeper sense unsupported"
+    },
+    {
+      "id": "am-019edb06-69c7-772f-ba21-972eba003525",
+      "Amt-Master-ID": "vahva tööinimene",
+      "DEF_en": null,
+      "DEF_et": "tubli, töökas inimene (sks ein guter/braver Arbeiter, arbeitsam)",
+      "reason": "'fleissiger Arbeiter' not attested"
+    },
+    {
+      "id": "am-019edb06-69c8-7c8f-9fce-2336061a365c",
+      "Amt-Master-ID": "vaim",
+      "DEF_en": null,
+      "DEF_et": "vaim, kummitus; (Hupelil) jalateoline, sulane/tööline (sks Geist, Gespenst; Fußarbeiter)",
+      "reason": "'jalategija' not real (sweep); jalateoline as in abivaim"
+    },
+    {
+      "id": "am-019edb06-69e3-7450-a0f9-87e9597f697f",
+      "Amt-Master-ID": "vapper suu",
+      "DEF_en": null,
+      "DEF_et": "lobiseja, latatara, suure suuga inimene (sks Plauderer)",
+      "reason": "'latataja' -> 'latatara'"
+    },
+    {
+      "id": "am-019edb06-69e4-7f26-9eb0-cf755eee81c9",
+      "Amt-Master-ID": "varanduse ülevaataja",
+      "DEF_en": null,
+      "DEF_et": "varahoidja, varanduse ülevaataja, laekur (sks Schatzmeister, Vogt)",
+      "reason": "missing (sks ...) citation"
+    },
+    {
+      "id": "am-019edb06-69e9-7d3b-8434-52910a41be49",
+      "Amt-Master-ID": "vastaline",
+      "DEF_en": null,
+      "DEF_et": "vastane, vastaline, vastutegija (sks entgegen, zuwider)",
+      "reason": "'Widersacher' not attested"
+    },
+    {
+      "id": "am-019edb06-69ec-7e07-9f25-1e9f3a702b87",
+      "Amt-Master-ID": "vastuvõtja",
+      "DEF_en": null,
+      "DEF_et": "varastatud kauba vastuvõtja, varjaja (sks Hehler)",
+      "reason": "'salakaup' = contraband; Hehler deals in stolen goods"
+    },
+    {
+      "id": "am-019edb06-69f2-79b9-8a0d-31074309f905",
+      "Amt-Master-ID": "veomeister",
+      "DEF_en": null,
+      "DEF_et": "kaalumeister, vaekoja meister (sks Wagemeister)",
+      "reason": "source gloss is 'Wagemeister', not 'Wägemeister'"
+    },
+    {
+      "id": "am-019edb06-69fc-70f1-9d44-ab9945fc7d45",
+      "Amt-Master-ID": "vilajas inimene",
+      "DEF_en": null,
+      "DEF_et": "pikaks kasvanud, sihvakas inimene (sks ein lang aufgeschossener Mensch)",
+      "reason": "'longus' unsupported by glosses"
+    },
+    {
+      "id": "am-019edb06-6a08-798a-a904-9a0881655e2a",
+      "Amt-Master-ID": "võltsija",
+      "DEF_en": null,
+      "DEF_et": "valetaja, võltsija, petja (sks Lügner)",
+      "reason": "misspelling 'pettja' -> 'petja'"
+    },
+    {
+      "id": "am-019edb06-6a0d-76d3-a344-23d0d7f52bf6",
+      "Amt-Master-ID": "võõra usu mees",
+      "DEF_en": null,
+      "DEF_et": "ketser, võõrausuline (sks Ketzer)",
+      "reason": "'usutaganeja' unsupported; sole gloss 'ketzer'"
+    },
+    {
+      "id": "am-019edb06-6a18-7879-87af-af8603ae55f8",
+      "Amt-Master-ID": "vöörmünder",
+      "DEF_en": "guardian (legal); churchwarden, church overseer",
+      "DEF_et": "eestkostja (vormünder); kirikuvöörmünder, kiriku eestseisja (sks Vormund, Vorsteher)",
+      "reason": "Kirchenvorsteher not attested (Hu: Wormund, Vorsteher)"
+    },
+    {
+      "id": "am-019edb06-6a1b-708c-8d00-a290e5564379",
+      "Amt-Master-ID": "õige varas",
+      "DEF_en": null,
+      "DEF_et": "tõeline varas, paadunud varas (sks ein Erzdieb)",
+      "reason": "'ülemvaras', 'peavaras' not real words"
+    },
+    {
+      "id": "am-019edb06-6a1d-7379-93fa-59b93811da03",
+      "Amt-Master-ID": "õitsiline",
+      "DEF_en": null,
+      "DEF_et": "õitsiline, öine hobusekarjus (õitsil olija) (sks der Nachthüter bey Pferden)",
+      "reason": "claimed no German equivalent; Hupel glosses it"
+    },
+    {
+      "id": "am-019edb06-6a22-74ac-bdc5-95c4b66311b4",
+      "Amt-Master-ID": "õpetaja",
+      "DEF_en": null,
+      "DEF_et": "õpetaja; (ka) jutlustaja (sks Lehrmeister, Lehrer, Prediger)",
+      "reason": "'õpetajameister' not real; Lehrer gloss added"
+    },
+    {
+      "id": "am-019edb06-6a27-718c-8810-d37860b16369",
+      "Amt-Master-ID": "öövaht",
+      "DEF_en": null,
+      "DEF_et": "öövaht (sks Nachtwache)",
+      "reason": "gloss is Nachtwache, not Nachtwächter"
+    },
+    {
+      "id": "am-019edb06-6a29-7b5d-9ecc-cb6fe8346769",
+      "Amt-Master-ID": "ülbe ja üleannetu inimene",
+      "DEF_en": "an insolent, impudent and cunning person",
+      "DEF_et": "ülbe, jultunud ja kaval inimene (sks ein frecher, durchtriebener Mensch)",
+      "reason": "durchtrieben = cunning, not mischievous (DWDS)"
+    },
+    {
+      "id": "am-019edb06-6a30-7026-9878-150827e59ff6",
+      "Amt-Master-ID": "ülem proua",
+      "DEF_en": null,
+      "DEF_et": "kõrgest seisusest proua, suursugune daam (sks eine vornehme Dame)",
+      "reason": "'ülik daam' ungrammatical"
+    },
+    {
+      "id": "am-019edb06-6a3a-710d-b56b-5faea948f123",
+      "Amt-Master-ID": "ümberviija",
+      "DEF_en": "one who leads/carries around; one who leads across",
+      "DEF_et": null,
+      "reason": "'conveyor (transfers over)' unidiomatic"
+    },
+    {
+      "id": "am-019edb06-6a3c-7990-aed5-42a7a230c40e",
+      "Amt-Master-ID": "üte maa mees",
+      "DEF_en": null,
+      "DEF_et": "kaasmaalane, sama maa mees (sks Landesmann)",
+      "reason": "'ühemaamees' not real; gloss is Landesmann"
+    }
+  ]
+}

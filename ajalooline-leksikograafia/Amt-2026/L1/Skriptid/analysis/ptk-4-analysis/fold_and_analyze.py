@@ -1,0 +1,205 @@
+#!/usr/bin/env python3
+# Created: 2026-07-12 20-34-20
+# Author: Madis Jürviste
+# Co-Authored-By: Claude Opus 4.8
+# Co-Authored-By: Claude Fable 5
+"""Fold the manual review corrections into the tagged JSON and run 4.3 analysis.
+
+1. Reads AMT-Master_4-3-tagged.json + 4-3_corrections.json (idx-keyed manual
+   review), overrides Teema/Sugu, and writes AMT-Master_4-3-final.json.
+2. Computes the per-theme evidence tables for sub-chapter 4.3 and writes
+   4-3_evidence.md.
+
+Usage:
+    uv run python Katus-DRAFTS/Ptk-4/fold_and_analyze.py
+"""
+from __future__ import annotations
+
+import json
+from collections import Counter, defaultdict
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+TAGGED = HERE / "AMT-Master_4-3-tagged.json"
+CORR = HERE / "4-3_corrections.json"
+FINAL = HERE / "AMT-Master_4-3-final.json"
+EVIDENCE = HERE / "4-3_evidence.md"
+
+SOURCES = [("Stahl", 1637, "Stahl-1637"), ("Gutslaff", 1648, "Gutslaff-1648"),
+           ("Göseken", 1660, "Göseken-1660"), ("Vestring", "17XX", "Vestring-17XX"),
+           ("Helle", 1732, "Helle-1732"), ("Hupel", 1780, "Hupel-1780-est-ger")]
+PLACEHOLDERS = {"", "---", "NULL", "???"}
+TEEMA_ORDER = ["KÄSITÖÖ", "MORAAL_HÄLVE", "HALDUS_VÕIM", "TEENISTUS", "FEOD_MAA",
+               "KIRIK_FUNKTSIOON", "KIRIK_VAIMULIK", "NÕID", "HARIDUS", "SUGU_REPRO",
+               "MÜÜT", "MUU"]
+
+
+def present(entry, key):
+    return (entry.get(key) or "").strip() not in PLACEHOLDERS
+
+
+def fold():
+    data = json.loads(TAGGED.read_text(encoding="utf-8"))
+    rows = data["AMT-Master"]
+    corr = json.loads(CORR.read_text(encoding="utf-8"))
+    n = 0
+    for i, r in enumerate(rows):
+        c = corr.get(str(i))
+        if not c:
+            continue
+        if "Teema" in c and c["Teema"] != r.get("Teema"):
+            r["Teema"] = c["Teema"]; n += 1
+        if "Sugu" in c:
+            r["Sugu"] = c["Sugu"]
+        r["Teema-conf"] = "manual"
+        r["Sugu-conf"] = "manual"
+        if c.get("note"):
+            r["Teema-note"] = c["note"]
+    FINAL.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    return rows, n
+
+
+def md_table(headers, rows):
+    out = ["| " + " | ".join(headers) + " |",
+           "|" + "|".join("---" for _ in headers) + "|"]
+    for r in rows:
+        out.append("| " + " | ".join(str(x) for x in r) + " |")
+    return "\n".join(out)
+
+
+def main():
+    rows, n_folded = fold()
+    total = len(rows)
+    L = []
+    A = L.append
+    A("# 4.3 Ühiskondlike teemade peegeldused — tõendid (analüüs)\n")
+    A(f"**Allikas:** `AMT-Master_4-3-final.json` ({total} lemmat), käsitsi üle vaadatud sildid.")
+    A(f"**Loendusalus:** korrigeeritud `Teema`/`Sugu` (esmane tag). Folditud {n_folded} parandust.\n")
+    A("> Platshoidjad `---`/`???`/`NULL` ei loe esinemiseks (vt Ptk-3 CSC-parandus).\n")
+
+    # ---- 1. Teema distribution ----
+    teema = Counter(r["Teema"] for r in rows)
+    A("## 1. Teemade jaotus\n")
+    A(md_table(["Teema", "Lemmade arv", "Osakaal (%)"],
+               [[k, teema[k], f"{teema[k]/total*100:.1f}"] for k in TEEMA_ORDER if teema[k]]
+               + [["**Kokku**", f"**{total}**", "**100**"]]))
+    A("")
+
+    # ---- 2. Church: persistence (avg CSC) ----
+    def avg_csc(pred):
+        vals = [int(r.get("Cross-source count") or 0) for r in rows if pred(r)]
+        return (sum(vals) / len(vals), len(vals)) if vals else (0, 0)
+    overall_csc, _ = avg_csc(lambda r: True)
+    church = lambda r: r["Teema"] in ("KIRIK_VAIMULIK", "KIRIK_FUNKTSIOON")
+    A("## 2. Püsivus teemade lõikes (keskmine CSC)\n")
+    A("Püsivuse mõõt = keskmine `Cross-source count` (mitmes 6 sõnastikust lemma esineb). "
+      "**Algse hüpoteesi (kirik = kõige püsivam) korrektuur:** korrigeeritud siltidega on kirik "
+      "vaid mõõdukalt üle keskmise; **NÕID ja FEOD_MAA on tegelikult püsivamad**, samas kui "
+      "käsitöö ja naise reproduktiivne sõnavara on kõige allikaspetsiifilisem.\n")
+    theme_csc = []
+    for k in TEEMA_ORDER:
+        a, c = avg_csc(lambda r, kk=k: r["Teema"] == kk)
+        if c:
+            theme_csc.append((a, c, k))
+    theme_csc.sort(reverse=True)
+    A(md_table(["Teema", "Lemmade arv", "Keskmine CSC"],
+               [[k, c, f"{a:.2f}"] for a, c, k in theme_csc]
+               + [["**Kõik lemmad**", total, f"**{overall_csc:.2f}**"]]))
+    A("\n**Kirik lähemalt** (ordineeritud vaimulikkond vs perifeerne religioosne sõnavara):\n")
+    CORE = {"papp", "preester", "piiskop", "munk", "köster", "abt", "kaplan", "praost",
+            "kirikuhärra", "kirikuisand", "missapapp", "toompapp", "ohvripreester",
+            "ülempreester", "suurpreester", "kõrgpreester", "superdent", "pealevaataja",
+            "nunn", "abtiemand", "paavst"}
+    crows = []
+    for label, pred in [("Tuumik-vaimulikkond (papp, munk, preester, piiskop…)",
+                         lambda r: church(r) and r["Amt-Master-ID"] in CORE),
+                        ("Perifeerne religioosne (pagan, prohvet, usklik…)",
+                         lambda r: church(r) and r["Amt-Master-ID"] not in CORE),
+                        ("Kogu kirikusõnavara", church)]:
+        a, c = avg_csc(pred)
+        crows.append([label, c, f"{a:.2f}"])
+    A(md_table(["Rühm", "Lemmade arv", "Keskmine CSC"], crows))
+    A("\n> Järeldus: **tuumiktermineid** (nt `papp`, `munk` esinevad kõigis 6 sõnastikus) "
+      "tunti hästi ja need on püsivad, kuid laiem religioosne sõnavara on enamasti ühe allika "
+      "põhine (27/55 kirikulemmast esineb vaid 1 sõnastikus). 'Täpsus ja püsivus' kehtib "
+      "tuumiku, mitte kogu kirikuvaldkonna kohta.\n")
+
+    # ---- 3. Witchcraft per dictionary ----
+    A("## 3. Nõiasõnavara sõnastike lõikes\n")
+    witch = [r for r in rows if r["Teema"] == "NÕID"]
+    wrows = []
+    for name, yr, key in SOURCES:
+        c = sum(1 for r in witch if present(r, key + "-et"))
+        wrows.append([f"{name} {yr}", c])
+    A(md_table(["Sõnastik", "NÕID-termineid"], wrows))
+    A(f"\nKokku NÕID-lemmasid massiivis: **{len(witch)}**. "
+      "German-hüperonüümide jaotus (DE_hüperonüüm väljalt):")
+    hyp = Counter()
+    for r in witch:
+        for h in (r.get("DE_hüperonüüm") or "").split(","):
+            h = h.strip()
+            if h:
+                hyp[h] += 1
+    A(md_table(["Saksa hüperonüüm", "Esinemisi"],
+               [[k, v] for k, v in hyp.most_common()]) if hyp else "_(none)_")
+    A("")
+
+    # ---- 4. Gender ----
+    A("## 4. Sugu ja amet\n")
+    sugu = Counter(r["Sugu"] for r in rows)
+    A(md_table(["Sugu", "Lemmade arv", "Osakaal (%)"],
+               [[k, sugu[k], f"{sugu[k]/total*100:.1f}"] for k in ("M", "N", "Ü")]))
+    A("")
+    # female by dictionary
+    fem = [r for r in rows if r["Sugu"] == "N"]
+    A(f"**Naissoole viitavaid lemmasid kokku: {len(fem)}.** Esinemine sõnastike lõikes:\n")
+    frows = []
+    for name, yr, key in SOURCES:
+        c = sum(1 for r in fem if present(r, key + "-et"))
+        frows.append([f"{name} {yr}", c])
+    A(md_table(["Sõnastik", "Naissoo-lemmasid"], frows))
+    A("")
+    # female by theme
+    femt = Counter(r["Teema"] for r in fem)
+    A("**Naissoo-lemmad teema kaupa:**\n")
+    A(md_table(["Teema", "N-lemmasid"],
+               [[k, femt[k]] for k in TEEMA_ORDER if femt[k]]))
+    A("")
+    # the hoor case
+    hoor_ids = [r["Amt-Master-ID"] for r in rows
+                if r["Amt-Master-ID"] in ("hoor", "port") ]
+    for hid in ("hoor",):
+        for r in rows:
+            if r["Amt-Master-ID"] == hid:
+                csc = r.get("Cross-source count")
+                A(f"- `hoor` (prostituut): CSC = **{csc}** — üks läbivamaid naissoole viitavaid lemmasid.")
+                break
+    A("")
+
+    # ---- 5. Amt-Cat x Teema cross-tab ----
+    A("## 5. Amt-Cat × Teema (sotsioloogiline vs temaatiline telg)\n")
+    def amt(r):
+        a = (r.get("Amt-Cat") or "").strip()
+        return a if a in ("K1", "K2", "K3") else "muu"
+    grid = defaultdict(Counter)
+    for r in rows:
+        grid[r["Teema"]][amt(r)] += 1
+    cols = ["K1", "K2", "K3", "muu"]
+    gr = []
+    for k in TEEMA_ORDER:
+        if not teema[k]:
+            continue
+        gr.append([k] + [grid[k][c] for c in cols] + [teema[k]])
+    gr.append(["**Kokku**"] + [sum(grid[k][c] for k in teema) for c in cols] + [total])
+    A(md_table(["Teema"] + cols + ["Kokku"], gr))
+    A("")
+
+    EVIDENCE.write_text("\n".join(L), encoding="utf-8")
+    print(f"Folded {n_folded} Teema corrections -> {FINAL.name}")
+    print(f"Wrote {EVIDENCE.name}")
+    print(f"\nChurch avg CSC {avg_csc(church)[0]:.2f} vs overall {overall_csc:.2f}")
+    print(f"Witchcraft lemmas: {len(witch)} | Female lemmas: {len(fem)}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,2835 @@
+{
+  "meta": {
+    "created": "2026-07-13 21-07-53",
+    "author": "Madis Jürviste",
+    "co_authored_by": [
+      "Claude Fable 5"
+    ],
+    "title": "AMT-Master DEF_en/DEF_et — reconstructed full changelog, initial generation to current master",
+    "generated": "2026-07-13",
+    "generated_by": "snapshot-chain diff (script: scratchpad/build_reconstructed_changelog.py, Claude Fable 5 session)",
+    "purpose": "Audit trail for the machine-generated definitions: every DEF change between the initial LLM generation (Claude Opus, baseline snapshot 2026-06-12) and the canonical master of 2026-07-13, attributed to manual editing, the logged LLM-as-judge review pass, or the documented data-quality round.",
+    "snapshots": [
+      {
+        "label": "opus-baseline-2026-06-12",
+        "path": "Katuse-failide-arhiiv/Ptk-3/OLD_AMT-Master_annotated.json",
+        "n_records": 907,
+        "note": "Earliest DEF-bearing snapshot; same-day analyzed-tables/AMT-Master.json has no DEF fields, so this is at or very near the initial Claude Opus 4.5/4.8 generation output."
+      },
+      {
+        "label": "2026-06-17",
+        "path": "Katuse-failide-arhiiv/Ptk-3/OLD2_AMT-Master_annotated.json",
+        "n_records": 907,
+        "note": "Intermediate snapshot; zero DEF changes vs baseline."
+      },
+      {
+        "label": "review-2026-07-07",
+        "path": "Katuse-failide-arhiiv/Review-JSON-AMT/AMT-Master_annotated_REVIEW.json",
+        "n_records": 886,
+        "note": "State after the logged LLM review pass (Claude Fable 5 as judge; DEF-review_changelog_20260707.json) plus the unlogged manual edits of the same window."
+      },
+      {
+        "label": "backup-2026-07-13",
+        "path": "Katuse-failide-arhiiv/AMT-Master_annotated.BACKUP-2026-07-13.json",
+        "n_records": 882,
+        "note": "Pre-DQ-round backup; zero DEF changes vs review-2026-07-07."
+      },
+      {
+        "label": "current",
+        "path": "Katus-ALUSANDMED/json-all/AMT-Master_annotated.json",
+        "n_records": 870,
+        "note": "Canonical master as of 2026-07-13, after the DQ fix run (T1-T20 + D1-D12), the Sugu policy review and 12 manual record deletions (886 -> 870)."
+      }
+    ],
+    "provenance_legend": {
+      "manual-unlogged": "Manual edit by the author (MJ) between 2026-06-17 and 2026-07-07; not in any changelog, reconstructed here by snapshot diff. Typically substantive interpretation decisions (resolving [uncertain] readings etc.).",
+      "llm-review-logged": "Correction from the logged LLM-as-judge review pass of 2026-07-07: all machine-generated DEFs critically reviewed by Claude Fable 5 against the six sources' attested German glosses plus DWDS/EKSS/Sonaveeb; per-change reason recorded in DEF-review_changelog_20260707.json and reproduced here.",
+      "llm-review-logged-no-baseline": "Same logged 2026-07-07 review pass, but the record was added to the master after the 2026-06-17 snapshot, so its pre-correction reading is not preserved in any snapshot (old = null).",
+      "dq-round-2026-07-13": "Data-quality review round of 2026-07-13 (T1-T20 + D1-D12 fixes, Sugu policy review); author-decided, applied per the documented review files."
+    },
+    "interval_summaries": [
+      {
+        "interval": "opus-baseline-2026-06-12 -> 2026-06-17",
+        "records_common": 907,
+        "records_added": [],
+        "records_removed": [],
+        "def_changes": 0
+      },
+      {
+        "interval": "2026-06-17 -> review-2026-07-07",
+        "records_common": 857,
+        "records_added": [
+          "jutustaja",
+          "kasakas",
+          "koorilaulja",
+          "kõrtsnik",
+          "lesk",
+          "marterer",
+          "neitsi",
+          "peretütar",
+          "sakste lämmija",
+          "seakarjane",
+          "sillavanemad",
+          "söödik",
+          "teadvamees",
+          "teadvarahvas",
+          "trööstija",
+          "trükimeister",
+          "trükkija",
+          "tõlkija",
+          "tüürman",
+          "uksevaht",
+          "vabadik",
+          "vahtja",
+          "vana kämaras",
+          "väärjumala paluja",
+          "väärjumala pidaja",
+          "võlglik",
+          "võlgnik",
+          "võõra jumala ori",
+          "ühe nõu mehed"
+        ],
+        "records_removed": [
+          "aadler",
+          "abivaimud",
+          "alamad",
+          "apoteckr",
+          "hädalik",
+          "kaajemees",
+          "kasakad",
+          "kisendaja",
+          "kohtuvanemad",
+          "koorilauljad",
+          "krapp",
+          "kuulja",
+          "liikemees",
+          "lobin",
+          "martler",
+          "moondaja",
+          "naiseline",
+          "neitsid",
+          "prohwet",
+          "puhastusohver",
+          "punane saks",
+          "puuraija",
+          "päevane",
+          "rahajootja",
+          "riisimees",
+          "röökja",
+          "sea karjane",
+          "silla vanemad",
+          "surnuohver",
+          "suured vägevad mehed",
+          "sõjategija",
+          "södik",
+          "talgus",
+          "targon",
+          "tooja",
+          "trööstja",
+          "trükja",
+          "trükmeister",
+          "tuleja",
+          "täiskasvanud mees",
+          "täkk",
+          "tõlkja",
+          "töö orjane",
+          "vaataja",
+          "vabadik, vabandetu",
+          "valgevereline",
+          "vana kämaras kõik",
+          "võtja",
+          "walmis mees",
+          "ülla"
+        ],
+        "def_changes": 153
+      },
+      {
+        "interval": "review-2026-07-07 -> backup-2026-07-13",
+        "records_common": 880,
+        "records_added": [
+          "alv rahvas",
+          "trükkmeister"
+        ],
+        "records_removed": [
+          "alw rahvas",
+          "at",
+          "att",
+          "essitaja",
+          "ohver",
+          "trükimeister"
+        ],
+        "def_changes": 0
+      },
+      {
+        "interval": "backup-2026-07-13 -> current",
+        "records_common": 863,
+        "records_added": [
+          "hõikaja",
+          "meestepidaja",
+          "saiaküpsetaja",
+          "tolvan",
+          "õmbleja",
+          "õppija poiss",
+          "ühe maa mees"
+        ],
+        "records_removed": [
+          "heikaja",
+          "madal mees",
+          "meeste piddäja",
+          "mehine mees",
+          "mooramees",
+          "opja poiss",
+          "saia kitsäja",
+          "selge vana muld",
+          "söönud mees",
+          "tolwan",
+          "umbleja",
+          "vana kämaras",
+          "vana muld",
+          "vana mäda",
+          "vana tudi",
+          "vana tungus",
+          "vilajas inimene",
+          "vindunud inimene",
+          "üte maa mees"
+        ],
+        "def_changes": 34
+      }
+    ],
+    "entry_counts_by_provenance": {
+      "llm-review-logged": 140,
+      "manual-unlogged": 13,
+      "dq-round-2026-07-13": 34,
+      "llm-review-logged-no-baseline": 4
+    },
+    "total_entries": 191,
+    "caveats": [
+      "DEF_en/DEF_et fields only; changes to other fields (Amt-Cat, Sugu, Teema, attestations) are diffable from the same snapshots but not included here.",
+      "Manual edits are reconstructed by exclusion (changed in snapshot diff but absent from the 2026-07-07 changelog); edits made and reverted between snapshots are invisible.",
+      "Record-level additions/removals per interval are listed in interval_summaries; the 12 record deletions of 2026-07-13 (886 -> 870, minus renames) appear there, not as DEF entries.",
+      "The June snapshots contain some duplicate Amt-Master-IDs (e.g. 921 records but ~907 unique IDs in the 2026-06-17 snapshot); diffing keeps the last occurrence per ID, so records_common counts are unique-ID counts, not raw record counts. ID renames (e.g. 'alw rahvas' -> 'alv rahvas') appear as an add/remove pair, not as a change."
+    ]
+  },
+  "entries": [
+    {
+      "Amt-Master-ID": "abimees",
+      "id": "am-019edb06-66a9-7f2e-a623-d7a3f51a74fe",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "helper, assistant; also 'husband, spouse' (Stahl); Göseken also 'pettifogger, word-twister'",
+          "new": "helper, assistant; also 'husband, spouse' (Stahl, Vestring); Göseken also 'pettifogger, word-twister'"
+        },
+        "DEF_et": {
+          "old": "abiline, abistaja; ka 'abikaasa, abielumees' (Stahlil Ehemann); Gösekenil ka 'keelepeksja, seaduseväänaja'",
+          "new": "abiline, abistaja; ka 'abikaasa, abielumees' (Stahlil Ehemann, Vestringil Ehegatte); Gösekenil ka 'seaduseväänaja, halb advokaat'"
+        }
+      },
+      "reason": "Ve Ehegatte attested (per Comment-1); Zungendrescher = halb advokaat, not keelepeksja"
+    },
+    {
+      "Amt-Master-ID": "abivaim",
+      "id": "am-019edb06-66ab-78fa-8a34-ad5784fdd04b",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "(suvine) abitööline, jalategija (sks Hülfsarbeiter)",
+          "new": "(suvine) abitööline, jalateoline (sks Hülfsarbeiter)"
+        }
+      },
+      "reason": "'jalategija' not a real word; Fußarbeiter = jalateoline"
+    },
+    {
+      "Amt-Master-ID": "adramees",
+      "id": "am-019edb06-66b0-74da-aae6-4551dd70d466",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "adramaad pidav talupoeg, vakutalupoeg (sks Hakenbauer)",
+          "new": "adramaad pidav talupoeg, adratalupoeg (sks Hakenbauer)"
+        }
+      },
+      "reason": "'vakutalupoeg' not real / wrong referent"
+    },
+    {
+      "Amt-Master-ID": "ajaja",
+      "id": "am-019edb06-66b6-7074-ba41-4ffb67f8de93",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "chaser, driver; game-beater; investigator of theft",
+          "new": "chaser, driver; game-beater; investigator of theft; Göseken also 'hunter'"
+        },
+        "DEF_et": {
+          "old": "ajaja, taga-ajaja; jahil peletaja (Treiber); varguse uurija (sks Nachforscher)",
+          "new": "ajaja, taga-ajaja; jahil peletaja (Treiber); varguse uurija (sks Nachforscher); Gösekenil ka 'jahimees' (Jäger)"
+        }
+      },
+      "reason": "Gö 'Jäger' sense omitted"
+    },
+    {
+      "Amt-Master-ID": "amm",
+      "id": "am-019edb06-66be-733a-b9c6-cff3e94bde8e",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "amm, imetajanna (sks Amme)",
+          "new": "amm, last imetav naine (sks Amme)"
+        }
+      },
+      "reason": "'imetajanna' not a real word"
+    },
+    {
+      "Amt-Master-ID": "avanisa-amm",
+      "id": "am-019edb06-66cd-7496-afd9-addc9c7f7c16",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "imetajanna, amm (sks Säugamme)",
+          "new": "last imetav naine, amm (sks Säugamme)"
+        }
+      },
+      "reason": "'imetajanna' not a real word"
+    },
+    {
+      "Amt-Master-ID": "eestkostja",
+      "id": "am-019edb06-66d5-70cd-ab28-56d7c72f6ca9",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "advocate, guardian, intercessor; overseer",
+          "new": "advocate, intercessor; overseer"
+        }
+      },
+      "reason": "'guardian' unsupported by glosses"
+    },
+    {
+      "Amt-Master-ID": "eksinud mees",
+      "id": "am-019edb06-66d8-7977-a582-496b64c93db6",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "manslayer, killer; fallen man",
+          "new": "manslayer, killer"
+        },
+        "DEF_et": {
+          "old": "tapja, hukka läinud mees (sks Totschläger)",
+          "new": "tapja (sks Totschläger)"
+        }
+      },
+      "reason": "'fallen man' literal reading unsupported"
+    },
+    {
+      "Amt-Master-ID": "ettejooksja",
+      "id": "am-019edb06-66dd-7a1c-8fa7-17d43d93b86e",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "ettejooksja, eeljooksja, eelkäija (sks Vorläufer, Vorbote)",
+          "new": "ettejooksja, eesjooksja, eelkäija (sks Vorläufer, Vorbote)"
+        }
+      },
+      "reason": "'eeljooksja' -> 'eesjooksja' (EKSS)"
+    },
+    {
+      "Amt-Master-ID": "etteseisja",
+      "id": "am-019edb06-66e0-7b35-8cbd-ef2d131dd02b",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "advocate, overseer",
+          "new": "advocate, spokesman"
+        }
+      },
+      "reason": "'overseer' unsupported; sole gloss Vorsprecher"
+    },
+    {
+      "Amt-Master-ID": "ettetõstja",
+      "id": "am-019edb06-66e1-71b4-8ca8-e461c1bcdc72",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "(laua)ettelõikaja, eeslõikaja (sks Vorschneider)",
+          "new": "lahtilõikaja, lauas liha lõikaja (sks Vorschneider)"
+        }
+      },
+      "reason": "'ettelõikaja'/'eeslõikaja' not real; editor's note gives 'lahtilõikaja'"
+    },
+    {
+      "Amt-Master-ID": "heikaja",
+      "id": "am-019edb06-66e7-725e-9b72-4d37572faa28",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "hõikaja, väljakuulutaja, herald (sks Ausrufer, Herold)",
+          "new": "hõikaja, väljakuulutaja, heerold (sks Ausrufer, Herold)"
+        }
+      },
+      "reason": "'herald' -> Estonian 'heerold'"
+    },
+    {
+      "Amt-Master-ID": "heinaline",
+      "id": "am-019edb06-66e8-7191-8397-340ad81410ec",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "heinatööline, heinategija (sks Heuarbeiter)",
+          "new": "heinatööline, heinategija (sks auf den Heuschlag gehen)"
+        }
+      },
+      "reason": "'Heuarbeiter' not the attested gloss"
+    },
+    {
+      "Amt-Master-ID": "hirmutaja",
+      "id": "am-019edb06-66ea-716c-9f57-7d2de86c5f6a",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "karistaja, distsiplinaator (sks Zuchtmeister)",
+          "new": "karistaja, range kasvataja (sks Zuchtmeister)"
+        }
+      },
+      "reason": "'distsiplinaator' not real"
+    },
+    {
+      "Amt-Master-ID": "hoorapealne",
+      "id": "am-019edb06-66f2-7d88-90f7-da7f786f0aa5",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "hooravoot, bordelli ülevaataja (sks Hurenvogt)",
+          "new": "bordelli ülevaataja (sks Hurenvogt)"
+        }
+      },
+      "reason": "'hooravoot' not real"
+    },
+    {
+      "Amt-Master-ID": "hoorasaadik",
+      "id": "am-019edb06-66f6-733d-869f-7e7749a4cf8a",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "procurer, go-between for whores",
+          "new": "procuress, go-between for whores"
+        },
+        "DEF_et": {
+          "old": "kupeldaja, hooravahendaja (sks Kupplerin)",
+          "new": "kupeldaja, vahendaja (sks Kupplerin)"
+        }
+      },
+      "reason": "'hooravahendaja' not real; Kupplerin feminine (Sugu N)"
+    },
+    {
+      "Amt-Master-ID": "hoorasundija",
+      "id": "am-019edb06-66f7-72a8-baab-ae59d112f6d0",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "hooravoot, kupeldaja; hoorajaht (sks Hurenvogt, Hurenjäger)",
+          "new": "bordelli ülevaataja, kupeldaja; naistekütt (sks Hurenvogt, Hurenjäger)"
+        }
+      },
+      "reason": "'hooravoot' not real; 'hoorajaht' is activity not person"
+    },
+    {
+      "Amt-Master-ID": "hoovimeister",
+      "id": "am-019edb06-66f8-7df3-b8c9-0a7aa39caed5",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "hoovmeister, majapidamise ülevaataja, koduõpetaja (sks Hofmeister)",
+          "new": "hoovimeister, majapidamise ülevaataja, koduõpetaja (sks Hofmeister)"
+        }
+      },
+      "reason": "'hoovmeister' nonstandard spelling"
+    },
+    {
+      "Amt-Master-ID": "hukkaja",
+      "id": "am-019edb06-66fa-7622-9c34-bf3c813345cd",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "prassija, läbilööja, raiskaja (sks Prasser, Durchbringer)",
+          "new": "prassija, pillaja, raiskaja (sks Prasser, Durchbringer)"
+        }
+      },
+      "reason": "'läbilööja' = go-getter, wrong sense"
+    },
+    {
+      "Amt-Master-ID": "hulgus",
+      "id": "am-019edb06-66fc-7afe-add4-2383974e6f2c",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "hulkur, rändaja, maaltkäija (sks Herumläufer, Landstreicher)",
+          "new": "hulkur, rändaja (sks Herumläufer, Landstreicher)"
+        }
+      },
+      "reason": "'maaltkäija' not real"
+    },
+    {
+      "Amt-Master-ID": "hulkuja",
+      "id": "am-019edb06-66fd-7419-9ef3-787971e7332a",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "hulkuja, hulkur, rändleja (sks Umschweifer, Landstreicher)",
+          "new": "hulkuja, hulkur, rändur (sks Umschweifer, Landstreicher)"
+        }
+      },
+      "reason": "'rändleja' not standard; 'rändur'"
+    },
+    {
+      "Amt-Master-ID": "imetaja naine",
+      "id": "am-019edb06-6706-7766-81d6-78ba99a88c24",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "amm, imetajanna (sks Säugamme)",
+          "new": "amm, imetav naine (sks Säugamme)"
+        }
+      },
+      "reason": "'imetajanna' not real"
+    },
+    {
+      "Amt-Master-ID": "jalapoisid",
+      "id": "am-019edb06-670e-7146-831d-a7b23cb611db",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "(elu)teenrid, jalapoisid (mitmus; sks Lackei)",
+          "new": "lakeid, jalapoisid (mitmus; sks Lackei)"
+        }
+      },
+      "reason": "'(elu)teener' formation not real; 'lakei' standard"
+    },
+    {
+      "Amt-Master-ID": "junkur",
+      "id": "am-019edb06-6713-7b7e-9fc1-bdca3ae5979f",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "estate steward, bailiff, estate manager",
+          "new": "estate steward, bailiff, estate manager; Gutslaff and Hupel (junkro) also 'maiden, young lady (Jungfrau, Jungfer)'"
+        },
+        "DEF_et": {
+          "old": "mõisavalitseja, ametmees, mõisnik (sks Amtmann, Verwalter); Gutslaffil eksitav 'Jungfrau'",
+          "new": "mõisavalitseja, ametmees (sks Amtmann, Verwalter); Gutslaffil ja Hupelil (junkro) ka 'Jungfrau, Jungfer'"
+        }
+      },
+      "reason": "'mõisnik' unsupported; Jungfer sense also in Hupel"
+    },
+    {
+      "Amt-Master-ID": "jutleja",
+      "id": "am-019edb06-6714-7918-b3ba-4dff18bf7167",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "jutlustaja, prediker (sks Prediger)",
+          "new": "jutlustaja (sks Prediger)"
+        }
+      },
+      "reason": "'prediker' not a real word"
+    },
+    {
+      "Amt-Master-ID": "jutujätk",
+      "id": "am-019edb06-6715-7f10-98dd-9522142e7b49",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "lobiseja, latataja, jutukas inimene (sks Plauderer, Wäscher)",
+          "new": "lobiseja, latatara, jutukas inimene (sks Plauderer, Wäscher)"
+        }
+      },
+      "reason": "'latataja' -> 'latatara'"
+    },
+    {
+      "Amt-Master-ID": "jõle",
+      "id": "am-019edb06-6717-7048-8c80-c6a64a5da8d0",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "rumal, narr, albur inimene; enamasti omadussõna (sks albern, Narr)",
+          "new": "rumal, narr, alp inimene; enamasti omadussõna (sks albern, Narr)"
+        }
+      },
+      "reason": "'albur' not a real word"
+    },
+    {
+      "Amt-Master-ID": "kaarman",
+      "id": "am-019edb06-671b-7af6-802c-f1f2bd431481",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "voorimees, kaarmees, vooriajaja (sks Fuhrmann)",
+          "new": "voorimees (sks Fuhrmann)"
+        }
+      },
+      "reason": "'kaarmees', 'vooriajaja' not real words"
+    },
+    {
+      "Amt-Master-ID": "kaeja",
+      "id": "am-019edb06-6724-776d-954c-d155140aed41",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "one who sees/watches; seer",
+          "new": "seer, clairvoyant"
+        },
+        "DEF_et": {
+          "old": "vaataja, nägija (curatori märkus: TEGIJA, mitte amet ega roll; sks ein Seher)",
+          "new": "selgeltnägija (sks Seher)"
+        }
+      },
+      "reason": "Seher gloss unreflected; missing (sks ...)"
+    },
+    {
+      "Amt-Master-ID": "kammerer",
+      "id": "am-019edb06-672f-7e52-b7de-3187b3b018bd",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "chamberlain, treasurer",
+          "new": "treasurer, bursar"
+        },
+        "DEF_et": {
+          "old": "kammerhärra, varahoidja (sks Kämmerer)",
+          "new": "laekur, varahoidja (sks Kämmerier)"
+        }
+      },
+      "reason": "gloss is Kämmerier (treasurer), not Kämmerer; chamberlain sense unsupported"
+    },
+    {
+      "Amt-Master-ID": "kanavaras",
+      "id": "am-019edb06-6730-79e3-8b95-09123593dc85",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kanavaras; silmaalt vaataja, kelm (sks Hühnerdieb, tückisch von Augen)",
+          "new": "kanavaras; altkulmu vaataja, kelm (sks Hühnerdieb, tückisch von Augen)"
+        }
+      },
+      "reason": "'silmaalt vaataja' not idiomatic"
+    },
+    {
+      "Amt-Master-ID": "kandja",
+      "id": "am-019edb06-6732-758b-bece-b3b94dffcc53",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kandja, porter; (lipu-, raamatu)kandja (sks Träger)",
+          "new": "kandja; (lipu-, raamatu)kandja (sks Träger)"
+        }
+      },
+      "reason": "'porter' is not Estonian"
+    },
+    {
+      "Amt-Master-ID": "kandlelööja",
+      "id": "am-019edb06-6733-7da3-83a2-25cf831f3480",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kandlemängija, harfenist (sks Harfenist)",
+          "new": "kandlemängija, harfist (sks Harfenist)"
+        }
+      },
+      "reason": "'harfenist' -> 'harfist'"
+    },
+    {
+      "Amt-Master-ID": "kardsepp",
+      "id": "am-019edb06-673a-7a36-8ed6-89ed656f0614",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "maker of gold/silver lace, passementier",
+          "new": "tinsmith, sheet-metal worker"
+        },
+        "DEF_et": {
+          "old": "kardpaela meister, kuld- ja hõbepaela valmistaja (allikate sks vaste puudub)",
+          "new": "plekksepp (sks Klempner)"
+        }
+      },
+      "reason": "Hupel glosses 'ein Klempner'; passementier claim contradicts evidence"
+    },
+    {
+      "Amt-Master-ID": "karistaja",
+      "id": "am-019edb06-673b-7363-8392-057c028a2883",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "karistaja, distsiplinaator (sks Zuchtmeister); vrd 'hirmutaja'",
+          "new": "karistaja, range kasvataja (sks Zuchtmeister); vrd 'hirmutaja'"
+        }
+      },
+      "reason": "'distsiplinaator' not a real word"
+    },
+    {
+      "Amt-Master-ID": "kasuksepp",
+      "id": "am-019edb06-6740-766b-93e4-1fbc7eca4b4f",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kasukassepp, karusnahatööline, kürsner (sks Kürschner)",
+          "new": "köösner, karusnahatööline (sks Kürschner)"
+        }
+      },
+      "reason": "'kasukassepp' misspelled; 'kürsner' not real; köösner standard"
+    },
+    {
+      "Amt-Master-ID": "kaupleja",
+      "id": "am-019edb06-6745-7ff6-87ad-1204cc353f90",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "manual-unlogged",
+      "changes": {
+        "DEF_en": {
+          "old": "trader, dealer, buyer",
+          "new": "buyer"
+        },
+        "DEF_et": {
+          "old": "kaupleja, kaupmees, ostja (sks Käufer)",
+          "new": "ostja (sks Käufer)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "kedranaine",
+      "id": "am-019edb06-6747-7242-880f-62b7d6305edb",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "ketrajanna, ketraja naine (sks Spinnerin)",
+          "new": "ketraja, kedrav naine (sks Spinnerin)"
+        }
+      },
+      "reason": "'ketrajanna' not real; 'ketraja naine' = spinner's wife"
+    },
+    {
+      "Amt-Master-ID": "keelekandja",
+      "id": "am-019edb06-6748-7c90-b8f9-9bacc2b9507a",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "slanderer, talebearer, informer",
+          "new": "slanderer, talebearer, informer; Göseken 'flatterer'"
+        },
+        "DEF_et": {
+          "old": "keelekandja, laimaja, kõrvasosistaja (sks Verleumder, Ohrenbläser)",
+          "new": "keelekandja, laimaja, pealekaebaja (Gösekenil 'lipitseja'; sks Verleumder, Ohrenbläser, Fuchsschwänzer)"
+        }
+      },
+      "reason": "'kõrvasosistaja' not real; Gö Fuchsschwänzer sense omitted"
+    },
+    {
+      "Amt-Master-ID": "kekk",
+      "id": "am-019edb06-674e-700d-a843-f6e487158bc1",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "fool, fop, coxcomb",
+          "new": "fool, buffoon; Göseken 'fanatic'"
+        },
+        "DEF_et": {
+          "old": "narr, keigar, tobu (sks Geck, Narr)",
+          "new": "narr, tobu (Gösekenil ka 'fanaatik'; sks Narr, Stocknarr, Tor, Schwärmer)"
+        }
+      },
+      "reason": "'fop/keigar' anachronistic reading of Geck; Schwärmer omitted"
+    },
+    {
+      "Amt-Master-ID": "keldrimeister",
+      "id": "am-019edb06-674f-7b65-a567-2557d7eae4c1",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "keldrimeister, joogiülem (sks Kellermeister, Kellner)",
+          "new": "keldrimeister (sks Kellner)"
+        }
+      },
+      "reason": "'joogiülem' not real; Kellermeister not attested"
+    },
+    {
+      "Amt-Master-ID": "kellakuuljad",
+      "id": "am-019edb06-6750-72bd-b5b8-1b4f826d8d7c",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "linna- v. kirikulähedased elanikud, kellahääle kuuldekaugusel elajad (sks die nahe bey der Stadt/Kirche wohnen)",
+          "new": "linna- v. kirikulähedased elanikud, kellahääle kuuldekaugusel elavad inimesed (sks die nahe bey der Stadt/Kirche wohnen)"
+        }
+      },
+      "reason": "'elajad' reads as 'beasts'"
+    },
+    {
+      "Amt-Master-ID": "kellapeksja",
+      "id": "am-019edb06-6753-7662-a422-0b0aa28d78c1",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kellamees, kellalööja, kellur (sks Glöckner)",
+          "new": "kellamees, kellalööja (sks Glöckner)"
+        }
+      },
+      "reason": "'kellur' not a real word"
+    },
+    {
+      "Amt-Master-ID": "kellassepp",
+      "id": "am-019edb06-6754-7e61-ada1-0e006d2e794f",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kellassepp, kellmeister (sks Uhrmacher)",
+          "new": "kellassepp (sks Uhrmacher)"
+        }
+      },
+      "reason": "'kellmeister' not real (kellameister = bell-founder)"
+    },
+    {
+      "Amt-Master-ID": "kelm",
+      "id": "am-019edb06-6755-77d9-997f-87c9fe17a614",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kelm, suli, vurle (sks Schelm)",
+          "new": "kelm, suli, petis (sks Schelm)"
+        }
+      },
+      "reason": "'vurle' = city slicker, not rogue"
+    },
+    {
+      "Amt-Master-ID": "kiimane hoor",
+      "id": "am-019edb06-675a-747d-96f0-6859685c5a51",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "ülihoor, kiimaline hoor (sks Erzhure)",
+          "new": "paadunud hoor, kiimaline hoor (sks Erzhure)"
+        }
+      },
+      "reason": "'ülihoor' not a real word"
+    },
+    {
+      "Amt-Master-ID": "kiriku vöörmünder",
+      "id": "am-019f31d3-af35-78f6-9a87-62cbf2d2fc6f",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "churchwarden",
+          "new": "churchwarden, church elder, overseer of the church"
+        },
+        "DEF_et": {
+          "old": "kirikuvöörmünder, koguduse eestseisja (sks Kirchenvorsteher)",
+          "new": "kirikuvöörmünder, kiriku eestseisja (sks Kirchenvorsteher, Kirchenvormund)"
+        }
+      },
+      "reason": "'guardian (legal)'/plain Vormund unattested"
+    },
+    {
+      "Amt-Master-ID": "kirikuhärra",
+      "id": "am-019edb06-6762-7933-a75e-be5fbc560804",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "pastor, kirikuõpetaja, kirikuhärra (sks Pastor, Pfarrer)",
+          "new": "pastor, kirikuõpetaja, kirikuhärra (sks Pastor)"
+        }
+      },
+      "reason": "'Pfarrer' not attested for this lemma"
+    },
+    {
+      "Amt-Master-ID": "kivinek",
+      "id": "am-019edb06-676b-7d10-855d-d2629cabe383",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kiviraidur, müürsepp (halvustav nimetus; sks Steinhauer, Scheltwort)",
+          "new": "kiviraidur (halvustav nimetus; sks Steinhauer, Scheltwort)"
+        }
+      },
+      "reason": "'müürsepp' (Maurer) unsupported"
+    },
+    {
+      "Amt-Master-ID": "kivisepp",
+      "id": "am-019edb06-676c-7771-8990-7f8bb62864e3",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kivisepp, kiviraidur, müürsepp (sks Steinhauer, Steinmetz)",
+          "new": "kivisepp, kiviraidur (sks Steinhauer, Steinmetz)"
+        }
+      },
+      "reason": "'müürsepp' unsupported"
+    },
+    {
+      "Amt-Master-ID": "kivitakar",
+      "id": "am-019edb06-676d-7ba1-87d5-28039155d6e6",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kiviraidur, müürsepp (sks Steinmetz)",
+          "new": "kiviraidur, kivisepp (sks Steinmetz)"
+        }
+      },
+      "reason": "'müürsepp' unsupported"
+    },
+    {
+      "Amt-Master-ID": "koategija",
+      "id": "am-019edb06-676f-744d-a0c4-1fefc0ef94fe",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "manual-unlogged",
+      "changes": {
+        "DEF_en": {
+          "old": "maker/doer ('-tegija'); referent unresolved — no gloss in any source [uncertain]",
+          "new": "builder, master builder ('house-maker')"
+        },
+        "DEF_et": {
+          "old": "millegi tegija ('-tegija', Amt-Cat K1); täpne tähendus lahendamata, allikates seletus puudub [ebakindel]",
+          "new": "hoone ehitaja, ehitusmeister (sks Baumeister)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "kodapoolik",
+      "id": "am-019edb06-6772-7bd4-a77b-bc9336d4fe69",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "pops, vabadik, saunaüürnik, elanik (sks Einwohner, Badstüber)",
+          "new": "pops, vabadik, saunik, elanik (sks Einwohner, Badstüber)"
+        }
+      },
+      "reason": "'saunaüürnik' not established; 'saunik' historical term"
+    },
+    {
+      "Amt-Master-ID": "kodapooline",
+      "id": "am-019edb06-6773-7ead-8913-337213f92aa6",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "pops, vabadik, saunaüürnik, elanik (sks Einwohner, Badstüber)",
+          "new": "pops, vabadik, saunik, elanik (sks Einwohner, Badstüber)"
+        }
+      },
+      "reason": "'saunaüürnik' not established; 'saunik' historical term"
+    },
+    {
+      "Amt-Master-ID": "kohtumõistja",
+      "id": "am-019edb06-6778-702e-a294-71b2b0054103",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "judge",
+          "new": "judge, lord of the court"
+        },
+        "DEF_et": {
+          "old": "kohtumõistja, kohtunik (sks Richter)",
+          "new": "kohtumõistja, kohtunik (sks Richter, Gerichtsherr)"
+        }
+      },
+      "reason": "Gerichtsherr gloss (Ve, Hu) omitted"
+    },
+    {
+      "Amt-Master-ID": "kohtuvanem",
+      "id": "am-019edb06-677b-7741-b425-1062399e0f7f",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "manual-unlogged",
+      "changes": {
+        "DEF_en": {
+          "old": "court elder, magistrate; authority",
+          "new": "magistrates, authorities (plural)"
+        },
+        "DEF_et": {
+          "old": "kohtuvanem, kohtunik, ülemus (sks Obrigkeit)",
+          "new": "kohtuvanemad, ülemus, võimukandjad (mitmus; sks Obrigkeit)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "kriivlipoiss",
+      "id": "am-019edb06-678f-7325-9d03-e53569d6ee1a",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "(koopia)kirjutaja, kirjutajapoiss, amanuens (sks Kopist, Amanuensis)",
+          "new": "(koopia)kirjutaja, kirjutajapoiss, kopist (sks Kopist, Amanuensis)"
+        }
+      },
+      "reason": "'amanuens' not a real Estonian word"
+    },
+    {
+      "Amt-Master-ID": "kubuköitja",
+      "id": "am-019edb06-6792-784e-ab6f-ffe2c9da606f",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "vihuköitja, vihukoojaja (sks Garbenbinder)",
+          "new": "vihuköitja, vihusiduja (sks Garbenbinder)"
+        }
+      },
+      "reason": "'vihukoojaja' corrupted form"
+    },
+    {
+      "Amt-Master-ID": "kunstimees",
+      "id": "am-019edb06-679b-7019-8737-f2c0506e4bd4",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "artist, skilled craftsman; possibly 'one who practises magic'",
+          "new": "artist, skilled craftsman"
+        },
+        "DEF_et": {
+          "old": "kunstnik, oskaja; võimalik et 'nõiakunsti tegija' (sks Künstler; vrd Kunst = Hexerey)",
+          "new": "kunstnik, oskaja (sks Künstler)"
+        }
+      },
+      "reason": "missing (sks ...) citation"
+    },
+    {
+      "Amt-Master-ID": "kübarsepp",
+      "id": "am-019edb06-67bb-73d8-9e0d-2b5ec582f428",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kübarsepp, mütsisepp (sks Hutmacher)",
+          "new": "kübarsepp (sks Hutmacher)"
+        }
+      },
+      "reason": "'mütsisepp' not a real word"
+    },
+    {
+      "Amt-Master-ID": "külalähk",
+      "id": "am-019edb06-67be-71d7-9104-046ca2449c7a",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "manual-unlogged",
+      "changes": {
+        "DEF_en": {
+          "old": "meaning unresolved; no German gloss in sources [uncertain]",
+          "new": "sorcerer"
+        },
+        "DEF_et": {
+          "old": "tähendus lahendamata; allikates sks vaste puudub [ebakindel]",
+          "new": "nõid, võlur, lähk (sks Zauberer)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "künnipoiss",
+      "id": "am-019edb06-67c6-7ce2-9442-e43df918eea4",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "künnipoiss, kündmisoskaja poiss (sks ein Junge der pflügen kann)",
+          "new": "künnipoiss, künda oskav poiss (sks ein Junge der pflügen kann)"
+        }
+      },
+      "reason": "'kündmisoskaja' not a real word"
+    },
+    {
+      "Amt-Master-ID": "küpsja",
+      "id": "am-019edb06-67c7-792e-9dcb-5cc45d4a12e5",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "roaster, one who roasts/bakes; cook",
+          "new": "roaster, one who roasts/bakes"
+        },
+        "DEF_et": {
+          "old": "küpsetaja, praadija, kokk (sks einer der da brätet)",
+          "new": "küpsetaja, praadija (sks einer der da brätet)"
+        }
+      },
+      "reason": "'cook' sense unsupported"
+    },
+    {
+      "Amt-Master-ID": "laevasulane",
+      "id": "am-019edb06-67cc-78a7-b2b3-6fb9163ed53c",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "laevasulane, tüürmadrus, aerutaja (sks Bootsknecht, Ruderknecht)",
+          "new": "laevasulane, madrus, sõudja (sks Bootsknecht, Ruderknecht)"
+        }
+      },
+      "reason": "'tüürmadrus' misspelled+unsupported; Ruderknecht = sõudja"
+    },
+    {
+      "Amt-Master-ID": "lausuja",
+      "id": "am-019edb06-67dd-73ff-83ac-3465a9adbeb4",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "sorcerer, conjurer, incantator; soothsayer",
+          "new": "sorcerer, conjurer, enchanter; soothsayer"
+        }
+      },
+      "reason": "'incantator' not English"
+    },
+    {
+      "Amt-Master-ID": "linnupüüdja",
+      "id": "am-019edb06-67ee-781c-bdb3-1ca29e612e1d",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "linnupüüdja, linnuküttija (sks Vogelfänger)",
+          "new": "linnupüüdja, linnukütt (sks Vogelfänger, Vogelsteller)"
+        }
+      },
+      "reason": "'linnuküttija' not standard; Vogelsteller attested"
+    },
+    {
+      "Amt-Master-ID": "lirva",
+      "id": "am-019edb06-67f1-70f7-9df3-78f0f99dfc90",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "lobiseja, latataja (ajalooline täh; sks Plaudertasche)",
+          "new": "lobiseja, latatara (ajalooline täh; sks Plaudertasche)"
+        }
+      },
+      "reason": "'latataja' -> 'latatara'"
+    },
+    {
+      "Amt-Master-ID": "loba",
+      "id": "am-019edb06-67f3-79a9-a7bf-8fe7bcd21986",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "lobiseja, latataja (sks Plapperer)",
+          "new": "lobiseja, latatara (sks Plapperer)"
+        }
+      },
+      "reason": "'latataja' -> 'latatara'"
+    },
+    {
+      "Amt-Master-ID": "lobasuu",
+      "id": "am-019edb06-67f4-7a92-8d35-6dc4641716d8",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "lobasuu, latrkõri (sks Plappermaul)",
+          "new": "lobasuu, lobamokk (sks Plappermaul)"
+        }
+      },
+      "reason": "'latrkõri' not a real word"
+    },
+    {
+      "Amt-Master-ID": "lobiseja",
+      "id": "am-019edb06-67f6-7fb7-ae97-f0d8dc431174",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "lobiseja, latataja, klatšija (sks Schwätzer, Plauderer)",
+          "new": "lobiseja, latatara, klatšija (sks Schwätzer, Plauderer)"
+        }
+      },
+      "reason": "'latataja' -> 'latatara'"
+    },
+    {
+      "Amt-Master-ID": "läbinägija",
+      "id": "am-019edb06-67fc-73f2-87ac-6c658b0ccd83",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "soolepuhuja, ennustaja, haruspeks (sks Eingeweideschauer, aruspex)",
+          "new": "sisikonna järgi ennustaja, haruspeks (sks Eingeweideschauer; ld aruspex)"
+        }
+      },
+      "reason": "'soolepuhuja' not real; Latin marked per file convention"
+    },
+    {
+      "Amt-Master-ID": "maasundija",
+      "id": "am-019edb06-6806-7ca3-aa90-99905bb9d1bc",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "maafoogt, maavalitseja, kohtufoogt (sks Landvogt)",
+          "new": "maafoogt, maavalitseja (sks Landvogt)"
+        }
+      },
+      "reason": "'kohtufoogt' unsupported"
+    },
+    {
+      "Amt-Master-ID": "manrihter",
+      "id": "am-019edb06-680f-7253-8c2f-8e9672bb671b",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "maakohtunik, maafoogt (sks Mannrichter, Landvogt)",
+          "new": "maakohtunik, maafoogt (sks Drost, Landvogt)"
+        }
+      },
+      "reason": "cited 'Mannrichter' is etymon, not gloss; actual 'drost, Land-Vogt'"
+    },
+    {
+      "Amt-Master-ID": "meier",
+      "id": "am-019edb06-6819-7619-bf46-604ee431a17b",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "liignaine, armuke, kaasnaine (sks Kebsweib, Beischläferin)",
+          "new": "liignaine, armuke (sks Kebsweib, Beischläferin)"
+        }
+      },
+      "reason": "'kaasnaine' not a real word for concubine"
+    },
+    {
+      "Amt-Master-ID": "mooramees",
+      "id": "am-019edb06-6824-7ab2-95bc-7131ed1fb79b",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "moor, tumedanahaline inimene (sks ein Mohr)",
+          "new": "mooramaalane, tumedanahaline inimene (sks ein Mohr)"
+        }
+      },
+      "reason": "'moor' = old woman in Estonian"
+    },
+    {
+      "Amt-Master-ID": "mädanud hoor",
+      "id": "am-019edb06-6837-7267-854e-e53433a3ed66",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "vana läbi hoor, ülihoor (sks Erzhure)",
+          "new": "paadunud hoor, igavene hoor (sks Erzhure)"
+        }
+      },
+      "reason": "'vana läbi hoor' ungrammatical; 'ülihoor' not real"
+    },
+    {
+      "Amt-Master-ID": "müütnik",
+      "id": "am-019edb06-6840-7035-a098-b22a1ada6951",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "tollnik, tollikoguja (sks Zöllner)",
+          "new": "tölner, tollikoguja (sks Zöllner)"
+        }
+      },
+      "reason": "'tollnik' not a real word"
+    },
+    {
+      "Amt-Master-ID": "naiseline mees",
+      "id": "am-019edb06-6847-74d4-a182-3835953641dd",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "married man, husband",
+          "new": "married man, husband; man of marriageable age"
+        },
+        "DEF_et": {
+          "old": "abielumees, naisemees (sks Ehemann, beweibter Kerl)",
+          "new": "abielumees, naisemees; abieluealine mees (sks Ehemann, beweibter Kerl, mannbarer Kerl)"
+        }
+      },
+      "reason": "Ve 'Manbarer Kerl' sense omitted"
+    },
+    {
+      "Amt-Master-ID": "nobedad poisid",
+      "id": "am-019edb06-6859-77b7-bc06-1519024164f5",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "jooksupoisid, (elu)teenrid (mitmus; sks Lackei)",
+          "new": "jooksupoisid, lakeid (mitmus; sks Lackei)"
+        }
+      },
+      "reason": "'eluteener' not a real word; 'lakei' standard"
+    },
+    {
+      "Amt-Master-ID": "ori",
+      "id": "am-019edb06-686a-71b1-944a-9b97ea3f6243",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "ori, sulane, teener (sks Sklave, Knecht, Diener)",
+          "new": "ori, sulane, teener (sks Sklave, Diener, Dienstbote)"
+        }
+      },
+      "reason": "'Knecht' not attested for this lemma"
+    },
+    {
+      "Amt-Master-ID": "paademooder",
+      "id": "am-019edb06-6873-76a4-b015-5b038564b8c9",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "ämmaemand, ämm; amm (sks Hebamme, Amme)",
+          "new": "ämmaemand; amm (sks Hebamme, Amme)"
+        }
+      },
+      "reason": "'ämm' = mother-in-law, misleading"
+    },
+    {
+      "Amt-Master-ID": "paganarahvas",
+      "id": "am-019edb06-6878-7593-8f19-4938c1d00b2b",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "paganrahvas, paganad (mitmus; sks die Heiden, Heidentum)",
+          "new": "paganarahvas, paganad (mitmus; sks die Heiden, Heidentum)"
+        }
+      },
+      "reason": "'paganrahvas' misspelled"
+    },
+    {
+      "Amt-Master-ID": "paljas mees",
+      "id": "am-019edb06-6880-7cb0-8ea6-0f8dae4d3250",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "üksik mees; vaene, kehvik mees (sks ein einzelner Kerl; ein armer Kerl)",
+          "new": "üksik mees; vaene mees, kehvik (sks ein einzelner Kerl; ein armer Kerl)"
+        }
+      },
+      "reason": "'kehvik mees' ungrammatical (noun used attributively)"
+    },
+    {
+      "Amt-Master-ID": "pandimees",
+      "id": "am-019edb06-6882-7d3e-b4ad-ae958da6172a",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "manual-unlogged",
+      "changes": {
+        "DEF_en": {
+          "old": "pledge-man: one held as a pledge/hostage, or a holder of property in pledge",
+          "new": "lessor, landlord"
+        },
+        "DEF_et": {
+          "old": "pandimees: pandiks antu (käemees, pant) v. pandipidaja (allikagloss puudub)",
+          "new": "üürileandja"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "pandisaks",
+      "id": "am-019edb06-6883-7524-a347-da1d6c507ef5",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "manual-unlogged",
+      "changes": {
+        "DEF_en": {
+          "old": "German holder of an estate in pledge/mortgage (Pfandherr)",
+          "new": "lessor, landlord"
+        },
+        "DEF_et": {
+          "old": "mõisa pandipidaja, pandisaks (allikagloss puudub)",
+          "new": "üürileandja"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "pealekaebaja",
+      "id": "am-019edb06-688c-70b9-9597-1f81e13078fd",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "pealekaebaja, süüdistaja, kaebleja (sks Verkläger)",
+          "new": "pealekaebaja, süüdistaja, kaebaja (sks Verkläger)"
+        }
+      },
+      "reason": "'kaebleja' = lamenter, not accuser"
+    },
+    {
+      "Amt-Master-ID": "piirits",
+      "id": "am-019edb06-689a-7db1-89e0-bbdf5dd5beb9",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "timukas, tapja; ka kohtuteener, sundija (sks Henker, Büttel)",
+          "new": "timukas, hukkaja; ka kohtuteener, sundija (sks Henker, Büttel)"
+        }
+      },
+      "reason": "'tapja' = killer, not executioner"
+    },
+    {
+      "Amt-Master-ID": "plekleier",
+      "id": "am-019edb06-689f-750a-b87a-06b92423b4b4",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "tinsmith, plumber",
+          "new": "tinsmith, sheet-metal worker"
+        },
+        "DEF_et": {
+          "old": "plekksepp, tinatööline (sks Klempner, Blechschläger)",
+          "new": "plekksepp (sks Blechschläger, Klempner)"
+        }
+      },
+      "reason": "18th-c. Klempner = tinsmith, not plumber; 'tinatööline' not real"
+    },
+    {
+      "Amt-Master-ID": "poenaine",
+      "id": "am-019edb06-68a3-7507-be1e-59c49968e4d5",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "poodnik, poepidaja (naine) (sks Budensitzerin)",
+          "new": "poodnik, poepidaja (naine) (sks Budensitzer)"
+        }
+      },
+      "reason": "gloss is 'budensitzer', not 'Budensitzerin'"
+    },
+    {
+      "Amt-Master-ID": "poepoiss",
+      "id": "am-019edb06-68a4-72e6-9d8a-5a0922add369",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "shop boy, shopkeeper's lad",
+          "new": "shopkeeper, stallholder"
+        },
+        "DEF_et": {
+          "old": "poepoiss, poodniku abi (sks Budensitzer)",
+          "new": "poodnik, poepidaja (sks Budensitzer)"
+        }
+      },
+      "reason": "'shop boy' unsupported; Gö UV täh 'poodnik, poepidaja'"
+    },
+    {
+      "Amt-Master-ID": "pordusundija",
+      "id": "am-019edb06-68b2-7194-a64e-6acae88844aa",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "pimp, procurer; whoremonger",
+          "new": "whoremonger, fornicator; pimp, procurer"
+        },
+        "DEF_et": {
+          "old": "kupeldaja, pordusundija; hooraja (sks Hurer)",
+          "new": "hooraja; kupeldaja, pordusundija (sks Hurer)"
+        }
+      },
+      "reason": "attested Hurer sense should lead; pimp rests on word-form only"
+    },
+    {
+      "Amt-Master-ID": "pormeister",
+      "id": "am-019edb06-68b3-7264-b10b-e11ad7da02e2",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "linnapea, raehärra (sks Bürgermeister)",
+          "new": "linnapea, bürgermeister (sks Bürgermeister)"
+        }
+      },
+      "reason": "'raehärra' = Ratsherr, not mayor"
+    },
+    {
+      "Amt-Master-ID": "päiline",
+      "id": "am-019edb06-68d1-784a-8f6e-1a3aae598300",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "päiline, päevatööline (sks Tagelöhner); 'päevaline' süno",
+          "new": "päiline, päevatööline (sks Tagelöhner); 'päeviline' süno"
+        }
+      },
+      "reason": "cross-ref should match master lemma 'päeviline' (verified exists)"
+    },
+    {
+      "Amt-Master-ID": "raamatukirjutaja",
+      "id": "am-019edb06-68e0-7f28-8d1e-7621f000487e",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "manual-unlogged",
+      "changes": {
+        "DEF_en": {
+          "old": "scribe, copyist (book-writer); no gloss given in source",
+          "new": "book-writer, scribe/copyist; also 'author' (Göseken Scribent)"
+        },
+        "DEF_et": {
+          "old": "(raamatu)kirjutaja, ümberkirjutaja (allikagloss puudub; vrd raamatukriivel, -saarn 'Schreiber')",
+          "new": "raamatukirjutaja, ümberkirjutaja; ka autor (sks Buchschreiber, Scribent)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "raamatukriivel",
+      "id": "am-019edb06-68e1-76d5-a94e-497cf2278f43",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kirjutaja, sekretär, notar (sks Sekretär)",
+          "new": "kirjutaja, sekretär (sks Sekretär)"
+        }
+      },
+      "reason": "'notar' unsupported"
+    },
+    {
+      "Amt-Master-ID": "rahurikkuja",
+      "id": "am-019edb06-68f1-7055-9928-ede096e21321",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "rahurikkuja, rahuhäirija (sks Friedensstörer)",
+          "new": "rahurikkuja, rahuhäirija (sks Störenfried)"
+        }
+      },
+      "reason": "gloss is 'stören Fried', not Friedensstörer"
+    },
+    {
+      "Amt-Master-ID": "raudsõjamees",
+      "id": "am-019edb06-68f5-706b-8fb0-31db5c3f897c",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kürassir, raskeratsaväelane (sks Kürassier)",
+          "new": "kürassiir, raskeratsaväelane (sks Kürassier)"
+        }
+      },
+      "reason": "misspelling 'kürassir'"
+    },
+    {
+      "Amt-Master-ID": "rehepeksja",
+      "id": "am-019edb06-68f8-7726-a189-a11af96b73b9",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "manual-unlogged",
+      "changes": {
+        "DEF_en": {
+          "old": "thresher (of grain); no gloss given in source",
+          "new": "thresher, barn-thresher (one who threshes grain in the drying barn)"
+        },
+        "DEF_et": {
+          "old": "rehepeksja, reheline (sks Drescher; allikagloss puudub)",
+          "new": "rehepeksja, reheline (sks Riegendrescher)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "rendimees",
+      "id": "am-019edb06-68fa-716b-b939-01dbd1d08ffc",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "tenant, leaseholder (Göseken interprets as lessor)",
+          "new": "tenant, lessee, leaseholder"
+        },
+        "DEF_et": {
+          "old": "rentnik, rendimees; Gösekenil 'rendileandja' (sks Pachtmann)",
+          "new": "rentnik, rendilevõtja (sks Pachtmann, Mietmann)"
+        }
+      },
+      "reason": "Pachtmann/Mietmann = tenant, not lessor (Grimm)"
+    },
+    {
+      "Amt-Master-ID": "rentmeister",
+      "id": "am-019edb06-68fb-7411-8f7a-08c1761a45c7",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "rentmeister, varahoidja, rahapealik (sks Rentmeister, quaestor)",
+          "new": "rentmeister, varahoidja, rahapealik (sks Rentmeister; ld quaestor)"
+        }
+      },
+      "reason": "quaestor is Latin; file convention is '; ld ...'"
+    },
+    {
+      "Amt-Master-ID": "riidepesija",
+      "id": "am-019edb06-68fd-70bd-8026-b636dc3eb3d7",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "launderer, washerwoman (clothes-washer); no gloss in source",
+          "new": "launderer, washerwoman (clothes-washer)"
+        },
+        "DEF_et": {
+          "old": "rõivapesija, pesunaine (allikagloss puudub)",
+          "new": "rõivapesija, pesunaine (sks Wäscherin)"
+        }
+      },
+      "reason": "missing (sks ...) citation"
+    },
+    {
+      "Amt-Master-ID": "saia kitsäja",
+      "id": "am-019edb06-6912-7971-89ab-1efdded61b9d",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "unclear: 'sai' = white/wheat bread, so perhaps a bread-baker/seller, but 'kitsäja' is unresolved; no gloss in source [uncertain]",
+          "new": "baker"
+        },
+        "DEF_et": {
+          "old": "ebaselge: 'sai' viitab saiale, vahest saiaküpsetaja v -müüja, kuid 'kitsäja' jääb lahtiseks; allikagloss puudub [ebakindel]",
+          "new": "pagar (sks Becker)"
+        }
+      },
+      "reason": "missing (sks ...) citation"
+    },
+    {
+      "Amt-Master-ID": "salaja nõuandja",
+      "id": "am-019edb06-6915-7af3-8693-8d5af47058be",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "salanõunik, geheimrat, salajane nõuandja (sks Geheimer Rat)",
+          "new": "salanõunik, salajane nõuandja (sks Geheimer Rat)"
+        }
+      },
+      "reason": "'geheimrat' is German, not Estonian"
+    },
+    {
+      "Amt-Master-ID": "seemisker",
+      "id": "am-019edb06-691e-768f-8687-3a056ccf949c",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "tawer, white-tanner (chamois-leather dresser)",
+          "new": "tanner; tawer, white-tanner (chamois-leather dresser)"
+        },
+        "DEF_et": {
+          "old": "(valge)parkal, säämisknahaparkal (sks Weißgerber; ld alutarius)",
+          "new": "(valge)parkal, seemisnahaparkal (sks Gerber, Weißgerber; ld alutarius)"
+        }
+      },
+      "reason": "'säämisknahaparkal' misspelled; plain 'gerber' sense missing"
+    },
+    {
+      "Amt-Master-ID": "sepiline",
+      "id": "am-019edb06-6922-78d6-b211-41dc6df054b4",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "manual-unlogged",
+      "changes": {
+        "DEF_en": {
+          "old": "smithy hand/helper; or one who has work done at the smithy",
+          "new": "one who has work done at the smithy"
+        },
+        "DEF_et": {
+          "old": "sepapoiss, sepa abiline; v sepikojas tööd laskev inimene (sks einer der in der Schmiede arbeiten lässt)",
+          "new": "sepikojas tööd teha laskev inimene (sks einer der in der Schmiede arbeiten lässt)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "silmakirjutaja",
+      "id": "am-019edb06-6926-77ca-9399-8f6f1cd312b8",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "silmamoondaja, mustkunstnik, petukunstnik (sks Augenblender)",
+          "new": "silmamoondaja, mustkunstnik (sks Augenblender)"
+        }
+      },
+      "reason": "'petukunstnik' not a real word"
+    },
+    {
+      "Amt-Master-ID": "silmapetja",
+      "id": "am-019edb06-6928-706e-af82-5f6b5565262a",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "silmamoondaja, mustkunstnik, pettekunstnik (sks Gaukler)",
+          "new": "silmamoondaja, mustkunstnik (sks Gaukler)"
+        }
+      },
+      "reason": "'pettekunstnik' not a real word"
+    },
+    {
+      "Amt-Master-ID": "sulane",
+      "id": "am-019edb06-692e-7855-91bc-a421b7fa477e",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "sulane, teener, talisulane; Gösekenil ka 'kaupmees, poepidaja' (sks Knecht, Diener)",
+          "new": "sulane, teener; Gösekenil ka 'kaupmees, poepidaja' (sks Knecht, Diener)"
+        }
+      },
+      "reason": "'talisulane' unsupported and non-standard"
+    },
+    {
+      "Amt-Master-ID": "sõidetud hoor",
+      "id": "am-019edb06-6937-7419-bbc5-8ed676f9917d",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "ülihoor, läbi ja lõhki hoor (sks Erzhure)",
+          "new": "paadunud hoor, läbi ja lõhki hoor (sks Erzhure)"
+        }
+      },
+      "reason": "'ülihoor' not a real word"
+    },
+    {
+      "Amt-Master-ID": "taevatähe seletaja",
+      "id": "am-019edb06-6953-7e0c-beb8-222f8671efba",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "astroloog, tähetargutaja (sks Sterndeuter)",
+          "new": "astroloog, tähetark (sks Sterndeuter)"
+        }
+      },
+      "reason": "'tähetargutaja' not a real word"
+    },
+    {
+      "Amt-Master-ID": "taldrikunolpija",
+      "id": "am-019edb06-6959-7db4-9b1e-c635cb56c814",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "(toidu)parasiit, priileivasööja; lipitseja, silmakirjatseja (sks Schmarotzer, Tellerlecker, Augendiener, Fuchsschwänzer)",
+          "new": "(toidu)parasiit, priileivasööja; lipitseja, silmakirjatseja (sks Suppenfresser, Tellerlecker, Augendiener, Fuchsschwänzer)"
+        }
+      },
+      "reason": "cited 'Schmarotzer' not among glosses; 'Suppenfresser' omitted"
+    },
+    {
+      "Amt-Master-ID": "tallatav",
+      "id": "am-019edb06-695e-7f43-acfc-d4dd4de59a55",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "ülihoor, läbi ja lõhki hoor (sks Erzhure)",
+          "new": "paadunud hoor, läbi ja lõhki hoor (sks Erzhure)"
+        }
+      },
+      "reason": "'ülihoor' not a real word (sweep)"
+    },
+    {
+      "Amt-Master-ID": "talumees",
+      "id": "am-019edb06-6961-7393-87c9-353ccd0a97f4",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "talupoeg, talupidaja; pererahva peremees (sks Bauer, Bauerwirth, Gesinde-Wirth)",
+          "new": "talupoeg, talupidaja; talu peremees (sks Bauer, Bauerwirth, Gesinde-Wirth)"
+        }
+      },
+      "reason": "'pererahva peremees' confused doubling"
+    },
+    {
+      "Amt-Master-ID": "tapja mees",
+      "id": "am-019edb06-6966-73f6-9eee-0857264edbc9",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "tapja, mõrtsukas (sks Todschläger)",
+          "new": "tapja, surmaja (sks Todschläger)"
+        }
+      },
+      "reason": "'mõrtsukas' unsupported by sole gloss Todschläger"
+    },
+    {
+      "Amt-Master-ID": "teadmamees",
+      "id": "am-019edb06-696b-758f-a393-e2bca1ebdccf",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "cunning-man, wise man, one who knows (folk seer/healer); (Hupel) an acquainted person",
+          "new": "cunning-man, wise man, one who knows (folk seer/healer)"
+        },
+        "DEF_et": {
+          "old": "teadjamees, tark, oskaja (rahvatark/ravitseja); (Hupelil) tuttav inimene (sks 'was weiß', bekannter Mensch)",
+          "new": "teadjamees, tark, oskaja (rahvatark/ravitseja) (sks der etwas weiß)"
+        }
+      },
+      "reason": "missing conventional (sks ...) citation"
+    },
+    {
+      "Amt-Master-ID": "teekäija",
+      "id": "am-019edb06-696d-7b45-8e1e-2bec9a4da15a",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "rändaja, teekäija, rändmees; (palve)rändur; võõras (sks Reisender, Wanderer, Pilger)",
+          "new": "rändaja, teekäija, rännumees; (palve)rändur; võõras (sks Reisender, Wanderer, Pilger)"
+        }
+      },
+      "reason": "'rändmees' not standard; 'rännumees'"
+    },
+    {
+      "Amt-Master-ID": "teener",
+      "id": "am-019edb06-6970-759c-bce5-59dfa5f5537c",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "manual-unlogged",
+      "changes": {
+        "DEF_en": {
+          "old": "servant",
+          "new": "servant, attendant"
+        },
+        "DEF_et": {
+          "old": "teener (sks Diener)",
+          "new": "teener, sulane (sks Diener, Aufwärter)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "teeröövel",
+      "id": "am-019edb06-6973-75d6-b6df-b404d39a3c02",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "teeröövel, maantereröövel; mõrtsukas (sks Straßenräuber, Mörder)",
+          "new": "teeröövel, maanteeröövel; mõrtsukas (sks Straßenräuber, Mörder)"
+        }
+      },
+      "reason": "typo 'maantereröövel'"
+    },
+    {
+      "Amt-Master-ID": "tiisler",
+      "id": "am-019edb06-697a-7d01-b7a5-57308fd07df0",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "tisler, puusepp (sks Tischler)",
+          "new": "tisler (sks Tischler)"
+        }
+      },
+      "reason": "'puusepp' is a different trade (Zimmermann), unsupported"
+    },
+    {
+      "Amt-Master-ID": "tollipealine",
+      "id": "am-019edb06-697f-7533-8c06-e929e7eec803",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "tolliülem, tollnik (kes on tolli rentinud) (sks Zöllner)",
+          "new": "tolliülem, tölner (kes on tolli rentinud) (sks Zöllner)"
+        }
+      },
+      "reason": "'tollnik' not a real word (sweep); tölner as in müütnik"
+    },
+    {
+      "Amt-Master-ID": "torikas",
+      "id": "am-019edb06-6984-7268-85cb-22c75efb74e8",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "a quarrelsome, contentious person; brawler",
+          "new": "a quarrelsome, contentious person; brawler; (Vestring) braggart"
+        },
+        "DEF_et": {
+          "old": "tülinorija, riiakas inimene (sks ein Zanksüchtiger, Krakeeler)",
+          "new": "tülinorija, riiakas inimene; (Vestringil) hoopleja, kiitleja (sks ein Zanksüchtiger, Krakeeler; Prahlhans)"
+        }
+      },
+      "reason": "Ve 'Prahlhans' sense omitted"
+    },
+    {
+      "Amt-Master-ID": "tragun",
+      "id": "am-019edb06-6987-74e0-a780-4d831b9dbc5d",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "dragoon, ratsaväelane (Gösekenil); (Hupelil segiaetud) estragon-maitsetaim (sks Dragoner; Dragunkel)",
+          "new": "tragun, ratsaväelane (Gösekenil); (Hupelil segiaetud) estragon-maitsetaim (sks Dragoner; Dragunkel)"
+        }
+      },
+      "reason": "'dragoon' is English; Estonian is 'tragun'"
+    },
+    {
+      "Amt-Master-ID": "tuleroog",
+      "id": "am-019edb06-698f-7b14-b84f-10957deaee44",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "nõid (tuleriidale väärt), nõiamoor; sõimusõnana (sks eine Hexe die des Feuers werth ist, Herz-Zauberin)",
+          "new": "nõid (tuleriita väärt), nõiamoor; sõimusõnana (sks eine Hexe die des Feuers werth ist, Herz-Zauberin)"
+        }
+      },
+      "reason": "'väärt' governs partitive: 'tuleriita väärt'"
+    },
+    {
+      "Amt-Master-ID": "turuhoor",
+      "id": "am-019edb06-6994-7e28-b515-155f6637e24d",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "avalik hoor, turulits; ülihoor (sks eine öffentliche Hure, Erzhure)",
+          "new": "avalik hoor, turulits; paadunud hoor (sks eine öffentliche Hure, Erzhure)"
+        }
+      },
+      "reason": "'ülihoor' not a real word (sweep)"
+    },
+    {
+      "Amt-Master-ID": "tõmbaja",
+      "id": "am-019edb06-6999-7e7e-ab72-530d66fe59dd",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "thief, thievish person",
+          "new": "thief"
+        },
+        "DEF_et": {
+          "old": "varas, näppaja, vargalik inimene (sks Dieb, diebischer Mensch)",
+          "new": "varas, näppaja (sks Dieb)"
+        }
+      },
+      "reason": "'diebischer Mensch' belongs to separate lemma 'tõmbaja inimene' (verified)"
+    },
+    {
+      "Amt-Master-ID": "töömees",
+      "id": "am-019edb06-69a1-7430-8707-0556e9937603",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "workman, labourer (town day-labourer)",
+          "new": "workman, labourer (in town)"
+        },
+        "DEF_et": {
+          "old": "töömees, (linna)tööline, päeviline (sks Arbeitskerl, Arbeiter)",
+          "new": "töömees, (linna)tööline (sks Arbeitskerl, Arbeiter)"
+        }
+      },
+      "reason": "'päeviline'/day-labourer unsupported"
+    },
+    {
+      "Amt-Master-ID": "uksehoidja",
+      "id": "am-019edb06-69ac-7363-9f8d-6370fe2b78d0",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "manual-unlogged",
+      "changes": {
+        "DEF_et": {
+          "old": "uksehoidja, väravavaht (sks Türhüter)",
+          "new": "uksehoidja (sks Türhüter)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "usklik",
+      "id": "am-019edb06-69b0-717f-bfbb-eae92ed7ffaf",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "usklik, usumees (sks Gläubiger)",
+          "new": "usklik, usumees (sks gläubig; Stahlil Glaubiger)"
+        }
+      },
+      "reason": "modern 'Gläubiger' = creditor, misleading; sources gloss adjective 'gläubig'"
+    },
+    {
+      "Amt-Master-ID": "vabatmees",
+      "id": "am-019edb06-69b6-7a50-a903-870254c21a2f",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "vabamees; vabadik, pop (Lostreiber); vähe mõisatööd tegev talupoeg (sks Freykerl, Lostreiber)",
+          "new": "vabamees; vabadik, pops (Lostreiber); vähe mõisatööd tegev talupoeg (sks Freykerl, Lostreiber)"
+        }
+      },
+      "reason": "'pop' -> 'pops'"
+    },
+    {
+      "Amt-Master-ID": "vaekojamees",
+      "id": "am-019edb06-69ba-7f7c-89e8-ca66a51353e4",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "vaekojamees, kaaluja (sks Wägekerl)",
+          "new": "vaekojamees, kaaluja (sks Wagekerl)"
+        }
+      },
+      "reason": "sources gloss 'Wagekerl', not 'Wägekerl'"
+    },
+    {
+      "Amt-Master-ID": "vaevaja",
+      "id": "am-019edb06-69bc-702c-9fab-9d3d1ff4d163",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "tormentor, tyrant, one who torments",
+          "new": "tormentor, one who torments"
+        }
+      },
+      "reason": "'tyrant' unsupported (only Peiniger)"
+    },
+    {
+      "Amt-Master-ID": "vaht",
+      "id": "am-019edb06-69c1-7f08-ab5e-a0f0f66aa9c3",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "watchman, guard (also doorkeeper)",
+          "new": "watchman, guard"
+        },
+        "DEF_et": {
+          "old": "vaht, valvur (ka uksevaht) (sks Wächter)",
+          "new": "vaht, valvur (sks Wächter)"
+        }
+      },
+      "reason": "doorkeeper sense unsupported"
+    },
+    {
+      "Amt-Master-ID": "vahva tööinimene",
+      "id": "am-019edb06-69c7-772f-ba21-972eba003525",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "tubli, töökas inimene (sks ein braver/fleissiger Arbeiter, arbeitsam)",
+          "new": "tubli, töökas inimene (sks ein guter/braver Arbeiter, arbeitsam)"
+        }
+      },
+      "reason": "'fleissiger Arbeiter' not attested"
+    },
+    {
+      "Amt-Master-ID": "vaim",
+      "id": "am-019edb06-69c8-7c8f-9fce-2336061a365c",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "vaim, kummitus; (Hupelil) jalategija, sulane/tööline (sks Geist, Gespenst; Fußarbeiter)",
+          "new": "vaim, kummitus; (Hupelil) jalateoline, sulane/tööline (sks Geist, Gespenst; Fußarbeiter)"
+        }
+      },
+      "reason": "'jalategija' not real (sweep); jalateoline as in abivaim"
+    },
+    {
+      "Amt-Master-ID": "vapper suu",
+      "id": "am-019edb06-69e3-7450-a0f9-87e9597f697f",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "lobiseja, latataja, suure suuga inimene (sks Plauderer)",
+          "new": "lobiseja, latatara, suure suuga inimene (sks Plauderer)"
+        }
+      },
+      "reason": "'latataja' -> 'latatara'"
+    },
+    {
+      "Amt-Master-ID": "varanduse ülevaataja",
+      "id": "am-019edb06-69e4-7f26-9eb0-cf755eee81c9",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "varahoidja, varanduse ülevaataja, laekur (saksakeelne vaste puudub)",
+          "new": "varahoidja, varanduse ülevaataja, laekur (sks Schatzmeister, Vogt)"
+        }
+      },
+      "reason": "missing (sks ...) citation"
+    },
+    {
+      "Amt-Master-ID": "varitseja",
+      "id": "am-019edb06-69e7-730d-9374-74c95184b77b",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "manual-unlogged",
+      "changes": {
+        "DEF_et": {
+          "old": "varitseja, salakaela luuraja (sks ein Laurer)",
+          "new": "varitseja, salaluuraja (sks ein Laurer)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "vastaline",
+      "id": "am-019edb06-69e9-7d3b-8434-52910a41be49",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "vastane, vastaline, vastutegija (sks Widersacher, entgegen, zuwider)",
+          "new": "vastane, vastaline, vastutegija (sks entgegen, zuwider)"
+        }
+      },
+      "reason": "'Widersacher' not attested"
+    },
+    {
+      "Amt-Master-ID": "vastuvõtja",
+      "id": "am-019edb06-69ec-7e07-9f25-1e9f3a702b87",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "varastatud kauba vastuvõtja, salakauba varjaja (sks Hehler)",
+          "new": "varastatud kauba vastuvõtja, varjaja (sks Hehler)"
+        }
+      },
+      "reason": "'salakaup' = contraband; Hehler deals in stolen goods"
+    },
+    {
+      "Amt-Master-ID": "veomeister",
+      "id": "am-019edb06-69f2-79b9-8a0d-31074309f905",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kaalumeister, vaekoja meister (sks Wägemeister)",
+          "new": "kaalumeister, vaekoja meister (sks Wagemeister)"
+        }
+      },
+      "reason": "source gloss is 'Wagemeister', not 'Wägemeister'"
+    },
+    {
+      "Amt-Master-ID": "vilajas inimene",
+      "id": "am-019edb06-69fc-70f1-9d44-ab9945fc7d45",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "pikaks kasvanud, sihvakas/longus inimene (sks ein lang aufgeschossener Mensch)",
+          "new": "pikaks kasvanud, sihvakas inimene (sks ein lang aufgeschossener Mensch)"
+        }
+      },
+      "reason": "'longus' unsupported by glosses"
+    },
+    {
+      "Amt-Master-ID": "võltsija",
+      "id": "am-019edb06-6a08-798a-a904-9a0881655e2a",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "valetaja, võltsija, pettja (sks Lügner)",
+          "new": "valetaja, võltsija, petja (sks Lügner)"
+        }
+      },
+      "reason": "misspelling 'pettja' -> 'petja'"
+    },
+    {
+      "Amt-Master-ID": "võõra usu mees",
+      "id": "am-019edb06-6a0d-76d3-a344-23d0d7f52bf6",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "ketser, võõrausuline, usutaganeja (sks Ketzer)",
+          "new": "ketser, võõrausuline (sks Ketzer)"
+        }
+      },
+      "reason": "'usutaganeja' unsupported; sole gloss 'ketzer'"
+    },
+    {
+      "Amt-Master-ID": "võõras",
+      "id": "am-019edb06-6a10-77cd-ac29-64e7553726d5",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "manual-unlogged",
+      "changes": {
+        "DEF_en": {
+          "old": "stranger, foreigner; guest",
+          "new": "stranger, foreigner; guest; pilgrim"
+        },
+        "DEF_et": {
+          "old": "võõras, võõramaalane; külaline (sks fremd, ein Gast)",
+          "new": "võõras, võõramaalane; külaline (sks fremd, ein Gast); palverändur"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "vöörmünder",
+      "id": "am-019edb06-6a18-7879-87af-af8603ae55f8",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "guardian (legal); church-warden, churchwarden-overseer",
+          "new": "guardian (legal); churchwarden, church overseer"
+        },
+        "DEF_et": {
+          "old": "eestkostja (vormünder); kirikuvöörmünder, kiriku eestseisja (sks Vormund, Kirchenvorsteher)",
+          "new": "eestkostja (vormünder); kirikuvöörmünder, kiriku eestseisja (sks Vormund, Vorsteher)"
+        }
+      },
+      "reason": "Kirchenvorsteher not attested (Hu: Wormund, Vorsteher)"
+    },
+    {
+      "Amt-Master-ID": "õige varas",
+      "id": "am-019edb06-6a1b-708c-8d00-a290e5564379",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "tõeline ülivaras, peavaras (sks ein Erzdieb)",
+          "new": "tõeline varas, paadunud varas (sks ein Erzdieb)"
+        }
+      },
+      "reason": "'ülemvaras', 'peavaras' not real words"
+    },
+    {
+      "Amt-Master-ID": "õitsiline",
+      "id": "am-019edb06-6a1d-7379-93fa-59b93811da03",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "õitsiline, öine hobusekarjus (õitsil olija) (saksakeelne vaste puudub)",
+          "new": "õitsiline, öine hobusekarjus (õitsil olija) (sks der Nachthüter bey Pferden)"
+        }
+      },
+      "reason": "claimed no German equivalent; Hupel glosses it"
+    },
+    {
+      "Amt-Master-ID": "õpetaja",
+      "id": "am-019edb06-6a22-74ac-bdc5-95c4b66311b4",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "õpetaja, õpetajameister; (ka) jutlustaja (sks Lehrmeister, Prediger)",
+          "new": "õpetaja; (ka) jutlustaja (sks Lehrmeister, Lehrer, Prediger)"
+        }
+      },
+      "reason": "'õpetajameister' not real; Lehrer gloss added"
+    },
+    {
+      "Amt-Master-ID": "öövaht",
+      "id": "am-019edb06-6a27-718c-8810-d37860b16369",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "öövaht, öine valvur (saksakeelne vaste puudub; vrd Nachtwächter)",
+          "new": "öövaht (sks Nachtwache)"
+        }
+      },
+      "reason": "gloss is Nachtwache, not Nachtwächter"
+    },
+    {
+      "Amt-Master-ID": "ülbe ja üleannetu inimene",
+      "id": "am-019edb06-6a29-7b5d-9ecc-cb6fe8346769",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "an insolent, impudent and mischievous person",
+          "new": "an insolent, impudent and cunning person"
+        },
+        "DEF_et": {
+          "old": "ülbe, jultunud ja üleannetu inimene (sks ein frecher, durchtriebener Mensch)",
+          "new": "ülbe, jultunud ja kaval inimene (sks ein frecher, durchtriebener Mensch)"
+        }
+      },
+      "reason": "durchtrieben = cunning, not mischievous (DWDS)"
+    },
+    {
+      "Amt-Master-ID": "ülem proua",
+      "id": "am-019edb06-6a30-7026-9878-150827e59ff6",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "kõrgest seisusest proua, ülik daam (sks eine vornehme Dame)",
+          "new": "kõrgest seisusest proua, suursugune daam (sks eine vornehme Dame)"
+        }
+      },
+      "reason": "'ülik daam' ungrammatical"
+    },
+    {
+      "Amt-Master-ID": "ümberviija",
+      "id": "am-019edb06-6a3a-710d-b56b-5faea948f123",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_en": {
+          "old": "one who leads/carries around, conveyor (transfers over)",
+          "new": "one who leads/carries around; one who leads across"
+        }
+      },
+      "reason": "'conveyor (transfers over)' unidiomatic"
+    },
+    {
+      "Amt-Master-ID": "üte maa mees",
+      "id": "am-019edb06-6a3c-7990-aed5-42a7a230c40e",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged",
+      "changes": {
+        "DEF_et": {
+          "old": "ühemaamees, kaasmaalane, sama maa mees (sks Landsmann)",
+          "new": "kaasmaalane, sama maa mees (sks Landesmann)"
+        }
+      },
+      "reason": "'ühemaamees' not real; gloss is Landesmann"
+    },
+    {
+      "Amt-Master-ID": "abikaasa",
+      "id": "am-019edb06-66a7-7025-93d8-9f6124b55dce",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "abikaasa, abielupartner (Stahlil 'abielunaine')",
+          "new": "abikaasa, abielupartner (Stahlil 'abielunaine') (sks Ehegatte, Gattin)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "abimees",
+      "id": "am-019edb06-66a9-7f2e-a623-d7a3f51a74fe",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "abiline, abistaja; ka 'abikaasa, abielumees' (Stahlil Ehemann, Vestringil Ehegatte); Gösekenil ka 'seaduseväänaja, halb advokaat'",
+          "new": "abiline, abistaja; ka 'abikaasa, abielumees' (Stahlil Ehemann, Vestringil Ehegatte); Gösekenil ka 'seaduseväänaja, halb advokaat' (sks Helfer, Gehülfe)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "aganakott",
+      "id": "am-019edb06-66b2-78bb-99fc-2bb83ddc56bf",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "kerjus (halvustav sõimusõna; sks Bettler)",
+          "new": "kerjus (halvustav sõimusõna) (sks Bettler)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "haug",
+      "id": "am-019edb06-66e5-7d01-8805-66bf289e3d02",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "narr, tobuke (Hupelil; sks Narr, Thor) — enamasti siiski kalanimetus 'haug'",
+          "new": "narr, tobuke (Hupelil) — enamasti siiski kalanimetus 'haug' (sks Narr, Thor)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "isandakene",
+      "id": "am-019edb06-6708-7aee-bcee-4c08536a019e",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "isandike, väike härra (deminutiiv; sks Herrchen)",
+          "new": "isandike, väike härra (deminutiiv) (sks Herrchen, Herrlein)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "isandike",
+      "id": "am-019edb06-6709-73dd-b4eb-edb1ce10155a",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "isandike, väike härra (deminutiiv; sks Herrchen)",
+          "new": "isandike, väike härra (deminutiiv) (sks Herrchen, Herrlein)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "jalapoisid",
+      "id": "am-019edb06-670e-7146-831d-a7b23cb611db",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "lakeid, jalapoisid (mitmus; sks Lackei)",
+          "new": "lakeid, jalapoisid (mitmus) (sks Lackey)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "kandijanne",
+      "id": "am-019edb06-6731-7955-8db2-a85efb901357",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "kandja, kandev inimene (poeetiline; sks ein Tragender)",
+          "new": "kandja, kandev inimene (poeetiline) (sks Tragender)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "kannikapoiss",
+      "id": "am-019edb06-6735-7e51-ab24-8db818299079",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "kerjus, sant (halvustav; sks Bettler, Scheltwort)",
+          "new": "kerjus, sant (halvustav) (sks Bettler)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "keelekandja",
+      "id": "am-019edb06-6748-7c90-b8f9-9bacc2b9507a",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "keelekandja, laimaja, pealekaebaja (Gösekenil 'lipitseja'; sks Verleumder, Ohrenbläser, Fuchsschwänzer)",
+          "new": "keelekandja, laimaja, pealekaebaja (Gösekenil 'lipitseja') (sks Ohrenbläser, Verläumder)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "kekk",
+      "id": "am-019edb06-674e-700d-a843-f6e487158bc1",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "narr, tobu (Gösekenil ka 'fanaatik'; sks Narr, Stocknarr, Tor, Schwärmer)",
+          "new": "narr, tobu (Gösekenil ka 'fanaatik') (sks Narr, Stocknarr)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "kihnumees",
+      "id": "am-019edb06-6759-7cec-ad23-677e9152383e",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "varas (mitte 'kihnlane'; sks Dieb)",
+          "new": "varas (mitte 'kihnlane') (sks Dieb)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "kirikumees",
+      "id": "am-019edb06-6764-783c-803a-b6745c7d82a2",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "kirikuteenija: kellamees, koerapeksja (mitte 'vaimulik'; sks Kirchenkerl, Glockenläuter, Hundeschläger)",
+          "new": "kirikuteenija: kellamees, koerapeksja (mitte 'vaimulik') (sks Kirchenkerl, Glockenläuter)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "kivinek",
+      "id": "am-019edb06-676b-7d10-855d-d2629cabe383",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "kiviraidur (halvustav nimetus; sks Steinhauer, Scheltwort)",
+          "new": "kiviraidur (halvustav nimetus) (sks Steinhauer)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "kohtuvanem",
+      "id": "am-019edb06-677b-7741-b425-1062399e0f7f",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "kohtuvanemad, ülemus, võimukandjad (mitmus; sks Obrigkeit)",
+          "new": "kohtuvanemad, ülemus, võimukandjad (mitmus) (sks Obrigkeit)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "koorilaulja",
+      "id": "am-019edb06-6787-7d87-81f6-b73188bad8a8",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "koorilauljad (mitmus; sks Chorsänger)",
+          "new": "koorilauljad (mitmus) (sks Chor singer)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "leivavanemad",
+      "id": "am-019edb06-67e0-7231-864e-00995b52718a",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "leivavanemad, isandad, tööandjad (keda teenitakse; mitmus; sks Herrschaft, Brodeltern)",
+          "new": "leivavanemad, isandad, tööandjad (keda teenitakse; mitmus) (sks Brodeltern, Herrschaft)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "liigrahvas",
+      "id": "am-019edb06-67e9-7bc2-af3f-b592c338f560",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "kohalviibijad, juuresolijad, tunnistajad (mitmus; sks Umstand des Volkes)",
+          "new": "kohalviibijad, juuresolijad, tunnistajad (mitmus) (sks umbstand des Volkes)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "lirva",
+      "id": "am-019edb06-67f1-70f7-9df3-78f0f99dfc90",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "lobiseja, latatara (ajalooline täh; sks Plaudertasche)",
+          "new": "lobiseja, latatara (ajalooline täh) (sks Plaudertasche)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "maamuusikas",
+      "id": "am-019edb06-6803-7d74-90cc-d553d7e5c806",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "mõrtsukas, tapja (mitte 'muusik'; sks Mörder)",
+          "new": "mõrtsukas, tapja (mitte 'muusik') (sks mörder)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "maarahvas",
+      "id": "am-019edb06-6804-7682-a716-fa2452499c59",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "maarahvas, talurahvas, eesti maainimesed (mitmus; sks die Bauern)",
+          "new": "maarahvas, talurahvas, eesti maainimesed (mitmus) (sks Bauern)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "maavanemad",
+      "id": "am-019edb06-6808-76a7-8598-62624ebc45ca",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "maavanemad, maanõunikud, ülemus (mitmus; sks Landräte, Obrigkeit)",
+          "new": "maavanemad, maanõunikud, ülemus (mitmus) (sks Landräthe, Obrigkeit)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "marterer",
+      "id": "am-019edb06-6813-7fc2-9e3e-c6242ed4ac98",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "märter, usukannataja",
+          "new": "märter, usukannataja (sks Martyrer)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "mungarahvas",
+      "id": "am-019edb06-6826-7bed-affb-a0f9ae6ef379",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "mungad, mungarahvas, paavstiusulised (mitmus; sks Papsttum)",
+          "new": "mungad, mungarahvas, paavstiusulised (mitmus) (sks Pabstumb)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "muusikas",
+      "id": "am-019edb06-682b-7767-8afc-9b854c96d399",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "mõrtsukas, tapja; maanteeröövel (mitte 'muusik'; sks Mörder, Buschklepper)",
+          "new": "mõrtsukas, tapja; maanteeröövel (mitte 'muusik') (sks mörder, Buschklepper)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "mõisavanemad",
+      "id": "am-019edb06-6831-7723-b74c-326e4ea71424",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "mõisarahvas, mõisaisandad, mõisavalitsejad (mitmus; sks Hofsherrschaft)",
+          "new": "mõisarahvas, mõisaisandad, mõisavalitsejad (mitmus) (sks Hofsherrschaft)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "neitsike",
+      "id": "am-019edb06-6852-7679-975f-f36087d8c993",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "neitsike, neiuke (deminutiiv; sks Jungferchen)",
+          "new": "neitsike, neiuke (deminutiiv) (sks Jungferchen)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "nobedad poisid",
+      "id": "am-019edb06-6859-77b7-bc06-1519024164f5",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "jooksupoisid, lakeid (mitmus; sks Lackei)",
+          "new": "jooksupoisid, lakeid (mitmus) (sks Lackey)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "nõumehed",
+      "id": "am-019edb06-6863-7553-aa48-c84bd02071a7",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "vandenõulased, salaliitlased, õhutajad (mitmus; sks die in einem Complot stehen, Urheber)",
+          "new": "vandenõulased, salaliitlased, õhutajad (mitmus) (sks die in einem Complot stehen, Urheber)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "paganarahvas",
+      "id": "am-019edb06-6878-7593-8f19-4938c1d00b2b",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "paganarahvas, paganad (mitmus; sks die Heiden, Heidentum)",
+          "new": "paganarahvas, paganad (mitmus) (sks Heiden, Heidenthum)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "pandimees",
+      "id": "am-019edb06-6882-7d3e-b4ad-ae958da6172a",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "üürileandja",
+          "new": "üürileandja (sks Pachtman, miehtman)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "pandisaks",
+      "id": "am-019edb06-6883-7524-a347-da1d6c507ef5",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "üürileandja",
+          "new": "üürileandja (sks Miehtman, der ligende Gründe vermietet)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "raad",
+      "id": "am-019edb06-68dd-7dcc-a839-352b7129e220",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_et": {
+          "old": "raad, linnavolikogu; ka raehärra (asutus v. ametiisik; sks Rat, Stadtrat, senatus)",
+          "new": "raad, linnavolikogu; ka raehärra (asutus v. ametiisik) (sks Rath, Stadtrath; ld senatus)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "sötiku istja",
+      "id": "am-019edb06-6949-7326-aa5d-a004ce2e9afc",
+      "interval": "backup-2026-07-13 -> current",
+      "provenance": "dq-round-2026-07-13",
+      "changes": {
+        "DEF_en": {
+          "old": "soldier in winter quarters, billeted soldier",
+          "new": "soldiers in winter quarters, billeted soldiers"
+        },
+        "DEF_et": {
+          "old": "talvekorteris istuv soldat, talvituv sõdur (sks Soldaten in Winterquartier)",
+          "new": "talvekorteris istuvad soldatid, talvituvad sõdurid (sks Soldaten in Winterquartier)"
+        }
+      }
+    },
+    {
+      "Amt-Master-ID": "jutustaja",
+      "id": "am-019f31d3-af34-7dd9-81bd-423d22a4e498",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged-no-baseline",
+      "changes": {
+        "DEF_en": {
+          "old": null,
+          "new": null
+        },
+        "DEF_et": {
+          "old": null,
+          "new": "jutlustaja (sks Prediger)"
+        }
+      },
+      "reason": "'prediker' not a real word",
+      "note": "Record added to the master after the 2026-06-17 snapshot; changelog gives the corrected reading only (null field = that field was not corrected)."
+    },
+    {
+      "Amt-Master-ID": "koorilaulja",
+      "id": "am-019edb06-6787-7d87-81f6-b73188bad8a8",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged-no-baseline",
+      "changes": {
+        "DEF_en": {
+          "old": null,
+          "new": null
+        },
+        "DEF_et": {
+          "old": null,
+          "new": "koorilauljad (mitmus; sks Chorsänger)"
+        }
+      },
+      "reason": "'korist' not a real word",
+      "note": "Record added to the master after the 2026-06-17 snapshot; changelog gives the corrected reading only (null field = that field was not corrected)."
+    },
+    {
+      "Amt-Master-ID": "kõrtsnik",
+      "id": "am-019f31d3-af36-7a5b-b3f6-942503a310cc",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged-no-baseline",
+      "changes": {
+        "DEF_en": {
+          "old": null,
+          "new": null
+        },
+        "DEF_et": {
+          "old": null,
+          "new": "kõrtsmik, kõrtsipidaja (sks Krüger)"
+        }
+      },
+      "reason": "'Wirt' not attested for this lemma",
+      "note": "Record added to the master after the 2026-06-17 snapshot; changelog gives the corrected reading only (null field = that field was not corrected)."
+    },
+    {
+      "Amt-Master-ID": "lesk",
+      "id": "am-019f31d3-af37-74fe-8466-f42ba51470c7",
+      "interval": "2026-06-17 -> review-2026-07-07",
+      "provenance": "llm-review-logged-no-baseline",
+      "changes": {
+        "DEF_en": {
+          "old": null,
+          "new": "widow or widower"
+        },
+        "DEF_et": {
+          "old": null,
+          "new": null
+        }
+      },
+      "reason": "widower sense attested (Ve, Hu, He; Sugu Ü)",
+      "note": "Record added to the master after the 2026-06-17 snapshot; changelog gives the corrected reading only (null field = that field was not corrected)."
+    }
+  ]
+}
