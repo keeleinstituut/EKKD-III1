@@ -13,7 +13,7 @@ MASTER = Path("Katus-ALUSANDMED/json-all/AMT-Master_annotated.json")
 
 ORDER = ["KÄSITÖÖ", "MORAAL_HÄLVE", "HALDUS_VÕIM", "TEENISTUS", "FEOD_MAA",
          "KIRIK_FUNKTSIOON", "KIRIK_VAIMULIK", "NÕID", "HARIDUS", "SUGU_REPRO",
-         "MÜÜT", "MUU"]
+         "MÜÜT", "OMADUS_SEOS_KUULUVUS"]
 
 rows = json.loads(MASTER.read_text(encoding="utf-8"))["AMT-Master"]
 total = len(rows)

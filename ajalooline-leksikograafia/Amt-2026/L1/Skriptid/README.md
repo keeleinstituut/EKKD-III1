@@ -2,9 +2,25 @@
 
 *Created: 2026-07-13 21-16-45 · Author: Madis Jürviste · Co-Authored-By: Claude Fable 5*
 
+Transparency companion to the doctoral dissertation (the *kappa*, Estonian
+*katuspeatükk*) on occupational titles and social roles in early Estonian
+lexicography — the dictionaries of Stahl (1637), Gutslaff (1648), Göseken
+(1660), Vestring (early 18th c.), Helle (1732) and Hupel (1780/1818).
+
 This folder collects, in one reviewable place, **every script used to build
 and analyse the L1 dataset** and **the audit logs of all machine-assisted
-(LLM) work** on it.
+(LLM) work** on it, so that reviewers and opponents can inspect what was
+done by hand, what was done by script, what was done by a language model —
+and how each machine contribution was checked.
+
+The Master dataset itself (AMT-Master: 866 lemmas / 1805 attestations /
+2054 linked word forms) is published alongside this folder as
+`../Andmestik/AMT-Master_annotated.json`; an excerpt is printed as Annex 1
+of the dissertation. The six harmonized edition JSONs are available from
+the author on request.
+
+Author: Madis Jürviste. Prepared 2026-07-13, updated 2026-08-27;
+pre-defence state.
 
 ---
 
@@ -12,7 +28,8 @@ and analyse the L1 dataset** and **the audit logs of all machine-assisted
 
 | folder | contents | kappa chapters |
 |---|---|---|
-| `core/` | the live data pipeline: source-edition converters, id injection, Master↔edition linkage, validation/verification, counting, report builders, the LexLex viewer builder and the Annex 1 printout builders | §3.1, §3.2, Annex 1 |
+| `core/` | the live data pipeline: source-edition converters, id injection, Master↔edition linkage, validation/verification, counting, report builders, the APTSK/VPTS overlap diff, the LexLex viewer builder and the Annex 1 printout builders | §3.1, §3.2, §4.1, Annex 1 |
+| `retrodigitization/` | OCR and conversion pipelines for the Hupel dictionaries (TEI-XML→TXT converters, web-dictionary generators, Claude-API batch OCR of the 1818 edition) and the APTSK/VPTS PDF→JSON pipeline behind the overlap analysis | ch. 2, §3.2, §4.1, publication P5 |
 | `annotation/` | annotation splicing for ch. 3 (Sem-Cat + definitions) and the ÜS/Sõnaveeb semantic-category transfer that replaced the machine-proposed categories | §3.1, §3.2 |
 | `analysis/` | ch. 4 analyses (semantic change, "ghost professions", §4.3 thematic tagging) and the generators of Tables 3–13 | §4.1–4.3, tables in ch. 3–4 |
 | `logs/` | the audit trail of every machine-assisted change to the dataset (see below) | §3.2 |
@@ -26,11 +43,22 @@ Markdown, `created`/`author`/`co_authored_by` meta keys in JSON). The
 Claude model named is the one active in the session(s) that produced or
 substantively edited the file, verified against session logs; files
 created under Claude Opus 4.8 (June 2026) and substantively edited under
-Claude Fable 5 (July 2026) name both.
+Claude Fable 5 (July–August 2026) name both. Exception: the Hupel
+pipelines in `retrodigitization/` (Nov 2025 – Mar 2026, before the
+session-log window used for verification): their `Created:` stamps are
+recovered from the original files' modification times in the archived
+subprojects, and — since per-file model attribution is not recoverable
+there — they carry **no** `Co-Authored-By:` trailer rather than an
+unverified one. These pipelines were developed in LLM-assisted workflows
+(described in publication P5); the Claude models named in the
+`hupel-1818-ocr/` filenames are the OCR engines the scripts invoke, not a
+statement about who wrote the scripts.
 
 `core/` scripts are the maintained pipeline and run from the original
-repository root (`uv run python scripts/<name>.py`, Python 3.12). The `annotation/` 
-and `analysis/` folders are collected copies of scripts that originally lived inside self-contained subprojects with their own data layouts; they are published for inspection and are not
+repository root (`uv run python scripts/<name>.py`, Python 3.12). The
+`retrodigitization/`, `annotation/` and `analysis/` folders are collected
+copies of scripts that originally lived inside self-contained subprojects
+with their own data layouts; they are published for inspection and are not
 runnable as-is from this folder. Successive versions (e.g. the
 `hupel-1780-convert-early/` experiments, `DO-NOT-USE-review_processor.py`)
 are included deliberately: the development history is part of the record.
@@ -78,7 +106,10 @@ Since 2026-07-13 the working repository is under version control, so all
 later changes to data and scripts carry a commit-level trail; the period
 before that is covered by the reconstructed changelog above, built from
 dated snapshots whose earliest DEF-bearing state (2026-06-12) precedes any
-editing.
+editing. The later steps from 870 to the canonical **866** lemmas (the
+author's manual review round of 2026-07-22: renames, three merges, one
+deletion, two sense narrowings) and the thematic/semantic retags of
+2026-08-10 are all commit-trailed there.
 
 ## Known limitations
 
@@ -87,3 +118,6 @@ editing.
   from archived snapshots but not itemized here.
 - The changelog reconstruction cannot see edits made and reverted between
   snapshots (details in the `meta.caveats` of the reconstructed changelog).
+- Re-running an edition converter regenerates that edition's uuids and
+  would break existing Master↔edition links; the linkage, counting and
+  report scripts are idempotent and safe to re-run.

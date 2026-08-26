@@ -9,6 +9,7 @@ Katus-tervik-WIP docx), page numbers bottom center in 12 pt starting at 55.
 
 Per entry:
     **Amt-Master-ID** <cross-source count>
+    DEF_et in italics, no label
     et: forms grouped case-insensitively, displayed lowercased, with
         chronological author labels (St, Gu, Gö, Ve, He, Hu)
     de: forms grouped case-insensitively, displayed with the earliest
@@ -108,6 +109,9 @@ def main() -> None:
         head = esc(entry["Amt-Master-ID"])
         count = esc(str(entry["Cross-source count"]).strip())
         lines.append(f"\\entryhead{{{head}}}{{{count}}}")
+        definition = entry.get("DEF_et", "").strip()
+        if definition not in PLACEHOLDERS:
+            lines.append(f"\\textit{{{esc(definition)}}}\\par")
         for lang in ("et", "de"):
             parts = [
                 f"{esc(form)} ({', '.join(labels)})"

@@ -2,81 +2,81 @@
 # Created: 2026-07-12 15-49-56
 # Author: Madis Jürviste
 # Co-Authored-By: Claude Fable 5
-"""Build Annex 1 dataset printout (DOCX) from AMT-Master_annotated.json.
+"""Build the thesis annex ("LISA. Väljavõte L1-andmestikust") entries as DOCX
+from AMT-Master_annotated.json.
 
-Mirrors build_annex1_printout.py (the PDF/tectonic build): A4, two columns,
-Times New Roman 11 pt, 1-inch margins, page numbers bottom center in 12 pt
-starting at 55. Entries share the same grouping logic via import.
+Entries only — no heading, no intro paragraphs — so the block can be pasted
+straight over the entry run in the thesis WIP docx. Layout replicates the
+annex as it sits in Katus-tervik-WIP (measured from Katus-20260807-WIP.docx):
+
+- Letter page (12240 x 15840 twips), 1-inch margins, header/footer 720 twips
+- two columns, 720-twip gap
+- Times New Roman 11 pt (sz 22), lang et-EE, noProof on every run
+- entry head: keepNext, hanging indent 220 twips, bold lemma, cross-source
+  count in Cambria Math angle brackets
+- DEF_et line: keepNext, flush left, italic
+- et:/de: lines: hanging indent 352 twips; keepNext on all but the entry's
+  last line, which instead carries 6 pt spacing after
+
+Output is date-stamped (LISA-L1-andmestik-uuendatud-YYYYMMDD.docx) in
+Katus-DRAFTS/Katus-tervik-WIP/. Grouping/label logic is shared with
+build_annex1_printout.py via import.
 """
 
-from docx import Document
-from docx.enum.section import WD_SECTION
-from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.oxml.ns import qn
-from docx.oxml import OxmlElement
-from docx.shared import Inches, Pt
-
-from build_annex1_printout import MASTER, OUT_DIR, grouped_forms
 import json
+from datetime import date
 
-DOCX = OUT_DIR / "Annex-1_AMT-Master-printout.docx"
+from docx import Document
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+from docx.shared import Pt, Twips
+
+from build_annex1_printout import MASTER, OUT_DIR, PLACEHOLDERS, grouped_forms
+
+DOCX = OUT_DIR / f"LISA-L1-andmestik-uuendatud-{date.today():%Y%m%d}.docx"
 
 FONT = "Times New Roman"
-BODY_PT = Pt(11)
-EM = Pt(11)  # 1 em at 11 pt
+MATH_FONT = "Cambria Math"
+BODY_PT = Pt(11)  # sz 22 half-points
 
 
-def set_two_columns(section, space_pt: int = 28) -> None:
+def set_two_columns(section, space_twips: int = 720) -> None:
     cols = section._sectPr.find(qn("w:cols"))
     if cols is None:
         cols = OxmlElement("w:cols")
         section._sectPr.append(cols)
     cols.set(qn("w:num"), "2")
-    cols.set(qn("w:space"), str(space_pt * 20))  # twips
+    cols.set(qn("w:space"), str(space_twips))
 
 
-def set_page_start(section, start: int) -> None:
-    pgnum = OxmlElement("w:pgNumType")
-    pgnum.set(qn("w:start"), str(start))
-    section._sectPr.append(pgnum)
-
-
-def add_page_field(paragraph) -> None:
-    run = paragraph.add_run()
-    run.font.name = FONT
-    run.font.size = Pt(12)
-    for tag, attrs, text in (
-        ("w:fldChar", {"w:fldCharType": "begin"}, None),
-        ("w:instrText", {"xml:space": "preserve"}, " PAGE "),
-        ("w:fldChar", {"w:fldCharType": "end"}, None),
-    ):
-        el = OxmlElement(tag)
-        for k, v in attrs.items():
-            el.set(qn(k), v)
-        if text is not None:
-            el.text = text
-        run._r.append(el)
-
-
-def styled(par, *, hang: Pt | None = None, after: Pt = Pt(0), keep_next=False):
+def styled(par, *, hang_twips: int | None = None, after: Pt = Pt(0), keep_next=False):
     pf = par.paragraph_format
     pf.space_before = Pt(0)
     pf.space_after = after
     pf.alignment = WD_ALIGN_PARAGRAPH.LEFT
-    pf.widow_control = True
     if keep_next:
         pf.keep_with_next = True
-    if hang is not None:
-        pf.left_indent = hang
-        pf.first_line_indent = -hang
+    if hang_twips is not None:
+        pf.left_indent = Twips(hang_twips)
+        pf.first_line_indent = -Twips(hang_twips)
     return par
 
 
-def run(par, text: str, *, bold=False, size=BODY_PT):
+def run(par, text: str, *, bold=False, italic=False, font=FONT):
     r = par.add_run(text)
-    r.font.name = FONT
-    r.font.size = size
-    r.bold = bold
+    r.font.name = font
+    rPr = r._r.get_or_add_rPr()
+    rPr.get_or_add_rFonts().set(qn("w:cs"), font)
+    rPr.append(OxmlElement("w:noProof"))
+    r.font.size = BODY_PT
+    if bold:
+        r.bold = True
+    if italic:
+        r.italic = True
+    lang = OxmlElement("w:lang")
+    lang.set(qn("w:val"), "et-EE")
+    rPr.append(lang)
     return r
 
 
@@ -89,49 +89,46 @@ def main() -> None:
     normal.font.size = BODY_PT
     normal.paragraph_format.space_after = Pt(0)
 
-    # section 1: full-width title
-    s1 = doc.sections[0]
-    s1.page_width, s1.page_height = Inches(8.27), Inches(11.69)  # A4
+    s = doc.sections[0]
+    s.page_width, s.page_height = Twips(12240), Twips(15840)  # Letter
     for side in ("top", "bottom", "left", "right"):
-        setattr(s1, f"{side}_margin", Inches(1))
-    s1.footer_distance = Inches(0.5)
-    set_page_start(s1, 55)
-
-    footer_par = s1.footer.paragraphs[0]
-    footer_par.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    add_page_field(footer_par)
-
-    title = styled(doc.add_paragraph(), after=Pt(10))
-    title.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run(title, "Annex 1. AMT-Master dataset", bold=True, size=Pt(14))
-
-    # section 2: two-column body, continuous break
-    s2 = doc.add_section(WD_SECTION.CONTINUOUS)
-    set_two_columns(s2)
+        setattr(s, f"{side}_margin", Twips(1440))
+    s.header_distance = Twips(720)
+    s.footer_distance = Twips(720)
+    set_two_columns(s, 720)
 
     for entry in data:
-        head = styled(doc.add_paragraph(), hang=EM, keep_next=True)
+        head = styled(doc.add_paragraph(), hang_twips=220, keep_next=True)
         run(head, entry["Amt-Master-ID"], bold=True)
-        run(head, f" ⟨{str(entry['Cross-source count']).strip()}⟩")
+        run(head, " ")
+        run(head, "⟨", font=MATH_FONT)
+        run(head, str(entry["Cross-source count"]).strip())
+        run(head, "⟩", font=MATH_FONT)
 
-        lang_pars = []
-        for lang in ("et", "de"):
+        body_pars = []
+        definition = entry.get("DEF_et", "").strip()
+        if definition not in PLACEHOLDERS:
+            par = styled(doc.add_paragraph())  # flush left
+            run(par, definition, italic=True)
+            body_pars.append(par)
+        for lang_code in ("et", "de"):
             parts = [
                 f"{form} ({', '.join(labels)})"
-                for form, labels in grouped_forms(entry, lang)
+                for form, labels in grouped_forms(entry, lang_code)
             ]
             if parts:
-                par = styled(doc.add_paragraph(), hang=Pt(17.6))  # 1.6 em
-                run(par, f"{lang}: {'; '.join(parts)}")
-                lang_pars.append(par)
-        if lang_pars:
-            lang_pars[0].paragraph_format.keep_with_next = len(lang_pars) > 1
-            lang_pars[-1].paragraph_format.space_after = Pt(6)  # medskip
+                par = styled(doc.add_paragraph(), hang_twips=352)
+                run(par, f"{lang_code}: {'; '.join(parts)}")
+                body_pars.append(par)
+        for par in body_pars[:-1]:
+            par.paragraph_format.keep_with_next = True
+        if body_pars:
+            body_pars[-1].paragraph_format.space_after = Pt(6)  # 120 twips
         else:
             head.paragraph_format.space_after = Pt(6)
 
     doc.save(DOCX)
-    print(f"wrote {DOCX}")
+    print(f"wrote {DOCX} ({len(data)} entries)")
 
 
 if __name__ == "__main__":

@@ -16,7 +16,7 @@ PLACE = {"", "---", "???", "NULL"}
 # (kuvanimi, JSON-võtmeprefiks, artikleid_täpne, artikleid_kuvatav)
 SOURCES = [
     ("Hupel 1780 et-de", "Hupel-1780-est-ger", 13732, "13 732"),
-    ("Göseken 1660",     "Göseken-1660",        9000, "~9 000"),
+    ("Göseken 1660",     "Göseken-1660",        9941, "9 941"),  # MJ 2026-08-10 WIP-docx correction (was ~9 000)
     ("Vestring ~1720",   "Vestring-17XX",       6953, "6 953"),
     ("Helle 1732",       "Helle-1732",          6400, "~6 400"),
     ("Stahl 1637",       "Stahl-1637",          2309, "~2 300"),

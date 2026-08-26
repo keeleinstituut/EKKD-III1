@@ -21,7 +21,7 @@ import sys
 
 JD = "Katus-ALUSANDMED/json-all"
 OUT = "Katus-ALUSANDMED/global-view/LexLex.html"
-VERSION = "v9"  # v9 2026-07-13: 870 records after MJ deletions; DQ fix run + ÜS Sem-Cat fold-in + Sugu policy; comments extracted to archive
+VERSION = "v10"  # v10 2026-07-22: 866 records after MJ manual review (renames, jekk→kekk / longus→lõngus / tunnistusemees→tunnistusmees merges, haug+tont narrowed to person senses, Hupel dialect markers stripped); CSC recomputed, backlinks regenerated; v10 refresh 2026-08-10: Teema MUU→OMADUS_SEOS_KUULUVUS retag (212), Sem-Cat retag (24), kihnumees K1→K2
 SOURCES = ["Stahl-1637", "Gutslaff-1648", "Göseken-1660",
            "Vestring-17XX", "Helle-1732", "Hupel-1780-est-ger"]
 PLACE = {"---", "???", "NULL", "", " "}            # not a real attestation

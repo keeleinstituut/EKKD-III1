@@ -2,6 +2,7 @@
 # Created: 2026-06-16 11-49-31
 # Author: Madis Jürviste
 # Co-Authored-By: Claude Opus 4.8
+# Co-Authored-By: Claude Fable 5
 """Ghost-profession screen for sub-chapter 4.3.
 
 Tests every master lemma against a modern Estonian frequency list to find
@@ -31,16 +32,15 @@ import csv
 import json
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent
-TAGGED = HERE / "AMT-Master_4-3-tagged.json"
-SRC_FALLBACK = HERE.parent / "Ptk-3" / "AMT-Master_annotated.json"
-FREQ_FILE = HERE / "lemmafreq-jan24.txt"
-OUT_CSV = HERE / "lookup-needed.csv"
+# Run from the repo root. 2026-08-10: repointed from the old Ptk-4 draft-folder
+# copies to the canonical master; the frequency list stays in the archive.
+MASTER = Path("Katus-ALUSANDMED/json-all/AMT-Master_annotated.json")
+FREQ_FILE = Path("Katuse-failide-arhiiv/Ptk-4/lemmafreq-jan24.txt")
+OUT_CSV = Path("scripts/ptk-4-analysis/lookup-needed.csv")
 
 
 def load_rows() -> list[dict]:
-    path = TAGGED if TAGGED.exists() else SRC_FALLBACK
-    return json.loads(path.read_text(encoding="utf-8"))["AMT-Master"]
+    return json.loads(MASTER.read_text(encoding="utf-8"))["AMT-Master"]
 
 
 def primary_form(amt_id: str) -> str:

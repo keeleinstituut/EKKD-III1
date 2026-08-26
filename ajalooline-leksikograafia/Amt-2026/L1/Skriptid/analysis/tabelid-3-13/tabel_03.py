@@ -16,7 +16,7 @@ PLACE = {"", "---", "???", "NULL"}
 SOURCES = [
     ("Stahl",    "DE-ET", "1637", "Stahl-1637",         "2309"),
     ("Gutslaff", "DE-ET", "1648", "Gutslaff-1648",      "1714"),
-    ("Göseken",  "DE-ET", "1660", "Göseken-1660",       "9000"),
+    ("Göseken",  "DE-ET", "1660", "Göseken-1660",       "9941"),  # MJ 2026-08-10 WIP-docx correction (was 9000)
     ("Vestring", "ET-DE", "17XX", "Vestring-17XX",      "6953"),
     ("Helle",    "ET-DE", "1732", "Helle-1732",         "6400"),
     ("Hupel",    "ET-DE", "1780", "Hupel-1780-est-ger", "13 732"),
