@@ -1,123 +1,53 @@
-# Katus — companion scripts and audit logs
+# Katuspeatükis kasutatud skriptid ja logid
 
-*Created: 2026-07-13 21-16-45 · Author: Madis Jürviste · Co-Authored-By: Claude Fable 5*
+*Uuendatud: 2026-08-27 · Autor: Madis Jürviste · Kasutatud keelemudel: Claude Fable 5*
 
-Transparency companion to the doctoral dissertation (the *kappa*, Estonian
-*katuspeatükk*) on occupational titles and social roles in early Estonian
-lexicography — the dictionaries of Stahl (1637), Gutslaff (1648), Göseken
-(1660), Vestring (early 18th c.), Helle (1732) and Hupel (1780/1818).
+Lisamaterjal MJ doktoriväitekirja katuspeatükile, mis käsitleb ametite ja sotsiaalsete rollide nimetusi vanemas eesti leksikograafias. Põhiallikateks on esimesed eesti keelt sisaldavad trükis avaldatud sõnastikud: Stahl (1637), Gutslaff (1648), Göseken (1660), Vestring (2000 [?1710–1730]), Helle (1732) ja Hupel (1780, 1818). Siinsesse repositooriumisse on kogutud skriptid, mida on kasutatud L1 andmestiku koostamiseks ja analüüsimiseks, samuti logid käsitsianalüüsi, skriptide toel ning SKMidega loodud sisu jälgimiseks.
 
-This folder collects, in one reviewable place, **every script used to build
-and analyse the L1 dataset** and **the audit logs of all machine-assisted
-(LLM) work** on it, so that reviewers and opponents can inspect what was
-done by hand, what was done by script, what was done by a language model —
-and how each machine contribution was checked.
-
-The Master dataset itself (AMT-Master: 866 lemmas / 1805 attestations /
-2054 linked word forms) is published alongside this folder as
-`../Andmestik/AMT-Master_annotated.json`; an excerpt is printed as Annex 1
-of the dissertation. The six harmonized edition JSONs are available from
-the author on request.
-
-Author: Madis Jürviste. Prepared 2026-07-13, updated 2026-08-27;
-pre-defence state.
+Koondandmestik (AMT-Master: 866 märksõna / 1805 esinemust / 2054 seotud sõnakuju) on avaldatud failina `../Andmestik/AMT-Master_annotated.json`. Andmestiku väljavõte on lisatud katuspeatüki teksti lisas.
 
 ---
 
-## Layout
+## Ülesehitus
 
-| folder | contents | kappa chapters |
+| kaust | sisu | seos katuspeatükiga |
 |---|---|---|
-| `core/` | the live data pipeline: source-edition converters, id injection, Master↔edition linkage, validation/verification, counting, report builders, the APTSK/VPTS overlap diff, the LexLex viewer builder and the Annex 1 printout builders | §3.1, §3.2, §4.1, Annex 1 |
-| `retrodigitization/` | OCR and conversion pipelines for the Hupel dictionaries (TEI-XML→TXT converters, web-dictionary generators, Claude-API batch OCR of the 1818 edition) and the APTSK/VPTS PDF→JSON pipeline behind the overlap analysis | ch. 2, §3.2, §4.1, publication P5 |
-| `annotation/` | annotation splicing for ch. 3 (Sem-Cat + definitions) and the ÜS/Sõnaveeb semantic-category transfer that replaced the machine-proposed categories | §3.1, §3.2 |
-| `analysis/` | ch. 4 analyses (semantic change, "ghost professions", §4.3 thematic tagging) and the generators of Tables 3–13 | §4.1–4.3, tables in ch. 3–4 |
-| `logs/` | the audit trail of every machine-assisted change to the dataset (see below) | §3.2 |
-| `SCHEMA.md` | frozen schema of the edition JSONs and the Master, incl. the column→field maps per source and the Sugu (gender) tagging policy | §3.1 |
+| `core/` | töös olev andmetöötlusahel: allikaväljaannete konverterid, id-de lisamine, Master JSONi ja väljaannete linkimine, valideerimine ja kontroll, loendamine, vaheanalüüsid, kattuvusvõrdlus VPTSiga, LexLexi prototüübi koostamise skript ning lisa 1 trükiväljavõtte konverteerimise skriptid | §3.1, §3.2, §4.1, lisa |
+| `retrodigitization/` | Hupeli sõnaraamatute tärktuvastuse ja konverteerimise skriptid (TEI-XML→TXT-konverterid, veebisõnastike generaatorid, 1818. aasta väljaande OCRi API-masspäringuskriptid) ning kattuvusanalüüsi aluseks olev VPTSi PDF→JSON-tööahel | ptk 2, §3.2, §4.1, publikatsioon P5 |
+| `annotation/` | 3. peatüki annotatsioonide ühendamine (Sem-Cat + definitsioonid) ning ÜSi/Sõnaveebi semantiliste kategooriate lisamine, millega asendati SKMi genereeritud kategooriad | §3.1, §3.2 |
+| `analysis/` | 4. peatüki analüüsid (tähendusmuutused, „kummitusametid", §4.3 temaatiline märgendamine) ning tabelite 3–13 generaatorid | §4.1–4.3, ptk 3–4 tabelid |
+| `logs/` | kõigi masintoega andmestikumuudatuste auditijälg (vt allpool) | §3.2 |
+| `SCHEMA.md` | väljaande-JSONide ja Masteri andmeskeem, sh iga allika veergude ja väljade vastavustabelid ning sootunnuse (`Sugu`) märgendamise põhimõtted | §3.1 |
 
-Every file here carries a provenance stamp in git convention —
-`Created:` (original modification time), `Author: Madis Jürviste`, and one
-`Co-Authored-By: Claude <model>` trailer per AI
-model involved (a header comment in scripts and HTML, an italic line in
-Markdown, `created`/`author`/`co_authored_by` meta keys in JSON). The
-Claude model named is the one active in the session(s) that produced or
-substantively edited the file, verified against session logs; files
-created under Claude Opus 4.8 (June 2026) and substantively edited under
-Claude Fable 5 (July–August 2026) name both. Exception: the Hupel
-pipelines in `retrodigitization/` (Nov 2025 – Mar 2026, before the
-session-log window used for verification): their `Created:` stamps are
-recovered from the original files' modification times in the archived
-subprojects, and — since per-file model attribution is not recoverable
-there — they carry **no** `Co-Authored-By:` trailer rather than an
-unverified one. These pipelines were developed in LLM-assisted workflows
-(described in publication P5); the Claude models named in the
-`hupel-1818-ocr/` filenames are the OCR engines the scripts invoke, not a
-statement about who wrote the scripts.
+Igal siin repositooriumis talletatud failil on git'i tavapärane päritolutempel — `Created:` (faili algne muutmisaeg), `Author: Madis Jürviste` ning iga osalenud tehisintellektimudeli kohta üks rida `Co-Authored-By: Claude <mudel>` (skriptides ja HTML-failides päisekommentaarina, Markdownis kaldkirjareana, JSONis metaväljadena `created`/`author`/`co_authored_by`). Nimetatud Claude'i mudel on see, mis oli aktiivne seansis või seanssides, kus fail loodi või kus seda sisuliselt muudeti; andmed on kontrollitud seansilogide põhjal. Failid, mis on loodud Claude Opus 4.8-ga (juunis 2026) ja mida on sisuliselt muudetud Claude Fable 5-ga (juuli–august 2026), nimetavad mõlemat mudelit. Erandiks on Hupeli töövoo ahelad kaustas `retrodigitization/` (november 2025 – märts 2026, st enne kontrollimiseks kasutatud seansilogide perioodi algust): nende `Created:`-templid on taastatud algfailide muutmisaegadest arhiveeritud alamprojektides ning kuna failipõhine mudeli omistamine ei ole seal taastatav, ei sisalda need ühtegi `Co-Authored-By:` rida. Need ahelad on välja töötatud keelemudeli toega töövoogudes (kirjeldatud publikatsioonis P5); kausta `hupel-1818-ocr/` failinimedes nimetatud Claude'i mudelid on OCRi-tööriistad, mida skriptid välja kutsuvad, mitte väide skriptide autorsuse kohta.
 
-`core/` scripts are the maintained pipeline and run from the original
-repository root (`uv run python scripts/<name>.py`, Python 3.12). The
-`retrodigitization/`, `annotation/` and `analysis/` folders are collected
-copies of scripts that originally lived inside self-contained subprojects
-with their own data layouts; they are published for inspection and are not
-runnable as-is from this folder. Successive versions (e.g. the
-`hupel-1780-convert-early/` experiments, `DO-NOT-USE-review_processor.py`)
-are included deliberately: the development history is part of the record.
+Kausta `core/` skriptid moodustavad andmetöötlusahela ja käivituvad algse repositooriumi juurkataloogist (`uv run python scripts/<nimi>.py`, Python 3.12). Kaustad `retrodigitization/`, `annotation/` ja `analysis/` sisaldavad koopiaid skriptidest, mis algselt asusid iseseisvates, oma andmepaigutusega alamprojektides; need on avaldatud ülevaatamiseks ega ole sellest kaustast muutmata kujul käivitatavad. Järjestikused versioonid (nt katsetused kaustas `hupel-1780-convert-early/`, fail `DO-NOT-USE-review_processor.py`) on kaasatud teadlikult skriptide arengu jälgimiseks.
 
-## How this maps to the kappa
+## Seos katuspeatükiga
 
-- **§3.1 (the dataset).** Manual excerption produced the lemma inventory;
-  the `core/convert_*.py` scripts turn the six source editions and the
-  Master spreadsheet into harmonized JSON (schema in `SCHEMA.md`);
-  `inject_*_ids.py`, `link_master*.py` and `reverse_links.py` build the
-  id-based Master↔edition linkage (tiered, precision-first);
-  `validate_master.py`, `verify_all.py` and `recompute_crosssource.py`
-  enforce schema, id-uniqueness and attestation-count invariants.
-- **§3.2 (method).** The three-method design — manual collection,
-  Python scripting, LLM assistance — corresponds to this folder's
-  structure: everything scripted is here, and everything LLM-assisted is
-  logged in `logs/`.
-- **§4.1–4.3.** `analysis/ptk-4-analysis/` holds the semantic-change
-  candidate extraction, the frequency screening against a modern lemma
-  list, and the four-axis thematic tagger for §4.3 with its manual-review
-  fold-in; `analysis/tabelid-3-13/` regenerates every numbered table.
-- **Annex 1 and LexLex.** `core/build_annex1_*.py` produce the printed
-  dataset excerpt; `core/build_viewer.py` builds LexLex (Lexicon Lexicorum
-  Esthonicorum), the self-contained HTML portal used to work with the
-  dataset.
+- **§3.1 (andmestik).** Märksõnad on välja valitud käsitsi. Skriptid `core/convert_*.py` teisendavad kuus allikaväljaannet ja Master-faili tabeli ühtlustatud JSONiks (skeem failis `SCHEMA.md`); `inject_*_ids.py`, `link_master*.py` ja `reverse_links.py` ehitavad id-põhise Masteri JSONi ja väljaannete linkimise (astmeline, täpsus esikohal); `validate_master.py`, `verify_all.py` ja `recompute_crosssource.py` jõustavad skeemi, id-de unikaalsuse ja esinemusloendite invariandid.
+- **§3.2 (meetod).** Kolme meetodi ülesehitus — käsitsi kogumine, Pythoni skriptid, keelemudeli tugi — vastab selle kausta struktuurile: kõik skriptidega tehtu on siin ning kõik keelemudeli toel tehtu on logitud kaustas `logs/`.
+- **§4.1–4.3.** Kaustas `analysis/ptk-4-analysis/` on tähendusmuutuse kandidaatide eraldamine, sagedusfilter tänapäevase lemmaloendi suhtes ning §4.3 nelja teljega temaatiline märgendaja koos käsitsi ülevaatuse tulemuste sissekandmisega; `analysis/tabelid-3-13/` genereerib uuesti
+  kõik nummerdatud tabelid.
+- **Lisa ja LexLex.** Skriptid `core/build_annex1_*.py` koostavad andmestiku trükiväljavõtte; `core/build_viewer.py` ehitab LexLexi
+  (*Lexicon Lexicorum Esthonicorum*), iseseisva HTML-portaali, mida on kasutatud andmestikuga töötamiseks.
 
-## The LLM audit trail (`logs/`)
+## Keelemudelitöö auditijälg (`logs/`)
 
-Machine-generated content entered the dataset at three points: OCR of the
-source scans, the English/Estonian definitions (`DEF_en`/`DEF_et`), and
-proposal-stage semantic categories (later replaced entirely by curated
-ÜS/Sõnaveeb tags). The definitions are the fully logged case:
+Masinloodud sisu jõudis andmestikku kolmes kohas: allikaskaneeringute OCR, inglis- ja eestikeelsed definitsioonid (`DEF_en`/`DEF_et`) ning ettepanekujärgus semantilised kategooriad (hiljem täielikult asendatud ÜSi/Sõnaveebi kureeritud märgenditega). Definitsioonid on täies mahus logitud:
 
-| file | what it records |
+| fail | mida see dokumenteerib |
 |---|---|
-| `DEF-changelog_reconstructed-full_20260713.json` | **The master audit document.** All 191 definition changes from the initial LLM generation (Claude Opus, baseline snapshot 2026-06-12) to the canonical dataset, each with old/new readings and provenance: 144 corrections from the logged LLM-as-judge review pass, 13 manual author edits reconstructed by snapshot diff, 34 changes from the documented data-quality round of 2026-07-13. Caveats are stated in its `meta` block. |
-| `DEF-review_changelog_20260707.json` | The logged LLM-as-judge pass itself: every machine definition critically reviewed by a newer model (Claude Fable) against the sources' attested German glosses plus DWDS/EKSS/Sõnaveeb; 144 corrected entries with per-change reasons. |
-| `DEF-review_emendationes_20260707.html` | Human-readable apparatus-style rendering of those 144 corrections (old reading struck, new reading; filterable: wording 77 / meaning 46 / German citation 21). |
-| `DQ-fixes-changelog_2026-07-13.md` | Data-quality round of 2026-07-13: the T1–T20 and D1–D12 fixes, incl. the 12 record deletions (886 → 870). |
-| `Sugu-policy-review_2026-07-13.md` | Full audit of the gender (`Sugu`) field against the tagging policy: all 263 M and 60 N records re-checked against the attested glosses; 3 changed, borderline cases listed for decision. |
-| `EXECUTION-REPORT_semcat-fold-in_20260712.md` | Replacement of the machine-proposed semantic categories with person-type tags from the ÜS/Sõnaveeb database (810 records mapped directly, 72 decided manually). |
-| `linkage_report.json`, `linkage_fuzzy_report.json` | Machine-readable reports of the tiered Master↔edition linkage runs (per-tier match counts, unresolved tail). |
+| `DEF-changelog_reconstructed-full_20260713.json` | **Auditi põhidokument.** Kõik 191 definitsioonimuudatust alates esialgsest keelemudeli genereeritud sisust (Claude Opus, lähteseis 2026-06-12) kuni lõpliku andmestikuni, igaüks koos vana ja uue lugemi ning päritoluga: 144 parandust logitud LLM-hindaja (*LLM-as-judge*) ülevaatusvoorust, 13 autori käsitsi tehtud parandust, mis on taastatud snapshot'ide võrdluse teel, ning 34 muudatust 2026-07-13 dokumenteeritud andmekvaliteedivoorust. Reservatsioonid on esitatud faili `meta`-plokis. |
+| `DEF-review_changelog_20260707.json` | Logitud LLM-hindaja ülevaatus ise: iga masindefinitsioon on kriitiliselt üle vaadatud uuema mudeliga (Claude Fable), võrreldes allikates atesteeritud saksa vastetega ning DWDSi/EKSSi/Sõnaveebiga; 144 parandatud kirjet koos muudatusepõhiste põhjendustega. |
+| `DEF-review_emendationes_20260707.html` | Nende 144 paranduse inimloetav, tekstikriitilise aparaadi laadis esitus (vana lugem läbikriipsutatuna, kõrval uus; filtreeritav: sõnastus 77 / tähendus 46 / saksa tsitaat 21). |
+| `DQ-fixes-changelog_2026-07-13.md` | 2026-07-13 andmekvaliteedivoor: parandused, sh 12 kirje kustutamine (886 → 870). |
+| `Sugu-policy-review_2026-07-13.md` | Soovälja (`Sugu`) täielik audit märgendamispõhimõtete suhtes: kõik 263 M- ja 60 N-kirjet on atesteeritud vastete põhjal uuesti üle kontrollitud; 3 muudetud, piiripealsed juhtumid on loetletud otsustamiseks. |
+| `EXECUTION-REPORT_semcat-fold-in_20260712.md` | Masina pakutud semantiliste kategooriate asendamine ÜSi/Sõnaveebi andmebaasi isikutüübimärgenditega (810 kirjet vastendatud otse, 72 otsustatud käsitsi). |
+| `linkage_report.json`, `linkage_fuzzy_report.json` | Masinloetavad aruanded Master JSONi ja väljaannete astmelise linkimise käitustest (vastete arv astmete kaupa, lahendamata jääk). |
 
-Since 2026-07-13 the working repository is under version control, so all
-later changes to data and scripts carry a commit-level trail; the period
-before that is covered by the reconstructed changelog above, built from
-dated snapshots whose earliest DEF-bearing state (2026-06-12) precedes any
-editing. The later steps from 870 to the canonical **866** lemmas (the
-author's manual review round of 2026-07-22: renames, three merges, one
-deletion, two sense narrowings) and the thematic/semantic retags of
-2026-08-10 are all commit-trailed there.
+## Teadaolevad piirangud
 
-## Known limitations
-
-- The audit logs cover the `DEF`, `Sugu` and `Sem-Cat` fields and the
-  linkage; manual edits to other fields before 2026-07-13 are diffable
-  from archived snapshots but not itemized here.
-- The changelog reconstruction cannot see edits made and reverted between
-  snapshots (details in the `meta.caveats` of the reconstructed changelog).
-- Re-running an edition converter regenerates that edition's uuids and
-  would break existing Master↔edition links; the linkage, counting and
-  report scripts are idempotent and safe to re-run.
+- Auditilogid katavad väljad `DEF`, `Sugu` ja `Sem-Cat` ning linkimise; enne 2026-07-13 muudes väljades tehtud käsitsi parandused on arhiveeritud snapshot'ide põhjal võrreldavad, kuid siin ükshaaval loetlemata.
+- Muudatuslogi taastamine ei näe muudatusi, mis on tehtud ja tagasi võetud kahe snapshot'i vahel (üksikasjad taastatud muudatuslogi väljas `meta.caveats`).
+- Väljaandekonverteri uuesti käivitamine genereeriks selle väljaande uuid-d uuesti ja lõhuks olemasolevad Masteri↔väljaande lingid; linkimis-, loendus- ja aruandeskriptid on idempotentsed ning neid on ohutu uuesti käivitada.
