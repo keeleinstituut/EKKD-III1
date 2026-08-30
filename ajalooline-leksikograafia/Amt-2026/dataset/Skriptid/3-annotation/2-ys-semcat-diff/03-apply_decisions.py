@@ -1,0 +1,548 @@
+#!/usr/bin/env python3
+# Created: 2026-07-06 18-54-11
+# Author: Madis Jürviste
+# Co-Authored-By: Claude Fable 5
+"""Semantic-synonym sweep: apply per-lemma decisions to the match report.
+
+For each pending-tier row, DECISIONS gives an ordered candidate chain chosen
+from the lemma's DEF_et/DEF_en (AMT-Master_annotated_REVIEW.json). The first
+candidate present in the ÜS lemma list wins (tier column is kept as provenance,
+matching the author's manual-edit convention). Rows not in DECISIONS keep their
+current candidate, but every candidate is validated against ÜS and flagged if
+absent. Finally the SQL IN-list query is regenerated from the updated TSV.
+"""
+import json
+import re
+from pathlib import Path
+
+# Original working-repo data layout (not included in the public repository).
+BASE = Path("Katus-ALUSANDMED/YS-Master-semcat-diff/Lemmas")
+# NB: the TSV below is both input and output — it is overwritten in place with
+# no backup. A second run against a hand-edited copy silently re-applies
+# DECISIONS; keep a copy first if re-running.
+TSV = BASE / "AMT-YS-match-report_20260706.tsv"
+
+ys_set = set()
+for ln in (BASE / "YS-lemmad_20260506.txt").open(encoding="utf-8"):
+    w = re.sub(r" \d+$", "", ln.strip())
+    if w:
+        ys_set.add(w)
+ys_ci = {}
+for w in ys_set:
+    ys_ci.setdefault(w.lower(), w)
+
+# lemma -> ordered candidate chain (first ÜS hit wins)
+DECISIONS = {
+    "abtiemand": ["abtiss"],
+    "aitaja": ["abistaja"],
+    "alevisulane": ["kohtuteener"],
+    "allakorraline": ["mõisatööline", "tööline"],
+    "ammulaskja": ["vibulaskja", "vibukütt"],
+    "auteotaja": ["teotaja", "laimaja", "pilkaja"],
+    "avitaja": ["aitaja", "abistaja"],
+    "eeljooksja": ["eelkäija"],
+    "eelsõitja": ["eessõitja"],
+    "eesjooksja": ["eelkäija"],
+    "eespajataja": ["eestkostja"],
+    "eksija": ["eksinu", "patune"],
+    "eksinud mees": ["tapja"],
+    "eksinud naisterahvas": ["hoor"],
+    "eksitaja": ["võrgutaja", "ahvatleja", "meelitaja", "kiusaja"],
+    "emandatüdruk": ["toatüdruk"],
+    "essitaja": ["ässitaja"],
+    "ettejooksja": ["eelkäija"],
+    "ettekostja": ["eestkostja"],
+    "ettepajataja": ["eestkostja"],
+    "etteseisja": ["eestseisja"],
+    "ettetõstja": ["ettelõikaja", "ettekandja"],
+    "heikaja": ["hüüdja"],
+    "hirmutaja": ["karistaja", "nuhtleja", "kasvataja"],
+    "hoonepõletaja": ["süütaja"],
+    "hoorapealne": ["kupeldaja"],
+    "hooraperemees": ["bordellipidaja", "kupeldaja"],
+    "hooraperenaine": ["kupeldaja"],
+    "hoorapidaja": ["kupeldaja"],
+    "hoorasaadik": ["kupeldaja"],
+    "hoorasundija": ["kupeldaja"],
+    "hoovimeister": ["majavalitseja", "ülevaataja"],
+    "hukataja": ["prassija"],
+    "hukkaja": ["prassija"],
+    "huutler": ["soperdaja", "käsitööline"],
+    "hädaajaja": ["hädaline"],
+    "igavene sulane": ["pärisori"],
+    "ilma usklik": ["uskmatu"],
+    "imetaja naine": ["amm"],
+    "isandakene": ["isand"],
+    "isandike": ["isand"],
+    "isetalumees": ["talupidaja"],
+    "istja": ["sõdur"],
+    "jalapoisid": ["lakei", "teener"],
+    "jekk": ["narr"],
+    "Jumala sunnitav": ["kohtualune"],
+    "jutleja": ["jutlustaja"],
+    "järelekuulaja": ["järelevaataja"],
+    "kaarman": ["voorimees"],
+    "kaasnaine": ["liignaine"],
+    "kaasori": ["kaasteenija"],
+    "kaassulane": ["kaasteenija"],
+    "kaassundija": ["kaasistuja"],
+    "kaeja": ["selgeltnägija"],
+    "kahtja": ["värvija"],
+    "kalliskivikaupmees": ["juveliir"],
+    "kambrisulane": ["kammerteener"],
+    "kammerer": ["kammerhärra"],
+    "kandijanne": ["kandja"],
+    "kannikapoiss": ["kerjus"],
+    "kapsaaiamees": ["aednik"],
+    "karistaja": ["nuhtleja", "kasvataja"],
+    "kasuvõtja": ["liigkasuvõtja"],
+    "kasvatik": ["kasvandik"],
+    "katlasepp": ["katelsepp"],
+    "katuselaua kiskuja": ["sindlitegija", "käsitööline"],
+    "kedranaine": ["ketraja"],
+    "keelekoer": ["keelepeksja"],
+    "keelekurn": ["keelepeksja"],
+    "keisriproua": ["keisrinna"],
+    "keldrimeister": ["kelner"],
+    "kellakuuljad": ["elanik"],
+    "kellapeksja": ["kellamees"],
+    "kepimees": ["kirikuteenija"],
+    "kerja": ["kerjus"],
+    "kihnumees": ["varas"],
+    "kingsepa sulane": ["sell"],
+    "kinker": ["kõrtsmik"],
+    "kirikuisand": ["pastor"],
+    "kirikuvanem": ["eestseisja"],
+    "kivinek": ["kiviraidur"],
+    "kivitakar": ["kiviraidur"],
+    "klaasisepp": ["klaassepp"],
+    "koategija": ["ehitaja"],
+    "kodapoolik": ["pops"],
+    "kodapooline": ["pops"],
+    "koeraselts": ["pööbel"],
+    "kohtuisand": ["kohtunik"],
+    "kohtusulane": ["kohtuteener"],
+    "kohtuvanem": ["ülemus"],
+    "kojaisand": ["majaisand"],
+    "kokaemand": ["naiskokk"],
+    "kokanaine": ["naiskokk"],
+    "koogipagar": ["kondiiter"],
+    "koolipealne": ["abiõpetaja"],
+    "kooljamatja": ["hauakaevaja"],
+    "krahviisand": ["krahv"],
+    "kriivel": ["advokaat"],
+    "kriivlipoiss": ["kirjutaja"],
+    "kuningaemand": ["kuninganna"],
+    "kuningamees": ["sõdur"],
+    "kuningaproua": ["kuninganna"],
+    "kunsikas": ["nõid"],
+    "kunstimees": ["kunstnik"],
+    "kuntskop": ["maakuulaja"],
+    "kuppar": ["kupulaskja"],
+    "kupparimoor": ["kupulaskja"],
+    "kuradikunstlik": ["mustkunstnik"],
+    "kuri algkäija": ["ninamees"],
+    "kuulutaja": ["jutlustaja"],
+    "kõhkler": ["silmamoondaja"],
+    "kõigist varastest vargam": ["suurvaras", "peavaras", "varas"],
+    "kõrgpreester": ["ülempreester"],
+    "kõrtsnik": ["kõrtsmik"],
+    "käraisand": ["isand"],
+    "kärpleja": ["võitleja"],
+    "käsutundja": ["seadusetundja"],
+    "külakubjas": ["külavanem"],
+    "külalähk": ["nõid"],
+    "külavardja": ["külavanem"],
+    "kümnisemees": ["maksukoguja"],
+    "künnipoiss": ["kündja", "poiss"],
+    "küpsja": ["kokk"],
+    "laeva valitseja": ["tüürimees"],
+    "laevasulane": ["madrus", "aerutaja"],
+    "laevavanem": ["laevajuht"],
+    "lahti mees": ["poissmees"],
+    "lakkuja": ["joodik"],
+    "lakkuja mees": ["logeleja"],
+    "lakukoer": ["joodik"],
+    "lambrine": ["lambur"],
+    "lapse kaela murdja": ["lapsetapja"],
+    "lapselootaja": ["aborditegija", "abortöör", "lapsetapja"],
+    "laudamees": ["õigusemõistja"],
+    "leehoidja": ["ülevaataja"],
+    "leinanaine": ["leinaja"],
+    "leivavanemad": ["tööandja", "isand"],
+    "lepingumees": ["liitlane"],
+    "lepingupidaja": ["liitlane"],
+    "liigmees": ["vahemees"],
+    "liigrahvas": ["juuresolija", "pealtvaataja", "tunnistaja"],
+    "linarabaja": ["linaropsija"],
+    "linnakrapp": ["lobiseja"],
+    "lummaja": ["nõid"],
+    "läbinägija": ["ennustaja"],
+    "lähk": ["nõid"],
+    "lämmija": ["nõid"],
+    "maahulkuja": ["hulkur"],
+    "maajooksja": ["jooksik"],
+    "maamuusikas": ["mõrtsukas"],
+    "maasulane": ["mõisavalitseja"],
+    "maasundija": ["maavalitseja"],
+    "maavanemad": ["maanõunik", "ülemus"],
+    "majainimene": ["majapidaja"],
+    "majamees": ["majapidaja"],
+    "manrihter": ["maakohtunik"],
+    "marjaline": ["marjuline"],
+    "marterer": ["märter"],
+    "mees oma naha sees": ["uhkeldaja", "uhkustaja", "mees"],
+    "meeste piddäja": ["sodomiit"],
+    "meheeksja": ["mehetapja"],
+    "mesilistemees": ["mesinik"],
+    "mesimees": ["mesinik"],
+    "metsmuusikas": ["maanteeröövel"],
+    "missapapp": ["preester"],
+    "mullikavaataja": ["karjus"],
+    "mungarahvas": ["munk"],
+    "musketimees": ["musketär"],
+    "muundaja": ["silmamoondaja"],
+    "muusikas": ["mõrtsukas"],
+    "mõisakekk": ["õuenarr"],
+    "mõisasulane": ["mõisateener"],
+    "mõisatohter": ["ihuarst"],
+    "mõisavaht": ["valvur"],
+    "mõisavanemad": ["mõisnik", "mõisavalitseja"],
+    "mõisnikuemand": ["aadlidaam"],
+    "mõisnikusulane": ["teener"],
+    "mõrtsuk": ["mõrtsukas"],
+    "mängimees": ["pillimees"],
+    "mässutegija": ["mässaja"],
+    "müütnik": ["tollnik", "tolliametnik", "maksukoguja"],
+    "naharookija": ["parkal"],
+    "nahksepp": ["parkal"],
+    "naiseropsija": ["naisepeksja", "peksja"],
+    "naiseta mees": ["poissmees"],
+    "naiseta poiss": ["poissmees"],
+    "nartsakas": ["kaltsakas", "inimene"],
+    # curser/Flucher: no agent noun in ÜS (sajataja, vanduja, kiruja, ropendaja
+    # all absent) — pilkaja is the closest available person noun; REVIEW
+    "needja": ["sajataja", "vanduja", "kiruja", "pilkaja"],
+    "neitsike": ["neiuke"],
+    "nikker": ["tisler"],
+    "nikker mees": ["nikerdaja"],
+    "nobedad poisid": ["jooksupoiss", "teener"],
+    "noolelaskja": ["vibukütt"],
+    "nurgamees": ["töömees"],
+    "nurges mees": ["töömees"],
+    "nõudja": ["salakuulaja"],
+    "nõumehed": ["vandenõulane"],
+    "nülgija": ["nahanülgija"],
+    "opja poiss": ["õpilane"],
+    "orjaja": ["teener"],
+    "orjane": ["teener"],
+    "orjapoiss": ["teenijapoiss", "teener"],
+    "orjatüdruk": ["teenijatüdruk"],
+    "osalik": ["osaline"],
+    "osamees": ["osaline"],
+    "paademooder": ["ämmaemand"],
+    "paader": ["saunamees"],
+    "paavstiline": ["katoliiklane"],
+    "pagarisulane": ["pagarisell"],
+    "paigamees": ["maaomanik"],
+    "paimendaja": ["kaitsja"],
+    "palgesepp": ["skulptor"],
+    "paljas mees": ["kehvik"],
+    "palper": ["habemeajaja"],
+    "pandimees": ["üürileandja"],
+    "pandisaks": ["üürileandja"],
+    "parker": ["parkal"],
+    "parkmeister": ["parkal"],
+    "pasteedipagar": ["kondiiter"],
+    "paugupeksja": ["trummar"],
+    "peakarjus": ["karjus"],
+    "pealevaataja": ["ülevaataja"],
+    "peavanem": ["pealik"],
+    "pekker": ["pagar"],
+    "pilliajaja": ["pillimees"],
+    "plekleier": ["plekksepp"],
+    "pobol": ["pops"],
+    "pobolik": ["pops"],
+    "poenaine": ["poodnik"],
+    "poesistuja": ["poodnik"],
+    "poisiline mees": ["poissmees"],
+    "poistepidaja": ["pederast"],
+    "poisteteotaja": ["pederast"],
+    "pookpender": ["raamatuköitja"],
+    "pooleadramees": ["talupoeg"],
+    "poolsaks": ["kadakasaks", "sakslane"],
+    "pordupealine": ["liiderdaja", "hooraja", "naistekütt", "elumees"],
+    "pordusundija": ["kupeldaja"],
+    "pormeister": ["linnapea"],
+    "pormeistri asemel": ["aselinnapea"],
+    "portja": ["liiderdaja", "hooraja", "naistekütt", "elumees"],
+    "priihärra": ["parun"],
+    "prillsepp": ["optik", "valmistaja"],
+    "prohvetiemand": ["prohvet"],
+    "pruar": ["õllepruul", "pruulija"],
+    "puduvägi": ["kannupoiss"],
+    "pulmarahva talitaja": ["pulmavanem"],
+    "pulmatalitaja": ["pulmavanem"],
+    "puuseppmeister": ["ehitusmeister"],
+    "põleja": ["süütaja"],
+    "põletaja": ["süütaja"],
+    "põlgaja": ["halvustaja", "pilkaja"],
+    "pärismees": ["pärisori"],
+    "püssilaskja": ["laskur"],
+    "pütsepp": ["püttsepp"],
+    "püügimees": ["rüüstaja"],
+    "raamatu-rutsuja": ["trükkal"],
+    "raamatukandja": ["käskjalg"],
+    "raamatukriivel": ["kirjutaja"],
+    "raamatumees": ["kirjaoskaja"],
+    "raamatumüüja": ["raamatukaupmees"],
+    "raamatusaarn": ["kirjutaja"],
+    "raamatusepp": ["raamatuköitja"],
+    "raamatutegija": ["raamatuköitja"],
+    "raamatuõmbleja": ["raamatuköitja"],
+    "raha väljapaneja": ["rahavahetaja"],
+    "rahahoidja": ["varahoidja"],
+    "rahajuhataja": ["müntmeister"],
+    "rahapealine": ["maksukoguja"],
+    "rahapüüdja": ["sahkerdaja", "ahnitseja", "kasuahne"],
+    "rakkel": ["nahanülgija", "timukas"],
+    "raudsõjamees": ["kürassiir", "ratsanik", "sõjamees"],
+    "reisija mees": ["reisija"],
+    "rendimees": ["rendileandja"],
+    "rentmeister": ["varahoidja"],
+    "rihmasepp": ["sadulsepp"],
+    "riidepesija": ["pesunaine"],
+    "riisuja": ["röövel"],
+    "roa üleskandja": ["ettekandja"],
+    "roalõikaja": ["ettelõikaja", "ettekandja"],
+    "roameister": ["ökonoom", "majapidaja"],
+    "ropsija": ["peksja"],
+    "rõõmuandja": ["rõõmustaja", "lõbustaja", "heategija"],
+    "rõõmukuulutaja": ["evangelist"],
+    "rätsepasulane": ["rätsepasell", "sell"],
+    "saesepp": ["sepp"],
+    "saia kitsäja": ["pagar"],
+    "saksatüdruk": ["toatüdruk"],
+    "sakste lämmija": ["nõid"],
+    "salaja nõuandja": ["salanõunik"],
+    "seapoiss": ["seakarjus"],
+    "seemisker": ["parkal"],
+    "seletaja": ["tõlk"],
+    "selge vana muld": ["rauk"],
+    "sillavanemad": ["kohtumõistja", "kohtunik"],
+    "silmakirjutaja": ["silmamoondaja"],
+    "silmapetja": ["silmamoondaja"],
+    "silmapistaja": ["silmamoondaja"],
+    "superdent": ["superintendent"],
+    "surnusaatjad": ["matuseline", "leinaja"],
+    "surnuvaras": ["hauakaevaja"],
+    "suurpreester": ["ülempreester"],
+    "suutler": ["soperdaja", "käsitööline"],
+    "sõja peamees": ["väepealik"],
+    "sõjamees raudriidega": ["kürassiir", "ratsanik", "sõjamees"],
+    "sõjavanem": ["väepealik"],
+    "sõjaväe ülem peamees": ["ülemjuhataja"],
+    "sõnapõlgaja": ["sõnakuulmatu"],
+    "sängikaeja": ["kammerhärra"],
+    "sötik": ["kohtutäitur"],
+    "sötiku": ["sõdur"],
+    "sötiku istja": ["sõdur"],
+    "süüdlik": ["süüalune"],
+    "süütegija": ["süüalune"],
+    "taatholder": ["asehaldur"],
+    "taevatähe seletaja": ["astroloog"],
+    "taevatähe vaataja": ["astronoom"],
+    "tagandismees": ["käendaja"],
+    "taganesmees": ["käendaja"],
+    "taldrikunolp": ["priileivasööja"],
+    "taldrikunolpija": ["priileivasööja"],
+    "tallatav": ["hoor"],
+    "talutaja": ["teejuht"],
+    "tapja mees": ["tapja"],
+    "tapleja": ["kakleja"],
+    "teadvamees": ["tuttav"],
+    "teadvarahvas": ["tuttav"],
+    "teejuhataja": ["teejuht"],
+    "teotaja": ["pilkaja"],
+    "tiisler": ["tisler"],
+    "toaselts": ["toakaaslane"],
+    "tollipealine": ["tollnik", "tolliametnik", "maksukoguja"],
+    "toompapp": ["preester"],
+    "torikas": ["tülinorija"],
+    "torine": ["tülinorija"],
+    "trossipoiss": ["kannupoiss"],
+    "trummipeksja": ["trummar"],
+    "trööstija": ["lohutaja", "hingehoidja"],
+    "trükkmeister": ["trükkal"],
+    "tundja": ["ennustaja"],
+    "tunnistusemees": ["tunnistaja"],
+    "tunnistusmees": ["tunnistaja"],
+    "turuhoor": ["hoor"],
+    "tõmbaja": ["varas"],
+    "tõmbaja inimene": ["varas"],
+    "tõrutegija": ["ninamees"],
+    "tähetundja": ["astronoom"],
+    "tööorjane": ["ori"],
+    "tülitseja": ["tülinorija"],
+    "tüma saks": ["tobu"],
+    "tündrivitsutaja": ["tündersepp"],
+    # fuller/Walker: vanutaja absent from ÜS (only verb vanutama) — generic
+    # craftsman as last resort; REVIEW
+    "uhtuja": ["vanutaja", "käsitööline"],
+    "uksevaht": ["uksehoidja", "väravavaht", "valvur"],
+    "umbleja": ["õmbleja"],
+    "uue usu ning õpetuse tooja": ["uuendaja"],
+    "vabandetu": ["vabakslastu"],
+    "vabandik": ["vabakslastu"],
+    "vabatnaine": ["vabadik"],
+    "vaekojaisand": ["kaaluja"],
+    "vaekojamees": ["kaaluja"],
+    "vaevaja": ["piinaja"],
+    "vahetaja": ["rahavahetaja"],
+    "vahtja": ["valvur"],
+    "vahva mees": ["kangelane"],
+    "vahva mees rääkima": ["kõnemees"],
+    "vahva naine": ["kangelanna"],
+    "vahva sõnamees": ["kõnemees"],
+    "valjud vanemad": ["ülemus"],
+    "vallalimees": ["vabadik"],
+    "valuvõtja": ["ravitseja", "nõid"],
+    "valvaja": ["valvur"],
+    "vana juas": ["narr"],
+    "vana kämaras": ["rauk"],
+    "vana muld": ["rauk"],
+    "vana mäda": ["rauk"],
+    "vana nõid": ["nõiamoor"],
+    "vana tungus": ["vanataat"],
+    "vanakõu": ["esiisa"],
+    "vanaämm": ["ämmaemand"],
+    "vande äravannutaja": ["lausuja"],
+    "vangihoidja": ["vangivalvur"],
+    "vangitu": ["vang"],
+    "vankrisepp": ["ratassepp", "sepp"],
+    "vapper suu": ["lobiseja"],
+    "varanduse ülevaataja": ["varahoidja"],
+    "varitseja": ["salakuulaja"],
+    "vastupanija": ["mässaja"],
+    "vehtmeister": ["vehkleja"],
+    "veisekarjane": ["karjane"],
+    "veisekarjus": ["karjus"],
+    "veltherr": ["väejuht"],
+    "veomeister": ["kaaluja"],
+    "vere tagaajaja": ["kättemaksja"],
+    "vereajaja": ["kättemaksja"],
+    "viinaaednik": ["viinamarjakasvataja"],
+    "viinaaiamees": ["viinamarjakasvataja"],
+    "viinajooja": ["joodik"],
+    "viivitaja": ["kõhkleja"],
+    "viks tegija": ["meister"],
+    "villakraasitaja": ["villakraasija"],
+    "villamees": ["kaupmees"],
+    "vitsaroog": ["lurjus"],
+    "voorkööper": ["ülesostja"],
+    "voorster": ["eestseisja"],
+    "võla": ["nõid"],
+    "võlaline": ["võlgnik"],
+    "võlglik": ["võlgnik"],
+    "võltstunnistaja": ["valetunnistaja"],
+    "võõra jumala ori": ["ebajumalakummardaja"],
+    "võõra jumala teener": ["ebajumalakummardaja"],
+    "võõra usu mees": ["ketser"],
+    "võõra vastuvõtja": ["võõrustaja", "vastuvõtja"],
+    "võõramaa mees": ["välismaalane"],
+    "väljakuulutaja": ["hüüdja"],
+    "väljamees": ["rändaja"],
+    "väramees": ["abielurikkuja"],
+    "väravatagune": ["eeslinlane"],
+    "väärjumala paluja": ["ebajumalakummardaja"],
+    "väärjumala pidaja": ["ebajumalakummardaja"],
+    "õlimees": ["kaupmees"],
+    "õlletegija": ["õllepruulija"],
+    "õnneandja": ["lausuja"],
+    "ühe nõu mehed": ["vandenõulane"],
+    "ükslane": ["üksiklane"],
+    "ülbe ja üleannetu inimene": ["ülbik", "inimene"],
+    "ülekaeja": ["ülevaataja"],
+    "ülekuulutaja": ["ülevaataja"],
+    "ülem kohtuisand": ["ülemkohtunik"],
+    "ülem proua": ["daam"],
+    "ülem rahva sees": ["ülik"],
+    "ülempealik": ["väejuht"],
+    "ülespidaja": ["ülalpidaja"],
+    "ümberhulkuja": ["hulkur"],
+    "ümberkaudne rahvas": ["naaber"],
+    "ümberviija": ["saatja", "teejuht"],
+    "üte maa mees": ["kaasmaalane"],
+    "ütleja": ["jutlustaja"],
+}
+
+
+def resolve(chain):
+    """First candidate present in ÜS (case-insensitive, return ÜS casing)."""
+    for c in chain:
+        if c in ys_set:
+            return c, chain.index(c)
+        if c.lower() in ys_ci:
+            return ys_ci[c.lower()], chain.index(c)
+    return None, None
+
+
+lines = [ln.rstrip("\n").split("\t") for ln in TSV.open(encoding="utf-8")]
+header, rows = lines[0][:3], [r + [""] * (3 - len(r)) for r in lines[1:]]
+
+changed, fallback_used, unresolved, invalid_kept = [], [], [], []
+out_rows = []
+for lemma, tier, cur in (r[:3] for r in rows):
+    cur = cur.strip()
+    if lemma in DECISIONS:
+        pick, idx = resolve(DECISIONS[lemma])
+        if pick is None:
+            unresolved.append((lemma, tier, "; ".join(DECISIONS[lemma])))
+            out_rows.append([lemma, tier, ""])
+            continue
+        if idx > 0:
+            fallback_used.append((lemma, DECISIONS[lemma][0], pick))
+        if pick != cur:
+            changed.append((lemma, tier, cur, pick))
+        out_rows.append([lemma, tier, pick])
+    else:
+        # keep, but validate every kept candidate (user edits included)
+        cands = [c.strip() for c in cur.split(";") if c.strip()]
+        bad = [c for c in cands if c not in ys_set and c.lower() not in ys_ci]
+        if cands and bad:
+            invalid_kept.append((lemma, tier, cur, "; ".join(bad)))
+        if not cands and tier != "exact":
+            unresolved.append((lemma, tier, "(blank)"))
+        out_rows.append([lemma, tier, cur])
+
+with TSV.open("w", encoding="utf-8") as f:
+    f.write("\t".join(header) + "\n")
+    for r in out_rows:
+        f.write("\t".join(r) + "\n")
+
+print(f"rows: {len(out_rows)}, changed: {len(changed)}, fallback used: {len(fallback_used)}")
+print("\n-- fallbacks (first choice absent from ÜS) --")
+for l, first, got in fallback_used:
+    print(f"  {l}: {first} -> {got}")
+print("\n-- unresolved (no candidate in ÜS) --")
+for l, t, c in unresolved:
+    print(f"  {l} [{t}]: {c}")
+print("\n-- kept rows with candidate NOT in ÜS (please review) --")
+for l, t, c, bad in invalid_kept:
+    print(f"  {l} [{t}]: '{c}' -- not in ÜS: {bad}")
+
+# ---- regenerate SQL -------------------------------------------------------
+example = BASE / "_SELECT_w_id_AS_word_id_w_value_AS_word_w_value_prese_AS_word_pr_202607061807.json"
+sql_template = next(iter(json.load(example.open(encoding="utf-8"))))
+forms = set()
+for lemma, tier, cur in out_rows:
+    for c in (c.strip() for c in cur.split(";")):
+        if c and (c in ys_set or c.lower() in ys_ci):
+            forms.add(c if c in ys_set else ys_ci[c.lower()])
+in_list = ",\n  ".join("'" + f.replace("'", "''") + "'" for f in sorted(forms))
+sql = sql_template.replace(
+    "WHERE w.value IN ('abikaasa')",
+    f"WHERE w.value IN (\n  {in_list}\n) AND w.lang = 'est'",
+)
+(BASE / "AMT-YS-semcat-query_20260706.sql").write_text(sql + ";\n", encoding="utf-8")
+print(f"\nSQL regenerated with {len(forms)} distinct ÜS forms")
